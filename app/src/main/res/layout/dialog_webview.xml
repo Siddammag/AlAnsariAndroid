@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/layout_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:ignore="WebViewLayout">
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_350">
+
+    </WebView>
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/close_btn"
+        android:layout_width="@dimen/dimens_35"
+        android:layout_height="@dimen/dimens_35"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dimens_10"
+        android:padding="@dimen/dimens_6"
+        android:scaleType="fitXY"
+        android:tint="@color/colorPrimary_red"
+        app:srcCompat="@drawable/svg_close_icon_red" />
+
+
+</RelativeLayout>

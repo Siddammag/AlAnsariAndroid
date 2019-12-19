@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar_big" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/toolbar_layout"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingTop="@dimen/dimens_16"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!--            android:layout_width="@dimen/layout_width"
+-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/bg"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimens_24">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/amount_cal_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimens_2"
+                android:layout_marginRight="@dimen/dimens_2"
+                android:minHeight="@dimen/dimens_150"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="@dimen/dimens_4"
+                app:cardElevation="@dimen/dimens_4"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/fragment_data_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimens_12">
+
+                    <LinearLayout
+                        android:id="@+id/buy_sell_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/buy"
+                            fontPath="fonts/Roboto-Medium.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary_blue"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dimens_12"
+                            android:paddingTop="@dimen/dimens_12"
+                            android:text="Buy Foreign\nCurrency"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimens_18sp" />
+
+                        <TextView
+                            android:id="@+id/sell"
+                            fontPath="fonts/Roboto-Medium.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dimens_12"
+                            android:paddingTop="@dimen/dimens_12"
+                            android:text="Sell Foreign\nCurrency"
+                            android:textColor="@color/color373A49"
+                            android:textSize="@dimen/dimens_18sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/country_divider"
+                        style="@style/AddBeneficiaryDividerView"
+                        android:layout_below="@id/buy_sell_layout"
+                        android:layout_marginBottom="@dimen/dimens_12"
+                        android:layout_marginLeft="@dimen/dimens_8"
+                        android:layout_marginRight="@dimen/dimens_8" />
+
+                    <TextView
+                        android:id="@+id/currency"
+                        fontPath="fonts/Roboto-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/country_divider"
+                        android:layout_marginBottom="@dimen/dimens_2"
+                        android:layout_marginLeft="@dimen/dimens_8"
+                        android:layout_marginRight="@dimen/dimens_8"
+                        android:text="Currency"
+                        android:textColor="@color/color373A49"
+                        android:textSize="@dimen/dimens_12sp" />
+
+                    <TextView
+                        android:id="@+id/select_currency"
+                        fontPath="fonts/Roboto-Light.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/currency"
+                        android:layout_marginBottom="@dimen/dimens_12"
+                        android:layout_marginLeft="@dimen/dimens_8"
+                        android:layout_marginRight="@dimen/dimens_8"
+                        android:text="Select Currency"
+                        android:textColor="@color/color373A49"
+                        android:textSize="@dimen/dimens_15sp" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        style="@style/dropdownArrowStyle"
+                        android:layout_below="@id/currency" />
+
+                    <View
+                        android:id="@+id/currency_divider"
+                        style="@style/AddBeneficiaryDividerView"
+                        android:layout_below="@id/select_currency"
+                        android:layout_marginLeft="@dimen/dimens_8"
+                        android:layout_marginRight="@dimen/dimens_8" />
+                    <!-- <TextView
+                         android:id="@+id/from_label"
+                         fontPath="fonts/Roboto-Medium.ttf"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@id/select_currency"
+                         android:layout_marginBottom="@dimen/dimens_12"
+                         android:text="From"
+                         android:textColor="@color/color373A49"
+                         android:textSize="@dimen/dimens_12sp" />
+
+                     <TextView
+                         android:id="@+id/to_label"
+                         fontPath="fonts/Roboto-Medium.ttf"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentRight="true"
+                         android:layout_below="@id/select_currency"
+                         android:layout_marginBottom="@dimen/dimens_12"
+                         android:text="To"
+                         android:textColor="@color/color373A49"
+                         android:textSize="@dimen/dimens_12sp" />-->
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/from_flag"
+                        android:layout_width="@dimen/dimens_28"
+                        android:layout_height="@dimen/dimens_22"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/currency_divider"
+                        android:layout_marginLeft="@dimen/dimens_8"
+                        android:layout_marginTop="@dimen/dimens_10"
+                        android:background="@color/colorWhite_240"
+                        android:padding="@dimen/dimens_1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/svg_flag_aed" />
+
+                    <TextView
+                        android:id="@+id/from_code"
+                        fontPath="fonts/HelveticaNeue-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/from_flag"
+                        android:layout_alignTop="@+id/from_flag"
+                        android:layout_toRightOf="@+id/from_flag"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dimens_8"
+                        android:text="AED"
+                        android:textColor="@color/color373A49"
+                        android:textSize="@dimen/dimens_14sp" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/to_flag"
+                        android:layout_width="@dimen/dimens_28"
+                        android:layout_height="@dimen/dimens_22"
+                        android:layout_below="@+id/currency_divider"
+                        android:layout_marginTop="@dimen/dimens_10"
+                        android:layout_toLeftOf="@+id/to_code"
+                        android:background="@color/colorWhite_240"
+                        android:padding="@dimen/dimens_1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/svg_flag_aed" />
+
+                    <TextView
+                        android:id="@+id/to_code"
+                        fontPath="fonts/HelveticaNeue-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/to_flag"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/to_flag"
+                        android:layout_marginRight="@dimen/dimens_8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dimens_8"
+                        android:text="INR"
+                        android:textColor="@color/color373A49"
+                        android:textSize="@dimen/dimens_14sp" />
+
+                    <EditText
+                        android:id="@+id/from"
+                        style="@style/BigAmountEditText"
+                        android:layout_below="@+id/from_flag"
+                        android:layout_marginLeft="@dimen/dimens_8"
+                        android:gravity="center_vertical"
+                        android:maxLength="9" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/swap_btn"
+                        android:layout_width="@dimen/dimens_26"
+                        android:layout_height="@dimen/dimens_26"
+                        android:layout_alignBottom="@+id/from"
+                        android:layout_alignTop="@+id/from"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/svg_success" />
+
+                    <app.alansari.customviews.progressbar.CircleProgressBar
+                        android:id="@+id/progress_bar"
+                        android:layout_width="@dimen/dimens_26"
+                        android:layout_height="@dimen/dimens_26"
+                        android:layout_alignBottom="@+id/from"
+                        android:layout_alignTop="@+id/from"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible"
+                        app:mlpb_arrow_height="@dimen/dimens_3"
+                        app:mlpb_arrow_width="@dimen/dimens_6"
+                        app:mlpb_enable_circle_background="false"
+                        app:mlpb_inner_radius="@dimen/dimens_12"
+                        app:mlpb_max="100"
+                        app:mlpb_progress="50"
+                        app:mlpb_progress_color="@color/colorPrimary"
+                        app:mlpb_progress_stoke_width="@dimen/dimens_1"
+                        app:mlpb_progress_text_color="@color/colorPrimary"
+                        app:mlpb_progress_text_visibility="invisible"
+                        app:mlpb_show_arrow="true" />
+
+                    <EditText
+                        android:id="@+id/to"
+                        style="@style/BigAmountEditText"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/to_flag"
+                        android:layout_marginRight="@dimen/dimens_8"
+                        android:gravity="center_vertical|right"
+                        android:maxLength="11"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/rate"
+                        fontPath="fonts/Roboto-Light.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/from"
+                        android:layout_marginLeft="@dimen/dimens_8"
+                        android:layout_marginTop="@dimen/dimens_12"
+                        android:text="Exchange Rate AED = INR 18.40"
+                        android:textColor="@color/color3F3F3F"
+                        android:textSize="@dimen/dimens_9sp" />
+
+                    <TextView
+                        fontPath="fonts/Roboto-Light.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/rate"
+                        android:layout_marginLeft="@dimen/dimens_8"
+                        android:layout_marginTop="@dimen/dimens_5"
+                        android:textColor="@color/color3F3F3F"
+                        android:textSize="@dimen/dimens_9sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/message"
+                fontPath="fonts/Roboto-Light.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/amount_cal_card_view"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:text="Rates are indicative and may vary."
+                android:textColor="@color/color3F3F3F"
+                android:textSize="@dimen/dimens_8sp" />
+
+            <View
+                android:id="@+id/amount_fragment_layout_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/amount_cal_card_view"
+                android:layout_alignTop="@id/amount_cal_card_view"
+                android:background="@color/colorWhiteOverlay"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/amount_layout"
+                layout="@layout/amount_summary_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amount_cal_card_view"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/branch_locator_btn"
+                style="@style/SubmitBtn"
+                android:layout_below="@+id/message"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimens_30"
+                android:text="@string/btn_branch_locator" />
+
+
+            <TextView
+                android:id="@+id/enter_ref_num_msg"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/branch_locator_btn"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.3"
+                android:padding="@dimen/dimens_16"
+                android:text="@string/call_customer_care"
+                android:textColor="@color/color3F3F3F"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <include
+                layout="@layout/call_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enter_ref_num_msg"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/transparent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_marginTop="-24dp"
+        android:background="@color/colorTransparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" />
+</RelativeLayout>

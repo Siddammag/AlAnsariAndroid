@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="android.alansari.app.alansari.DashboardActivity">
+
+    <include layout="@layout/toolbar_actionbar_small" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_weight="0.5"
+        android:padding="@dimen/dimens_8">
+
+        <Button
+            android:id="@+id/send_money_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_dialog_no"
+            android:gravity="center"
+            android:padding="@dimen/dimens_20"
+            android:text="Send Money"
+            android:textColor="@color/color1E6AB3"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimens_16">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_0.5"
+            android:layout_marginLeft="@dimen/dimens_8"
+            android:layout_marginRight="@dimen/dimens_8"
+            android:background="@color/colorDivider" />
+
+        <TextView
+            android:id="@+id/pending_transaction"
+            fontPath="fonts/Roboto-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icn_arrow_small_next_75"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimens_16"
+            android:text="Pending Transaction"
+            android:textColor="@color/color3F3F3F"
+            android:textSize="@dimen/dimens_18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_0.5"
+            android:layout_marginLeft="@dimen/dimens_8"
+            android:layout_marginRight="@dimen/dimens_8"
+            android:background="@color/colorDivider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimens_16">
+
+            <TextView
+                android:id="@+id/quick_label"
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/dimens_5"
+                android:text="Quick"
+                android:textColor="@color/color1E6AB3"
+                android:textSize="@dimen/dimens_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quick_send_label"
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/quick_label"
+                android:gravity="center_vertical"
+                android:text="Send"
+                android:textColor="@color/color979797"
+                android:textSize="@dimen/dimens_18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/colorTransparent"
+            android:clickable="true"
+            android:clipToPadding="false"
+            android:paddingLeft="@dimen/dimens_8"
+            android:paddingRight="@dimen/dimens_8"
+            android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</RelativeLayout>

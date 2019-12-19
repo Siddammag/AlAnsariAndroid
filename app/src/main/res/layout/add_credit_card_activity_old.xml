@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/verify_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="android.alansari.app.alansari.LoginActivity"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/next_btn"
+        android:layout_below="@+id/toolbar"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/dimens_20"
+        android:paddingTop="@dimen/dimens_20"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimens_8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimens_1"
+                android:orientation="vertical">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/account_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimens_8"
+                    android:textColorHint="@color/color8F8C8C">
+
+                    <EditText
+                        android:id="@+id/account_name"
+                        style="@style/VerifyEIDEditText"
+                        android:hint="Name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:nextFocusDown="@+id/card_number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:background="@color/colorDivider" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/card_number_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimens_8"
+                    android:textColorHint="@color/color8F8C8C">
+
+                    <EditText
+                        android:id="@+id/card_number"
+                        style="@style/VerifyEIDEditText"
+                        android:hint="Card Number"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:nextFocusDown="@+id/bank_name" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:background="@color/colorDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/bank_name_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:clipToPadding="false"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimens_8"
+                        android:textColorHint="@color/color8F8C8C">
+
+                        <EditText
+                            android:id="@+id/bank_name"
+                            style="@style/VerifyEIDEditText"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:hint="Bank Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="none"
+                            android:nextFocusDown="@+id/scheme_name" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="@dimen/dimens_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorDivider" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/scheme_name_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:clipToPadding="false"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimens_8"
+                        android:textColorHint="@color/color8F8C8C">
+
+                        <EditText
+                            android:id="@+id/scheme_name"
+                            style="@style/VerifyEIDEditText"
+                            android:hint="Scheme Name"
+                            android:imeOptions="actionDone" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:background="@color/colorDivider" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/due_date_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimens_8"
+                    android:textColorHint="@color/color8F8C8C">
+
+                    <EditText
+                        android:id="@+id/due_date"
+                        style="@style/VerifyEIDEditText"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="Due Date"
+                        android:imeOptions="actionDone"
+                        android:inputType="none" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:background="@color/colorDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimens_8"
+                    android:paddingRight="@dimen/dimens_8"
+                    android:weightSum="1">
+
+                    <TextView
+                        style="@style/VerifyEIDEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="0dp"
+                        android:layout_weight="0.5"
+                        android:paddingBottom="@dimen/dimens_16"
+                        android:paddingTop="@dimen/dimens_16"
+                        android:text="Reminder" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="0dp"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dimens_8"
+                        android:paddingTop="@dimen/dimens_8"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:id="@+id/minus_btn"
+                            android:layout_width="@dimen/dimens_35"
+                            android:layout_height="@dimen/dimens_35"
+                            android:layout_toLeftOf="@+id/reminder"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/svg_minus" />
+
+                        <TextView
+                            android:id="@+id/reminder"
+                            style="@style/VerifyEIDEditText"
+                            android:layout_width="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dimens_16"
+                            android:paddingRight="@dimen/dimens_16"
+                            android:paddingTop="0dp"
+                            android:text="2"
+                            android:textSize="@dimen/dimens_18sp" />
+
+                        <ImageView
+                            android:id="@+id/plus_btn"
+                            android:layout_width="@dimen/dimens_35"
+                            android:layout_height="@dimen/dimens_35"
+                            android:layout_toRightOf="@+id/reminder"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/svg_add" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/next_btn"
+        style="@style/SubmitBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Next" />
+
+</RelativeLayout>

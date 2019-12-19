@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix"
+    tools:context=".TravelCardReloadCurrencyActivity">
+
+    <include layout="@layout/toolbar_actionbar_big" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_margin="@dimen/dimens_5"
+        android:padding="@dimen/dimens_3">
+
+        <TextView
+            android:id="@+id/title"
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingRight="@dimen/dimens_5"
+            android:text="Card Number"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimens_13sp" />
+
+
+        <TextView
+            android:id="@+id/card_num"
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="544546551651651655465465465"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimens_13sp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_layout_card_number"
+        android:layout_above="@+id/bottom_layout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/bg"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimens_10"
+            android:paddingTop="@dimen/dimens_12">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimens_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/header_1"
+                        layout="@layout/item_travel_card_header"
+                        android:layout_width="@dimen/beneficiary_card_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_lay_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                    <include
+                        android:id="@+id/recyclerView"
+                        layout="@layout/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/minus_dimens_6"
+                        android:paddingBottom="@dimen/dimens_0"
+                        android:paddingTop="@dimen/dimens_0" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/tv_empty"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimens_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/header_2"
+                        layout="@layout/item_travel_card_header_new"
+                        android:layout_width="@dimen/beneficiary_card_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" />
+
+
+                    <include
+                        android:id="@+id/recyclerView_2"
+                        layout="@layout/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/minus_dimens_10"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:minHeight="@dimen/dimens_45"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimens_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7"
+            android:paddingLeft="@dimen/dimens_10"
+            android:paddingRight="@dimen/dimens_8">
+
+            <TextView
+                android:id="@+id/total_to_pay_label"
+                fontPath="fonts/HelveticaNeue.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/total_amount_to_pay"
+                android:gravity="center_vertical"
+                android:text="@string/total_to_pay"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <TextView
+                android:id="@+id/fee_aed"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/total_to_pay_currency_code"
+                android:layout_below="@+id/total_to_pay_label"
+                android:gravity="center_vertical"
+                android:text="@string/fee_aed_0_00"
+                android:textColor="@color/colorEDEBEB"
+                android:textSize="@dimen/dimens_9sp" />
+
+            <TextView
+                android:id="@+id/vat_label"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fee_aed"
+                android:gravity="center_vertical"
+                android:text="@string/vat_changes_ade_0_00"
+                android:textColor="@color/colorEDEBEB"
+                android:textSize="@dimen/dimens_9sp" />
+
+            <TextView
+                android:id="@+id/discount_label"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vat_label"
+                android:layout_marginTop="@dimen/dimens_2"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorEDEBEB"
+                android:textSize="@dimen/dimens_9sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/roundoff_label"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/discount_label"
+                android:layout_marginTop="@dimen/dimens_2"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorEDEBEB"
+                android:textSize="@dimen/dimens_9sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/total_to_pay"
+                fontPath="fonts/HelveticaNeue.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/total_to_pay_label"
+                android:gravity="right"
+                android:maxLines="1"
+                android:text="0.00"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dimens_15sp" />
+
+            <TextView
+                android:id="@+id/total_to_pay_currency_code"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/total_to_pay"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimens_8"
+                android:text="AED"
+                android:textColor="@color/colorEDEBEB"
+                android:textSize="@dimen/dimens_9sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/send_btn"
+            style="@style/SendMoneySendBtn"
+            android:layout_width="@dimen/dimens_0"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="0.3"
+            android:enabled="false"
+            android:text="@string/btn_next" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DialogCardView">
+
+    <RelativeLayout
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dimens_100">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            style="@style/DialogTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_40"
+            android:layout_margin="@dimen/dimens_0"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Select Beneficiary Type"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dimens_14sp" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/dynamic_layout_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_title">
+
+            <LinearLayout
+                android:id="@+id/dynamic_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/dialog_btn"
+            style="@style/SubmitOutlineBtnDialog"
+            android:layout_below="@+id/dynamic_layout_scroll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimens_8"
+            android:layout_marginTop="@dimen/dimens_20"
+            android:text="@string/btn_done"
+            android:visibility="gone" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

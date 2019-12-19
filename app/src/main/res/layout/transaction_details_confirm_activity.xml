@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar_big_old" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimens_100"
+            android:paddingTop="@dimen/dimens_20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimens_20"
+                android:paddingRight="@dimen/dimens_20"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/name_label"
+                        style="@style/ConfirmViewTextLabel"
+                        android:text="Beneficiary Name" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        style="@style/ConfirmViewText"
+                        android:layout_below="@+id/name_label"
+                        android:text="Parveen D" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/bank_name_label"
+                        style="@style/ConfirmViewTextLabel"
+                        android:text="Beneficiary Agent / Bank" />
+
+                    <TextView
+                        android:id="@+id/bank_name"
+                        style="@style/ConfirmViewText"
+                        android:layout_below="@+id/bank_name_label"
+                        android:text="Federal Bank" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_25"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimens_20"
+                android:paddingRight="@dimen/dimens_20"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/branch_name_label"
+                        style="@style/ConfirmViewTextLabel"
+                        android:text="Beneficiary Branch" />
+
+                    <TextView
+                        android:id="@+id/branch_name"
+                        style="@style/ConfirmViewText"
+                        android:layout_below="@+id/branch_name_label"
+                        android:text="Bengaluru" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/account_number_label"
+                        style="@style/ConfirmViewTextLabel"
+                        android:text="Account Number" />
+
+                    <TextView
+                        android:id="@+id/account_number"
+                        style="@style/ConfirmViewText"
+                        android:layout_below="@+id/account_number_label"
+                        android:text="12345678901234" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_25"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimens_20"
+                android:paddingRight="@dimen/dimens_20"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/source_label"
+                        style="@style/ConfirmViewTextLabel"
+                        android:text="Source of Fund" />
+
+                    <TextView
+                        android:id="@+id/source"
+                        style="@style/ConfirmViewText"
+                        android:layout_below="@+id/source_label"
+                        android:text="Salary Savings" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/purpose_label"
+                        style="@style/ConfirmViewTextLabel"
+                        android:text="Purpose of Transfer" />
+
+                    <TextView
+                        android:id="@+id/purpose"
+                        style="@style/ConfirmViewText"
+                        android:layout_below="@+id/purpose_label"
+                        android:text="Finance Maintenance" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_1"
+                android:layout_marginBottom="@dimen/dimens_10"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:background="@drawable/line_divider" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fragment_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginRight="@dimen/dimens_10"
+                app:cardBackgroundColor="@color/card_bg"
+                app:cardCornerRadius="@dimen/dimens_4"
+                app:cardElevation="@dimen/dimens_4"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dimens_15"
+                        android:paddingLeft="@dimen/dimens_10"
+                        android:paddingRight="@dimen/dimens_10"
+                        android:paddingTop="@dimen/dimens_15">
+
+                        <TextView
+                            android:id="@+id/total_amount"
+                            fontPath="fonts/HelveticaNeue.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="1"
+                            android:text="3,680.00"
+                            android:textColor="@color/color62A930"
+                            android:textSize="@dimen/dimens_28sp" />
+
+                        <TextView
+                            android:id="@+id/currency_code"
+                            fontPath="fonts/HelveticaNeue.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/total_amount"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/dimens_8"
+                            android:text="Receive Amount (INR)"
+                            android:textColor="@color/color373A49" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dimens_1"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/line_divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dimens_15"
+                        android:paddingLeft="@dimen/dimens_10"
+                        android:paddingRight="@dimen/dimens_10"
+                        android:paddingTop="@dimen/dimens_15">
+
+                        <TextView
+                            android:id="@+id/total_amount_to_pay"
+                            fontPath="fonts/HelveticaNeue.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="1"
+                            android:text="215.00"
+                            android:textColor="@color/colorE86768"
+                            android:textSize="@dimen/dimens_28sp" />
+
+                        <TextView
+                            android:id="@+id/currency_code_to_pay"
+                            fontPath="fonts/HelveticaNeue.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/total_amount_to_pay"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/dimens_8"
+                            android:text="Total To Pay (AED)"
+                            android:textColor="@color/color373A49" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/next_btn"
+        style="@style/SubmitBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Confirm" />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar" />
+
+    <app.alansari.customviews.MultiStateView
+        android:id="@+id/multiStateView"
+        style="@style/MultiStateViewStyle"
+        android:layout_below="@+id/toolbar">
+
+      <!--  <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>-->
+
+
+         <im.delight.android.webview.AdvancedWebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+
+    </app.alansari.customviews.MultiStateView>
+
+    <View
+        android:id="@+id/transparent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent" />
+</RelativeLayout>

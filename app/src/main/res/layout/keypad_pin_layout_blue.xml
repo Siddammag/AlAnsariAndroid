@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keypad_pin_top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/colorPrimary"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimens_20"
+    android:paddingRight="@dimen/dimens_20">
+
+    <TextView
+        android:id="@+id/login_pin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimens_10"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:text="Enter PIN"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/login_mobile_no_label" />
+
+    <LinearLayout
+        android:id="@+id/keypad_pin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <RelativeLayout
+            android:id="@+id/pin1_layout"
+            style="@style/OTPViewEditTextLayout">
+
+            <TextView
+                android:id="@+id/pin1"
+                style="@style/OTPViewEditText"
+                android:nextFocusDown="@+id/pin2"
+                android:nextFocusUp="@+id/pin1" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_3"
+                android:layout_alignBottom="@+id/pin1"
+                android:layout_alignLeft="@+id/pin1"
+                android:layout_alignRight="@+id/pin1"
+                android:background="@drawable/pin_line_bg_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pin2_layout"
+            style="@style/OTPViewEditTextLayout">
+
+            <TextView
+                android:id="@+id/pin2"
+                style="@style/OTPViewEditText"
+                android:nextFocusDown="@+id/pin3"
+                android:nextFocusUp="@+id/pin1" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_3"
+                android:layout_alignBottom="@+id/pin2"
+                android:layout_alignLeft="@+id/pin2"
+                android:layout_alignRight="@+id/pin2"
+                android:background="@drawable/pin_line_bg_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pin3_layout"
+            style="@style/OTPViewEditTextLayout">
+
+            <TextView
+                android:id="@+id/pin3"
+                style="@style/OTPViewEditText"
+                android:nextFocusDown="@+id/pin4"
+                android:nextFocusUp="@+id/pin2" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_3"
+                android:layout_alignBottom="@+id/pin3"
+                android:layout_alignLeft="@+id/pin3"
+                android:layout_alignRight="@+id/pin3"
+                android:background="@drawable/pin_line_bg_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pin4_layout"
+            style="@style/OTPViewEditTextLayout">
+
+            <TextView
+                android:id="@+id/pin4"
+                style="@style/OTPViewEditText"
+                android:nextFocusDown="@+id/pin5"
+                android:nextFocusUp="@+id/pin3" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_3"
+                android:layout_alignBottom="@+id/pin4"
+                android:layout_alignLeft="@+id/pin4"
+                android:layout_alignRight="@+id/pin4"
+                android:background="@drawable/pin_line_bg_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pin5_layout"
+            style="@style/OTPViewEditTextLayout">
+
+            <TextView
+                android:id="@+id/pin5"
+                style="@style/OTPViewEditText"
+                android:nextFocusDown="@+id/pin6"
+                android:nextFocusUp="@+id/pin4" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_3"
+                android:layout_alignBottom="@+id/pin5"
+                android:layout_alignLeft="@+id/pin5"
+                android:layout_alignRight="@+id/pin5"
+                android:background="@drawable/pin_line_bg_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pin6_layout"
+            style="@style/OTPViewEditTextLayout">
+
+            <TextView
+                android:id="@+id/pin6"
+                style="@style/OTPViewEditText"
+                android:nextFocusDown="@+id/pin6"
+                android:nextFocusUp="@+id/pin5" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_3"
+                android:layout_alignBottom="@+id/pin6"
+                android:layout_alignLeft="@+id/pin6"
+                android:layout_alignRight="@+id/pin6"
+                android:background="@drawable/pin_line_bg_white" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dimens_1"
+            android:layout_height="@dimen/dimens_20"
+            android:layout_gravity="center_vertical"
+            android:alpha="0.58"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_30"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dimens_8"
+            android:layout_weight="1"
+            android:src="@drawable/ic_back_white"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

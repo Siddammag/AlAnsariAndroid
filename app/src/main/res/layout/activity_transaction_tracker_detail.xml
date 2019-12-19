@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".TransactionTrackerDetailActivity"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar_account_management" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_above="@+id/track_transfer"
+        android:background="@color/bg">
+
+        <LinearLayout
+            android:id="@+id/transaction_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimens_10">
+
+            <LinearLayout
+                android:id="@+id/lin_lay_txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/trans_created"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Transaction Created"
+                    android:textColor="@color/colorTrans6F92BE"
+                    android:textSize="@dimen/dimens_12sp" />
+
+                <TextView
+                    android:id="@+id/trans_verified"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Transaction Verified"
+                    android:textColor="@color/colorTrans6F92BE"
+                    android:textSize="@dimen/dimens_12sp" />
+
+                <TextView
+                    android:id="@+id/trans_processed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Transaction Processed"
+                    android:textColor="@color/colorTrans6F92BE"
+                    android:textSize="@dimen/dimens_12sp" />
+
+                <TextView
+                    android:id="@+id/trans_recieved"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Transaction Received"
+                    android:textColor="@color/colorTrans6F92BE"
+                    android:textSize="@dimen/dimens_12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_lay_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_20"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:layout_marginRight="@dimen/dimens_20"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <ImageView
+                    android:id="@+id/iv_trans_created"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/circle_fill_with_strike" />
+
+                <View
+                    android:id="@+id/v_trans_created"
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorButton" />
+
+                <ImageView
+                    android:id="@+id/iv_trans_verified"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/circle_fill_with_strike" />
+
+                <View
+                    android:id="@+id/v_trans_verified"
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorButton" />
+
+
+                <ImageView
+                    android:id="@+id/iv_trans_processed"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/circle_empty_with_strike" />
+
+                <View
+                    android:id="@+id/v_trans_processed"
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorButton" />
+
+                <ImageView
+                    android:id="@+id/iv_trans_recieved"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/circle_empty_with_strike" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_50"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Transaction Number"
+                    android:textColor="@color/colorTrans6F92BE"
+                    android:textSize="@dimen/dimens_20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/trans_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="59498479497798987*797*77"
+                    android:textColor="@color/colorTrans6F92BE"
+                    android:textSize="@dimen/dimens_16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Current Status"
+                    android:textColor="@color/colorTrans6F92BE"
+                    android:textSize="@dimen/dimens_20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/trans_status"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/dimens_10"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorTrans6F92BE"
+                    android:textSize="@dimen/dimens_16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/dimens_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="To Follow up contact 600546000"
+                android:textColor="@color/colorTrans6F92BE"
+                android:textSize="@dimen/dimens_12sp"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/track_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorButton"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimens_8"
+        android:paddingRight="@dimen/dimens_8"
+        android:text="Back to Home"
+        android:textColor="@color/white" />
+</RelativeLayout>

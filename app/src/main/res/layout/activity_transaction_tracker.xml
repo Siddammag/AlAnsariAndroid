@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".TransactionTrackerActivity"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar_account_management" />
+
+    <LinearLayout
+        android:id="@+id/transaction_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimens_10">
+
+
+        <TextView
+            android:id="@+id/transaction_number"
+            style="@style/addTransactionTextView"
+            android:gravity="center"
+            android:text="@string/transaction_number" />
+
+        <EditText
+            android:id="@+id/transaction_mode_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_35sp"
+            android:layout_marginTop="@dimen/dimens_20"
+            android:layout_marginLeft="@dimen/dimens_20"
+            android:layout_marginRight="@dimen/dimens_20"
+            android:background="@drawable/rounded_edittext"
+            android:clickable="false"
+            android:gravity="center"
+            android:hint="@string/transaction_mode"
+            android:inputType="number"
+            android:imeOptions="actionSend"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack" />
+
+
+        <TextView
+            android:id="@+id/trnas_status"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dimens_10"
+            android:text="To Follow up contact 600546000"
+            android:textColor="@color/colorTrans6F92BE"
+            android:textSize="@dimen/dimens_12sp"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/track_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorButton"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimens_8"
+        android:paddingRight="@dimen/dimens_8"
+        android:text="@string/txt_track_transfer"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

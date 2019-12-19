@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:descendantFocusability="beforeDescendants"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    tools:ignore="MissingPrefix">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_272"
+        android:background="@drawable/login_register_header_bg" />
+
+    <include layout="@layout/toolbar_actionbar_transparent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/login_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_toolbar_padding_minus"
+                android:background="@drawable/login_register_header_bg"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/top_toolbar_padding">
+
+                <RelativeLayout
+                    android:id="@+id/mobile_layout"
+                    style="@style/MobileNumberLayout"
+                    android:layout_marginBottom="@dimen/dimens_18">
+
+                    <TextView
+                        android:id="@+id/mobile_label"
+                        style="@style/LoginMobileNumberLabel" />
+
+                    <TextView
+                        android:id="@+id/country_code"
+                        style="@style/LoginCountryCode"
+                        android:layout_alignBottom="@+id/change_btn"
+                        android:layout_alignTop="@+id/change_btn"
+                        android:textColor="@color/colorECEAEA" />
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        style="@style/LoginMobileNumber"
+                        android:layout_alignBottom="@+id/change_btn"
+                        android:layout_alignTop="@+id/change_btn"
+                        android:layout_toLeftOf="@+id/change_btn"
+                        android:layout_toRightOf="@+id/country_code" />
+
+                    <Button
+                        android:id="@+id/change_btn"
+                        style="@style/LoginChangeButton"
+                        android:text="Logout"
+                        android:layout_below="@+id/mobile_label" />
+                </RelativeLayout>
+
+                <include layout="@layout/keypad_pin_layout_login" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_48"
+                    android:layout_marginBottom="@dimen/minus_dimens_8"
+                    android:layout_marginTop="@dimen/dimens_6"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/svg_wave" />
+            </LinearLayout>
+
+            <include layout="@layout/keypad_key_layout" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

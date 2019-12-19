@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/verify_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar_menu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/email_notification"
+                style="@style/notificationTextView"
+                android:layout_toLeftOf="@+id/email_notification_switch"
+                android:paddingBottom="@dimen/dimens_5"
+                android:text="Email notification" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/email_notification_switch"
+                style="@style/notificationSwitch"
+                android:layout_alignBottom="@id/email_notification"
+                android:layout_alignTop="@id/email_notification" />
+
+            <RelativeLayout
+                android:id="@+id/email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_30"
+                android:layout_below="@+id/email_notification_switch"
+                android:layout_marginBottom="@dimen/dimens_8"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimens_15"
+                android:paddingRight="@dimen/dimens_18">
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorButton"
+                    android:text="@string/save"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/save"
+                    android:layout_alignTop="@id/save"
+                    android:layout_toLeftOf="@+id/save"
+                    android:background="@drawable/bg_personal_details"
+                    android:hint="Email Id"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/dimens_12"
+                    android:textColor="@color/color3F3F3F"
+                    android:textColorHint="@color/color9B9B9B"
+                    android:textSize="@dimen/dimens_12sp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/SendMoneyBeneficiaryDetailsDivider"
+                android:layout_below="@+id/email_layout" />
+
+
+            <TextView
+                android:id="@+id/sms_notification"
+                style="@style/notificationTextView"
+                android:layout_below="@+id/email_layout"
+                android:layout_toLeftOf="@+id/sms_notification_switch"
+                android:text="SMS notification" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sms_notification_switch"
+                style="@style/notificationSwitch"
+                android:layout_alignBottom="@id/sms_notification"
+                android:layout_alignTop="@id/sms_notification" />
+
+            <View
+                style="@style/SendMoneyBeneficiaryDetailsDivider"
+                android:layout_below="@+id/sms_notification" />
+
+
+            <TextView
+                android:id="@+id/aae_alert"
+                style="@style/notificationTextView"
+                android:layout_below="@+id/sms_notification"
+                android:layout_toLeftOf="@+id/aae_alert_switch"
+                android:text="Receive alerts from AAE" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/aae_alert_switch"
+                style="@style/notificationSwitch"
+                android:layout_alignBottom="@id/aae_alert"
+                android:layout_alignTop="@id/aae_alert" />
+
+            <View
+                style="@style/SendMoneyBeneficiaryDetailsDivider"
+                android:layout_below="@+id/aae_alert" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        - Created by Parveen Dala on 05 October, 2016
+        - Fugenx Technologies, Bengaluru
+        - AlAnsari
+        -->
+    <integer name="num_columns_images">3</integer>
+
+
+</resources>

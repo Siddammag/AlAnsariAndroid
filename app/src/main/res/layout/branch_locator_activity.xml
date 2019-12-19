@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:ignore="MissingPrefix">
+
+        <include layout="@layout/toolbar_actionbar_menu" />
+
+        <LinearLayout
+            android:id="@+id/list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical">
+
+            <include layout="@layout/search_view_layout" />
+
+            <include layout="@layout/recycler_view_full" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/map_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:visibility="visible">
+
+            <include
+                layout="@layout/maplayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                layout="@layout/branch_locator_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/fab"
+        style="@style/FloatingRoundButton"
+        android:layout_width="@dimen/dimens_48"
+        android:layout_height="@dimen/dimens_48"
+        android:padding="@dimen/dimens_10"
+        android:src="@drawable/icn_map_blue"
+        app:backgroundTint="@color/colorWhite" />
+</FrameLayout>

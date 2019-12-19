@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dimens_100">
+
+            <RelativeLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dimens_8">
+
+                <TextView
+                    android:id="@+id/temp_transaction_num_label"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dimens_8"
+                    android:layout_marginTop="@dimen/dimens_16"
+                    android:gravity="center"
+                    android:padding="@dimen/dimens_8"
+                    android:text="Your Temporary Transaction Number is"
+                    android:textColor="@color/color9E9E9E"
+                    android:textSize="@dimen/verify_eid_desc_text_size" />
+
+                <TextView
+                    android:id="@+id/temp_transaction_num"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/temp_transaction_num_label"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dimens_8"
+                    android:text="90014200"
+                    android:textColor="@color/color1E6AB3"
+                    android:textSize="@dimen/dimens_22sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_1"
+                android:layout_below="@+id/top_layout"
+                android:layout_marginTop="@dimen/dimens_8"
+                android:background="@drawable/line_divider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_layout"
+                android:layout_marginTop="@dimen/dimens_8"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dimens_8">
+
+                <TextView
+                    android:id="@+id/temp_message"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="@dimen/dimens_8"
+                    android:text="Please visit nearest branch within 4 hours to complete the transaction."
+                    android:textColor="@color/color9F9F9F"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <TextView
+                    android:id="@+id/temp_message2"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/temp_message"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_8"
+                    android:gravity="center"
+                    android:padding="@dimen/dimens_8"
+                    android:text="This Transaction will automatically expired at the end of 4 Hours."
+                    android:textColor="@color/colorE86768"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <TextView
+                    android:id="@+id/assistance_call_label"
+                    fontPath="fonts/Roboto-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/temp_message2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dimens_16"
+                    android:layout_marginTop="@dimen/dimens_8"
+                    android:text="For Assistance Call"
+                    android:textColor="@color/color3F3F3F"
+                    android:textSize="@dimen/dimens_18sp" />
+
+                <ImageView
+                    android:id="@+id/assistance_call_icon"
+                    android:layout_width="@dimen/dimens_30"
+                    android:layout_height="@dimen/dimens_30"
+                    android:layout_below="@+id/assistance_call_label"
+                    android:layout_toLeftOf="@+id/assistance_call"
+                    app:srcCompat="@drawable/svg_phone_call_back" />
+
+                <TextView
+                    android:id="@+id/assistance_call"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/assistance_call_icon"
+                    android:layout_alignTop="@+id/assistance_call_icon"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimens_14"
+                    android:text="09 - 1234567"
+                    android:textColor="@color/color1E6AB3"
+                    android:textSize="@dimen/dimens_20sp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/next_btn"
+        style="@style/SubmitBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Add to Wallet" />
+</RelativeLayout>

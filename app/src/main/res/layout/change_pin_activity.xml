@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ChangePinActivity"
+    tools:ignore="MissingPrefix">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="313dp"
+        android:background="@drawable/login_register_header_bg" />
+
+    <include layout="@layout/toolbar_actionbar_transparent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/register_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_toolbar_padding_minus"
+                android:background="@drawable/login_register_header_bg"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/top_toolbar_padding">
+
+                <RelativeLayout
+                    android:id="@+id/mobile_layout"
+                    style="@style/MobileNumberLayout"
+                    android:layout_marginTop="@dimen/dimens_6"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/mobile_label"
+                        style="@style/LoginMobileNumberLabel" />
+
+                    <TextView
+                        android:id="@+id/country_code"
+                        style="@style/LoginCountryCode"
+                        android:layout_alignBottom="@+id/change_btn"
+                        android:layout_alignTop="@+id/change_btn"
+                        android:layout_below="@+id/mobile_label" />
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        style="@style/LoginMobileNumber"
+                        android:layout_below="@+id/mobile_label"
+                        android:layout_toRightOf="@+id/country_code" />
+                </RelativeLayout>
+
+
+                <include
+                    layout="@layout/keypad_pin_layout"
+                    android:layout_width="@dimen/min_width_view"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dimens_10"
+                    android:layout_marginTop="@dimen/dimens_30" />
+
+                <TextView
+                    android:id="@+id/resend_otp"
+                    fontPath="fonts/Roboto-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dimens_10"
+                    android:layout_marginTop="@dimen/dimens_30"
+                    android:text="Resend OTP"
+                    android:textColor="@color/colorECEAEA"
+                    android:textSize="@dimen/dimens_13sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/resend_otp_timer"
+                    fontPath="fonts/Roboto-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dimens_10"
+                    android:text="Resend OTP"
+                    android:textColor="@color/colorECEAEA"
+                    android:textSize="@dimen/dimens_10sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_48"
+                    android:layout_marginBottom="@dimen/minus_dimens_8"
+                    android:layout_marginTop="@dimen/dimens_16"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/svg_wave" />
+            </LinearLayout>
+
+            <include layout="@layout/keypad_key_layout" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/change_pin_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlackOverlay"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+            style="@style/DialogCardView"
+            android:layout_centerInParent="true">
+            <!--android:layout_width="@dimen/layout_width"-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimens_14">
+
+                <TextView
+                    android:id="@+id/result_title"
+                    style="@style/DialogTitleTextView"
+                    android:text="PIN Setup" />
+
+                <TextView
+                    android:id="@+id/result_status"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/result_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_8"
+                    android:text="Success!"
+                    android:textColor="@color/color373A49"
+                    android:textSize="@dimen/dimens_18sp" />
+
+                <TextView
+                    android:id="@+id/result_text"
+                    style="@style/DialogTextView"
+                    android:layout_below="@+id/result_status"
+                    android:gravity="center_horizontal"
+                    android:text="@string/pin_setup_done" />
+
+                <Button
+                    android:id="@+id/result_ok_btn"
+                    style="@style/SubmitBtn"
+                    android:layout_below="@+id/result_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_35"
+                    android:text="OK" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

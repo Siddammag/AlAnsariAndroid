@@ -1,0 +1,154 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.27.1'
+    }
+    configurations.all {
+        resolutionStrategy {
+            force 'net.sf.proguard:proguard-gradle:5.3.3'
+        }
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    signingConfigs {
+        AlAnsariRelease {
+            keyAlias 'AlAnsariAlias'
+            keyPassword 'AlAnsari@Dubai'
+            //storeFile file('/media/parveen/01D27348B79328C0/DiskE/Pro Labs/zFug!nx/@Pro Labs/Al Ansari/Keystore/AlAnsariKeyStore.jks')
+            //storeFile file('E:/Fugenx/keystore/AlAnsari/AlAnsariKeyStore.jks')
+            storePassword 'AlAnsari@Dubai'
+        }
+    }
+/*    dexOptions {
+        incremental = true;
+        preDexLibraries = false
+        javaMaxHeapSize "4g" // 2g should be also OK
+    }*/
+
+    /* dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+        preDexLibraries true
+        dexInProcess = true
+
+    }*/
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "app.alansari"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 51
+        versionName "4.44"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.AlAnsariRelease
+            lintOptions {
+                disable 'MissingTranslation'
+                checkReleaseBuilds false
+                abortOnError false
+            }
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        repositories {
+            maven { url 'https://oss.sonatype.org/content/repositories/ksoap2-android-releases' }
+        }
+    }
+    lintOptions {
+        disable 'MissingPrefix'
+    }
+    productFlavors {
+    }
+}
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:support-v4:28.0.0'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/date4j.jar')
+    implementation 'com.google.android.gms:play-services-location:11.4.0'
+    implementation 'com.google.android.gms:play-services-maps:11.4.0'
+    implementation 'com.android.support:multidex:1.0.1'
+    compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    compile "com.android.support:design:${rootProject.ext.supportLibVersion}"
+    compile "com.android.support:recyclerview-v7:${rootProject.ext.supportLibVersion}"
+    compile "com.android.support:palette-v7:${rootProject.ext.supportLibVersion}"
+    compile "com.android.support:cardview-v7:${rootProject.ext.supportLibVersion}"
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.google.code.ksoap2-android:ksoap2-android:3.6.2'
+    implementation 'uk.co.chrisjenx:calligraphy:2.2.0'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.specyci:residemenu:1.6'
+    implementation 'com.loopeer.library:cardstack:1.0.2'
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:1.0.1'
+    //implementation 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    //compile 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.9.1'
+    implementation 'com.google.firebase:firebase-messaging:11.4.0'
+    //compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
+    //Image
+    //implementation 'com.mikhaellopez:circularimageview:3.2.0'
+
+    implementation 'com.github.demoNo:AutoScrollViewPager:v1.0.2'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //compile 'com.facebook.android:facebook-core:4.33.0'
+    //implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'com.facebook.android:facebook-core:5.1.1'
+    //implementation 'com.facebook.android:facebook-marketing:[4,5)'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    /*compile 'com.google.firebase:firebase-core:16.0.6'*/
+
+/*3rd Party Webview*/
+
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+
+/*Finish*/
+    testCompile 'junit:junit:4.12'
+    compile('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
+        transitive = true
+    }
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+
+    //implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    //implementation 'com.google.firebase:firebase-messaging:20.1.0'
+
+    // (Recommended) Add the Google Analytics dependency.
+    implementation 'com.google.firebase:firebase-analytics:11.4.0'
+
+    // Add the Firebase Crashlytics dependency.
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+}
+apply plugin: 'com.google.gms.google-services'

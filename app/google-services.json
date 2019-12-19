@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "494330422840",
+    "firebase_url": "https://alansari-android.firebaseio.com",
+    "project_id": "alansari-android",
+    "storage_bucket": "alansari-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494330422840:android:c1342683d3b47b7f",
+        "android_client_info": {
+          "package_name": "app.alansari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494330422840-r2q3hv393c099ee3sj0g3930f95ibtd8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.alansari",
+            "certificate_hash": "22a3a3fedbf3ed70e3167ff9f061181f989c41a6"
+          }
+        },
+        {
+          "client_id": "494330422840-cmbfcgemier6mbk7rpmp78jq6ra4m7hv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX_KYufnL4Him-9bWRpJzipNj00LY3PIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494330422840-cmbfcgemier6mbk7rpmp78jq6ra4m7hv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "494330422840-i9q4ntaqjroi6nmm5tqu5vosorm3adgh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alansariexchange.alansariex"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar_account_management" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/dimens_10"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                style="@style/contactUsCardViewStyle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/name_layout"
+                        style="@style/contactUsTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/name"
+                            style="@style/contactUsEditText"
+                            android:hint="Name"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@+id/mobile" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/mobile_layout"
+                        style="@style/contactUsTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/mobile"
+                            style="@style/contactUsEditText"
+                            android:hint="Phone number"
+                            android:imeOptions="actionNext"
+                            android:inputType="none"
+                            android:nextFocusDown="@+id/email" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/email_layout"
+                        style="@style/contactUsTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/email"
+                            style="@style/contactUsEditText"
+                            android:hint="Email"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:nextFocusDown="@+id/subject" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/subject_layout"
+                        style="@style/contactUsTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/subject"
+                            style="@style/contactUsEditText"
+                            android:hint="Subject"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@+id/message" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/message_layout"
+                        style="@style/contactUsTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/message"
+                            style="@style/contactUsEditText"
+                            android:gravity="top"
+                            android:hint="Message"
+                            android:inputType="textMultiLine"
+                            android:maxLines="4"
+                            android:minLines="4"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/submit_btn"
+                style="@style/ConfirmBtnGreen"
+                android:layout_width="@dimen/btn_confirm_green_width_big"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimens_8"
+                android:text="@string/btn_submit" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

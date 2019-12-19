@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_register_header_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dimens_12"
+                android:paddingRight="@dimen/dimens_12">
+
+                <TextView
+                    android:id="@+id/title"
+                    fontPath="fonts/HelveticaNeue-Light.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="Your opinion matters!"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dimens_24sp" />
+
+                <TextView
+                    android:id="@+id/sub_title"
+                    fontPath="fonts/HelveticaNeue.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_50"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/transaction_rate"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dimens_14sp" />
+
+                <android.support.v7.widget.AppCompatRatingBar
+                    android:id="@+id/rating_bar"
+                    style="@style/transactionRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sub_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_35"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1.0" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/close_btn"
+        android:layout_width="@dimen/dimens_42"
+        android:layout_height="@dimen/dimens_42"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dimens_10"
+        android:padding="@dimen/dimens_6"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/svg_rate_close_icon" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_48"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_marginBottom="@dimen/minus_dimens_8"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/svg_wave" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_75"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg">
+
+        <Button
+            android:id="@+id/submit_btn"
+            style="@style/ConfirmBtnGreen"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimens_18"
+            android:enabled="false"
+            android:text="Submit" />
+    </RelativeLayout>
+</RelativeLayout>

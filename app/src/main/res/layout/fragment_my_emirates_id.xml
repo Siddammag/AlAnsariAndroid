@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.my_emirates.MyEmiratesIdFragment">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_above="@+id/btn_click_submit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingTop="@dimen/dimens_6">
+
+        <LinearLayout
+            android:id="@+id/reg_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_click_front_side"
+                style="@style/SubmitBtnDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dimens_8"
+                android:layout_marginRight="@dimen/dimens_8"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimens_40"
+                android:paddingRight="@dimen/dimens_40"
+                android:text="Take Photo of ID Front Side"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btn_click_back_side"
+                style="@style/SubmitBtnDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dimens_8"
+                android:layout_marginRight="@dimen/dimens_8"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimens_40"
+                android:paddingRight="@dimen/dimens_40"
+                android:text="Take Photo of ID backside"
+                android:textColor="@color/colorWhite" />
+
+
+            <TextView
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_8"
+                android:layout_marginRight="@dimen/dimens_8"
+                android:paddingLeft="@dimen/dimens_8"
+                android:paddingRight="@dimen/dimens_8"
+                android:paddingTop="@dimen/dimens_5"
+                android:text="Preview"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimens_15sp" />
+
+
+            <TextView
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_8"
+                android:layout_marginRight="@dimen/dimens_8"
+                android:paddingLeft="@dimen/dimens_8"
+                android:paddingRight="@dimen/dimens_8"
+                android:paddingTop="@dimen/dimens_5"
+                android:text="Front side of Emirates ID"
+                android:textColor="@color/color9B9B9B" />
+
+            <LinearLayout
+                android:id="@+id/tv_front_side"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_150"
+                android:layout_margin="@dimen/dimens_10"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:background="@drawable/bg_box_grey_outline">
+
+                <ImageView
+                    android:id="@+id/captured_photo_front_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/dimens_10"
+                    android:contentDescription="desc" />
+
+            </LinearLayout>
+
+            <TextView
+
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_8"
+                android:layout_marginRight="@dimen/dimens_8"
+                android:paddingLeft="@dimen/dimens_8"
+                android:paddingRight="@dimen/dimens_8"
+                android:paddingTop="@dimen/dimens_10"
+                android:text="Back side of Emirates ID"
+                android:textColor="@color/color9B9B9B" />
+
+            <LinearLayout
+                android:id="@+id/tv_back_side"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_150"
+                android:layout_margin="@dimen/dimens_10"
+                android:background="@drawable/bg_box_grey_outline">
+
+                <ImageView
+                    android:id="@+id/captured_photo_back_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/dimens_10"
+                    android:contentDescription="desc" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_click_submit"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimens_5"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimens_40"
+        android:paddingRight="@dimen/dimens_40"
+        android:text="Submit"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimens_12sp" />
+
+</RelativeLayout>

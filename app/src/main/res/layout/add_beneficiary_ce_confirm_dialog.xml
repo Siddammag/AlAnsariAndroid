@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_beneficiary_confirm_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/am_beneficiary_header_bg"
+        android:paddingBottom="@dimen/dimens_8">
+
+        <include layout="@layout/toolbar_actionbar_transparent" />
+
+        <LinearLayout
+            android:id="@+id/confirm_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dimens_6"
+            android:background="@color/bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:id="@+id/country_name_c_layout"
+                    style="@style/AddBeneficiaryConfirmDetailsLayout"
+                    android:layout_weight="0.5"
+                    android:paddingRight="@dimen/dimens_4">
+
+                    <TextView
+                        android:id="@+id/country_name_label_c"
+                        style="@style/AddBeneficiaryConfirmDetailsTextLabel"
+                        android:text="@string/country" />
+
+                    <TextView
+                        android:id="@+id/country_name_c"
+                        style="@style/AddBeneficiaryConfirmDetailsText"
+                        android:layout_below="@+id/country_name_label_c"
+                        android:text="India" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/dimens_0.5"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorB7B3B3" />
+
+                <RelativeLayout
+                    android:id="@+id/bank_name_c_layout"
+                    style="@style/AddBeneficiaryConfirmDetailsLayout"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/bank_name_label_c"
+                        style="@style/AddBeneficiaryConfirmDetailsTextLabel"
+                        android:text="@string/beneficiary_bank_agent" />
+
+                    <TextView
+                        android:id="@+id/bank_name_c"
+                        style="@style/AddBeneficiaryConfirmDetailsText"
+                        android:layout_below="@+id/bank_name_label_c"
+                        android:text="Federal Bank" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/AddBeneficiaryConfirmDetailsDividerView" />
+
+            <LinearLayout
+                android:id="@+id/confirm_dynamic_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <app.alansari.customviews.progressbutton.CircularProgressButton
+            android:id="@+id/dialog_btn"
+            style="@style/CircularProgressSaveBtn"
+            android:layout_below="@+id/confirm_data_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimens_25"
+            android:layout_marginTop="@dimen/dimens_25"
+            android:drawablePadding="@dimen/dimens_8"
+            android:text="Save"
+            app:cpb_colorIndicator="@color/color70D303"
+            app:cpb_colorIndicatorBackground="@color/colorWhite"
+            app:cpb_colorProgress="@color/colorTransparent"
+            app:cpb_paddingProgress="@dimen/dimens_8"
+            app:cpb_selectorIdle="@color/cpb_idle_state_selector_trans"
+            app:cpb_textError="Try Again" />
+    </RelativeLayout>
+
+</ScrollView>
+
+

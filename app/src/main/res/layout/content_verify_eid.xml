@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context="android.alansari.app.alansari.LoginActivity">
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_header_height"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimens_16"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/dimens_16"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_header_text_size" />
+
+    </RelativeLayout>-->
+
+    <include layout="@layout/toolbar_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/verify_eid_title_height"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimens_40"
+                android:paddingRight="@dimen/dimens_40">
+
+                <TextView
+                    android:id="@+id/login_eid_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Verify EID"
+                    android:textColor="@color/color9E9E9E"
+                    android:textSize="@dimen/verify_eid_title_text_size" />
+
+                <TextView
+                    android:id="@+id/login_eid_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_eid_label"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/dimens_40"
+                    android:text="Please enter following details and verify your EID"
+                    android:textColor="@color/color9E9E9E"
+                    android:textSize="@dimen/verify_eid_desc_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimens_40"
+                android:paddingRight="@dimen/dimens_40">
+
+                <TextView
+                    android:id="@+id/login_mobile_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textColor="@color/colorBAB6B6"
+                    android:textSize="@dimen/login_mobile_no_label" />
+
+                <TextView
+                    android:id="@+id/login_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_mobile_label"
+                    android:paddingTop="@dimen/dimens_10"
+                    android:text="+91 9041411410"
+                    android:textColor="@color/color3F3F3F"
+                    android:textSize="@dimen/login_mobile_no" />
+
+                <Button
+                    android:id="@+id/login_change_btn"
+                    android:layout_width="@dimen/login_change_btn_width"
+                    android:layout_height="@dimen/login_change_btn_height"
+                    android:layout_alignBottom="@+id/login_mobile"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_login_change"
+                    android:text="Change"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/login_change_btn_text" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_1"
+                android:layout_marginTop="@dimen/dimens_60"
+                android:background="@color/colorDivider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_60"
+                android:paddingLeft="@dimen/dimens_40"
+                android:paddingRight="@dimen/dimens_40">
+
+                <TextView
+                    android:id="@+id/login_pin_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_40"
+                    android:text="Enter PIN"
+                    android:textColor="@color/colorBAB6B6"
+                    android:textSize="@dimen/login_mobile_no_label" />
+
+                <LinearLayout
+                    android:id="@+id/login_pin_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_pin_label"
+                    android:weightSum="0.8">
+
+                    <RelativeLayout
+                        android:id="@+id/login_pin_1_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimens_8"
+                        android:layout_marginRight="@dimen/dimens_8"
+                        android:layout_weight="0.2">
+
+                        <TextView
+                            android:id="@+id/login_pin_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:maxLength="1"
+                            android:maxLines="1"
+                            android:padding="@dimen/dimens_8"
+                            android:text="*"
+                            android:textColor="@color/color3F3F3F"
+                            android:textSize="@dimen/login_mobile_no" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimens_3"
+                            android:layout_alignBottom="@+id/login_pin_1"
+                            android:background="@drawable/pin_line_bg_black" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/login_pin_2_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimens_8"
+                        android:layout_marginRight="@dimen/dimens_8"
+                        android:layout_weight="0.2">
+
+                        <TextView
+                            android:id="@+id/login_pin_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:maxLength="1"
+                            android:maxLines="1"
+                            android:padding="@dimen/dimens_8"
+                            android:text="*"
+                            android:textColor="@color/color3F3F3F"
+                            android:textSize="@dimen/login_mobile_no" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimens_3"
+                            android:layout_alignBottom="@+id/login_pin_2"
+                            android:background="@drawable/pin_line_bg_black" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/login_pin_3_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimens_8"
+                        android:layout_marginRight="@dimen/dimens_8"
+                        android:layout_weight="0.2">
+
+                        <TextView
+                            android:id="@+id/login_pin_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:maxLength="1"
+                            android:maxLines="1"
+                            android:padding="@dimen/dimens_8"
+                            android:text="*"
+                            android:textColor="@color/color3F3F3F"
+                            android:textSize="@dimen/login_mobile_no" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimens_3"
+                            android:layout_alignBottom="@+id/login_pin_3"
+                            android:background="@drawable/pin_line_bg_black" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/login_pin_4_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimens_8"
+                        android:layout_marginRight="@dimen/dimens_8"
+                        android:layout_weight="0.2">
+
+                        <TextView
+                            android:id="@+id/login_pin_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:maxLength="1"
+                            android:maxLines="1"
+                            android:padding="@dimen/dimens_8"
+                            android:text="*"
+                            android:textColor="@color/color3F3F3F"
+                            android:textSize="@dimen/login_mobile_no" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimens_3"
+                            android:layout_alignBottom="@+id/login_pin_4"
+                            android:background="@drawable/pin_line_bg_black" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/login_forget_pin_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_pin_layout"
+                    android:layout_marginTop="@dimen/dimens_40"
+                    android:text="Forget PIN?"
+                    android:textColor="@color/color3F3F3F"
+                    android:textSize="@dimen/login_mobile_no_label" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_1"
+                android:layout_marginTop="@dimen/dimens_25"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:id="@+id/login_touch_id_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_pin_layout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimens_50"
+                android:text="Or Setup your TouchId"
+                android:textColor="@color/color3F3F3F"
+                android:textSize="@dimen/login_mobile_no_label" />
+
+            <Button
+                android:id="@+id/login_submit_btn"
+                android:layout_width="@dimen/submit_btn_width"
+                android:layout_height="@dimen/submit_btn_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dimens_8"
+                android:layout_marginRight="@dimen/dimens_8"
+                android:layout_marginTop="@dimen/dimens_50"
+                android:background="@drawable/btn_primary_round"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_submit_btn_text" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorWhiteOverlay">
+
+    <item
+        android:id="@android:id/mask"
+        android:drawable="@color/colorBlack"
+        android:state_pressed="true"></item>
+    <item>
+        <selector>
+            <item android:state_enabled="false">
+                <shape>
+                    <stroke
+                        android:width="@dimen/dimens_2"
+                        android:color="@color/colorWhite" />
+                    <corners android:radius="@dimen/dimens_70"></corners>
+                    <solid android:color="@color/colorTransparent"></solid>
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <stroke
+                        android:width="@dimen/dimens_2"
+                        android:color="@color/colorWhite" />
+                    <corners android:radius="@dimen/dimens_70"></corners>
+                    <solid android:color="@color/colorTransparent"></solid>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

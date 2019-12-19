@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keypad_pin_top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimens_30"
+    android:paddingRight="@dimen/dimens_30">
+
+    <TextView
+        android:id="@+id/keypad_pin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimens_15"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:text="Enter Mobile Number"
+        android:textColor="@color/color1E6AB3"
+        android:textSize="@dimen/login_pin_label_title" />
+
+
+    <RelativeLayout
+        android:id="@+id/keypad_pin_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.48"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center|left|fill_horizontal"
+            android:inputType="none"
+            android:maxLength="4"
+            android:paddingBottom="@dimen/dimens_8"
+            android:text="+971"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimens_30" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimens_3"
+            android:layout_alignBottom="@+id/country_code"
+            android:layout_alignLeft="@+id/country_code"
+            android:layout_alignRight="@+id/country_code"
+            android:background="@drawable/pin_line_bg_black" />
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_10"
+            android:layout_toRightOf="@+id/country_code"
+            android:alpha="0.78"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:inputType="none"
+            android:maxEms="10"
+            android:maxLength="10"
+            android:minEms="5"
+            android:paddingBottom="@dimen/dimens_8"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimens_30" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_3"
+            android:layout_alignBottom="@+id/mobile"
+            android:layout_alignLeft="@+id/mobile"
+            android:layout_alignRight="@+id/mobile"
+            android:background="@drawable/pin_line_bg_black" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimens_110"
+    android:background="@drawable/login_register_header_bg"
+    android:gravity="center_vertical"
+    tools:ignore="MissingPrefix">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/toolbar_right_icon"
+        android:layout_width="@dimen/dimens_60"
+        android:layout_height="@dimen/dimens_60"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimens_1"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/svg_am_icon" />
+
+    <RelativeLayout
+        android:id="@+id/profile_pic_layout"
+        android:layout_width="@dimen/dimens_75"
+        android:layout_height="@dimen/dimens_75"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dimens_5"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimens_75"
+            android:layout_height="@dimen/dimens_75"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/beneficiary_pic"
+                android:layout_width="@dimen/dimens_74"
+                android:layout_height="@dimen/dimens_74"
+                android:src="@drawable/ic_new_user" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimens_70"
+            android:layout_height="@dimen/dimens_70"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/dimens_7"
+                android:layout_marginRight="@dimen/dimens_2"
+                android:background="@drawable/ic_new_edit" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/nav_menu"
+            style="@style/RightMenuButton"
+            android:layout_width="@dimen/dimens_40"
+            android:layout_height="@dimen/dimens_40"
+            android:padding="@dimen/dimens_8" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/toolbar_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="@dimen/dimens_10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimens_18">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            fontPath="fonts/HelveticaNeue-Light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accounts"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimens_18sp" />
+
+        <TextView
+            android:id="@+id/toolbar_title_2"
+            fontPath="fonts/HelveticaNeue.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_title"
+            android:layout_marginTop="@dimen/minus_dimens_2"
+            android:text="Managemet"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimens_20sp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/wu_add_beneficiary_confirm_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/am_beneficiary_header_bg"
+        android:paddingBottom="@dimen/dimens_8">
+
+        <include layout="@layout/toolbar_actionbar_transparent" />
+
+        <LinearLayout
+            android:id="@+id/confirm_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dimens_6"
+            android:background="@color/bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/confirm_dynamic_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <app.alansari.customviews.progressbutton.CircularProgressButton
+            android:id="@+id/dialog_btn"
+            style="@style/CircularProgressSaveBtn"
+            android:layout_below="@+id/confirm_data_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimens_25"
+            android:layout_marginTop="@dimen/dimens_25"
+            android:drawablePadding="@dimen/dimens_8"
+            android:text="Save"
+            app:cpb_colorIndicator="@color/color70D303"
+            app:cpb_colorIndicatorBackground="@color/colorWhite"
+            app:cpb_colorProgress="@color/colorTransparent"
+            app:cpb_paddingProgress="@dimen/dimens_8"
+            app:cpb_selectorIdle="@color/cpb_idle_state_selector_trans"
+            app:cpb_textError="Try Again" />
+    </RelativeLayout>
+
+</ScrollView>
+
+

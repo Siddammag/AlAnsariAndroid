@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/keypad_pin_layout_blue">
+
+        <requestFocus />
+    </include>
+
+    <include layout="@layout/keypad_key_layout_old" />
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimens_10"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <include
+        layout="@layout/toolbar_actionbar_transparent"
+        android:layout_width="@dimen/min_width_view"
+        android:layout_height="@dimen/dimens_40"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_register_header_bg" />
+
+    <ScrollView
+        android:layout_width="@dimen/min_width_view"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bg"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/dimens_16"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/text"
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="@dimen/dimens_14"
+            android:paddingRight="@dimen/dimens_14"
+            android:paddingTop="@dimen/dimens_14"
+            android:text="@string/indemnity_form_text"
+            android:textColor="@color/color3F3F3F"
+            android:textSize="@dimen/dimens_14sp" />
+    </ScrollView>
+
+    <View
+        android:layout_width="@dimen/min_width_view"
+        android:layout_height="@dimen/dimens_16"
+        android:layout_above="@id/bottom_layout"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.6"
+        android:background="@color/colorWhite" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="@dimen/min_width_view"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bg"
+        android:paddingLeft="@dimen/dimens_14"
+        android:paddingRight="@dimen/dimens_14">
+
+        <ImageView
+            android:id="@+id/accept_image"
+            android:layout_width="@dimen/dimens_26"
+            android:layout_height="@dimen/dimens_26"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:background="@drawable/pin_code_round_empty" />
+
+        <TextView
+            android:id="@+id/accept_text"
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/accept_image"
+            android:layout_toRightOf="@+id/accept_image"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:maxLines="4"
+            android:paddingLeft="@dimen/dimens_12"
+            android:text="@string/indemnity_form_agree_text"
+            android:textSize="@dimen/dimens_11sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accept_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/back_btn"
+                style="@style/SubmitOutlineBtnDialog"
+                android:layout_width="@dimen/dimens_0"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/submit_btn"
+                style="@style/SubmitBtnDialog"
+                android:layout_width="@dimen/dimens_0"
+                android:layout_marginRight="0dp"
+                android:layout_weight="0.5"
+                android:text="Submit" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keypad_top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/colorPrimary"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimens_30"
+    android:paddingRight="@dimen/dimens_30">
+
+    <TextView
+        android:id="@+id/login_pin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimens_20"
+        android:layout_marginTop="@dimen/dimens_20"
+        android:text="Enter PIN"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/login_mobile_no_label" />
+
+    <LinearLayout
+        android:id="@+id/keypad_pin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:id="@+id/otp_one_edit_text_layout"
+            style="@style/OTPViewEditTextLayout">
+
+            <TextView
+                android:id="@+id/otp_one_edit_text"
+                style="@style/OTPViewEditText"
+                android:nextFocusDown="@+id/otp_two_edit_text"
+                android:nextFocusUp="@+id/otp_one_edit_text" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_3"
+                android:layout_alignBottom="@+id/otp_one_edit_text"
+                android:layout_alignLeft="@+id/otp_one_edit_text"
+                android:layout_alignRight="@+id/otp_one_edit_text"
+                android:background="@drawable/pin_line_bg_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/otp_two_edit_text_layout"
+            style="@style/OTPViewEditTextLayout">
+
+            <TextView
+                android:id="@+id/otp_two_edit_text"
+                style="@style/OTPViewEditText"
+                android:nextFocusDown="@+id/otp_three_edit_text"
+                android:nextFocusUp="@+id/otp_one_edit_text" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_3"
+                android:layout_alignBottom="@+id/otp_two_edit_text"
+                android:layout_alignLeft="@+id/otp_two_edit_text"
+                android:layout_alignRight="@+id/otp_two_edit_text"
+                android:background="@drawable/pin_line_bg_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/otp_three_edit_text_layout"
+            style="@style/OTPViewEditTextLayout">
+
+            <TextView
+                android:id="@+id/otp_three_edit_text"
+                style="@style/OTPViewEditText"
+                android:nextFocusDown="@+id/otp_four_edit_text"
+                android:nextFocusUp="@+id/otp_two_edit_text" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_3"
+                android:layout_alignBottom="@+id/otp_three_edit_text"
+                android:layout_alignLeft="@+id/otp_three_edit_text"
+                android:layout_alignRight="@+id/otp_three_edit_text"
+                android:background="@drawable/pin_line_bg_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/otp_four_edit_text_layout"
+            style="@style/OTPViewEditTextLayout">
+
+            <TextView
+                android:id="@+id/otp_four_edit_text"
+                style="@style/OTPViewEditText"
+                android:nextFocusDown="@+id/otp_four_edit_text"
+                android:nextFocusUp="@+id/otp_three_edit_text" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_3"
+                android:layout_alignBottom="@+id/otp_four_edit_text"
+                android:layout_alignLeft="@+id/otp_four_edit_text"
+                android:layout_alignRight="@+id/otp_four_edit_text"
+                android:background="@drawable/pin_line_bg_white" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dimens_1"
+            android:layout_height="@dimen/dimens_40"
+            android:layout_gravity="center_vertical"
+            android:alpha="0.58"
+            android:background="@color/white" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_60"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dimens_8"
+            android:layout_weight="1"
+            android:src="@drawable/ic_back_white" />
+    </LinearLayout>
+</LinearLayout>

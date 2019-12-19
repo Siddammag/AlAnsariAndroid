@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_item_trans_over_bg">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/radio"
+        android:layout_width="@dimen/dimens_15"
+        android:layout_height="@dimen/dimens_15"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dimens_3"
+        android:src="@color/color408000"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/DialogTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/radio"
+        android:gravity="left"
+        android:paddingLeft="@dimen/dimens_5"
+        android:paddingRight="@dimen/dimens_12"
+        android:text="Parveen D"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/dimens_13sp" />
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="@dimen/dimens_4"
+    android:layout_marginRight="@dimen/dimens_4"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/cardview_title_selector"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/dimens_2"
+    app:cardElevation="@dimen/dimens_4"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/bg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimens_6">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="@dimen/dimens_60"
+            android:layout_height="@dimen/dimens_60"
+            android:layout_marginRight="@dimen/dimens_8"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_logo_2" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/open_status_icon"
+            android:layout_width="@dimen/dimens_6"
+            android:layout_height="@dimen/dimens_6"
+            android:layout_below="@+id/profile_pic"
+            android:layout_alignTop="@+id/open_status"
+            android:layout_alignBottom="@+id/open_status"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dimens_8"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/svg_branch_open" />
+
+        <TextView
+            android:id="@+id/open_status"
+            fontPath="fonts/HelveticaNeue.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/data_layout"
+            android:layout_toRightOf="@+id/open_status_icon"
+            android:gravity="fill"
+            android:paddingLeft="@dimen/dimens_3"
+            android:text="Open Now"
+            android:textColor="@color/color62A930"
+            android:textSize="@dimen/dimens_7sp" />
+
+        <RelativeLayout
+            android:id="@+id/data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimens_4"
+            android:layout_toRightOf="@+id/profile_pic"
+            android:paddingLeft="@dimen/dimens_6"
+            android:paddingRight="@dimen/dimens_6">
+
+            <TextView
+                android:id="@+id/name"
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/pin_call_layout"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="Parveen K"
+                android:textColor="@color/color377EC4"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <RelativeLayout
+                android:id="@+id/pin_call_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dimens_6">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/map_icon"
+                    android:layout_width="@dimen/dimens_16"
+                    android:layout_height="@dimen/dimens_20"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/svg_map_pin_marked" />
+
+                <TextView
+                    android:id="@+id/find"
+                    android:layout_below="@id/map_icon"
+                    fontPath="fonts/HelveticaNeue.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_15"
+                    android:background="@drawable/btn_find"
+                    android:paddingLeft="@dimen/dimens_12"
+                    android:paddingTop="@dimen/dimens_5"
+                    android:paddingRight="@dimen/dimens_12"
+                    android:paddingBottom="@dimen/dimens_5"
+                    android:text="Find"
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:id="@+id/call"
+                    android:layout_below="@id/find"
+                    fontPath="fonts/HelveticaNeue.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_5"
+                    android:background="@drawable/btn_call"
+                    android:paddingLeft="@dimen/dimens_12"
+                    android:paddingTop="@dimen/dimens_5"
+                    android:paddingRight="@dimen/dimens_12"
+                    android:paddingBottom="@dimen/dimens_5"
+                    android:text="Call"
+                    android:textColor="@color/white" />
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/address"
+                fontPath="fonts/HelveticaNeue.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/dimens_4"
+                android:layout_toLeftOf="@+id/pin_call_layout"
+                android:lineSpacingMultiplier="1.1"
+                android:maxLines="2"
+                android:text="BTM Layout, 1st Stage, Bengaluru, \nIndia"
+                android:textColor="@color/color373A49"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/dimens_9sp" />
+
+            <TextView
+                android:id="@+id/phone"
+                fontPath="fonts/HelveticaNeue.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/dimens_1"
+                android:layout_toLeftOf="@+id/pin_call_layout"
+                android:maxLines="2"
+                android:textColor="@color/color373A49"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/dimens_9sp" />
+
+            <TextView
+                android:id="@+id/timings"
+                fontPath="fonts/HelveticaNeue.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/dimens_1"
+                android:layout_toLeftOf="@+id/pin_call_layout"
+                android:maxLines="2"
+                android:textColor="@color/color62A930"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/dimens_9sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

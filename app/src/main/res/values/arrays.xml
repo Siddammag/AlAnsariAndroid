@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        - Created by Parveen Dala on 05 October, 2016
+        - Fugenx Technologies, Bengaluru
+        - AlAnsari
+        -->
+
+    <string-array name="residential_status">
+        <item>Resident</item>
+        <item>Non Resident</item>
+    </string-array>
+
+    <string-array name="id_date_type">
+        <item>Issue Date</item>
+        <item>Expiry Date</item>
+    </string-array>
+
+    <string-array name="tl_date_type">
+        <item>Issue Date</item>
+        <item>Expiry Date</item>
+    </string-array>
+
+    <string-array name="beneficiary_type">
+        <item>Individual</item>
+        <item>Corporate</item>
+    </string-array>
+
+    <string-array name="beneficiary_type_ce">
+        <item>Saudi National/Citizen</item>
+        <item>Saudi Resident/Resident</item>
+        <item>Corporate</item>
+    </string-array>
+
+    <string-array name="credit_card_payment_date">
+        <item>1st of every month</item>
+        <item>2nd of every month</item>
+        <item>3rd of every month</item>
+        <item>4th of every month</item>
+        <item>5th of every month</item>
+        <item>6th of every month</item>
+        <item>7th of every month</item>
+        <item>8th of every month</item>
+        <item>9th of every month</item>
+        <item>10th of every month</item>
+        <item>11th of every month</item>
+        <item>12th of every month</item>
+        <item>13th of every month</item>
+        <item>14th of every month</item>
+        <item>15th of every month</item>
+        <item>16th of every month</item>
+        <item>17th of every month</item>
+        <item>18th of every month</item>
+        <item>19th of every month</item>
+        <item>20th of every month</item>
+        <item>21st of every month</item>
+        <item>22nd of every month</item>
+        <item>23rd of every month</item>
+        <item>24th of every month</item>
+        <item>25th of every month</item>
+        <item>26th of every month</item>
+        <item>27th of every month</item>
+        <item>28th of every month</item>
+        <item>29th of every month</item>
+        <item>30th of every month</item>
+        <item>31st of every month</item>
+    </string-array>
+</resources>

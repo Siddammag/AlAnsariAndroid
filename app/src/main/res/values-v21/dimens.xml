@@ -1,0 +1,17 @@
+<resources>
+    <!--
+        - Created by Parveen Dala on 05 October, 2016
+        - Fugenx Technologies, Bengaluru
+        - AlAnsari
+        -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="card_padding_top">@dimen/dimens_6</dimen>
+    <dimen name="card_padding_left">@dimen/dimens_6</dimen>
+    <dimen name="card_padding_right">@dimen/dimens_6</dimen>
+    <dimen name="card_padding_bottom">@dimen/dimens_6</dimen>
+    <dimen name="card_padding_left_small">@dimen/dimens_4</dimen>
+    <dimen name="card_padding_right_small">@dimen/dimens_4</dimen>
+    <dimen name="status_bar_padding">24dp</dimen>
+
+</resources>

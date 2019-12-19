@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/time_message"
+        fontPath="fonts/Roboto-Light.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimens_10"
+        android:layout_marginTop="@dimen/dimens_15"
+        android:paddingLeft="@dimen/dimens_15"
+        android:text="Transfer would take up to 1 day to complete"
+        android:textColor="@color/color1E6AB3"
+        android:textSize="@dimen/dimens_12sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimens_8"
+        android:layout_marginRight="@dimen/dimens_8"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="@dimen/dimens_4"
+        app:cardElevation="@dimen/dimens_4"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimens_16"
+            android:paddingLeft="@dimen/dimens_10"
+            android:paddingRight="@dimen/dimens_10"
+            android:paddingTop="@dimen/dimens_16">
+
+            <TextView
+                android:id="@+id/send_label"
+
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/dimens_8"
+                android:text="You Send"
+                android:textColor="@color/color373A49"
+                android:textSize="@dimen/dimens_17sp" />
+
+            <TextView
+                android:id="@+id/get_label"
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/dimens_8"
+                android:text="You Get"
+                android:textColor="@color/color373A49"
+
+                android:textSize="@dimen/dimens_17sp" />
+
+            <EditText
+                android:id="@+id/send"
+                fontPath="fonts/HelveticaNeue-UltraLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/send_label"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="0,00"
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="@color/color1E6AB3"
+                android:textColorHint="@color/color1E6AB3"
+                android:textSize="@dimen/dimens_35sp" />
+
+            <ImageView
+                android:id="@+id/success_image"
+                android:layout_width="@dimen/dimens_35"
+                android:layout_height="@dimen/dimens_35"
+                android:layout_alignBottom="@+id/send"
+                android:layout_alignTop="@+id/send"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:srcCompat="@drawable/svg_success" />
+
+            <app.alansari.customviews.progressbar.CircleProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="@dimen/dimens_40"
+                android:layout_height="@dimen/dimens_40"
+                android:layout_alignBottom="@+id/send"
+                android:layout_alignTop="@+id/send"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:mlpb_arrow_height="5dp"
+                app:mlpb_arrow_width="10dp"
+                app:mlpb_enable_circle_background="false"
+                app:mlpb_inner_radius="15dp"
+                app:mlpb_max="100"
+                app:mlpb_progress="50"
+                app:mlpb_progress_color="@color/colorPrimary"
+                app:mlpb_progress_stoke_width="2dp"
+                app:mlpb_progress_text_color="@color/colorPrimary"
+                app:mlpb_progress_text_visibility="invisible"
+                app:mlpb_show_arrow="true" />
+
+            <EditText
+                android:id="@+id/get"
+                fontPath="fonts/HelveticaNeue-UltraLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/send"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/send"
+                android:layout_below="@+id/get_label"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="0,00"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="@color/color1E6AB3"
+                android:textColorHint="@color/color1E6AB3"
+                android:textSize="@dimen/dimens_35sp" />
+
+            <TextView
+                android:id="@+id/send_code"
+                fontPath="fonts/HelveticaNeue-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/send"
+                android:layout_marginTop="@dimen/dimens_8"
+                android:alpha="0.78"
+                android:text="AED"
+                android:textColor="@color/color373A49"
+                android:textSize="@dimen/dimens_20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/get_code"
+                fontPath="fonts/HelveticaNeue-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/get"
+                android:layout_marginTop="@dimen/dimens_8"
+                android:alpha="0.78"
+                android:text="INR"
+                android:textColor="@color/color373A49"
+                android:textSize="@dimen/dimens_20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rate"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/send_code"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:text="Exchange Rate AED = INR 18.40"
+                android:textColor="@color/color9B9B9B"
+                android:textSize="@dimen/dimens_12sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/message"
+        fontPath="fonts/Roboto-Regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/send_code"
+        android:layout_marginBottom="@dimen/dimens_15"
+        android:layout_marginLeft="@dimen/dimens_15"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:text="Rates are indicative and may vary based on the bank or agent."
+        android:textColor="@color/color9B9B9B"
+        android:textSize="@dimen/dimens_12sp" />
+</LinearLayout>

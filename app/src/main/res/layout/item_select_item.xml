@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_item_trans_over_bg">
+
+    <TextView
+        android:id="@+id/name"
+        fontPath="fonts/HelveticaNeue.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimens_12"
+        android:paddingRight="@dimen/dimens_12"
+        android:paddingTop="@dimen/dimens_10"
+        android:text="Parveen D"
+        android:textColor="@color/color3F3F3F"
+        android:textSize="@dimen/dimens_11sp" />
+
+    <TextView
+        android:id="@+id/description"
+        fontPath="fonts/HelveticaNeue-Light.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:letterSpacing="0.02"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="@dimen/dimens_12"
+        android:paddingRight="@dimen/dimens_12"
+        android:paddingTop="@dimen/dimens_0.5"
+        android:text="Parveen D"
+        android:textColor="@color/color3F3F3F"
+        android:textSize="@dimen/dimens_9sp" />
+
+    <TextView
+        android:id="@+id/description_two"
+        fontPath="fonts/HelveticaNeue-Light.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:letterSpacing="0.02"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="@dimen/dimens_12"
+        android:paddingRight="@dimen/dimens_12"
+        android:paddingTop="@dimen/dimens_0.5"
+        android:text="Parveen D"
+        android:textColor="@color/color3F3F3F"
+        android:textSize="@dimen/dimens_9sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_0.5"
+        android:layout_below="@+id/description_two"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:background="@color/color979797" />
+
+</RelativeLayout>

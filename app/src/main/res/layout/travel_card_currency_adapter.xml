@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/reg_label"
+        android:paddingLeft="@dimen/dimens_12"
+        android:paddingRight="@dimen/dimens_12"
+        android:paddingTop="@dimen/dimens_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/flag_image"
+            android:layout_width="@dimen/dimens_32"
+            android:layout_height="@dimen/dimens_32"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/svg_flag_aed" />
+
+        <TextView
+            android:id="@+id/title"
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/time"
+            android:layout_toRightOf="@+id/flag_image"
+            android:paddingLeft="@dimen/dimens_7"
+            android:text="Value Transfer"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimens_13sp" />
+
+
+        <TextView
+            android:id="@+id/rate"
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="1 - 3 days"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimens_13sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/reg_label"
+        style="@style/AddBeneficiaryDividerView" />
+</RelativeLayout>
+

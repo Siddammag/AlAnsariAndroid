@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pin_layout_login"
+    android:layout_width="@dimen/min_width_view"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimens_14"
+    android:paddingRight="@dimen/dimens_14">
+
+    <TextView
+        android:id="@+id/enter_pin_label"
+        fontPath="fonts/Roboto-Medium.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimens_12"
+        android:text="@string/enter_otp"
+        android:textColor="@color/colorECEAEA"
+        android:textSize="@dimen/dimens_13sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/pin_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="6">
+
+            <RelativeLayout
+                android:id="@+id/pin1_text_layout"
+                style="@style/PINViewTextLayout">
+
+                <View
+                    android:id="@+id/pin1_view"
+                    style="@style/PINViewTextBottomDivider"
+                    android:layout_below="@+id/pin1_text" />
+
+                <TextView
+                    android:id="@+id/pin1_text"
+                    style="@style/PINViewText"
+                    android:layout_width="wrap_content"
+                    android:nextFocusDown="@+id/pin2_text"
+                    android:nextFocusUp="@+id/pin1_text"
+                    android:text="1"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pin2_text_layout"
+                style="@style/PINViewTextLayout">
+
+                <View
+                    android:id="@+id/pin2_view"
+                    style="@style/PINViewTextBottomDivider"
+                    android:layout_below="@+id/pin2_text" />
+
+                <TextView
+                    android:id="@+id/pin2_text"
+                    style="@style/PINViewText"
+                    android:layout_width="wrap_content"
+                    android:nextFocusDown="@+id/pin3_text"
+                    android:nextFocusUp="@+id/pin1_text"
+                    android:text="2"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pin3_text_layout"
+                style="@style/PINViewTextLayout">
+
+                <View
+                    android:id="@+id/pin3_view"
+                    style="@style/PINViewTextBottomDivider"
+                    android:layout_below="@+id/pin3_text" />
+
+                <TextView
+                    android:id="@+id/pin3_text"
+                    style="@style/PINViewText"
+                    android:layout_width="wrap_content"
+                    android:nextFocusDown="@+id/pin4_text"
+                    android:nextFocusUp="@+id/pin2_text"
+                    android:text="3"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pin4_text_layout"
+                style="@style/PINViewTextLayout">
+
+                <View
+                    android:id="@+id/pin4_view"
+                    style="@style/PINViewTextBottomDivider"
+                    android:layout_below="@+id/pin4_text" />
+
+                <TextView
+                    android:id="@+id/pin4_text"
+                    style="@style/PINViewText"
+                    android:layout_width="wrap_content"
+                    android:nextFocusDown="@+id/pin5_text"
+                    android:nextFocusUp="@+id/pin3_text"
+                    android:text="4"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pin5_text_layout"
+                style="@style/PINViewTextLayout">
+
+                <View
+                    android:id="@+id/pin5_view"
+                    style="@style/PINViewTextBottomDivider"
+                    android:layout_below="@+id/pin5_text" />
+
+                <TextView
+                    android:id="@+id/pin5_text"
+                    style="@style/PINViewText"
+                    android:layout_width="wrap_content"
+                    android:nextFocusDown="@+id/pin6_text"
+                    android:nextFocusUp="@+id/pin4_text"
+                    android:text="5"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pin6_text_layout"
+                style="@style/PINViewTextLayout">
+
+                <View
+                    android:id="@+id/pin6_view"
+                    style="@style/PINViewTextBottomDivider"
+                    android:layout_below="@+id/pin6_text" />
+
+                <TextView
+                    android:id="@+id/pin6_text"
+                    style="@style/PINViewText"
+                    android:layout_width="wrap_content"
+                    android:nextFocusDown="@+id/pin6_text"
+                    android:nextFocusUp="@+id/pin5_text"
+                    android:text="6"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:weightSum="6">
+
+            <RelativeLayout
+                android:id="@+id/pin1_layout"
+                style="@style/PINViewTextLayout">
+
+                <ImageView
+                    android:id="@+id/pin1"
+                    style="@style/LoginViewPINBall"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pin2_layout"
+                style="@style/PINViewTextLayout">
+
+                <ImageView
+                    android:id="@+id/pin2"
+                    style="@style/LoginViewPINBall"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pin3_layout"
+                style="@style/PINViewTextLayout">
+
+                <ImageView
+                    android:id="@+id/pin3"
+                    style="@style/LoginViewPINBall"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pin4_layout"
+                style="@style/PINViewTextLayout">
+
+                <ImageView
+                    android:id="@+id/pin4"
+                    style="@style/LoginViewPINBall"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pin5_layout"
+                style="@style/PINViewTextLayout">
+
+                <ImageView
+                    android:id="@+id/pin5"
+                    style="@style/LoginViewPINBall"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pin6_layout"
+                style="@style/PINViewTextLayout">
+
+                <ImageView
+                    android:id="@+id/pin6"
+                    style="@style/LoginViewPINBall"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

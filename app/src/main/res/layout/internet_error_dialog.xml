@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dimens_16"
+                android:paddingRight="@dimen/dimens_16">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/cloud_img"
+                    android:layout_width="@dimen/dimens_110"
+                    android:layout_height="@dimen/dimens_90"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/ic_svg_internet_error_cloud" />
+
+                <TextView
+                    android:id="@+id/title"
+                    fontPath="fonts/Roboto-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cloud_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_24"
+                    android:gravity="center_horizontal"
+                    android:text="Oops!"
+                    android:textColor="@color/color9E9E9E"
+                    android:textSize="@dimen/dimens_28sp" />
+
+                <TextView
+                    android:id="@+id/sub_title"
+                    fontPath="fonts/Roboto-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dimens_20"
+                    android:layout_marginTop="@dimen/dimens_18"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="@dimen/dimens_3"
+                    android:paddingLeft="@dimen/dimens_10"
+                    android:paddingRight="@dimen/dimens_10"
+                    android:text="@string/error_no_internet_found_splash"
+                    android:textColor="@color/color9E9E9E"
+                    android:textSize="@dimen/dimens_13sp" />
+
+
+                <TextView
+                    android:id="@+id/enter_ref_num_msg"
+                    fontPath="fonts/Roboto-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sub_title"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2.0dp"
+                    android:paddingLeft="@dimen/dimens_16"
+                    android:paddingRight="@dimen/dimens_16"
+                    android:text="@string/call_customer_care"
+                    android:textColor="@color/color9E9E9E"
+                    android:textSize="@dimen/dimens_12sp" />
+
+                <include
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/dimens_28"
+                    layout="@layout/call_layout"
+                    android:layout_marginBottom="@dimen/dimens_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/enter_ref_num_msg"
+                    android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_call"
+                    fontPath="fonts/Roboto-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/enter_ref_num_msg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_18"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="@dimen/dimens_3"
+                    android:paddingLeft="@dimen/dimens_10"
+                    android:paddingRight="@dimen/dimens_10"
+                    android:text="Call: +971 43772666"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/dimens_12sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    fontPath="fonts/Roboto-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_call"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2.0dp"
+                    android:paddingLeft="@dimen/dimens_16"
+                    android:paddingRight="@dimen/dimens_16"
+                    android:text="Email: hello.app@alansari.ae"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/dimens_12sp" />
+
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/close_btn"
+        android:layout_width="@dimen/dimens_42"
+        android:layout_height="@dimen/dimens_42"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dimens_10"
+        android:padding="@dimen/dimens_6"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/svg_close_icon_blue" />
+
+
+    <Button
+        android:id="@+id/retry_btn"
+        style="@style/SubmitBtn"
+        android:layout_width="@dimen/btn_confirm_green_width"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimens_18"
+        android:text="Try Again" />
+
+</RelativeLayout>

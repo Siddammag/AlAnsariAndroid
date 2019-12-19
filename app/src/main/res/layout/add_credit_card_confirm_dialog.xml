@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_credit_card_confirm_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/am_credit_card_header_bg"
+        android:paddingBottom="@dimen/dimens_6">
+
+        <include layout="@layout/toolbar_actionbar_transparent" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/confirm_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dimens_20"
+            android:layout_marginRight="@dimen/dimens_20"
+            android:layout_marginTop="@dimen/dimens_0"
+            android:foreground="@drawable/cardview_title_selector"
+            app:cardCornerRadius="@dimen/dimens_8"
+            app:cardElevation="@dimen/dimens_3"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/bg_layout_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/credit_card_black_bg"
+                android:padding="@dimen/dimens_12">
+
+                <RelativeLayout
+                    android:id="@+id/top_layout_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimens_14">
+
+                    <ImageView
+                        android:id="@+id/card_chip_c"
+                        android:layout_width="@dimen/dimens_32"
+                        android:layout_height="@dimen/dimens_32"
+                        android:gravity="center"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/icn_card_chip" />
+
+                    <TextView
+                        android:id="@+id/bank_name_c"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/card_chip_c"
+                        android:ellipsize="marquee"
+                        android:gravity="right"
+                        android:hint="@string/bank_name"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dimens_12"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dimens_15sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/card_num_layout_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_layout_c"
+                    android:layout_marginBottom="@dimen/dimens_12"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/card_num_1_c"
+                        style="@style/creditCardNumberTextView"
+                        android:hint="0000" />
+
+                    <TextView
+                        android:id="@+id/card_num_2_c"
+                        style="@style/creditCardNumberTextView"
+                        fontPath="fonts/HelveticaNeue-Medium.ttf"
+                        android:gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/card_num_3_c"
+                        style="@style/creditCardNumberTextView"
+                        android:gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/card_num_4_c"
+                        style="@style/creditCardNumberTextView"
+                        android:gravity="right"
+                        android:hint="0000" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/name_c"
+                    fontPath="fonts/Roboto-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/card_num_layout_c"
+                    android:layout_marginTop="@dimen/dimens_12"
+                    android:layout_toLeftOf="@+id/card_type_layout"
+                    android:hint="@string/cardholder_name"
+                    android:maxLines="2"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dimens_14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/card_type_layout_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/card_num_layout_c"
+                    android:layout_marginLeft="@dimen/dimens_8">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/card_type_c"
+                        android:layout_width="@dimen/dimens_32"
+                        android:layout_height="@dimen/dimens_32"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/svg_card_master" />
+
+                    <TextView
+
+                        android:id="@+id/card_type_name_c"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_type_c"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/minus_dimens_4"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dimens_8sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <app.alansari.customviews.progressbutton.CircularProgressButton
+            android:id="@+id/dialog_btn"
+            style="@style/CircularProgressSaveBtn"
+            android:layout_below="@+id/confirm_data_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimens_25"
+            android:layout_marginTop="@dimen/dimens_25"
+            android:drawablePadding="@dimen/dimens_8"
+            android:text="@string/btn_save"
+            android:visibility="gone"
+            app:cpb_colorIndicator="@color/color70D303"
+            app:cpb_colorIndicatorBackground="@color/colorWhite"
+            app:cpb_colorProgress="@color/colorTransparent"
+            app:cpb_paddingProgress="@dimen/dimens_8"
+            app:cpb_selectorIdle="@color/cpb_idle_state_selector_trans"
+            app:cpb_textError="Try Again" />
+    </RelativeLayout>
+</ScrollView>

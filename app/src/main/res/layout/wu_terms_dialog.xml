@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/DialogCardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--@dimen/layout_width-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/toolbar_actionbar_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/close_btn"
+                android:layout_width="@dimen/dimens_35"
+                android:layout_height="@dimen/dimens_35"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/dimens_6"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_close_small_white" />
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/close_btn"
+            android:layout_marginBottom="@dimen/dimens_15"
+            android:padding="@dimen/dimens_5">
+
+         <!--   <TextView
+                android:id="@+id/dialog_title"
+                style="@style/DialogTextView"
+                android:paddingTop="@dimen/dimens_1"
+                android:textSize="@dimen/dimens_13sp" />-->
+            <TextView
+                android:id="@+id/dialog_title"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="left"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingLeft="@dimen/dimens_14"
+                android:paddingRight="@dimen/dimens_14"
+                android:paddingTop="@dimen/dimens_1"
+                android:text="@string/indemnity_form_text"
+                android:textColor="@color/color3F3F3F"
+                android:textSize="@dimen/dimens_14sp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

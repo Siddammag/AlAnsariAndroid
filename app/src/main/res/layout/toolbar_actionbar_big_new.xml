@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimens_110"
+    android:gravity="center_vertical"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/india_banner" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.80"
+        android:scaleType="centerCrop"
+        android:src="@color/colorBlueOverlay" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/nav_menu"
+            style="@style/RightMenuButton"
+            android:layout_width="@dimen/dimens_40"
+            android:layout_height="@dimen/dimens_40"
+            android:padding="@dimen/dimens_8" />
+        <TextView
+            android:id="@+id/toolbar_title"
+            fontPath="fonts/HelveticaNeue-Light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currency"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimens_18sp" />
+    </android.support.v7.widget.Toolbar>
+
+
+</RelativeLayout>

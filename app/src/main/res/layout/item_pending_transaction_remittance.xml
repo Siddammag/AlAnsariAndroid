@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:foreground="@drawable/custom_item_trans_over_bg"
+    android:paddingBottom="@dimen/dimens_10"
+    android:paddingLeft="@dimen/dimens_8"
+    android:paddingRight="@dimen/dimens_8"
+    android:paddingTop="@dimen/dimens_10">
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="@dimen/select_pic_height"
+        android:layout_height="@dimen/select_pic_height"
+        android:layout_marginLeft="@dimen/dimens_4"
+        android:layout_marginRight="@dimen/dimens_8"
+        android:layout_marginTop="@dimen/dimens_4"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/name"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:ellipsize="marquee"
+                android:gravity="left|center_vertical"
+                android:maxLines="2"
+                tools:text="Homer Simpson"
+                android:textColor="@color/color377EC4"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40">
+
+                <TextView
+                    android:id="@+id/amount"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/currency_code"
+                    android:ellipsize="marquee"
+                    android:maxLength="10"
+                    tools:text="50000.00"
+                    android:textColor="@color/color0B4F8F"
+                    android:textSize="@dimen/dimens_12sp" />
+
+                <TextView
+                    android:id="@+id/currency_code"
+                    fontPath="fonts/HelveticaNeue.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/amount"
+                    android:layout_alignParentRight="true"
+                    android:ellipsize="marquee"
+                    android:gravity="bottom"
+                    android:maxLength="5"
+                    android:paddingLeft="@dimen/dimens_2"
+                    tools:text="INR"
+                    android:textColor="@color/color0B4F8F"
+                    android:textSize="@dimen/dimens_8sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dimens_2"
+            android:paddingTop="@dimen/dimens_2"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/bank_name"
+                fontPath="fonts/HelveticaNeue.ttf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:ellipsize="marquee"
+                android:gravity="left|center_vertical"
+                tools:text="Abu Dhabi Islamic Bank"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimens_10sp" />
+
+            <TextView
+                android:id="@+id/date"
+                fontPath="fonts/HelveticaNeue.ttf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:ellipsize="marquee"
+                android:gravity="right"
+                tools:text="25-Aug-2016"
+                android:textColor="@color/color3F3F3F"
+                android:textSize="@dimen/dimens_8sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/service_type"
+                fontPath="fonts/HelveticaNeue.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value Transfer"
+                android:textColor="@color/color3F3F3F"
+                android:textSize="@dimen/dimens_9sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/circle"
+                android:layout_width="@dimen/dimens_5"
+                android:layout_height="@dimen/dimens_2"
+                android:layout_alignBottom="@+id/service_type"
+                android:layout_alignTop="@+id/service_type"
+                android:layout_marginLeft="@dimen/dimens_4"
+                android:layout_marginRight="@dimen/dimens_4"
+                android:layout_toRightOf="@+id/service_type"
+                android:alpha="0.75"
+                android:scaleType="fitCenter"
+                android:tint="@color/color9F9F9F"
+                android:visibility="gone"
+                app:srcCompat="@drawable/svg_branch_open" />
+
+            <TextView
+                android:id="@+id/transfer_type"
+                fontPath="fonts/HelveticaNeue.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/circle"
+                android:text="Value Transfer"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:textColor="@color/color3F3F3F"
+                android:textSize="@dimen/dimens_9sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/status"
+                android:layout_width="@dimen/dimens_15"
+                android:layout_height="@dimen/dimens_15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimens_4"
+                android:layout_marginRight="@dimen/dimens_4"
+                android:alpha="0.75"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+

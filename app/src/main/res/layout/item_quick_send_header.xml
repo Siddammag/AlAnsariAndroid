@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dimens_170"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="@dimen/card_padding_bottom"
+    android:layout_marginLeft="@dimen/card_padding_left"
+    android:foreground="@drawable/cardview_title_selector"
+    app:cardBackgroundColor="@color/colorWhite"
+    card_view:cardCornerRadius="@dimen/dimens_8"
+    card_view:cardElevation="@dimen/dimens_4"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/bg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimens_8"
+        android:paddingLeft="@dimen/dimens_4"
+        android:paddingRight="@dimen/dimens_4"
+        android:paddingTop="@dimen/dimens_8">
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="@dimen/dimens_60"
+            android:layout_height="@dimen/dimens_60"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimens_10"
+            android:gravity="center"
+            app:srcCompat="@drawable/svg_avatar_black" />
+
+        <ImageView
+            android:id="@+id/profile_pic_text"
+            android:layout_width="@dimen/select_pic_height"
+            android:layout_height="@dimen/select_pic_height"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/name"
+            fontPath="fonts/Roboto-Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_pic"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            tools:text="Homer Simpson"
+            android:textColor="@color/color3F3F3F"
+            android:textSize="@dimen/dimens_18sp" />
+
+
+        <TextView
+            android:id="@+id/bank_name"
+            fontPath="fonts/HelveticaNeue.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimens_4"
+            tools:text="Abu Dhabi Islamic Bank"
+            android:textColor="@color/color504F51"
+            android:textSize="@dimen/dimens_16sp" />
+
+        <TextView
+            android:id="@+id/service_type"
+            fontPath="fonts/HelveticaNeue.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bank_name"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Value Transfer"
+            android:textColor="@color/color9B9B9B"
+            android:textSize="@dimen/dimens_14sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

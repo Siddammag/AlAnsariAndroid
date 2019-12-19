@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <include layout="@layout/toolbar_actionbar_account_management" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/dimens_6"
+        android:paddingTop="@dimen/dimens_6">
+
+        <app.alansari.customviews.MultiStateView
+            android:id="@+id/multiStateView"
+            style="@style/MultiStateViewStyle">
+
+            <LinearLayout
+                android:id="@+id/reg_main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/beneficiary_c_layout"
+                    style="@style/accountManagementCardViewStyle">
+
+                    <RelativeLayout
+                        android:id="@+id/beneficiary_layout"
+                        style="@style/accountManagementLayoutStyle">
+
+                        <TextView
+                            android:id="@+id/beneficiary_label"
+                            style="@style/accountManagementTextLabelStyle"
+                            android:text="SEND MONEY RECIPIENT" />
+
+                        <TextView
+                            android:id="@+id/beneficiary_desc"
+                            style="@style/accountManagementTextDescStyle"
+                            android:layout_below="@+id/beneficiary_label"
+                            android:text="@string/am_beneficiary_message" />
+
+                        <TextView
+                            android:id="@+id/beneficiary_continue_btn"
+                            style="@style/accountManagementContinueBtn"
+                            android:layout_below="@+id/beneficiary_desc" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimens_80"
+                            android:layout_height="@dimen/dimens_70"
+                            android:layout_alignBottom="@+id/beneficiary_continue_btn"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="@dimen/minus_dimens_14"
+                            android:layout_marginRight="@dimen/dimens_1"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/svg_am_beneficiary_icon" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/credit_card_c_layout"
+                    style="@style/accountManagementCardViewStyle"
+                    android:layout_below="@+id/branch_pay_c_layout">
+
+                    <RelativeLayout
+                        android:id="@+id/credit_card_layout"
+                        style="@style/accountManagementLayoutStyle"
+                        android:background="@drawable/pay_mode_bank_card_bg">
+
+                        <TextView
+                            android:id="@+id/credit_card_label"
+                            style="@style/accountManagementTextLabelStyle"
+                            android:text="CREDIT CARD RECIPIENT" />
+
+                        <TextView
+                            android:id="@+id/credit_card_desc"
+                            style="@style/accountManagementTextDescStyle"
+                            android:layout_below="@+id/credit_card_label"
+                            android:text="@string/am_credit_card_message" />
+
+                        <TextView
+                            android:id="@+id/credit_card_continue_btn"
+                            style="@style/accountManagementContinueBtn"
+                            android:layout_below="@+id/credit_card_desc" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimens_90"
+                            android:layout_height="@dimen/dimens_70"
+                            android:layout_alignBottom="@+id/credit_card_continue_btn"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="@dimen/minus_dimens_12"
+                            android:layout_marginRight="@dimen/dimens_1"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/svg_am_credit_card_icon" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/bank_account_c_layout"
+                    style="@style/accountManagementCardViewStyle"
+                    android:layout_below="@+id/credit_card_c_layout">
+
+                    <RelativeLayout
+                        android:id="@+id/bank_account_layout"
+                        style="@style/accountManagementLayoutStyle"
+                        android:background="@drawable/pay_mode_priority_card_bg">
+
+                        <TextView
+                            android:id="@+id/bank_account_label"
+                            style="@style/accountManagementTextLabelStyle"
+                            android:text="MY UAE BANK ACCOUNTS" />
+
+                        <TextView
+                            android:id="@+id/bank_account_desc"
+                            style="@style/accountManagementTextDescStyle"
+                            android:layout_below="@+id/bank_account_label"
+                            android:text="@string/am_bank_account_message" />
+
+                        <TextView
+                            android:id="@+id/bank_account_continue_btn"
+                            style="@style/accountManagementContinueBtn"
+                            android:layout_below="@+id/bank_account_desc" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimens_80"
+                            android:layout_height="@dimen/dimens_85"
+                            android:layout_alignBottom="@+id/bank_account_continue_btn"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="@dimen/minus_dimens_18"
+                            android:layout_marginRight="@dimen/dimens_1"
+                            app:srcCompat="@drawable/svg_am_bank_account_icon" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </app.alansari.customviews.MultiStateView>
+    </ScrollView>
+</RelativeLayout>

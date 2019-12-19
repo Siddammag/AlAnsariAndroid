@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!--        android:layout_width="@dimen/credit_card_width"
+-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/frame_list_card_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dimens_30"
+        android:layout_marginRight="@dimen/dimens_30"
+        android:foreground="@drawable/cardview_title_selector"
+        app:cardCornerRadius="@dimen/dimens_8"
+        app:cardElevation="@dimen/dimens_3"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/bg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/beneficiary_card_dark_bg"
+            android:padding="@dimen/dimens_8">
+
+            <RelativeLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimens_5">
+
+                <ImageView
+                    android:id="@+id/card_chip"
+                    android:layout_width="@dimen/dimens_27"
+                    android:layout_height="@dimen/dimens_27"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/icn_card_chip" />
+
+                <TextView
+                    android:id="@+id/bank_name"
+                    fontPath="fonts/Roboto-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/card_chip"
+                    android:ellipsize="marquee"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dimens_12"
+                    android:text="Federal Bank"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dimens_12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/card_num_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_layout"
+                android:layout_marginBottom="@dimen/dimens_5"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/card_num_1"
+                    style="@style/creditCardNumberTextView"
+                    android:textSize="@dimen/dimens_12sp"/>
+
+                <TextView
+                    android:id="@+id/card_num_2"
+                    style="@style/creditCardNumberTextView"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/dimens_12sp"/>
+
+                <TextView
+                    android:id="@+id/card_num_3"
+                    style="@style/creditCardNumberTextView"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/dimens_12sp"/>
+
+                <TextView
+                    android:id="@+id/card_num_4"
+                    style="@style/creditCardNumberTextView"
+                    android:gravity="right"
+                    android:textSize="@dimen/dimens_12sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/name"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/card_num_layout"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:layout_toLeftOf="@+id/card_type_layout"
+                android:maxLines="2"
+                android:text="Parveen Kumar"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <RelativeLayout
+                android:id="@+id/card_type_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/card_num_layout"
+                android:layout_marginLeft="@dimen/dimens_8">
+
+                <ImageView
+                    android:id="@+id/card_type"
+                    android:layout_width="@dimen/dimens_24"
+                    android:layout_height="@dimen/dimens_24"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/svg_card_master" />
+
+                <TextView
+
+                    android:id="@+id/card_type_name"
+                    fontPath="fonts/Roboto-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_type"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/minus_dimens_2"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:text="mastercard"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dimens_6sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar_big_old" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/dimens_20"
+        android:paddingTop="@dimen/dimens_8"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimens_8"
+                android:layout_marginRight="@dimen/dimens_8"
+                app:cardBackgroundColor="@color/card_bg"
+                app:cardCornerRadius="@dimen/dimens_4"
+                app:cardElevation="@dimen/dimens_4"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimens_16"
+                    android:paddingLeft="@dimen/dimens_10"
+                    android:paddingRight="@dimen/dimens_10"
+                    android:paddingTop="@dimen/dimens_16">
+
+                    <TextView
+                        android:id="@+id/send_label"
+
+                        fontPath="fonts/Roboto-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="@dimen/dimens_8"
+                        android:text="I have"
+                        android:textColor="@color/color373A49"
+                        android:textSize="@dimen/dimens_17sp" />
+
+                    <TextView
+                        android:id="@+id/get_label"
+                        fontPath="fonts/Roboto-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="@dimen/dimens_8"
+                        android:text="I want"
+                        android:textColor="@color/color373A49"
+                        android:textSize="@dimen/dimens_17sp" />
+
+                    <EditText
+                        android:id="@+id/send"
+                        fontPath="fonts/HelveticaNeue-UltraLight.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/send_label"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="0,00"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:maxLines="1"
+                        android:textColor="@color/color1E6AB3"
+                        android:textColorHint="@color/color1E6AB3"
+                        android:textSize="@dimen/dimens_40sp" />
+
+                    <ImageView
+                        android:id="@+id/swap_btn"
+                        android:layout_width="@dimen/dimens_35"
+                        android:layout_height="@dimen/dimens_35"
+                        android:layout_alignBottom="@+id/send"
+                        android:layout_alignTop="@+id/send"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/svg_swap" />
+
+                    <app.alansari.customviews.progressbar.CircleProgressBar
+                        android:id="@+id/progress_bar"
+                        android:layout_width="@dimen/dimens_40"
+                        android:layout_height="@dimen/dimens_40"
+                        android:layout_alignBottom="@+id/send"
+                        android:layout_alignTop="@+id/send"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                        app:mlpb_arrow_height="5dp"
+                        app:mlpb_arrow_width="10dp"
+                        app:mlpb_enable_circle_background="false"
+                        app:mlpb_inner_radius="15dp"
+                        app:mlpb_max="100"
+                        app:mlpb_progress="50"
+                        app:mlpb_progress_color="@color/colorPrimary"
+                        app:mlpb_progress_stoke_width="2dp"
+                        app:mlpb_progress_text_color="@color/colorPrimary"
+                        app:mlpb_progress_text_visibility="invisible"
+                        app:mlpb_show_arrow="true" />
+
+                    <EditText
+                        android:id="@+id/get"
+                        fontPath="fonts/HelveticaNeue-UltraLight.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/send"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/send"
+                        android:layout_below="@+id/get_label"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="0,00"
+                        android:inputType="numberDecimal"
+                        android:maxLength="7"
+                        android:maxLines="1"
+                        android:textColor="@color/color1E6AB3"
+                        android:textColorHint="@color/color1E6AB3"
+                        android:textSize="@dimen/dimens_40sp" />
+
+
+                    <ImageView
+                        android:id="@+id/send_flag"
+                        android:layout_width="@dimen/dimens_35"
+                        android:layout_height="@dimen/dimens_25"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/send"
+                        android:layout_marginTop="@dimen/dimens_8"
+                        android:padding="@dimen/dimens_1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/svg_flag_aed" />
+
+                    <TextView
+                        android:id="@+id/send_code"
+                        fontPath="fonts/HelveticaNeue-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/send_flag"
+                        android:layout_alignTop="@+id/send_flag"
+                        android:layout_toRightOf="@+id/send_flag"
+                        android:alpha="0.78"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dimens_8"
+                        android:text="AED"
+                        android:textColor="@color/color373A49"
+                        android:textSize="@dimen/dimens_20sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/get_flag"
+                        android:layout_width="@dimen/dimens_35"
+                        android:layout_height="@dimen/dimens_25"
+                        android:layout_below="@+id/get"
+                        android:layout_marginTop="@dimen/dimens_8"
+                        android:layout_toLeftOf="@+id/get_code"
+                        android:padding="@dimen/dimens_1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/svg_flag_in" />
+
+                    <TextView
+                        android:id="@+id/get_code"
+                        fontPath="fonts/HelveticaNeue-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/get_flag"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/get_flag"
+                        android:alpha="0.78"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dimens_8"
+                        android:text="INR"
+                        android:textColor="@color/color373A49"
+                        android:textSize="@dimen/dimens_20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rate"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/send_code"
+                        android:layout_marginTop="@dimen/dimens_15"
+                        android:text="Exchange Rate AED = INR 18.40"
+                        android:textColor="@color/color9B9B9B"
+                        android:textSize="@dimen/dimens_12sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimens_8"
+                android:layout_marginRight="@dimen/dimens_8"
+                app:cardBackgroundColor="@color/card_bg"
+                app:cardCornerRadius="@dimen/dimens_4"
+                app:cardElevation="@dimen/dimens_4"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimens_10">
+
+                    <TextView
+                        android:id="@+id/total_label"
+                        fontPath="fonts/HelveticaNeue.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/total_amount_to_pay"
+                        android:gravity="center_vertical"
+                        android:text="Total to Pay"
+                        android:textColor="@color/color3F3F3F"
+                        android:textSize="@dimen/dimens_22sp" />
+
+                    <TextView
+                        android:id="@+id/fee"
+                        fontPath="fonts/HelveticaNeue.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/pay_code"
+                        android:layout_below="@+id/total_label"
+                        android:layout_marginTop="@dimen/dimens_5"
+                        android:gravity="center_vertical"
+                        android:text="Fee : AED 2.00"
+                        android:textColor="@color/colorBlack_3"
+                        android:textSize="@dimen/dimens_14sp" />
+
+                    <TextView
+                        android:id="@+id/total_amount_to_pay"
+                        fontPath="fonts/HelveticaNeue.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:maxLines="1"
+                        android:text="0.00"
+                        android:textColor="@color/colorE86768"
+                        android:textSize="@dimen/dimens_30sp" />
+
+                    <TextView
+                        android:id="@+id/pay_code"
+                        fontPath="fonts/HelveticaNeue.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/total_amount_to_pay"
+                        android:layout_marginTop="@dimen/dimens_5"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dimens_8"
+                        android:text="AED"
+                        android:textColor="@color/colorE86768"
+                        android:textSize="@dimen/dimens_20sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/call_back_btn"
+                    style="@style/SubmitBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:minWidth="@dimen/submit_btn_width"
+                    android:text="Click here to get a call back"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/call_message"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/dimens_8">
+
+                    <ImageView
+                        android:id="@+id/call_icon"
+                        android:layout_width="@dimen/dimens_30"
+                        android:layout_height="@dimen/dimens_30"
+                        app:srcCompat="@drawable/svg_phone_call_back" />
+
+                    <TextView
+                        android:id="@+id/call_messaged"
+                        fontPath="fonts/Roboto-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/call_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/call_icon"
+                        android:paddingLeft="@dimen/dimens_14"
+                        android:text="09 - 1234567"
+                        android:textColor="@color/color1E6AB3"
+                        android:textSize="@dimen/dimens_18sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/call_message"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/call_back_btn"
+                    android:layout_alignRight="@+id/call_back_btn"
+                    android:layout_below="@+id/call_back_btn"
+                    android:layout_centerHorizontal="true"
+                    android:alpha="0.85"
+                    android:gravity="center"
+                    android:padding="@dimen/dimens_8"
+                    android:text="Please call our customer care and complete your transaction."
+                    android:textColor="@color/color9E9E9E"
+                    android:textSize="@dimen/verify_eid_desc_text_size" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

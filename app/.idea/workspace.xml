@@ -1,0 +1,2787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="App" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9739949f-36fd-4b2c-bd06-11b660684184" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle____local_aars___C__Users_iamdk_OneDrive_Desktop_Al_Ansari_AlAnsariAndroid_app_libs_carousel_api_v1_jar_unspecified_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle____local_aars___C__Users_iamdk_OneDrive_Desktop_Al_Ansari_AlAnsariAndroid_app_libs_date4j_jar_unspecified_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_core_common_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_collections_28_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_multidex_1_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_multidex_instrumentation_1_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_palette_v7_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_annotations_28_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_media_compat_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_v4_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_volley_volley_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_facebook_android_facebook_core_5_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__pl_droidsonroids_gif_android_gif_drawable_1_2_17_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__pl_droidsonroids_relinker_relinker_1_3_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/alansari/TransactionTrackerActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/alansari/TransactionTrackerDetailActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/alansari/adapters/TransactionHistoryRemittanceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/alansari/customviews/CurrencyEditText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/alansari/fragments/TransactionHistoryRemittanceFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/beneficiary_card_dark_bg_image.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/circle_empty_with_strike.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/circle_fill_with_strike.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_landing_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_nav_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/rounded_edittext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_transaction_completed_remittance.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_transaction_tracker.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_transaction_tracker_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/item_pending_transaction_remittance.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/4.1/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/4.1/taskHistory/fileSnapshots.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/4.1/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/4.1/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle____local_jars___D__Teja_BitBucket_AlAnsari_app_libs_carousel_api_v1_jar_unspecified_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle____local_jars___D__Teja_BitBucket_AlAnsari_app_libs_date4j_jar_unspecified_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_core_common_1_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_core_runtime_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_cardview_v7_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_0_0_beta4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_0_0_beta4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_0_0_beta4_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_design_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_exifinterface_27_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_multidex_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_multidex_instrumentation_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_palette_v7_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_compat_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_v4_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_2_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_2_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_test_exposed_instrumentation_api_publish_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_test_rules_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_test_runner_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_support_transition_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_android_volley_volley_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_crashlytics_sdk_android_answers_1_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_crashlytics_sdk_android_beta_1_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_crashlytics_sdk_android_crashlytics_2_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_crashlytics_sdk_android_crashlytics_core_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_facebook_android_facebook_core_4_33_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_getkeepsafe_taptargetview_taptargetview_1_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_7_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_7_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_github_delight_im_Android_AdvancedWebView_v3_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_github_demoNo_AutoScrollViewPager_v1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_android_gms_play_services_base_11_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_android_gms_play_services_basement_11_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_android_gms_play_services_location_11_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_android_gms_play_services_maps_11_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_11_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_code_ksoap2_android_ksoap2_base_3_6_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_code_ksoap2_android_ksoap2_base_3_6_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_code_ksoap2_android_ksoap2_j2se_3_6_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_code_ksoap2_android_ksoap2_j2se_3_6_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_firebase_firebase_analytics_11_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_11_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_firebase_firebase_common_11_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_firebase_firebase_core_11_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_firebase_firebase_iid_11_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_firebase_firebase_messaging_11_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_loopeer_library_cardstack_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_parse_bolts_bolts_android_1_4_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_parse_bolts_bolts_android_1_4_0_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_parse_bolts_bolts_applinks_1_4_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_parse_bolts_bolts_applinks_1_4_0_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_parse_bolts_bolts_tasks_1_4_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_parse_bolts_bolts_tasks_1_4_0_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_specyci_residemenu_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_10_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_10_0_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_urlconnection_3_2_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_urlconnection_3_2_0_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_squareup_okio_okio_1_14_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_squareup_okio_okio_1_14_0_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_fabric_sdk_android_fabric_1_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__net_sourceforge_kxml_kxml_2_2_4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__net_sourceforge_kxml_kxml_2_2_4_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__net_yslibrary_keyboardvisibilityevent_keyboardvisibilityevent_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__pl_droidsonroids_gif_android_gif_drawable_1_2_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__uk_co_chrisjenx_calligraphy_2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/__local_jars___D__Teja_BitBucket_AlAnsari_app_libs_carousel_api_v1_jar_unspecified_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/__local_jars___D__Teja_BitBucket_AlAnsari_app_libs_date4j_jar_unspecified_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_animated_vector_drawable_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_appcompat_v7_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_cardview_v7_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_constraint_constraint_layout_1_0_0_beta4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_constraint_constraint_layout_solver_1_0_0_beta4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_design_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_multidex_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_multidex_instrumentation_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_palette_v7_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_recyclerview_v7_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_support_annotations_25_3_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_support_compat_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_support_core_ui_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_support_core_utils_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_support_fragment_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_support_media_compat_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_support_v4_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_support_vector_drawable_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_test_espresso_espresso_core_2_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_test_espresso_espresso_idling_resource_2_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_test_exposed_instrumentation_api_publish_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_test_rules_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_test_runner_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_support_transition_25_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_android_volley_volley_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_crashlytics_sdk_android_answers_1_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_crashlytics_sdk_android_beta_1_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_crashlytics_sdk_android_crashlytics_2_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_crashlytics_sdk_android_crashlytics_core_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_getkeepsafe_taptargetview_taptargetview_1_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_github_demoNo_AutoScrollViewPager_v1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_android_gms_play_services_base_10_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_android_gms_play_services_basement_10_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_android_gms_play_services_location_10_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_android_gms_play_services_maps_10_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_android_gms_play_services_tasks_10_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_code_gson_gson_2_8_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_code_ksoap2_android_ksoap2_android_3_6_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_code_ksoap2_android_ksoap2_base_3_6_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_code_ksoap2_android_ksoap2_j2se_3_6_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_firebase_firebase_analytics_10_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_firebase_firebase_analytics_impl_10_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_firebase_firebase_common_10_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_firebase_firebase_core_10_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_firebase_firebase_iid_10_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_firebase_firebase_messaging_10_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_loopeer_library_cardstack_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_specyci_residemenu_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_squareup_okhttp3_okhttp_3_2_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_squareup_okhttp3_okhttp_urlconnection_3_2_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_squareup_okio_okio_1_6_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_squareup_picasso_picasso_2_5_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/de_hdodenhof_circleimageview_2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/gradle_wrapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/io_fabric_sdk_android_fabric_1_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/javax_annotation_javax_annotation_api_1_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/javax_inject_javax_inject_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/junit_junit_4_12_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/libs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/net_sourceforge_kobjects_kobjects_j2me_0_0_SNAPSHOT_20040926_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/net_sourceforge_kxml_kxml_2_2_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/net_yslibrary_keyboardvisibilityevent_keyboardvisibilityevent_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/org_xmlpull_xmlpull_1_1_3_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/pl_droidsonroids_gif_android_gif_drawable_1_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/uk_co_chrisjenx_calligraphy_2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/AdditionalInfoTravelCardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/AdditionalInfoTravelCardActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/ChangePinActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/ChangePinActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/DashboardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/DashboardActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/LandingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/LandingActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/NavigationBaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/NavigationBaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/PaymentGatewayActivity2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/PaymentGatewayActivity2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/TransactionHistroyCompletedActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/TransactionHistroyCompletedActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/TransactionPagePendingTravelCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/TransactionPagePendingTravelCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/TransactionPageTravelCardComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/TransactionPageTravelCardComp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/TransactionTravelCompDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/TransactionTravelCompDetailsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/TravelCardReloadActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/TravelCardReloadActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/TravelCardReloadCurrencyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/TravelCardReloadCurrencyActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/Utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/Utils/CommonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/Utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/Utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/Utils/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/Utils/Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/adapters/QuickSendRecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/adapters/QuickSendRecyclerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/adapters/SelectItemRecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/adapters/SelectItemRecyclerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/adapters/TravelCardReloadDynamicListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/adapters/TravelCardReloadDynamicListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/fragments/RegisterEmailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/fragments/RegisterEmailFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/fragments/RegisterMobileFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/fragments/RegisterMobileFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/fragments/TransactionHistoryReloadFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/fragments/TransactionHistoryReloadFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/ipcheck/ApiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/ipcheck/ApiManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/models/BeneficiaryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/models/BeneficiaryData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/models/CountryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/models/CountryData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/models/TxnDetailsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/models/TxnDetailsData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/models/UserAccountData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/models/UserAccountData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/models/travalcardvalidateflag/TravelCardFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/models/travalcardvalidateflag/TravelCardFlag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/AccountManagementActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/AccountManagementActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/AddBeneficiaryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/AddBeneficiaryActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/AddBeneficiaryCeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/AddBeneficiaryCeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/AddBeneficiaryCeDropdownActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/AddBeneficiaryCeDropdownActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/AddBeneficiarySelectTypeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/AddBeneficiarySelectTypeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/BeneficiaryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/BeneficiaryActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/UpdateExistingBeneficiaryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/UpdateExistingBeneficiaryActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/UpdateExistingBeneficiaryCeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/UpdateExistingBeneficiaryCeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/adapters/AddBeneficiaryCeDropdownRecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/adapters/AddBeneficiaryCeDropdownRecyclerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/adapters/BeneficiaryRecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/adapters/BeneficiaryRecyclerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/models/BeneficiaryDynamicFieldsCe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/models/BeneficiaryDynamicFieldsCe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/models/BeneficiaryDynamicFieldsCeNew.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/ForeignCurrencyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/ForeignCurrencyActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/AdditionalInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/AdditionalInfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/AdditionalInfoCeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/AdditionalInfoCeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentDetailsBankPaymentActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentDetailsBankPaymentActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentModeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentModeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/SendMoneyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/SendMoneyActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionCompletedActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionCompletedActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/adapters/PendingTransactionRecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/adapters/PendingTransactionRecyclerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/adapters/SendMoneyCurrencyCodeRecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/adapters/SendMoneyCurrencyCodeRecyclerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/adapters/TransactionHistoryRecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/adapters/TransactionHistoryRecyclerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/SendMoneyFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/SendMoneyFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/alansari/network/APIRequestParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/alansari/network/APIRequestParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/cardview_title_selector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/cardview_title_selector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_travel_card_reload_currency.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_travel_card_reload_currency.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/add_bank_account_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/add_bank_account_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/add_beneficiary_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/add_beneficiary_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/add_beneficiary_ce_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/add_beneficiary_ce_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/add_beneficiary_select_type_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/add_beneficiary_select_type_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/additional_info_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/additional_info_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/beneficiary_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/beneficiary_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/currency_converter_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/currency_converter_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/dashboard_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/dashboard_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/item_beneficiary.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/item_beneficiary.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/item_quick_send.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/item_quick_send.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/landing_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/landing_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/payment_details_bank_payment_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/payment_details_bank_payment_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/payment_gateway_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/payment_gateway_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/payment_mode_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/payment_mode_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/pp_mode_dialog_box.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/pp_mode_dialog_box.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/rate_alert_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/rate_alert_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/send_money_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/send_money_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/splash_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/splash_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/toolbar_actionbar_account_management.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/toolbar_actionbar_account_management.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/travel_card_currency_field_adapter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/travel_card_currency_field_adapter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/wu_send_money_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/wu_send_money_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/color.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/color.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/android-profile/profile-2019-06-21-18-50-07-225.rawproto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/intermediates/proguard-files/proguard-android-optimize.txt-2.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/intermediates/proguard-files/proguard-android.txt-2.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../local.properties" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/..">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>AdditionalInfoCESelectModeActivity</find>
+      <find>BeneficiaryActivity</find>
+      <find>priorityConditionsDialog</find>
+      <find>getpaymentmodes</find>
+      <find>TransactionDetailsActivity</find>
+      <find>PendingTransactionRecyclerAdapter</find>
+      <find>TransactionHistoryRemittanceFragment</find>
+      <find>BASE_URL_TESTING</find>
+      <find>PaymentModeActivity</find>
+      <find>PaymentGatewayActivity2</find>
+      <find>SplashActivity</find>
+      <find>VERIFY_OTP</find>
+      <find>setResult</find>
+      <find>VOTP_CODE</find>
+      <find>fetchProfileData</find>
+      <find>Toast</find>
+      <find>onActivityResult</find>
+      <find>RESULT_CANCELED</find>
+      <find>snackbar</find>
+      <find>requestCode == Constants.REQUEST_CODE_ADD_CREDIT_CARD &amp;&amp; resultCode == RESULT_OK</find>
+      <find>REQUEST_CODE_ADD_CREDIT_CARD</find>
+      <find>07</find>
+      <find>1007</find>
+      <find>onR</find>
+      <find>AppTheme.Base</find>
+      <find>try</find>
+      <find>enableTouchIdForAllCondition</find>
+      <find>countryCodeAREX</find>
+      <find>jsonObject</find>
+      <find>FETCH_TRANSACTIONS_HISTORY_REMITTANCE_API</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>response.getString(Constants.AED_AMOUNT</replace>
+      <replace>BeneficiaryHeaderViewHolder</replace>
+      <replace>color002043</replace>
+      <replace>screenMessage</replace>
+      <replace>beneficiaryDynamicFieldsCeList</replace>
+      <replace>BeneficiaryDynamicFieldsCe</replace>
+      <replace>PaymentDetailAdapterPayType</replace>
+      <replace>PayTypeViewHolder</replace>
+      <replace>BeneficiaryDynamicFieldsCeNew</replace>
+      <replace>REFERRAL_POP_UP_CONTENT</replace>
+      <replace>fetchReferralPopup</replace>
+      <replace>intent</replace>
+      <replace>ReferralData</replace>
+      <replace>datareferralMessage</replace>
+      <replace>dataReferralMessage</replace>
+      <replace>getREJECTIONMESSAGE</replace>
+      <replace>@color/colorButton</replace>
+      <replace>fetchProfileData</replace>
+      <replace>MY_PROFILE_TEMPLATE</replace>
+      <replace>myProfileData</replace>
+      <replace>String</replace>
+      <replace>getTYPE</replace>
+      <replace>MyProfileData2.TEMPALTEDETAILSItem</replace>
+      <replace>ProfileDetails</replace>
+      <replace>TEMPLATELISTItem</replace>
+      <replace>ProfessionalLoadList</replace>
+    </replaceStrings>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\iamdk\OneDrive\Desktop\Al_Ansari\AlAnsariKeyStore.jks" />
+    <option name="KEY_ALIAS" value="AlAnsariAlias" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/fragments/RegisterMobileFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/fragments/RegisterEmailFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/add_beneficiary_activity.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetail.java" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/models/myprofile/TEMPALTEDETAILSItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/models/referral/ReferralData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/models/myprofile/MyProfileData2.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/beneficiary_activity.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/models/profiledetails/RESULTItem.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/my_profile_adapter.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/models/profiledetails/TEMPALTEDETAILSItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/models/profiledetails/TEMPLATELISTItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/models/profiledetails/ProfileDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_my_profile_detail.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/adapters/MyProfileAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/models/gender/GenderSelection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/fragments/TransactionHistoryRemittanceFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/Utils/CommonUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/models/ProfessionalLoadList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/adapters/SelectItemRecyclerAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/adapters/PaymentDetailAdapterPayType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/AddBeneficiaryActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/PaymentSelectModeActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/item_beneficiary_cash_express.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/item_beneficiary.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/SplashActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java" />
+        <option value="$PROJECT_DIR$/google-services.json" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/AdditionalInfoSelectModeActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/AdditionalInfoCESelectModeActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/models/TxnDetailsData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/network/APIRequestParams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/adapters/PendingTransactionRecyclerAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/NavigationBaseActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/BeneficiaryActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentModeActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/PaymentGatewayActivity2.java" />
+        <option value="$PROJECT_DIR$/src/main/res/drawable/blue_semi_circle.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/Utils/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/ChangePinActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/add_my_profile_dialog.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/MyProfileActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/alansari/MyReferralActivity.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1935" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AlAnsariAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlAnsariAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DEBUGGABLE_DEVICE" value="oneplus-gm1901-797934d6" />
+    <property name="DEBUGGABLE_PROCESS" value="app.alansari" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="ExportApk.ApkPath" value="C:\Users\iamdk\OneDrive\Desktop\Al_Ansari\release" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="device.picker.selection" value="797934d6" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../AlAnsari4.40/AlAnsariAndroid (51)/AlAnsariAndroid" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\iamdk\OneDrive\Desktop\Al_Ansari\AlAnsariAndroid\app" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="app.alansari.modules.accountmanagement" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="app.alansari" />
+      <recent name="app.alansari.adapters" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\iamdk\OneDrive\Desktop\Al_Ansari\AlAnsariAndroid\app\src\main\res\drawable" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9739949f-36fd-4b2c-bd06-11b660684184" name="Default Changelist" comment="" />
+      <created>1561818086475</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561818086475</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="0" width="1548" height="832" extended-state="0" />
+    <layout>
+      <window_info id="Captures" order="0" sideWeight="0.5029586" side_tool="true" weight="0.19261745" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49704143" visible="true" weight="0.23252688" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Build Variants" order="3" sideWeight="0.5028329" side_tool="true" weight="0.21140939" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Resources Explorer" order="8" weight="0.32684565" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" x="23" y="323" width="1490" height="178" id="Build" order="4" weight="0.2557143" />
+      <window_info anchor="bottom" id="Android Profiler" order="5" weight="0.3286119" />
+      <window_info anchor="bottom" x="23" y="298" width="1490" height="227" id="Debug" order="6" weight="0.39571428" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.39660057" />
+      <window_info active="true" anchor="bottom" x="24" y="262" width="1490" height="303" id="Logcat" order="8" visible="true" weight="0.23714286" />
+      <window_info anchor="bottom" x="23" y="229" width="1490" height="365" id="Run" order="9" weight="0.51699716" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Gradle" order="1" weight="0.020134227" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
+      <window_info anchor="right" id="Preview" order="5" weight="0.27755377" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" sideWeight="0.5029586" side_tool="true" weight="0.19261745" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49704143" visible="true" weight="0.23221476" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Build Variants" order="3" sideWeight="0.5028329" side_tool="true" weight="0.21140939" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Resources Explorer" order="8" weight="0.32684565" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" x="23" y="323" width="1490" height="178" id="Build" order="4" visible="true" weight="0.3016086" />
+      <window_info anchor="bottom" id="Android Profiler" order="5" show_stripe_button="false" weight="0.3286119" />
+      <window_info anchor="bottom" x="23" y="298" width="1490" height="227" id="Debug" order="6" weight="0.04249292" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.39660057" />
+      <window_info anchor="bottom" x="23" y="260" width="1490" height="303" id="Logcat" order="8" weight="0.40080428" />
+      <window_info anchor="bottom" x="23" y="229" width="1490" height="365" id="Run" order="9" weight="0.51699716" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Gradle" order="1" weight="0.020134227" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
+      <window_info anchor="right" id="Preview" order="5" weight="0.21409395" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>1022</line>
+          <properties />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>1023</line>
+          <properties />
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>1024</line>
+          <properties />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>1025</line>
+          <properties />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>1027</line>
+          <properties />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>1026</line>
+          <properties />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>726</line>
+          <properties />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>727</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>728</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>731</line>
+          <properties />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>732</line>
+          <properties />
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>733</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>734</line>
+          <properties />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>735</line>
+          <properties />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>736</line>
+          <properties />
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>737</line>
+          <properties />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>738</line>
+          <properties />
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>740</line>
+          <properties />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>741</line>
+          <properties />
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>742</line>
+          <properties />
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>743</line>
+          <properties />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>720</line>
+          <properties />
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>721</line>
+          <properties />
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>722</line>
+          <properties />
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>723</line>
+          <properties />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>724</line>
+          <properties />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java</url>
+          <line>725</line>
+          <properties />
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>290</line>
+          <properties />
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>291</line>
+          <properties />
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>391</line>
+          <properties />
+          <option name="timeStamp" value="159" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>392</line>
+          <properties />
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>394</line>
+          <properties />
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>393</line>
+          <properties />
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>396</line>
+          <properties />
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>397</line>
+          <properties />
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>398</line>
+          <properties />
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>400</line>
+          <properties />
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>401</line>
+          <properties />
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>402</line>
+          <properties />
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>403</line>
+          <properties />
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>740</line>
+          <properties />
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>741</line>
+          <properties />
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>886</line>
+          <properties />
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>887</line>
+          <properties />
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>889</line>
+          <properties />
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>890</line>
+          <properties />
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>891</line>
+          <properties />
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>892</line>
+          <properties />
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>888</line>
+          <properties />
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java</url>
+          <line>524</line>
+          <properties />
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java</url>
+          <line>525</line>
+          <properties />
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java</url>
+          <line>527</line>
+          <properties />
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java</url>
+          <line>526</line>
+          <properties />
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java</url>
+          <line>535</line>
+          <properties />
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java</url>
+          <line>536</line>
+          <properties />
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java</url>
+          <line>538</line>
+          <properties />
+          <option name="timeStamp" value="307" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java</url>
+          <line>541</line>
+          <properties />
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java</url>
+          <line>545</line>
+          <properties />
+          <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java</url>
+          <line>546</line>
+          <properties />
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>177</line>
+          <properties />
+          <option name="timeStamp" value="412" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>178</line>
+          <properties />
+          <option name="timeStamp" value="413" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>179</line>
+          <properties />
+          <option name="timeStamp" value="414" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>182</line>
+          <properties />
+          <option name="timeStamp" value="416" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>183</line>
+          <properties />
+          <option name="timeStamp" value="417" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>192</line>
+          <properties />
+          <option name="timeStamp" value="418" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>193</line>
+          <properties />
+          <option name="timeStamp" value="419" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>194</line>
+          <properties />
+          <option name="timeStamp" value="420" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>197</line>
+          <properties />
+          <option name="timeStamp" value="421" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>198</line>
+          <properties />
+          <option name="timeStamp" value="422" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>200</line>
+          <properties />
+          <option name="timeStamp" value="423" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>201</line>
+          <properties />
+          <option name="timeStamp" value="424" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>202</line>
+          <properties />
+          <option name="timeStamp" value="425" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>204</line>
+          <properties />
+          <option name="timeStamp" value="426" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>205</line>
+          <properties />
+          <option name="timeStamp" value="427" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>206</line>
+          <properties />
+          <option name="timeStamp" value="428" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>210</line>
+          <properties />
+          <option name="timeStamp" value="429" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>209</line>
+          <properties />
+          <option name="timeStamp" value="431" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>211</line>
+          <properties />
+          <option name="timeStamp" value="432" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>212</line>
+          <properties />
+          <option name="timeStamp" value="433" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>214</line>
+          <properties />
+          <option name="timeStamp" value="434" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java</url>
+          <line>215</line>
+          <properties />
+          <option name="timeStamp" value="435" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>242</line>
+          <properties />
+          <option name="timeStamp" value="436" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>243</line>
+          <properties />
+          <option name="timeStamp" value="437" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>244</line>
+          <properties />
+          <option name="timeStamp" value="438" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>245</line>
+          <properties />
+          <option name="timeStamp" value="439" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>247</line>
+          <properties />
+          <option name="timeStamp" value="440" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>246</line>
+          <properties />
+          <option name="timeStamp" value="442" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>319</line>
+          <properties />
+          <option name="timeStamp" value="450" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>320</line>
+          <properties />
+          <option name="timeStamp" value="451" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>322</line>
+          <properties />
+          <option name="timeStamp" value="452" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>324</line>
+          <properties />
+          <option name="timeStamp" value="453" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>330</line>
+          <properties />
+          <option name="timeStamp" value="455" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>331</line>
+          <properties />
+          <option name="timeStamp" value="456" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>333</line>
+          <properties />
+          <option name="timeStamp" value="458" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>332</line>
+          <properties />
+          <option name="timeStamp" value="459" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>337</line>
+          <properties />
+          <option name="timeStamp" value="460" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>339</line>
+          <properties />
+          <option name="timeStamp" value="461" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>323</line>
+          <properties />
+          <option name="timeStamp" value="462" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>370</line>
+          <properties />
+          <option name="timeStamp" value="464" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>371</line>
+          <properties />
+          <option name="timeStamp" value="465" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>372</line>
+          <properties />
+          <option name="timeStamp" value="466" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>374</line>
+          <properties />
+          <option name="timeStamp" value="467" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>375</line>
+          <properties />
+          <option name="timeStamp" value="468" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/fragments/TransactionHistoryFragment.java</url>
+          <line>373</line>
+          <properties />
+          <option name="timeStamp" value="469" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/fragments/TransactionHistoryRemittanceFragment.java</url>
+          <line>132</line>
+          <properties />
+          <option name="timeStamp" value="477" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/fragments/TransactionHistoryRemittanceFragment.java</url>
+          <line>134</line>
+          <properties />
+          <option name="timeStamp" value="478" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/fragments/TransactionHistoryRemittanceFragment.java</url>
+          <line>146</line>
+          <properties />
+          <option name="timeStamp" value="479" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/fragments/TransactionHistoryRemittanceFragment.java</url>
+          <line>143</line>
+          <properties />
+          <option name="timeStamp" value="480" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/fragments/TransactionHistoryRemittanceFragment.java</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="481" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/adapters/QuickSendRecyclerAdapter.java</url>
+          <line>201</line>
+          <properties />
+          <option name="timeStamp" value="495" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/adapters/QuickSendRecyclerAdapter.java</url>
+          <line>202</line>
+          <properties />
+          <option name="timeStamp" value="496" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/adapters/TransactionHistoryRemittanceAdapter.java</url>
+          <line>249</line>
+          <properties />
+          <option name="timeStamp" value="515" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/adapters/TransactionHistoryRemittanceAdapter.java</url>
+          <line>251</line>
+          <properties />
+          <option name="timeStamp" value="517" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/adapters/TransactionHistoryRemittanceAdapter.java</url>
+          <line>254</line>
+          <properties />
+          <option name="timeStamp" value="519" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>157</line>
+          <properties />
+          <option name="timeStamp" value="520" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>159</line>
+          <properties />
+          <option name="timeStamp" value="521" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>160</line>
+          <properties />
+          <option name="timeStamp" value="522" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>161</line>
+          <properties />
+          <option name="timeStamp" value="523" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>162</line>
+          <properties />
+          <option name="timeStamp" value="524" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>163</line>
+          <properties />
+          <option name="timeStamp" value="525" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>172</line>
+          <properties />
+          <option name="timeStamp" value="526" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>173</line>
+          <properties />
+          <option name="timeStamp" value="527" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>174</line>
+          <properties />
+          <option name="timeStamp" value="528" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>509</line>
+          <properties />
+          <option name="timeStamp" value="558" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>513</line>
+          <properties />
+          <option name="timeStamp" value="559" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>514</line>
+          <properties />
+          <option name="timeStamp" value="560" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>516</line>
+          <properties />
+          <option name="timeStamp" value="561" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>518</line>
+          <properties />
+          <option name="timeStamp" value="562" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>520</line>
+          <properties />
+          <option name="timeStamp" value="563" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>521</line>
+          <properties />
+          <option name="timeStamp" value="564" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>523</line>
+          <properties />
+          <option name="timeStamp" value="565" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>524</line>
+          <properties />
+          <option name="timeStamp" value="566" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>527</line>
+          <properties />
+          <option name="timeStamp" value="567" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>529</line>
+          <properties />
+          <option name="timeStamp" value="568" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>531</line>
+          <properties />
+          <option name="timeStamp" value="569" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>532</line>
+          <properties />
+          <option name="timeStamp" value="570" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>544</line>
+          <properties />
+          <option name="timeStamp" value="571" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>546</line>
+          <properties />
+          <option name="timeStamp" value="572" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>552</line>
+          <properties />
+          <option name="timeStamp" value="573" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>554</line>
+          <properties />
+          <option name="timeStamp" value="575" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>553</line>
+          <properties />
+          <option name="timeStamp" value="576" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>436</line>
+          <properties />
+          <option name="timeStamp" value="577" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>438</line>
+          <properties />
+          <option name="timeStamp" value="578" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>439</line>
+          <properties />
+          <option name="timeStamp" value="579" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>441</line>
+          <properties />
+          <option name="timeStamp" value="580" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>510</line>
+          <properties />
+          <option name="timeStamp" value="628" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>116</line>
+          <properties />
+          <option name="timeStamp" value="629" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>148</line>
+          <properties />
+          <option name="timeStamp" value="630" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>149</line>
+          <properties />
+          <option name="timeStamp" value="631" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>150</line>
+          <properties />
+          <option name="timeStamp" value="632" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>151</line>
+          <properties />
+          <option name="timeStamp" value="633" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>179</line>
+          <properties />
+          <option name="timeStamp" value="635" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>180</line>
+          <properties />
+          <option name="timeStamp" value="636" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>182</line>
+          <properties />
+          <option name="timeStamp" value="637" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>183</line>
+          <properties />
+          <option name="timeStamp" value="638" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>534</line>
+          <properties />
+          <option name="timeStamp" value="639" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>535</line>
+          <properties />
+          <option name="timeStamp" value="640" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>512</line>
+          <properties />
+          <option name="timeStamp" value="641" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>325</line>
+          <properties />
+          <option name="timeStamp" value="642" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>326</line>
+          <properties />
+          <option name="timeStamp" value="643" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>328</line>
+          <properties />
+          <option name="timeStamp" value="644" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>330</line>
+          <properties />
+          <option name="timeStamp" value="645" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>335</line>
+          <properties />
+          <option name="timeStamp" value="646" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>337</line>
+          <properties />
+          <option name="timeStamp" value="647" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>338</line>
+          <properties />
+          <option name="timeStamp" value="648" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>346</line>
+          <properties />
+          <option name="timeStamp" value="649" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>352</line>
+          <properties />
+          <option name="timeStamp" value="650" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>347</line>
+          <properties />
+          <option name="timeStamp" value="651" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>353</line>
+          <properties />
+          <option name="timeStamp" value="652" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>356</line>
+          <properties />
+          <option name="timeStamp" value="653" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>357</line>
+          <properties />
+          <option name="timeStamp" value="654" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>358</line>
+          <properties />
+          <option name="timeStamp" value="655" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>426</line>
+          <properties />
+          <option name="timeStamp" value="656" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>427</line>
+          <properties />
+          <option name="timeStamp" value="657" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>429</line>
+          <properties />
+          <option name="timeStamp" value="658" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>430</line>
+          <properties />
+          <option name="timeStamp" value="659" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>431</line>
+          <properties />
+          <option name="timeStamp" value="660" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>433</line>
+          <properties />
+          <option name="timeStamp" value="661" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>466</line>
+          <properties />
+          <option name="timeStamp" value="662" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>467</line>
+          <properties />
+          <option name="timeStamp" value="663" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>469</line>
+          <properties />
+          <option name="timeStamp" value="664" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>470</line>
+          <properties />
+          <option name="timeStamp" value="665" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>472</line>
+          <properties />
+          <option name="timeStamp" value="667" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>473</line>
+          <properties />
+          <option name="timeStamp" value="668" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>440</line>
+          <properties />
+          <option name="timeStamp" value="669" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>443</line>
+          <properties />
+          <option name="timeStamp" value="670" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>445</line>
+          <properties />
+          <option name="timeStamp" value="671" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>444</line>
+          <properties />
+          <option name="timeStamp" value="672" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>447</line>
+          <properties />
+          <option name="timeStamp" value="673" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>448</line>
+          <properties />
+          <option name="timeStamp" value="674" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>449</line>
+          <properties />
+          <option name="timeStamp" value="675" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>451</line>
+          <properties />
+          <option name="timeStamp" value="676" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>450</line>
+          <properties />
+          <option name="timeStamp" value="677" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>452</line>
+          <properties />
+          <option name="timeStamp" value="678" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>453</line>
+          <properties />
+          <option name="timeStamp" value="679" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>454</line>
+          <properties />
+          <option name="timeStamp" value="681" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>458</line>
+          <properties />
+          <option name="timeStamp" value="682" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>459</line>
+          <properties />
+          <option name="timeStamp" value="683" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>463</line>
+          <properties />
+          <option name="timeStamp" value="684" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>164</line>
+          <properties />
+          <option name="timeStamp" value="685" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>166</line>
+          <properties />
+          <option name="timeStamp" value="686" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>167</line>
+          <properties />
+          <option name="timeStamp" value="687" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>169</line>
+          <properties />
+          <option name="timeStamp" value="688" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>230</line>
+          <properties />
+          <option name="timeStamp" value="695" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>231</line>
+          <properties />
+          <option name="timeStamp" value="696" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>232</line>
+          <properties />
+          <option name="timeStamp" value="697" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>234</line>
+          <properties />
+          <option name="timeStamp" value="698" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>236</line>
+          <properties />
+          <option name="timeStamp" value="699" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>237</line>
+          <properties />
+          <option name="timeStamp" value="700" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>241</line>
+          <properties />
+          <option name="timeStamp" value="701" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>240</line>
+          <properties />
+          <option name="timeStamp" value="702" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>243</line>
+          <properties />
+          <option name="timeStamp" value="703" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>244</line>
+          <properties />
+          <option name="timeStamp" value="704" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>248</line>
+          <properties />
+          <option name="timeStamp" value="705" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>247</line>
+          <properties />
+          <option name="timeStamp" value="706" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>246</line>
+          <properties />
+          <option name="timeStamp" value="707" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>249</line>
+          <properties />
+          <option name="timeStamp" value="708" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>252</line>
+          <properties />
+          <option name="timeStamp" value="709" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>254</line>
+          <properties />
+          <option name="timeStamp" value="710" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>255</line>
+          <properties />
+          <option name="timeStamp" value="711" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>253</line>
+          <properties />
+          <option name="timeStamp" value="712" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>256</line>
+          <properties />
+          <option name="timeStamp" value="713" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java</url>
+          <line>257</line>
+          <properties />
+          <option name="timeStamp" value="714" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileActivity.java</url>
+          <line>211</line>
+          <properties />
+          <option name="timeStamp" value="716" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileActivity.java</url>
+          <line>218</line>
+          <properties />
+          <option name="timeStamp" value="719" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileActivity.java</url>
+          <line>220</line>
+          <properties />
+          <option name="timeStamp" value="720" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileActivity.java</url>
+          <line>219</line>
+          <properties />
+          <option name="timeStamp" value="721" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileActivity.java</url>
+          <line>221</line>
+          <properties />
+          <option name="timeStamp" value="722" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileActivity.java</url>
+          <line>222</line>
+          <properties />
+          <option name="timeStamp" value="723" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>910</line>
+          <properties />
+          <option name="timeStamp" value="728" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>701</line>
+          <properties />
+          <option name="timeStamp" value="746" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/SelectItemActivity.java</url>
+          <line>703</line>
+          <properties />
+          <option name="timeStamp" value="748" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>912</line>
+          <properties />
+          <option name="timeStamp" value="751" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>911</line>
+          <properties />
+          <option name="timeStamp" value="752" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>1162</line>
+          <properties />
+          <option name="timeStamp" value="758" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>1163</line>
+          <properties />
+          <option name="timeStamp" value="759" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>1164</line>
+          <properties />
+          <option name="timeStamp" value="760" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>1166</line>
+          <properties />
+          <option name="timeStamp" value="761" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>838</line>
+          <properties />
+          <option name="timeStamp" value="763" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>837</line>
+          <properties />
+          <option name="timeStamp" value="764" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>839</line>
+          <properties />
+          <option name="timeStamp" value="765" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>840</line>
+          <properties />
+          <option name="timeStamp" value="766" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>841</line>
+          <properties />
+          <option name="timeStamp" value="767" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>842</line>
+          <properties />
+          <option name="timeStamp" value="768" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>934</line>
+          <properties />
+          <option name="timeStamp" value="770" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>935</line>
+          <properties />
+          <option name="timeStamp" value="771" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>936</line>
+          <properties />
+          <option name="timeStamp" value="772" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>932</line>
+          <properties />
+          <option name="timeStamp" value="773" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>931</line>
+          <properties />
+          <option name="timeStamp" value="774" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>930</line>
+          <properties />
+          <option name="timeStamp" value="775" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>929</line>
+          <properties />
+          <option name="timeStamp" value="776" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>928</line>
+          <properties />
+          <option name="timeStamp" value="777" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java</url>
+          <line>1161</line>
+          <properties class="app.alansari.MyProfileDetails" method="getPositionFromId" />
+          <option name="timeStamp" value="757" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>beneficiaryDynamicFieldsCeList</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((GenderSelection) data.getParcelableExtra(Constants.OBJECT)).getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((GenderSelection) data.getParcelableExtra(Constants.OBJECT)).getPicId()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>getPositionFromId(String.valueOf(requestCode)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>object</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>position</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(GenderSelection)dataItem</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dataItem</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_my_profile_detail.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="101" column="59" selection-start-line="101" selection-start-column="49" selection-end-line="101" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="283" column="18" selection-start-line="283" selection-start-column="18" selection-end-line="283" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/CreditCardPaymentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2480">
+          <caret line="182" column="41" selection-start-line="182" selection-start-column="41" selection-end-line="182" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/adapters/CreditCardPaymentStackAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10280">
+          <caret line="582" column="34" selection-start-line="582" selection-start-column="34" selection-end-line="582" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google-services.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18018">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/models/BeneficiaryData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="461" selection-start-line="461" selection-end-line="461" />
+          <folding>
+            <element signature="e#9819#9820#0" expanded="true" />
+            <element signature="e#9852#9853#0" expanded="true" />
+            <element signature="e#13409#13410#0" expanded="true" />
+            <element signature="e#13440#13441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/modules/remittance/TXNHISTORYDATAItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="363" column="25" selection-start-line="363" selection-start-column="25" selection-end-line="363" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/AdditionalInfoSelectModeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28260">
+          <caret line="1541" column="1" selection-start-line="1541" selection-start-column="1" selection-end-line="1541" selection-end-column="1" />
+          <folding>
+            <element signature="e#14284#14338#0" expanded="true" />
+            <element signature="e#19455#19501#0" expanded="true" />
+            <element signature="e#28000#28044#0" expanded="true" />
+            <element signature="e#28159#28209#0" expanded="true" />
+            <element signature="e#29781#29836#0" expanded="true" />
+            <element signature="e#30991#31053#0" expanded="true" />
+            <element signature="e#31158#31219#0" expanded="true" />
+            <element signature="e#34078#34122#0" expanded="true" />
+            <element signature="e#34245#34295#0" expanded="true" />
+            <element signature="e#35360#35399#0" expanded="true" />
+            <element signature="e#56046#56090#0" expanded="true" />
+            <element signature="e#56210#56264#0" expanded="true" />
+            <element signature="e#63269#63323#0" expanded="true" />
+            <element signature="e#63502#63556#0" expanded="true" />
+            <element signature="e#65930#65979#0" expanded="true" />
+            <element signature="e#66136#66185#0" expanded="true" />
+            <element signature="e#66854#66908#0" expanded="true" />
+            <element signature="e#67103#67157#0" expanded="true" />
+            <element signature="e#67278#67332#0" expanded="true" />
+            <element signature="e#69595#69644#0" expanded="true" />
+            <element signature="e#69801#69850#0" expanded="true" />
+            <element signature="e#70519#70573#0" expanded="true" />
+            <element signature="e#70768#70822#0" expanded="true" />
+            <element signature="e#70943#70997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentSelectModeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="329" column="109" lean-forward="true" selection-start-line="329" selection-start-column="109" selection-end-line="329" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/AdditionalInfoCESelectModeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="112" column="42" lean-forward="true" selection-start-line="112" selection-start-column="42" selection-end-line="112" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/models/TxnDetailsData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="4378" selection-start-line="4378" selection-end-line="4378" />
+          <folding>
+            <element signature="e#18393#18394#0" expanded="true" />
+            <element signature="e#18423#18424#0" expanded="true" />
+            <element signature="e#21738#21739#0" expanded="true" />
+            <element signature="e#21776#21777#0" expanded="true" />
+            <element signature="e#32057#32058#0" expanded="true" />
+            <element signature="e#32096#32097#0" expanded="true" />
+            <element signature="e#45907#45908#0" expanded="true" />
+            <element signature="e#45949#45950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="902" selection-start-line="902" selection-end-line="902" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/adapters/PendingTransactionRecyclerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544">
+          <caret line="522" column="15" selection-start-line="510" selection-start-column="11" selection-end-line="522" selection-end-column="15" />
+          <folding>
+            <element signature="e#31426#31427#0" expanded="true" />
+            <element signature="e#31464#31465#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/TransactionCompletedRemittanceActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3016">
+          <caret line="330" column="3" selection-start-line="330" selection-start-column="3" selection-end-line="330" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/ic_my_profile_icon.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1200">
+          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/NavigationBaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3284">
+          <caret line="323" column="63" selection-start-line="323" selection-start-column="63" selection-end-line="323" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/BeneficiaryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="2299" column="13" lean-forward="true" selection-start-line="2299" selection-start-column="13" selection-end-line="2299" selection-end-column="13" />
+          <folding>
+            <element signature="e#30813#30863#0" expanded="true" />
+            <element signature="e#31173#31222#0" expanded="true" />
+            <element signature="e#63906#63956#0" expanded="true" />
+            <element signature="e#64524#64600#0" expanded="true" />
+            <element signature="e#64859#64913#0" expanded="true" />
+            <element signature="e#68186#68230#0" expanded="true" />
+            <element signature="e#68353#68403#0" expanded="true" />
+            <element signature="e#70286#70330#0" expanded="true" />
+            <element signature="e#70548#70598#0" expanded="true" />
+            <element signature="e#77438#77482#0" expanded="true" />
+            <element signature="e#80774#80818#0" expanded="true" />
+            <element signature="e#82406#82450#0" expanded="true" />
+            <element signature="e#82549#82599#0" expanded="true" />
+            <element signature="e#83933#83977#0" expanded="true" />
+            <element signature="e#84787#84837#0" expanded="true" />
+            <element signature="e#85685#85729#0" expanded="true" />
+            <element signature="e#89552#89602#0" expanded="true" />
+            <element signature="e#101794#101848#0" expanded="true" />
+            <element signature="e#102043#102097#0" expanded="true" />
+            <element signature="e#102218#102272#0" expanded="true" />
+            <element signature="e#103590#103633#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/modules/sendmoney/PaymentModeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="67" column="32" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="32" />
+          <folding>
+            <element signature="e#16190#16252#0" expanded="true" />
+            <element signature="e#16361#16422#0" expanded="true" />
+            <element signature="e#21081#21142#0" expanded="true" />
+            <element signature="e#21255#21324#0" expanded="true" />
+            <element signature="e#23875#23936#0" expanded="true" />
+            <element signature="e#24053#24122#0" expanded="true" />
+            <element signature="e#27442#27510#0" expanded="true" />
+            <element signature="e#30642#30691#0" expanded="true" />
+            <element signature="e#30848#30897#0" expanded="true" />
+            <element signature="e#31566#31620#0" expanded="true" />
+            <element signature="e#31815#31869#0" expanded="true" />
+            <element signature="e#31990#32044#0" expanded="true" />
+            <element signature="e#34187#34236#0" expanded="true" />
+            <element signature="e#34393#34442#0" expanded="true" />
+            <element signature="e#35111#35165#0" expanded="true" />
+            <element signature="e#35360#35414#0" expanded="true" />
+            <element signature="e#35535#35589#0" expanded="true" />
+            <element signature="e#37263#37312#0" expanded="true" />
+            <element signature="e#37469#37518#0" expanded="true" />
+            <element signature="e#38187#38241#0" expanded="true" />
+            <element signature="e#38436#38490#0" expanded="true" />
+            <element signature="e#38611#38665#0" expanded="true" />
+            <element signature="e#41913#41962#0" expanded="true" />
+            <element signature="e#42119#42168#0" expanded="true" />
+            <element signature="e#42627#42681#0" expanded="true" />
+            <element signature="e#42876#42930#0" expanded="true" />
+            <element signature="e#43051#43105#0" expanded="true" />
+            <element signature="e#44489#44538#0" expanded="true" />
+            <element signature="e#44695#44744#0" expanded="true" />
+            <element signature="e#45203#45257#0" expanded="true" />
+            <element signature="e#45452#45506#0" expanded="true" />
+            <element signature="e#45627#45681#0" expanded="true" />
+            <element signature="e#51821#51870#0" expanded="true" />
+            <element signature="e#52027#52076#0" expanded="true" />
+            <element signature="e#52745#52799#0" expanded="true" />
+            <element signature="e#52994#53048#0" expanded="true" />
+            <element signature="e#53169#53223#0" expanded="true" />
+            <element signature="e#59216#59260#0" expanded="true" />
+            <element signature="e#59390#59440#0" expanded="true" />
+            <element signature="e#69046#69090#0" expanded="true" />
+            <element signature="e#69205#69255#0" expanded="true" />
+            <element signature="e#70452#70496#0" expanded="true" />
+            <element signature="e#70623#70673#0" expanded="true" />
+            <element signature="e#71515#71559#0" expanded="true" />
+            <element signature="e#71687#71737#0" expanded="true" />
+            <element signature="e#73155#73199#0" expanded="true" />
+            <element signature="e#73322#73372#0" expanded="true" />
+            <element signature="e#74372#74416#0" expanded="true" />
+            <element signature="e#74558#74608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/PaymentGatewayActivity2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="53" column="36" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="36" />
+          <folding>
+            <element signature="e#3736#3802#0" expanded="true" />
+            <element signature="e#3889#3954#0" expanded="true" />
+            <element signature="e#4042#4082#0" expanded="true" />
+            <element signature="e#4169#4208#0" expanded="true" />
+            <element signature="e#6697#6741#0" expanded="true" />
+            <element signature="e#8039#8083#0" expanded="true" />
+            <element signature="e#9266#9310#0" expanded="true" />
+            <element signature="e#9508#9558#0" expanded="true" />
+            <element signature="e#10448#10492#0" expanded="true" />
+            <element signature="e#17607#17651#0" expanded="true" />
+            <element signature="e#17800#17850#0" expanded="true" />
+            <element signature="e#21050#21104#0" expanded="true" />
+            <element signature="e#21225#21279#0" expanded="true" />
+            <element signature="e#25738#25792#0" expanded="true" />
+            <element signature="e#25913#25967#0" expanded="true" />
+            <element signature="e#28730#28786#0" expanded="true" />
+            <element signature="e#29858#29914#0" expanded="true" />
+            <element signature="e#30658#30712#0" expanded="true" />
+            <element signature="e#31601#31669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/blue_semi_circle.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/splash_activity.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/AddCreditCardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5670">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/modules/accountmanagement/CreditCardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="264" lean-forward="true" selection-start-line="264" selection-end-line="264" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/modules/travelcardreload/AddTravelCardReload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/toolbar_actionbar_menu.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="58" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_travel_card_reload.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/TravelCardReloadActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/network/APIRequestParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="2784" column="22" selection-start-line="2784" selection-start-column="22" selection-end-line="2784" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/ChangePinActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="597" column="13" lean-forward="true" selection-start-line="597" selection-start-column="13" selection-end-line="597" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/SelectCountryFlagActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="282" selection-start-line="282" selection-end-line="282" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/models/CountryData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="101" column="30" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="30" />
+          <folding>
+            <element signature="e#2795#2796#0" expanded="true" />
+            <element signature="e#2833#2834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/Utils/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/fragments/my_emirates/MyEmiratesIdFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="98" column="11" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/MyEmiratesIdActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="125" column="75" lean-forward="true" selection-start-line="125" selection-start-column="75" selection-end-line="125" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/adapters/TransactionHistoryRemittanceAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/fragments/TransactionHistoryRemittanceFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="313" column="60" selection-start-line="313" selection-start-column="60" selection-end-line="313" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="761" column="32" selection-start-line="761" selection-start-column="32" selection-end-line="761" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="463" column="5" selection-start-line="463" selection-start-column="5" selection-end-line="463" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#57322#57323#0" expanded="true" />
+            <element signature="e#57348#57349#0" expanded="true" />
+            <element signature="e#63508#63509#0" expanded="true" />
+            <element signature="e#63557#63558#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/Utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-634">
+          <caret line="541" column="31" selection-start-line="541" selection-start-column="31" selection-end-line="541" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/add_my_profile_dialog.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="86" column="47" lean-forward="true" selection-start-line="86" selection-start-column="47" selection-end-line="86" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_my_profile.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/MyProfileActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1685">
+          <caret line="283" selection-start-line="283" selection-end-line="283" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/util/DisplayMetrics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="192" column="15" selection-start-line="192" selection-start-column="15" selection-end-line="192" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/alansari/MyReferralActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="70" column="35" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

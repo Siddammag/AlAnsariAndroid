@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DialogCardView">
+
+    <ScrollView style="@style/DialogScrollView"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dialog_title"
+                style="@style/DialogTitleTextView"
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:text="@string/pm_bank_transfer_dialog_title" />
+
+            <TextView
+                android:id="@+id/dialog_text"
+                style="@style/DialogTextView"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_below="@+id/dialog_title"
+                android:text="@string/pm_bank_transfer_dialog_text"
+                android:textColor="@color/color3F3F3F"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/dialog_btn"
+                style="@style/SubmitBtn"
+                android:layout_below="@+id/dialog_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimens_8"
+                android:layout_marginTop="@dimen/dimens_35"
+                android:text="Save" />
+        </RelativeLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>

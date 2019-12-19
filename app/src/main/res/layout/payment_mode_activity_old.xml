@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dimens_100">
+
+
+            <RelativeLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dimens_15">
+
+                <TextView
+                    android:id="@+id/currency_code"
+                    fontPath="fonts/HelveticaNeue.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/total_amount_to_pay"
+                    android:layout_centerHorizontal="true"
+                    android:alpha="0.78"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/dimens_5"
+                    android:text="AED"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimens_18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_amount_to_pay"
+                    fontPath="fonts/HelveticaNeue.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimens_8"
+                    android:layout_toRightOf="@+id/currency_code"
+                    android:maxLines="1"
+                    android:text="215.00"
+                    android:textColor="@color/color1E6AB3"
+                    android:textSize="@dimen/dimens_30sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_1"
+                android:layout_below="@+id/top_layout"
+                android:layout_marginBottom="@dimen/dimens_10"
+                android:background="@drawable/line_divider" />
+
+
+            <RelativeLayout
+                android:id="@+id/reg_main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_layout"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/select_payment_mode_label"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dimens_15"
+                    android:layout_marginTop="@dimen/dimens_15"
+                    android:text="Select Payment Mode"
+                    android:textColor="@color/color9F9F9F"
+                    android:textSize="@dimen/dimens_18sp" />
+
+
+                <TextView
+                    android:id="@+id/payment_mode_details"
+                    fontPath="fonts/Roboto-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/select_payment_mode_label"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dimens_10"
+                    android:layout_marginRight="@dimen/dimens_10"
+                    android:alpha="0.80"
+                    android:background="@color/card_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/dimens_10"
+                    android:text="@string/payment_mode_dummy"
+                    android:textColor="@color/colorE86768"
+                    android:textSize="@dimen/verify_eid_desc_text_size" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/branch_payment_c_layout"
+                    style="@style/PaymentModeCardViewStyle"
+                    android:layout_below="@+id/payment_mode_details">
+
+                    <RelativeLayout
+                        android:id="@+id/branch_payment_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="@dimen/dimens_20"
+                        android:paddingLeft="@dimen/dimens_30"
+                        android:paddingRight="@dimen/dimens_15"
+                        android:paddingTop="@dimen/dimens_20">
+
+                        <ImageView
+                            android:id="@+id/branch_payment_image"
+                            android:layout_width="@dimen/dimens_30"
+                            android:layout_height="@dimen/dimens_30"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dimens_20"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/svg_payment_mode_branch" />
+
+                        <TextView
+                            android:id="@+id/branch_payment"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/branch_payment_image"
+                            android:gravity="center"
+                            android:text="Pay at Branch"
+                            android:textColor="@color/color3F3F3F"
+                            android:textSize="@dimen/dimens_20sp" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/bank_payment_c_layout"
+                    style="@style/PaymentModeCardViewStyle"
+                    android:layout_below="@+id/branch_payment_c_layout"
+                    android:layout_marginTop="0dp">
+
+                    <RelativeLayout
+                        android:id="@+id/bank_payment_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="@dimen/dimens_20"
+                        android:paddingLeft="@dimen/dimens_30"
+                        android:paddingRight="@dimen/dimens_15"
+                        android:paddingTop="@dimen/dimens_20">
+
+                        <ImageView
+                            android:id="@+id/bank_payment_image"
+                            android:layout_width="@dimen/dimens_30"
+                            android:layout_height="@dimen/dimens_30"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dimens_20"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/svg_payment_mode_bank" />
+
+                        <TextView
+                            android:id="@+id/bank_payment"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/bank_payment_image"
+                            android:gravity="center"
+                            android:text="Bank Payment"
+                            android:textColor="@color/color3F3F3F"
+                            android:textSize="@dimen/dimens_20sp" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/priority_pay_c_layout"
+                    style="@style/PaymentModeCardViewStyle"
+                    android:layout_below="@+id/bank_payment_c_layout"
+                    android:layout_marginTop="0dp">
+
+                    <RelativeLayout
+                        android:id="@+id/priority_pay_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="@dimen/dimens_20"
+                        android:paddingLeft="@dimen/dimens_30"
+                        android:paddingRight="@dimen/dimens_15"
+                        android:paddingTop="@dimen/dimens_20">
+
+                        <ImageView
+                            android:id="@+id/priority_pay_image"
+                            android:layout_width="@dimen/dimens_30"
+                            android:layout_height="@dimen/dimens_30"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dimens_20"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/svg_payment_mode_priority_pay" />
+
+                        <TextView
+                            android:id="@+id/priority_pay"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/priority_pay_image"
+                            android:gravity="center"
+                            android:text="Priority Pay"
+                            android:textColor="@color/color3F3F3F"
+                            android:textSize="@dimen/dimens_20sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/next_btn"
+        style="@style/SubmitBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Next" />
+</RelativeLayout>

@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        - Created by Parveen Dala on 05 October, 2016
+        - Fugenx Technologies, Bengaluru
+        - AlAnsari
+        -->
+
+    <string name="app_name">AlAnsariEX</string>
+    <string name="google_app_id1">00000000</string>
+    <string name="dummy_data">Dummy Data.</string>
+
+    <!--Login And Register -->
+    <string name="mobile_number">Mobile number</string>
+    <string name="forgot_pin">Forgot PIN?</string>
+    <string name="dummy_mobile_number">9041411410</string>
+    <!-- Register -->
+    <string name="mobile_login_details">Your registered mobile number with Al Ansari Exchange</string>
+    <string name="email_login_details"></string>
+    <string name="eexchange">eExchange</string>
+    <string name="eexchange_login_details">Your existing eExchange account</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">"  "Login here</string>
+    <!--Register With Mobile -->
+    <string name="enter_mobile_number">Enter your mobile number</string>
+
+    <!-- Register With Email -->
+    <string name="enter_eexchange_email">Enter eExchange email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="register_email_attempts_msg">You have upto 3 attempts. \nWrong credentials may result in your eExchange account getting blocked.</string>
+
+
+    <!-- Verify EID -->
+    <string name="enter_emirates_id_number">Enter Emirates ID number</string>
+    <string name="enter_eid_expiry">Enter expiry date of your Emirates ID</string>
+    <string name="enter_date_of_birth">Enter your date of birth</string>
+    <string name="enter_emirates_id_card_number">Enter Emirates ID card number</string>
+
+    <!-- PIN Layout -->
+    <string name="please_enter_pin">Please enter PIN</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="please_enter_pin13">Please enter PIN</string>
+    <string name="please_enter_pin133">Please enter PIN</string>
+
+    <!-- Dashboard Scree -->
+    <string name="send_money">SEND MONEY</string>
+    <string name="click_here_to_go">CLICK HERE TO GO</string>
+    <string name="my_recipients">My\nRecipients</string>
+    <string name="my_referral">Win\nExciting\nRewards</string>
+    <string name="transaction_tracker_post">Transaction\nTracker</string>
+    <string name="my_transactions">My\nTransactions</string>
+    <string name="rate_calculator">Rate Calculator</string>
+    <string name="know_our_rates">Know our transfer rates</string>
+    <string name="currency_convertor">Currency Convertor</string>
+    <string name="transaction_tracker">Transaction Tracker</string>
+    <string name="check_transaction_status">Check Transaction Status</string>
+    <string name="register_login">REGISTER / LOGIN</string>
+    <string name="click_here_to_start">CLICK HERE TO START</string>
+
+    <string name="buy_sell_currency">Buy/Sell foreign currency</string>
+    <string name="get_in_touch">Contact Us</string>
+    <string name="lets_know_feedback">Lets know your feedback</string>
+    <string name="branch_locator">Branch Locator</string>
+    <string name="find_nearest">Find our nearest branch</string>
+    <string name="you_have_total_pending_transactions">You have 5 pending transactions</string>
+    <string name="quick_send">QUICK SEND</string>
+
+    <!-- Account Management Screen -->
+    <string name="am_beneficiary_message">Add and manage your beneficiaries here for sending money</string>
+    <string name="am_credit_card_message">Pay all of your credit card due payments by adding and managing credit cards here</string>
+    <string name="am_bank_account_message">Add your local bank details to complete send money process via online bank transfer</string>
+
+    <!-- Send Money Screen -->
+
+    <string name="transfer_would_take_upto_days_to_complete">Transfer would take upto 1 day to complete</string>
+    <string name="currency_not_available_for_selected_country">Currency not available for selected country</string>
+    <string name="currency_not_available_for_selected_country_try_again">Currency not available for selected country. Please try again after some time.</string>
+
+
+    <string name="malaysia_msg">1) Corporate beneficiary transactions to be made in USD, if the purpose is TRADE/INVESTMENT/PROPERTY PURCHASE/STOCK PURCHASES\n\n
+2) Maximum limit for individual transactions is MYR 30,000\n\n
+3) Funds will be credited in the beneficiary account within 2-3 working days</string>
+
+    <!-- Beneficiary Details Top Banner Screen -->
+    <string name="beneficiary_name">Beneficiary name</string>
+    <string name="beneficiary_agent_bank">Beneficiary bank/Agent</string>
+    <string name="beneficiary_branch">Beneficiary branch</string>
+    <string name="beneficiary_branch_payout">Payout Location</string>
+    <string name="account_number">Account number</string>
+    <string name="receive_amount">Receiving amount</string>
+    <string name="received_amount">Received amount</string>
+    <string name="your_txn_ref_num">Transaction reference number</string>
+    <string name="payment_mode">Payment mode</string>
+    <string name="bank_transfer">Bank transfer</string>
+    <string name="aae_bank_account_number">Ansari bank account number</string>
+    <string name="aae_bank_name">Ansari bank name</string>
+
+    <string name="total_paid">Total paid</string>
+    <string name="total_to_pay">Total to pay</string>
+    <string name="fee_aed_0_00">Fee : AED 0.00</string>
+    <string name="vat_changes_ade_0_00">VAT Changes : AED 0.00</string>
+    <string name="fee_aed">Fee : AED </string>
+
+    <item name="VIEW_TAG_CODE_ID" type="id" />
+
+    <!-- Beneficiary Details -->
+    <string name="contact_number">Contact number</string>
+    <string name="account_name">Account name</string>
+    <string name="bank_name">Bank name</string>
+    <string name="branch_name">Branch name</string>
+    <string name="iban_number">IBAN</string>
+    <string name="ifsc_code">IFSC</string>
+    <string name="swift_code">Swift code</string>
+    <string name="sort_code">Sort code</string>
+    <string name="transit_code">Transit code</string>
+    <string name="institution_code">Institution code</string>
+    <string name="routing_code">Routing code</string>
+    <string name="bsb">BSB</string>
+    <string name="account_type">Account type</string>
+
+    <string name="beneficiary_bank_agent">Beneficiary bank/Agent</string>
+    <string name="bank_name_agent">Bank/Agent name</string>
+    <string name="transaction_mode">Transaction mode</string>
+    <string name="transaction_number">Transaction Number</string>
+    <string name="service_type">Service type</string>
+    <string name="beneficiary_type">Beneficiary type</string>
+
+    <!-- Beneficiary List -->
+    <string name="empty_beneficiary_arex">No beneficiaries available - you can add some by tapping  add new sign at the top of the screen</string>
+    <string name="empty_beneficiary_ce">No beneficiaries available - you can add some by tapping  add new sign at the top of the screen</string>
+    <string name="empty_beneficiary_wu">No beneficiaries available - you can add some by tapping add new button at the bottom of the screen</string>
+    <string name="error_beneficiary">Whoops! We are unable to show your beneficiaries at the moment.</string>
+
+    <!-- Add Beneficiary Text Error -->
+    <string name="invalid_company_name">Invalid company name</string>
+    <string name="invalid_first_name">Invalid first name</string>
+    <string name="invalid_last_name">Invalid last name</string>
+    <string name="invalid_country">Invalid country</string>
+    <string name="invalid_nationality">Invalid nationality</string>
+    <string name="invalid_address">Invalid address</string>
+    <string name="required_format_is">Required mobile no. length is %s</string>
+    <string name="required_account_num_format_is">Required account number length is %s</string>
+    <string name="invalid_branch_name">Invalid branch name</string>
+    <string name="invalid_ifsc_code">Invalid IFSC</string>
+    <string name="invalid_account_number">Invalid Account number</string>
+    <string name="invalid_iban_number">Invalid IBAN</string>
+    <string name="invalid_swift_code">Invalid Swift code</string>
+    <string name="invalid_sort_code">Invalid Sort code</string>
+    <string name="invalid_transit_code">Invalid Transit code</string>
+    <string name="invalid_institution_code">Invalid Institution code</string>
+    <string name="invalid_routing_code">Invalid Routing code</string>
+    <string name="invalid_bsb">Invalid BSB</string>
+    <string name="invalid_account_type">Invalid account type</string>
+    <string name="country_incorporation">Country of Incorporation</string>
+    <string name="invalid_incorporation">Invalid Country of Incorporation</string>
+    <string name="nationality_star">Nationality*</string>
+
+    <!-- Credit Card Details -->
+    <string name="cardholder_name">Cardholder name</string>
+    <string name="card_type">Card type</string>
+    <string name="card_number">Card number</string>
+    <string name="enter_card_number">Enter Card number</string>
+    <string name="scheme_name">Scheme name</string>
+    <string name="payment_date">Payment date</string>
+    <string name="reminder">Reminder</string>
+    <string name="days_in_advance">days in advance</string>
+
+    <!-- Add Credit Card Screen -->
+    <string name="invalid_cardholder_name">Invalid cardholder name</string>
+    <string name="invalid_bank_name">Invalid bank name</string>
+    <string name="invalid_card_number">Invalid card number</string>
+    <string name="invalid_payment_date">Invalid payment date</string>
+
+    <!-- Credit Card Payment -->
+    <string name="empty_credit_card_list">No credit cards added here - you can add some using the add new  sign at the top of the screen</string>
+    <string name="error_credit_card_list">Whoops! We are unable to show your credit cards at the moment.</string>
+
+    <!--
+    <string name="empty_travel_card_list">No travel cards added here - you can add some using the add new  sign at the top of the screen</string>
+-->
+    <string name="empty_travel_card_list">No saved travel cards available - you can add some by tapping the add new button at the top of the screen</string>
+    <string name="error_travel_card_list">Whoops! We are unable to show your travel cards at the moment.</string>
+
+    <!-- User Bank Account List -->
+    <string name="empty_bank_account_list">No bank account added here - you can add some using the add new sign at the top of the screen</string>
+    <string name="error_bank_account_list">Whoops! We are unable to show your bank accounts at the moment.</string>
+
+    <!-- Payment Modes Acreen -->
+    <string name="pm_pay_at_branch_dialog_title">Transaction pending</string>
+    <string name="pm_pay_at_branch_dialog_text">You have 4 hours to pay for the transaction at any Al Ansari Exchange branch.</string>
+    <string name="pm_bank_transfer_dialog_title">Reference number pending</string>
+    <string name="pm_bank_transfer_dialog_text">Enter bank transfer reference number in Transaction details /Pending transactions to complete.</string>
+    <string name="pm_priority_pay_dialog_title">Transaction pending</string>
+    <string name="pm_priority_pay_dialog_text">Fund receipt confirmation will be done on priority. Additional charges apply for priority services.</string>
+    <string name="pm_priority_transaction_pending_text"><b>Transaction will be confirmed immediately. Additional charges apply.</b></string>
+
+    <!-- Bank Transfer Payment Details Screen-->
+    <string name="choose_aae_bank">Choose the Bank you would like to transfer funds from</string>
+    <string name="aae_bank_details">Al Ansari Exchange bank details:</string>
+    <string name="aae_bank_acc_name">Account name: Al Ansari Exchange LLC</string>
+    <string name="charges_applicable">*Charges applicable</string>
+    <string name="for_assistance_call">For assistance call</string>
+    <string name="bt_payment_details_msg">Transaction will be processed upon fund confirmation only. It may vary between 4 to 24 hours.</string>
+
+    <!-- Payment Gateway Screen -->
+    <string name="payment_gateway_exit_dialog_title">Cancel transaction?</string>
+    <string name="payment_gateway_exit_dialog_text">Do you want to cancel this transaction?</string>
+
+    <!-- Transaction Details Screen -->
+    <string name="visit_to_nearest_branch_msg">Please visit any nearest Al Ansari Exchange branch within 4 hours to complete transaction</string>
+    <string name="transaction_completed">Transaction completed</string>
+    <string name="learn_to_transfer_title">How to make a\nBank Transfer</string>
+
+    <!-- Pending Txn Screen -->
+    <string name="empty_pending_arex">No transactions pending. Send money to your loved ones at the best rates using send money - value transfer</string>
+    <string name="empty_pending_ce">No transactions pending. Send money to your loved ones at the best rates using send money - instant transfer</string>
+    <string name="empty_pending_credit">No transactions pending. Pay your credit card dues using the credit card payment available in the side menu</string>
+    <string name="error_pending">Whoops! We are unable to show your pending transactions at the moment.</string>
+
+    <!-- Completed Txn Screen -->
+    <!--<string name="empty_completed_arex">No transactions yet. Why not send money to your loved ones with best rates ever using send money - value transfer</string>-->
+    <string name="empty_completed_arex">No transactions yet. Why not send money to your loved ones with best rates ever using send money</string>
+    <string name="empty_completed_ce">No transactions yet. Why not send money to your loved ones with best rates ever using send money - instant transfer</string>
+
+    <string name="empty_completed_credit">No transactions yet. Why not pay your credit card dues using the credit card payment available in the side menu</string>
+    <string name="error_completed_arex">Whoops! We are unable to show your completed transactions at the moment.</string>
+
+    <!-- Select Item Screen -->
+    <string name="empty_user_account">No local banks added here. Add your local UAE bank account to transfer funds.</string>
+    <string name="empty_bank_cash_pickup">Sorry we do not have cash pickup agent for the selected country. Alternatively, you can choose bank transfer option.</string>
+
+
+    <!-- Confirm Remove Dialog Box -->
+    <string name="confirm_delete_quick_send">Are you sure to delete this beneficiary from Quick Send?</string>
+    <string name="confirm_delete_beneficiary">Are you sure to delete this beneficiary?</string>
+    <string name="confirm_delete_credit_card">Are you sure to delete this Credit Card?</string>
+    <string name="confirm_delete_bank_account">Are you sure to delete this bank account?</string>
+    <string name="confirm_delete_rate_alert">Are you sure to delete this Rate Alert?</string>
+    <string name="confirm_delete_travel_card">Are you sure to delete this Travel Card?</string>
+
+    <string name="not_allowed_to_access">App usage is not permitted in your country.</string>
+    <string name="not_allowed_to_access_new">Sorry... This application is currently not available in your country/region.</string>
+    <string name="send_invoice_confirm_text">Invoice will be sent via email upon fund confirmation</string>
+    <string name="send_invoice_completed_text">Invoice will be sent via email upon fund confirmation</string>
+
+    <!-- Touch Id Dialog Vox -->
+    <string name="touch_id_dialog_title">Enable Touch ID</string>
+    <string name="touch_id_dialog_text">Easily sign-in using Touch ID / device fingerprint?</string>
+
+    <!-- Call Back Request -->
+    <string name="customer_care_mobile_number">600-54-6000</string>
+    <string name="request_for_call_back">Request a free call-back from Al Ansari Exchange. We\'ll give you a call back on +971  </string>
+    <string name="thank_you_for_call_back">Thank you for your Call Back request. We\'ll contact you within 1 working day.</string>
+
+    <!-- Contact Us Screen -->
+    <string name="invalid_name">Invalid name</string>
+    <string name="invalid_phone_number">Invalid phone number</string>
+    <string name="invalid_email_id">Invalid email-id</string>
+    <string name="invalid_subject">Invalid subject</string>
+    <string name="invalid_message">Invalid message</string>
+    <string name="contact_us_dialog_title">Thank you!</string>
+    <string name="contact_us_dialog_text">We have received your enquiry and will respond to you within 24 hours. For urgent enquiries, please contact us on 600-54-6000.</string>
+    <string name="contact_us_dialog_text_new">We will get back to you shortly.</string>
+
+    <!-- Dialog Screen-->
+    <string name="dialog_title">Dialog Title</string>
+    <string name="dialog_text">Dialog Text Dialog Text Dialog Text Dialog Text Dialog Text Dialog Text</string>
+    <string name="enter_email_id">Enter email-id</string>
+
+    <!-- Location Dialog -->
+    <string name="access_your_location">Access your location</string>
+    <string name="access_location_msg">Allow us to access your location while using the Al Ansari Exchange application.</string>
+    <string name="access_storage_msg">Allow us to access your storage while using the Al Ansari Exchange application.</string>
+
+
+    <!--Search Screen-->
+    <string name="search">Search...</string>
+
+    <string name="action_download">Download</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
+    <string name="error_no_internet">Please check your internet connection!</string>
+    <string name="empty_result">Sorry! No data found</string>
+    <string name="error_something_wrong">Sorry! Something went wrong</string>
+
+    <!--    <string name="empty_result">Whoops! We didn\'t find anything here!</string>
+        <string name="error_something_wrong">Whoops! Something went wrong here!</string>-->
+
+    <string name="rupee_symbol">\u20B9</string>
+    <string name="zero_rupee">\u20B9 0</string>
+    <string name="zero">0</string>
+
+    <string name="error_no_internet_found_splash">No Internet connection found. Check your connection or try again.</string>
+
+    <string name="error_invalid_eid_number">Invalid EID number.</string>
+    <string name="error_invalid_expiry_date">Invalid expiry date.</string>
+    <string name="error_invalid_date_of_birth">Invalid date of birth</string>
+    <string name="error_eid_verification">You have entered an invalid EID.</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="please_try_again">Please try again.</string>
+    <string name="please_try_after_some_time">Please try after sometime.</string>
+
+
+    <string name="select_valid_transaction_mode">Please select a valid transaction mode.</string>
+    <string name="select_valid_country">Please select a valid country.</string>
+    <string name="select_valid_transfer_type">Please Select a valid transfer type.</string>
+    <string name="select_valid_bank">Please select a valid bank.</string>
+    <string name="select_valid_service_type">Please select a vlid service type.</string>
+
+
+    <string name="call_customer_care">For further queries, please be in touch with our customer care team.</string>
+    <string name="ref_number_hint">Enter your bank transaction reference number</string>
+    <string name="enter_bank_ref_num_msg">Please enter your bank reference number in Pending Transactions after bank-transfer. Complete the transaction within 1 hour.</string>
+
+    <string name="transaction_processed_msg">Transaction will be processed once the funds are credited to the respective bank account of Al Ansari Exchange.</string>
+
+    <string name="complete_transaction_msg">The transaction status will remain \'Pending\' until you complete the transaction.</string>
+    <string name="transaction_rate">How do you rate the\nexperience?</string>
+
+
+    <string name="pin_setup_done">Your PIN Setup has been successfully done.</string>
+    <string name="transaction_is_pending">Please enter your bank reference number in Pending Transactions after bank-transfer. Complete the transaction within 1 hour.</string>
+    <string name="go_to_branch_text">As per Central Bank of the UAE guidelines, you are requested to complete a one-time physical verification at a branch prior registration.\n\nPlease visit a branch nearest to you with a valid Emirates ID within 10 days to complete the registration.</string>
+
+
+    <string name="notification_requires">Notification requires working internet connection and app permissions.</string>
+    <string name="notified_when_rate">You will be notified once the set rate is achieved.</string>
+
+
+    <!-- Service URL -->
+    <string name="service_url">http://www.parveenD.com</string>
+    <string name="lipsum_small">Lorem ipsum dolor sit amet, ut duis lorem provident sed felis blandit, condimentum donec lectus ipsum et mauris, morbi porttitor interdum feugiat nulla donec sodales, vestibulum nisl primis a molestie vestibulum quam</string>
+
+    <!-- Content Description -->
+    <string name="lipsum">Lorem ipsum dolor sit amet, ut duis lorem provident sed felis blandit, condimentum donec lectus ipsum et mauris, morbi porttitor interdum feugiat nulla donec sodales, vestibulum nisl primis a molestie vestibulum quam, sapien mauris metus risus suspendisse magnis. Augue viverra nulla faucibus egestas eu, a etiam id congue rutrum ante, arcu tincidunt donec quam felis at ornare, iaculis ligula sodales venenatis commodo volutpat neque, suspendisse elit praesent tellus felis mi amet. Inceptos amet tempor lectus lorem est non, ac donec ac libero neque mauris, tellus ante metus eget leo consequat. Scelerisque dolor curabitur pretium blandit ut feugiat, amet lacus pulvinar justo convallis ut, sed natoque ipsum urna posuere nibh eu. Sed at sed vulputate sit orci, facilisis a aliquam tellus quam aliquam, eu aliquam donec at molestie ante, pellentesque mauris lorem ultrices libero faucibus porta, imperdiet adipiscing sit hac diam ut nulla. Lacus enim elit pulvinar donec vehicula dapibus, accumsan purus officia cursus dolor sapien, eu amet dis mauris mi nulla ut. Non accusamus etiam pede non urna tempus, vestibulum aliquam tortor eget pharetra sodales, in vestibulum ut justo orci nulla, lobortis purus sem semper consectetuer magni purus. Dolor a leo vestibulum amet ut sit, arcu ut eaque urna fusce aliquet turpis, sed fermentum sed vestibulum nisl pede, tristique enim lorem posuere in laborum ut. Vestibulum id id justo leo nulla, magna lobortis ullamcorper et dignissim pellentesque, duis suspendisse quis id lorem ante. Vivamus a nullam ante adipiscing amet, mi vel consectetuer nunc aenean pede quisque, eget rhoncus dis porttitor habitant nunc vivamus, duis cubilia blandit non donec justo dictumst, praesent vitae nulla nam pulvinar urna. Adipiscing adipiscing justo urna pulvinar imperdiet nullam, vitae fusce rhoncus proin nonummy suscipit, ullamcorper amet et non potenti platea ultrices, mauris nullam sapien nunc justo vel, eu semper pellentesque arcu fusce augue. Malesuada mauris nibh sit a a scelerisque, velit sem lectus tellus convallis consectetuer, ultricies auctor a ante eros amet sed.\n\n
+Risus lacus duis leo platea wisi, felis maecenas rutrum in id in donec, non id a potenti libero eget, posuere elit ea sed pellentesque quis. Sunt lacus urna lorem elit duis, nibh donec purus quisque consectetuer dolor, neque vestibulum proin ornare eros nonummy phasellus. Iaculis cras eu at egestas dolor montes, viverra quisque malesuada consectetuer semper maecenas, a sed vitae donec tempor aliqua metus, ornare mollis suscipit et erat fusce, sit orci aut auctor elementum fames aliquam. Platea dui integer magnis non metus, minus dignissimos ante massa nostra et, rutrum sapien egestas quis sapien donec donec. Erat sit a eros aenean natoque, quam libero id lorem enim proin, lorem ipsum fermentum mattis metus et. Aliquam aliquet suscipit purus conubia at neque, platea vivamus vestibulum nulla quibusdam senectus, et morbi lectus malesuada gravida donec, elementum sit convallis pellentesque velit amet. Et eveniet viverra vehicula consectetuer justo, provident sed commodo non lacinia velit, tempor phasellus vel leo nisl cras, vivamus et arcu interdum dui eu amet. Volutpat wisi rhoncus vel turpis diam quibusdam, dapibus elit est quisque cubilia mauris, nulla elit magna tempor accumsan bibendum, lorem varius sed interdum eget mattis, scelerisque egestas feugiat donec dui molestie. Leo facilisis nisl sit montes ligula sed, enim commodo consectetuer nunc est et, ut sed vehicula dolor luctus elit. Fermentum cras donec eget nibh est vel, sed justo risus et pharetra diam, eu vivamus egestas ligula risus diam, sed justo eget hac ut mauris. Vestibulum diam nec vitae mi eget suspendisse, aenean arcu purus facilisis purus class in, id aliquam sit id scelerisque sapien etiam. Ut nullam sit sed at mauris lobortis, consequat dolor autem ipsum euismod nulla, elit quis proin eget conubia varius, erat arcu massa mus in mauris, scelerisque ut eu sollicitudin libero leo urna.\n\n
+Consectetuer luctus tempor elit ut dolor ligula, quis dui per dui hendrerit ante sagittis, in quisque pretium in eleifend enim. Condimentum iaculis vitae feugiat dis tellus vel, lectus dolor nec dui nulla nascetur, et pellentesque curabitur lorem leo velit eget. Id nascetur arcu lobortis suspendisse imperdiet urna, natoque nascetur ante in porta a, interdum hendrerit mi bibendum platea tellus, urna in enim ornare vestibulum faucibus enim. Leo fusce egestas ante nec volutpat, in tempor vel facilisis potenti ut, pede at non lorem a commodo, nulla dolor orci interdum vestibulum nulla. Dui nulla vestibulum quisque a pharetra porta, integer nec ipsum nec sed dui pharetra, magna et dignissim ipsum sed dictum, litora eros vivamus scelerisque libero ipsum. Sed ac ac lorem molestie adipiscing morbi, pellentesque imperdiet nunc quis morbi amet ante, libero dui ligula nec risus neque et, velit nonummy phasellus et facilisi amet, ligula in elementum non sapien pulvinar faucibus. Eu leo ut posuere sed aliquet, tincidunt vel urna volutpat tempus sem, sit felis aliquet vestibulum condimentum sit, amet nibh vel tellus purus ullamcorper libero, nulla vestibulum pede ut vestibulum pretium. Eu nulla vestibulum a neque in metus, quisquam nam sed cursus eget luctus, pede ultrices nec sed dignissim pellentesque, sit class cursus metus nulla placerat mauris, consequat mollis neque vivamus amet pede. Mauris dolor nulla diam eros bibendum, quam ante vestibulum morbi non ligula vel, molestie curabitur rhoncus nulla euismod interdum non. Nulla fringilla lorem mollis ad massa, sit molestie nibh lorem arcu volutpat, accumsan commodo lectus eu et donec, sit tempor tempus rutrum in curabitur amet. Nec urna euismod a tincidunt commodo, eu pede turpis libero vitae viverra, ante vestibulum nam non habitasse potenti, mauris imperdiet in in nunc convallis. Et nostra wisi in est accumsan vehicula, quisque vitae felis mauris sed vulputate nec, ante imperdiet sollicitudin massa iaculis massa sit.\n\n
+Quam libero nulla netus eu porta curae, ut nulla bibendum facilisis et urna sed, quis congue vestibulum aliquam interdum etiam. Nulla vel lobortis ullamcorper vitae excepturi, neque urna feugiat lectus vel lacinia, massa pretium orci eu metus neque vulputate. Imperdiet ac velit rhoncus nulla malesuada nullam, nec pulvinar justo gravida lorem rutrum magna, habitasse repudiandae mi eros vestibulum ante, nec euismod dui iaculis in turpis pretium, ac id metus egestas proin lacus lectus. Laoreet lorem nec vitae risus erat arcu, vitae quam ut in ante tristique, porta dolor pede quam et odio nam, arcu lacus sem congue ante cursus massa. Et mattis sagittis erat accumsan fusce quam, vehicula ligula beatae natoque fusce sodales conubia, habitasse metus cum magnis viverra nam cursus, egestas urna wisi primis blandit eu magna, eget libero elit lacus lorem dis aliquam. Ut mauris ante natoque lacus massa, justo a lectus sodales enim adipiscing id, accumsan ut ipsum vestibulum sed enim auctor, vitae congue tincidunt id phasellus lacinia scelerisque, tincidunt sapien nulla euismod volutpat iaculis. Platea sociis nec aliquet nec molestie, in mi et augue sapien in vivamus, integer fames proin vitae in ullamcorper et. Fringilla etiam sapiente rhoncus suspendisse nec id, lobortis cras eget egestas dui ac nec, justo lacus ut lorem bibendum quia eros, eget a gravida id donec nunc suscipit, porta sed in sodales non rutrum. Lectus vel dui elementum pellentesque magna aliquam, vitae non sit pede et fusce nibh, id id deserunt ornare dui sit condimentum, in adipiscing imperdiet turpis nam aliquet, facilisis metus magna lacus wisi facilisis tortor. Vulputate elit accumsan quam amet ligula, suspendisse lacus mi nonummy integer urna, libero nulla nunc varius in odio, laoreet nulla amet placerat amet nec. Consectetuer vel massa hendrerit vitae iaculis id, sed ut ut laudantium odio in, elit vestibulum duis ante maecenas interdum in, neque vehicula ultrices varius in quam, pede tellus pellentesque sed nullam quis.</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="error_mandatory_fields">Please complete all mandatory fields.</string>
+    <string name="error_enter_valid_exid">Please enter a valid eExchange user-id.</string>
+    <string name="error_enter_valid_password">Please enter a valid password.</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_enter_valid_email">Please enter a valid email-id.</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_user_credentials">Invalid user credentials.</string>
+    <string name="error_unable_to_send_otp">We are unable to send an OTP, Please try after some time.</string>
+    <string name="error_unable_to_process">Unable to process your request.</string>
+    <string name="error_register_again">Something went wrong here. Please register again.</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."
+    </string>
+
+
+    <string name="login_to_use">Please login to access this feature</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="selected_item">Selected item</string>
+
+
+    <string-array name="nav_headers">
+        <item>Home</item>
+        <item>Settings</item>
+        <item>Share App</item>
+        <item>Logout</item>
+    </string-array>
+
+    <!--Add Beneficiary-->
+    <string name="save">Save</string>
+    <string name="next">Next</string>
+    <string name="personal_info">Personal information</string>
+    <string name="account_info">Beneficiary information</string>
+    <string name="name">Name</string>
+    <string name="country">Country</string>
+    <string name="nationality">Nationality</string>
+    <string name="address">Address(optional)</string>
+    <string name="mobile">Mobile number</string>
+
+    <string name="bank">Beneficiary bank/Agent</string>
+    <string name="branch">Beneficiary branch</string>
+    <string name="payment">Pay for the transaction by</string>
+
+
+    //Buttons
+
+    <string name="btn_update">Update</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_pre_login">Sign up\n (or) Login</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_exit">Exit</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_upload">Save</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_error">Error</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_complete">Complete</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_send_now">Send Now</string>
+    <string name="btn_save_to_gallery">Save to gallery</string>
+    <string name="btn_send_again">Send again</string>
+    <string name="btn_make_another_txn">New Transaction</string>
+    <string name="btn_send_invoice">Send receipt</string>
+    <string name="btn_branch_locator">Branch locator</string>
+    <string name="btn_promo_code">PROMO CODE</string>
+
+    <string name="btn_touch_id">Use Touch ID</string>
+
+
+    <string name="btn_allow">Allow</string>
+    <string name="btn_deny">Deny</string>
+
+
+    <string name="payment_mode_dummy">simply dummy text of the printing and type setting industry.</string>
+
+
+    <string name="html_bullet">&#8226;</string>
+    <string name="indemnity_form_agree_text">I agree with the above mentioned terms and conditions.</string>
+    <string name="error_indemnity_form_text">You must agree with the terms and conditions to proceed using this application.</string>
+    <string name="indemnity_form_text" formatted="false"><![CDATA[<p>Please read these Terms and Conditions carefully before using this application. By clicking accept, you agree and understand that you have read, understood and acknowledged these terms and conditions. Other terms and conditions may be applicable to certain products, services or offers made available on the app, if there is any conflict or inconsistency between the terms and conditions, those specific terms will prevail to the extent of those products, services or offers. For your future reference, you can review these Terms and conditions on our website www.alansariexchange.com</p>
+<h2>1 Definitions and Terminologies</h2>
+<p>The following words and phrases have the meaning set out below unless the context indicates otherwise:</p>
+<ul>
+<li>&nbsp; &nbsp; KYC &ndash; know your customer (KYC) refers to due diligence activities conducted by Al Ansari Exchange as per regulatory requirements to ascertain the relevant information of the customer/sender.</li>
+</ul>
+<h2>2. General Terms and Conditions</h2>
+<h3>2.1 Registering for Al Ansari Exchange App</h3>
+<h3>2.1.1 Eligibility for using Al Ansari Exchange App</h3>
+<ol style="list-style-type: lower-alpha;">
+<li>You should be over 21 years of age</li>
+<li>You should be a resident in the UAE with a valid Emirates ID issued by EIDA</li>
+</ol>
+<h3>2.1.2 Registration Requirements</h3>
+<p>Registering Al Ansari Exchange Digital Channels requires the following conditions to be met:</p>
+<ul>
+<li>Register as a customer of Al Ansari Exchange and ensure all KYC information are up-to-date</li>
+<li>Provide original and valid Emirates ID at the branch for verification</li>
+<li>Read and agree to the Terms and Conditions listed on the digital channel used (mobile app/online portal)</li>
+</ul>
+<p>Activation of user for conducting online transactions is subject to AML/Compliance Department Approval, in line with Local and International AML/CFT Laws and Regulations. Application for activation of Mobile app user registration may be rejected due to insufficient/inaccurate information/documents, and matters related to AML Compliance Policies and Procedures. All subsequent changes in the profile of the customer are subject to enhanced verification and approval.</p>
+<h3>2.2 Features of the Al Ansari Exchange app</h3>
+<p>Al Ansari Exchange application offers various services and features not limited to those listed below. Al Ansari Exchange reserves all the rights to make change to the services and features at any time without prior notice or consent from you, for the latest features, you are advised to check the app.</p>
+<ul>
+<li>Send Local and International Remittance</li>
+<li>Pay for your credit card bills</li>
+<li>View your transaction history</li>
+<li>Take part in exclusive promotions</li>
+<li>Check our rates for remittance</li>
+<li>Check our buying and selling rates for physical currencies</li>
+<li>Set notification for your desired rate</li>
+<li>Locate Al Ansari Exchange Branches</li>
+</ul>
+<h3>2.3 Fees and Charges for Transactions</h3>
+<p>The Fees and charges for transactions are displayed at the time of initiating a transaction. VAT applicable on the transactions is also displayed. By proceeding with the transaction, it is understood that you have agreed to the applicable charges for the transaction.</p>
+<p><strong>2.4 Notifications</strong></p>
+<p>Al Ansari Exchange may send specific and timely notifications via email, pop up screen in your mobile device or web browser or SMS. You agree and acknowledge that the notifications may be delayed or prevented by factors affecting the service provider and other relevant entities, and we do not guarantee the delivery, timeline or accuracy of the notifications. We will not be liable to you for any losses, damages or expenses arising from</p>
+<ol>
+<li>Non-delivery, delayed delivery or wrong delivery of a notification.</li>
+<li>Inaccurate or incomplete content of a notification</li>
+<li>Use or reliance by you on the contents of an alert for any purpose.</li>
+</ol>
+<h3>2.5 Remittance Transactions</h3>
+<ol>
+<li>Transfers/Remittances are considered executed and delivered unless a claim is received within 3 months for cash payout and 6 months for bank transfer from the date the remittance was made.</li>
+</ol>
+<ol start="2">
+<li>Any amendments or re-issuance of the remittance transaction for whatsoever reason will be subject to regular charges and settlement of any rate differences, if applicable.&nbsp;</li>
+</ol>
+<ol start="3">
+<li>Transactions may be rejected automatically while initiating the transaction, or subsequently or while making the payment as per updated Regulatory/Correspondent Bank&rsquo;s Compliance Policy and Procedures.&nbsp;</li>
+</ol>
+<ol start="4">
+<li>Upon submitting the transaction, you confirm and acknowledge the correctness, authenticity and legality of all the transaction details and will be held responsible for the same. Al Ansari Exchange, its employees and its agents are indemnified and held harmless from any claims including but not limited to delays, delivery failures, and mistakes, losses resulting from any wrong information in the transaction receipt as well as force majeure events or any other circumstances beyond our control. Our liability is limited to performing necessary amendments at the shortest time if possible. Al Ansari Exchange has the right to recover any amount paid due to errors or oversight.&nbsp;</li>
+</ol>
+<ol start="5">
+<li>Refund against Cancellation of Transfers or any other Remittance transaction returned unpaid for whatsoever reason will be refunded to the sender at the prevailing market buying rate or transaction rate whichever is lower, excluding the sending charges, VAT and any deductions from the beneficiary bank, cancellation fees and any other expense incurred as a result. A confirmation of non-payment and cancellation of the original instruction is required from our correspondent bank or agent before refund is made. Sender has to submit a written request at branch in order to initiate the cancellation procedure.</li>
+</ol>
+<ol start="6">
+<li>Al Ansari Exchange reserves the right to use services of intermediary banks and financial institutions in any country of its choice for the execution of this transfer. Correspondent and/or intermediary charges are applicable to some countries and will be deducted at the receiving end.&nbsp;</li>
+</ol>
+<ol start="7">
+<li>All types of remittances conducted are subject to local, Federal and international Laws as well as the Central Bank of UAE regulations. All customers&rsquo; information and supporting documents must be provided as per requirements of local and international regulations and standards. The transaction maybe blocked if found suspicious. The sender and beneficiary will be fully responsible for providing necessary evidence and clarification about any inquiry, including the exact purpose of remittance, relationship, source of fund, etc. to prove legitimacy and legality of the information and fund involved as well as any follow-ups required with the concerned authorities to effect the payment or claim a refund. In such cases Al Ansari Exchange will not bear any responsibility.&nbsp;</li>
+</ol>
+<ol start="8">
+<li>Al Ansari Exchange will take all possible efforts to resolve any issues for services provided by a third party by coordinating with the concerned service provider. Al Ansari Exchange has no liability as an agent towards any related services. The third party will be fully liable for the completion of its service in accordance with its terms and conditions.&nbsp;</li>
+</ol>
+<ol start="9">
+<li>It is your responsibility to safeguard your login credentials and devices in order to protect yourself. All transactions submitted through your online profile after a login, will be considered as submitted by you and without any conditions or stipulations attached.&nbsp;</li>
+</ol>
+<ol start="10">
+<li>For Western Union&reg; Transfers, please refer to their existing terms and conditions available on leaflets within our network of branches or the Western Union&reg; website&nbsp;</li>
+</ol>
+<ol start="11">
+<li>Customer understands and agrees that only personal transactions are allowed through the Digital channels.</li>
+</ol>
+<h3>2.6 Bill Payments</h3>
+<ol>
+<li>Bill Payments (including credit card bill payment) may have additional charges and would be intimated at the time of the transaction.&nbsp;</li>
+</ol>
+<ol start="2">
+<li>Bill Payments (including credit card payments) are not instant payments and may take 1-2 working days for the selected institution to receive the payment&nbsp;</li>
+</ol>
+<ol start="3">
+<li>Al Ansari exchange is not liable for any damages or penalties incurred by the sender as a result of paying the bill through the digital channel. The responsibility of Al Ansari Exchange is to process the transaction as per the details provided by the sender upon receiving fund confirmation.</li>
+</ol>
+<h3>2.7 Paying with Bank Transfer</h3>
+<ol>
+<li>Please use your own account for funding the transactions. We do not accept payments made through third party accounts via Net Banking. Using third party accounts would result in your transaction being canceled / rejected in order to protect you from fraud.&nbsp;</li>
+</ol>
+<ol start="2">
+<li>Transaction will be processed once the funds are credited to the respective bank account of Al Ansari Exchange.&nbsp;</li>
+</ol>
+<ol start="3">
+<li>Al Ansari Exchange cannot be held liable for any interbank charges by your bank for making an internal fund transfer.</li>
+</ol>
+<h3>2.8 Transaction History</h3>
+<p>As part of the digital channel offering, Transaction History will be available for viewing purpose. However this is provided for reference only and should not be considered as legal proof of transactions. The transactions listed may not be comprehensive or completely accurate due to differences in customer profile information during the course of his/her relationship with Al Ansari Exchange. You have to make a formal request to Al Ansari Exchange branch for a statement of transactions made at Al Ansari Exchange.&nbsp;</p>
+<p>Status of Transactions:</p>
+<ul>
+<li>Completed (or) processed: Transactions have been processed by Al Ansari Exchange and does not mean credit/receipt to the beneficiary. To know the credit status, you will have to make an enquiry through the contact us page stating the transaction number.</li>
+<li>Created: Transaction has not yet been processed by Al Ansari Exchange. If the payment mode chosen was &ldquo;Pay at Branch&rdquo;, you have to make the payment at any Al Ansari Exchange branch within the timeframe stated at the time of transaction creation. If the payment mode is fund transfer via bank, we are awaiting credit of the amount to our account to process the transaction. A created transaction is a temporary status and may eventually become either completed, rejected or expired.</li>
+<li>Expired (or) rejected (or) canceled: Transaction has not been processed by Al Ansari Exchange and will definitely not be processed. This is due to non-receipt of payment for the transaction.</li>
+</ul>
+<h3>2.9 Login Credentials and OTP</h3>
+<ol style="list-style-type: lower-alpha;">
+<li>Al Ansari Exchange Digital Channels requires a login, with the login credentials set up by you, to start the services. OTP (One Time Password) are implemented at critical places to ensure control on access and activity on the app.</li>
+<li>You are responsible for the confidentiality and use of your login credentials and OTP. You must not disclose your login credentials or OTP to any third party, and must not authorize any third party to use your profile for any purpose whatsoever. You agree to take reasonable measures and due care to protect your login credentials against misuse by third parties. As a means of precaution, you understand that it is recommended to change the login credentials at periodic intervals.</li>
+<li>You must notify Al Ansari exchange immediately if you have knowledge or have reason for suspecting that the confidentiality of the your login credentials have been compromised or if there has been any unauthorized use of your Digital profile (such as where you notice any unauthorized transactions or unauthorized access to your Accounts) or your login credentials has been disabled after a number of incorrect password attempts.</li>
+<li>You must notify Al Ansari Exchange when you update your mobile number in order to avoid OTP being sent to the new user of the mobile number and potentially lead to breach of your online profile.</li>
+</ol>
+<h3>2.10 Profile Inactivation</h3>
+<p>Al Ansari Exchange has the right to inactivate the digital channels profile of a customer without any intimation, due to untimely response or insufficient/inaccurate information provided by the customer and matters related to AML Compliance Policies and Procedures of Al Ansari Exchange. Al Ansari Exchange will not be liable for any consequences arising out of such inactivation. Inactivation of a profile does not necessarily mean the customer cannot use the traditional branches for conducting future transactions. Any transaction in process at the time of profile inactivation will be processed as per the terms and conditions associated with the said service. Customer can request for the inactivation of his/her profile by visiting any Al Ansari Exchange branch and submitting a formal request.</p>
+<h3>2.11Security Issues, Software and Hardware</h3>
+<p>You will ensure that you maintain and update/upgrade all software, hardware and/or equipment, as applicable from time to time, to avail, access and use the services of Al Ansari Exchange and be compatible with Al Ansari Exchange digital channels at your own risk. You undertake to ensure that computers or mobile phones you use to access Al Ansari Exchange digital channels are free from any malware, virus, Trojan or such other computer/internet contaminants. Al Ansari exchange is at liberty to change, vary or upgrade its software, hardware, operating systems, etc., from time to time and will be under no obligation to support your software, hardware, operating systems and that the same will be your sole responsibility. Al Ansari Exchange will not be liable for any losses that may be suffered by you as a result of any incompatibility between the Service software and any computer, mobile phone or other device from which you may use to access the Service or non-use of the Service due to such incompatibility issues. The digital platforms are provided &ldquo;as is&rdquo;, without any warranties of any kind. To the fullest extent permissible under applicable laws, Al Ansari Exchange disclaims all such warranties, express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, non-infringement, accuracy, freedom from errors, suitability of content, or availability.</p>
+<p>You agree not to engage in any of the following activities:</p>
+<ol style="list-style-type: lower-roman;">
+<li>Copying, distributing, or disclosing any part of the platform in any medium, including without limitation by any automated or non-automated &ldquo;scraping&rdquo;.</li>
+<li>Using any automated system, including without limitation &ldquo;robots,&rdquo; &ldquo;spiders,&rdquo; &ldquo;offline readers,&rdquo; etc., to access the digital platform in a manner that sends more request messages to the servers than a human can reasonably produce in the same period of time.</li>
+<li>Transmitting spam, chain letters, or other unsolicited email.</li>
+<li>Attempting to interfere with, compromise the system integrity or security or decipher any transmissions to or from the servers running the platform.</li>
+<li>Taking any action that imposes, or may impose at our sole discretion an unreasonable or disproportionately large load on our infrastructure.</li>
+<li>Uploading invalid data, viruses, worms, or other software agents through the platform.</li>
+<li>Collecting or harvesting any personally identifiable information from the platform.</li>
+<li>Using the platform for any commercial solicitation purposes.</li>
+<li>Impersonating another person or otherwise misrepresenting your affiliation with a person or entity, conducting fraud, hiding or attempting to hide your identity.</li>
+<li>Interfering with the proper working of the platform.</li>
+<li>Accessing any content on the Site through any technology or means other than those provided or authorized by the platform.</li>
+<li>Bypassing the measures we may use to prevent or restrict access to the platform, including without limitation features that prevent or restrict use or copying of any content or enforce limitations on use of the platform or the content therein.</li>
+</ol>
+<h3>2.12 Record Maintenance</h3>
+<p>Al Ansari Exchange will maintain records of transactions, KYC information, customer feedback or complaints as mandated by the law and regulations. The period of retention of such records will be in the sole discretion of al Ansari Exchange as per statutory regulation or our internal policy. You hereby agree that you will not challenge or dispute the admissibility, reliability, accuracy or the authenticity of the contents of such records merely on the basis that such records were set out in electronic form or were the output of a computer system, and you hereby waive any of your rights to object.</p>
+<h3>2.13 Liability</h3>
+<p>You acknowledge and agree that:</p>
+<ol style="list-style-type: lower-alpha;">
+<li>Any Transaction, which originates from your Mobile or a Web browser, using your User ID and Password/PIN, whether initiated by you or not will be deemed to have originated from you.</li>
+<li>You will be liable for all loss from unauthorized transactions if your credentials are compromised and will not hold Al Ansari Exchange liable for any loss that you may suffer as a result.</li>
+<li>Illegal or improper use of Digital channels by you or any other person will result in suspension of your account.</li>
+<li>You are aware that internet/email is not a secure or error-free medium of communication and of the possible risks involved in connection with the transmission of information via email/internet.</li>
+<li>You are aware that universally it is understood that there is no way to verify that technologies are fool proof or tamper proof and/or to keep up with the latest technology as available at any particular time.</li>
+<li>You understand and agree that Al Ansari Exchange does not accept liability for any errors or omissions in the content of the email messages and its attachments. You undertake to keep us indemnified at all times against, and to save us harmless from all actions, proceedings, claims, loss, damage, costs and expenses including consequential losses/damages which may be brought against us and which will have arisen either directly or indirectly out of or in connection with us sending account statements and other documents on email.</li>
+</ol>
+<h3>2.14 Accuracy of information</h3>
+<p>You will be responsible for the correctness of information supplied by you to Al Ansari Exchange through the digital channel or through any other means such as electronic mail or written communication. Al Ansari Exchange accepts no liability for the consequence arising out of erroneous, incorrect or incomplete information supplied by you. If you suspect that there is an error in the information supplied by you, you will advise Al Ansari Exchange as soon as possible. Al Ansari Exchange will endeavor to correct the error wherever possible on a &lsquo;best effort&rsquo; basis.</p>
+<h3>2.15 Data Processing</h3>
+<p>Al Ansari Exchange&nbsp;places utmost importance on the privacy and protection of clients and considers this to be a critical part of the services rendered. You accept that all information/instructions which will be shared by you shall be governed by the Al Ansari Exchange Privacy Policy. Al Ansari Exchange Privacy Policy can be found on the Mobile App and/or on the Website (<a href="http://www.alansariexchange.com">www.alansariexchange.com</a>).&nbsp;</p>
+<p>You hereby consent to Al Ansari Exchange&rsquo;s collection, use, disclosure and processing of information in accordance with Al Ansari Exchange Privacy Policy and these Terms and Conditions.&nbsp;</p>
+<p>Al Ansari Exchange processes your personal data for your each transaction/payment, as far as necessary, during the entire duration of the business relationship as well as in accordance with the mandatory record retention as required by the Law.&nbsp;</p>
+<p>As part of our KYC process, you must provide us with all personal details which are necessary to record in our system to maintain the business relationship with you and also any additional data that we are required by the law to collect or by the requirement of our correspondent banking agents. If you do not provide us with such data, we cannot proceed further with your membership registration or execute any payments/transactions.&nbsp;</p>
+<p>By signing this form you are confirming that you are consenting to Al Ansari Exchange for recording/processing your personal data for the following purposes:&nbsp;</p>
+<p>-&nbsp; To record your personal details in our system for our KYC/due diligence purpose;</p>
+<p>- To process your transaction with basic personal details, through data processors and correspondent/intermediary banking agents;</p>
+<p>-&nbsp; To provide additional details to correspondent/intermediary banking agents, when requested;</p>
+<p>-&nbsp; To provide your KYC information to Law Enforcement Agencies/Financial Regulators, when requested;</p>
+<p>- To store your transaction details and KYC information at warehouses for record retention purpose.</p>
+<h3>2.16 Assignment</h3>
+<p>Al Ansari Exchange has the exclusive right to assign or transfer its right and obligations under the terms to anybody or any entity of its choice in whole or in part and in such manner and on such terms and conditions as Al Ansari Exchange may decide. Any such assignment or transfer will conclusively bind you and all other persons. You are not entitled to assign or transfer any of your right and obligations under these Terms and Conditions to any third party without prior written consent of Al Ansari Exchange.</p>
+<h3>2.17 Intellectual Property</h3>
+<p>You acknowledge that the intellectual property rights of Al Ansari Exchange are owned by Al Ansari Exchange, its Affiliates, or the Providers. No part or parts of the Al Ansari Exchange Digital Channels may be reproduced, distributed, republished, displayed, broadcast, hyperlinked, transmitted, adapted, modified to create derivative works or otherwise commercially exploited in any manner or by any means or stored in an information retrieval system without our prior written permission.</p>
+<h3>2.18 Indemnification</h3>
+<p>You agree and undertake to fully indemnify Al Ansari Exchange, its affiliates, service providers, subcontractors, and agents, and to hold each of the aforementioned parties harmless, from and against all liabilities (including settlement sums), losses, charges and expenses (including legal fees and disbursements on a solicitor-client basis), claims, demands, actions and proceedings which Al Ansari Exchange, its affiliates, service providers, subcontractors and agents may incur, suffer or sustain directly or indirectly from or by reason of or in relation to the use, misuse or purported use or misuse of Al Ansari Exchange Digital Channels, and will pay such monies to Al Ansari Exchange upon its demand.</p>
+<h3>2.19 Variation in Terms and Conditions</h3>
+<p>Al Ansari Exchange may by notice through digital channels or by such other method of notification as it may designate (which may include notification by way of email), vary these Terms and Conditions, whereupon such a variation will take effect on the date specified by us (which will generally be no less than thirty (30) days from the date of the notice). If you use Al Ansari Exchange Digital Channels including any new services after such date, you are deemed to have accepted such variations and such amended Terms and Conditions will be binding on you. If you do not accept the variation, you must stop using Al Ansari Exchange Digital Channels. Al Ansari Exchange has the right to vary these Terms and Conditions in the manner aforesaid without the consent of any person or entity who is not a party to this Terms and Conditions.</p>
+<p>&nbsp;</p>
+<h3>2.20 Illegality</h3>
+<p>If at any time any provision of these Terms and Conditions will be or will become illegal, invalid or unenforceable in any respect, the legality, validity and enforceability of the remaining provisions of these Terms and Conditions will not be affected or impaired thereby, and will continue in force as if such illegal, invalid or unenforceable provision was severed here from. Waiver of any of the covenants to be performed by you or any breach by you will not be construed to be a waiver of any succeeding breach by you or of any other covenant. Our rights and remedies in these Terms and Conditions are cumulative and not exclusive of any other rights or remedies provided by law</p>
+<h3>2.21 Notice</h3>
+<h3>2.21.1 Communication from Al Ansari Exchange</h3>
+<p>You hereby authorize Al Ansari Exchange to send promotional messages from time to time, by way of SMS and/or Email and/or Notifications on Phone. Al Ansari Exchange is entitled to send you &ldquo;notifications in the Al Ansari Exchange and Email/SMS notifications relating to your access to and use of the Al Ansari Exchange App and any updates on related services.</p>
+<h3>2.21.2 Communications through electronic means</h3>
+<p>Electronic delivery may be in the form of electronic mail, an attachment to the electronic mail, or in the form of an available download from the Digital Channels. Al Ansari Exchange will be deemed to have fulfilled its legal obligation to deliver to you any document if such document is sent via electronic means. Failure to advise Al Ansari Exchange of any difficulty in opening a document so delivered within twenty-four (24) hours after delivery will serve as an affirmation regarding the acceptance of the document. It may be noted that alerts if sent through SMS will be sent to the registered mobile number only. All communication by Al Ansari Exchange will be in English and will be through email to your email address as per our records; or using electronic services or any other electronic media or through your mobile. Where necessary, Al Ansari Exchange may also give any notice and communication through the press, radio, television, internet or any other media at the discretion of Al Ansari Exchange choice. Any communication from Al Ansari Exchange to you will be deemed to have been received by you and complete:&nbsp;</p>
+<ol style="list-style-type: lower-alpha;">
+<li>If sent by email &ndash; at the time of sending to your email address.</li>
+<li>If sent by electronic services &ndash; at the time it was sent.</li>
+<li>If made through the press, radio, television or internet &ndash; at the time it was made.</li>
+<li>If made over the Mobile App or Online Portal &ndash; at the time of publishing.</li>
+</ol>
+<h3>2.22.3 Feedback and Complaint Mechanism</h3>
+<p>Customers can contact Al Ansari Exchange through the contact us page in the mobile app or online portal or email us at <a href="mailto:hello.app@alansari.ae">hello.app@alansari.ae</a> for registering feedback or complaint. Al Ansari Exchange reserves the right to investigate complaints regarding the use of digital channels or reported violation of these terms and to take any action deemed appropriate, including but not limited to reporting any suspected unlawful activity to law enforcement official, the appropriate authorities or regulators and disclosing any information necessary or appropriate to such officials, authorities or regulators, whether located in the UAE or outside the UAE.</p>
+<h3>2.22.4 Governing Law and Jurisdiction</h3>
+<p>These Terms and Conditions for Al Ansari Exchange app shall be governed by and construed in accordance with the federal laws of the United Arab Emirates and the laws as applicable in the Emirate of Dubai and you irrevocably submit to the exclusive jurisdiction of the Dubai courts.</p>
+<h2>3. Electronic Signature</h2>
+<p>Electronic Signature (hereinafter referred to as &lsquo;eSignature&rsquo;) shall have the meaning ascribed under Federal Law No. (1) of 2006 On Electronic Commerce and Transactions or its subsequent amendments thereto. The following terms and conditions apply to your use of eSignature across the application/platform.&nbsp;</p>
+<ol>
+<li>By ticking &ldquo;I agree with the above mentioned term and conditions&rdquo; you are signing these terms and conditions electronically. You provide your consent to be legally bound by the terms and conditions and also to provide your undertaking and approval to obtain and disclose information about you as per the terms and conditions. You agree your eSignature is the legal equivalent of your handwritten signature recognized before all authorities and banks documents whether located in the UAE or outside of the UAE.&nbsp;</li>
+</ol>
+<ol start="2">
+<li>You further agree that your use of a key pad, mouse or other device to select an item, button, icon or similar act/action, or to otherwise provide Al Ansari Exchange, or in accessing or making any transaction regarding any agreement, acknowledgement, consent, disclosures or conditions, with Al Ansari Exchange or a third party using Al Ansari Exchange system, constitutes your signature, acceptance and agreement, as if actually signed by you with a pen in writing.&nbsp;</li>
+</ol>
+<ol start="3">
+<li>You also agree that no certification authority or other third party verification is necessary to validate your eSignature and that the lack of such certification or third party verification will not in any way affect the enforceability of your eSignature or any resulting contract between you and Al Ansari Exchange.</li>
+</ol>
+<h2>Do not agree until you have read the above Terms and Conditions</h2>
+<p>By my agreement below, I confirm that I have read, fully understand and accept all terms of the above Terms and Conditions.&nbsp;</p>
+<p>Please note that your agreement will be accepted as the electronic equivalent to a hand-written signature and/or as an electronic signature as may be permitted under/by any applicable law</p>]]></string>
+
+    <!-- Login Screen -->
+    <string name="tut_login_change_btn_title">Change mobile number</string>
+    <string name="tut_login_change_btn_text">Tap here to login with another account.</string>
+    <string name="tut_login_forgot_pin_title">Forgot PIN?</string>
+    <string name="tut_login_forgot_pin_text">Tap here to reset your PIN.</string>
+
+    <!-- Dashboard Screen -->
+    <string name="tut_db_nav_menu_title">Navigation Menu</string>
+    <string name="tut_db_nav_menu_text">Tap here to explore the features in this app.</string>
+
+    <string name="tut_db_send_money_title">Send Money</string>
+    <string name="tut_db_send_money_text">Tap here to Send Money.</string>
+
+    <string name="tut_db_my_recipients_title">My Recipients</string>
+    <string name="tut_db_my_recipients_text">Tap here to Manage your beneficiaries.</string>
+
+    <string name="tut_db_my_transactions_title">My Transactions</string>
+    <string name="tut_db_my_transactions_text">Tap here to view your completed transactions.</string>
+
+    <string name="tut_db_pending_transactions_title">Pending Transactions</string>
+    <string name="tut_db_pending_transactions_text">Tap here to view your pending transactions.</string>
+    <string name="new_offers_coming">New offers Coming Soon</string>
+    <string name="currency_not_selected">Please Select Currency</string>
+    <string name="click_to_learn"><u>Click to learn how to make bank transfer</u></string>
+    <string name="notification_error_ssl_cert_invalid">SSL error occurred. Would you like to proceed?</string>
+
+    <!--Western Union-->
+    <string name="currency">Currency</string>
+    <string name="receiver_name_type">Receiver Name Type</string>
+    <string name="wu_number">My WU Number</string>
+    <string name="wu_promo_code">WU PROMO CODE</string>
+    <string name="click_here_to_see_country_info"><u>click here to see country information</u></string>
+    <string name="wu_terms">I have read and agree to the <a href="terms:">terms and conditions</a> of Western Union Send Money Service</string>
+    <string name="terms_cond_label">I have read and agree to the <a href="terms:">terms and conditions</a></string>
+
+    <!-- <string name="facebook_app_id">725768121155594</string>
+    <string name="fb_login_protocol_scheme">fb725768121155594</string>-->
+
+
+    <string name="facebook_app_id">398397477659842</string>
+    <string name="fb_login_protocol_scheme">fb398397477659842</string>
+
+    <string name="please_submit_email">To complete your profile, kindly provide your email ID</string>
+    <string name="CE_Number">CE Number</string>
+    <string name="reg_note">Note: You should be UAE resident over 21 years of age to be able to send money online</string>
+    <string name="reg_for_sending_money">Register for sending money using</string>
+    <string name="btn_click_here">CLICK HERE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Alert Dialog -->
+    <!--<style name="MyAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>-->
+
+    <style name="MyAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">#000</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+
+    <!--                            ERROR HANDLING                                                   -->
+
+    <string name="getAdditionalInfo">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="getAaeBank">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="checktxnlimit">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="remittanceSendMoney">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="remittancecreditcard">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="getremittancecreditcard">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="updateBankRemittance">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="setTxnStatusCompleted">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="setcustrating">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="getcurrencyconvertor">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="getforeigncurrency">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="rateandchargesendmoney">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="getrateandchargesendmoneyOld">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="getsavedratealerts">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="saveratealert">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="deleteratealert">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="calculateratealert">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="validateTtTxn">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="validateremittancesendmoney">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="getremittancestatus">There was an error in processing the transaction. Kindly contact us at 04-5010555, to assist you with the transaction. We apologize for any inconvenience caused</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="emirates_id_card_number">Emirates ID Card Number</string>
+    <string name="emirates_id_number">Emirates ID Number</string>
+    <string name="charges">Charges</string>
+    <string name="txt_inclusive_sending_changes_nd_pmt_crgs">*inclusive of sending charge and payment mode charges.</string>
+    <string name="star">*</string>
+
+    <string name="txt_credit_card">CREDIT CARD</string>
+    <string name="txt_track_transfer">Track Transfer</string>
+    <string name="benificary_default_text">Select your saved benefeciary or tap on Add New to add a new benefeciary.\n\nTip:Scroll left or right to find your beneficiary.\n\nFor assistance call 600 54 6000.</string>
+    <!--                                     Completed                                               -->
+
+    <!-- <string name="dynamic_dialog_title">To update your Emirtes Id, Confirm the below fields</string>-->
+    <string name="dynamic_dialog_title">Kindly confirm the following</string>
+
+
+</resources>

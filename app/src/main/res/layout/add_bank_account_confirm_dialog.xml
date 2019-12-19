@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_bank_account_confirm_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/am_bank_account_header_bg"
+        android:paddingBottom="@dimen/dimens_8">
+
+        <include layout="@layout/toolbar_actionbar_transparent" />
+
+        <LinearLayout
+            android:id="@+id/confirm_data_layout"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimens_6"
+            android:layout_marginLeft="@dimen/dimens_6"
+            android:layout_marginRight="@dimen/dimens_6"
+            android:layout_marginTop="@dimen/dimens_12"
+            android:background="@color/bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimens_6"
+                android:paddingLeft="@dimen/dimens_10"
+                android:paddingRight="@dimen/dimens_10"
+                android:paddingTop="@dimen/dimens_8">
+
+                <TextView
+                    android:id="@+id/name_label_c"
+                    style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                    android:text="@string/account_name" />
+
+                <TextView
+                    android:id="@+id/name_c"
+                    style="@style/SendMoneyBeneficiaryDetailsText"
+                    android:layout_below="@+id/name_label_c"
+                    android:text="Parveen D" />
+            </RelativeLayout>
+
+            <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimens_10"
+                android:paddingRight="@dimen/dimens_6"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingBottom="@dimen/dimens_6"
+                    android:paddingRight="@dimen/dimens_4"
+                    android:paddingTop="@dimen/dimens_8">
+
+                    <TextView
+                        android:id="@+id/bank_name_label_c"
+                        style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                        android:text="@string/bank_name" />
+
+                    <TextView
+                        android:id="@+id/bank_name_c"
+                        style="@style/SendMoneyBeneficiaryDetailsText"
+                        android:layout_below="@+id/bank_name_label_c"
+                        android:text="Federal Bank" />
+                </RelativeLayout>
+
+                <View style="@style/SendMoneyBeneficiaryDetailsDividerVertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingBottom="@dimen/dimens_6"
+                    android:paddingLeft="@dimen/dimens_10"
+                    android:paddingTop="@dimen/dimens_8">
+
+                    <TextView
+                        android:id="@+id/branch_name_label_c"
+                        style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                        android:text="@string/branch_name" />
+
+                    <TextView
+                        android:id="@+id/branch_name_c"
+                        style="@style/SendMoneyBeneficiaryDetailsText"
+                        android:layout_below="@+id/branch_name_label_c"
+                        android:text="Bengaluru" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimens_6"
+                android:paddingLeft="@dimen/dimens_10"
+                android:paddingRight="@dimen/dimens_10"
+                android:paddingTop="@dimen/dimens_8">
+
+                <TextView
+                    android:id="@+id/iban_number_label_c"
+                    style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                    android:text="@string/iban_number" />
+
+                <TextView
+                    android:id="@+id/iban_number_c"
+                    style="@style/SendMoneyBeneficiaryDetailsText"
+                    android:layout_below="@+id/iban_number_label_c"
+                    android:text="898755601234" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <app.alansari.customviews.progressbutton.CircularProgressButton
+            android:id="@+id/dialog_btn"
+            style="@style/CircularProgressSaveBtn"
+            android:layout_below="@+id/confirm_data_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimens_25"
+            android:layout_marginTop="@dimen/dimens_25"
+            android:drawablePadding="@dimen/dimens_8"
+            android:text="@string/btn_save"
+            app:cpb_colorIndicator="@color/color70D303"
+            app:cpb_colorIndicatorBackground="@color/colorWhite"
+            app:cpb_colorProgress="@color/colorTransparent"
+            app:cpb_paddingProgress="@dimen/dimens_8"
+            app:cpb_selectorIdle="@color/cpb_idle_state_selector_trans"
+            app:cpb_textError="Try Again" />
+    </RelativeLayout>
+
+
+</ScrollView>
+
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/DialogCardView">
+
+    <!--@dimen/layout_width-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/close_btn"
+            android:layout_width="@dimen/dimens_35"
+            android:layout_height="@dimen/dimens_35"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/dimens_6"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/svg_close_icon_blue" />
+
+        <TextView
+            android:id="@+id/dialog_title"
+            style="@style/DialogTextView"
+            android:layout_below="@id/close_btn"
+            android:layout_marginBottom="@dimen/dimens_15"
+            android:paddingTop="@dimen/dimens_1"
+            android:textSize="@dimen/dimens_13sp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

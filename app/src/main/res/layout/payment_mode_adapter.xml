@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_item_trans_over_bg">
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/radio"
+        android:layout_width="@dimen/dimens_15"
+        android:layout_height="@dimen/dimens_15"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dimens_3"
+        android:src="@color/blue"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="2dp" />-->
+
+    <ImageView
+        android:id="@+id/radio"
+        android:layout_marginLeft="@dimen/dimens_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_radio_button_checked_black_24dp" />
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/DialogTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/radio"
+        android:gravity="left"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dimens_5"
+        android:paddingRight="@dimen/dimens_12"
+        android:text="Parveen D"
+        android:textColor="@color/color2887C7"
+        android:textSize="@dimen/dimens_12sp" />
+
+
+    <TextView
+        android:id="@+id/learn_how"
+        style="@style/DialogTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/name"
+        android:gravity="left"
+        android:maxLines="1"
+
+
+        android:text="Learn How"
+        android:background="@drawable/rectangle_learn_how"
+        android:textColor="@color/colorPrimary_red"
+        android:textSize="@dimen/dimens_8sp" />
+
+    <View
+        android:layout_marginTop="@dimen/dimens_10"
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimens_0.5"
+        android:layout_below="@+id/learn_how"
+        android:background="@color/colorB7B3B3" />
+
+</RelativeLayout>

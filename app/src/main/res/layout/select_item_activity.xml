@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_45"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/dimens_4"
+        android:paddingTop="@dimen/dimens_4"
+        android:paddingLeft="@dimen/dimens_8">
+
+        <AutoCompleteTextView
+            android:id="@+id/search_view"
+            fontPath="fonts/HelveticaNeue.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/close_btn"
+            android:background="@drawable/bg_grey_outline"
+            android:cursorVisible="true"
+            android:drawableRight="@drawable/ic_search_black_over"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:hint="Type / Select Bank Name"
+            android:imeOptions="actionDone"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dimens_12"
+            android:paddingRight="@dimen/dimens_12"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/list_group_title"
+            android:textSize="@dimen/dimens_12sp" />
+
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="@dimen/dimens_35"
+            android:layout_height="@dimen/dimens_35"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimens_8"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:padding="@dimen/dimens_10"
+            android:tint="@color/login_submit_btn_bg"
+            app:srcCompat="@drawable/svg_close" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/recycler_view_full" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/add_bank_btn"
+            style="@style/FloatingRoundButtonNew"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_add_new_bank" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimens_8"
+
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_view_reload_currencies"
+        style="@style/SendMoneyBeneficiaryDetailsText"
+        fontPath="fonts/Roboto-Medium.ttf"
+        android:text="Reload Currencies"
+        android:layout_gravity="center"
+        android:textStyle="normal"
+        android:textColor="@color/color1E6AB3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_0.5"
+        android:background="@color/colorB7B3B3" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimens_10"
+        android:paddingRight="@dimen/dimens_6"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingBottom="@dimen/dimens_6"
+            android:paddingRight="@dimen/dimens_4"
+            android:paddingTop="@dimen/dimens_6">
+
+            <TextView
+                android:id="@+id/tv_label_currency1"
+                android:text=""
+                style="@style/SendMoneyBeneficiaryDetailsText"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_label_name1"
+                style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                android:layout_below="@+id/tv_label_currency1"
+                android:text=""
+
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dimens_0.5"
+            android:layout_height="match_parent"
+            android:background="@color/colorB7B3B3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingBottom="@dimen/dimens_6"
+            android:paddingLeft="@dimen/dimens_10"
+            android:paddingTop="@dimen/dimens_6">
+
+            <TextView
+                android:id="@+id/tv_label_currency2"
+                style="@style/SendMoneyBeneficiaryDetailsText"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_label_name2"
+                style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                android:layout_below="@+id/tv_label_currency2"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_0.5"
+        android:background="@color/colorB7B3B3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimens_10"
+        android:paddingRight="@dimen/dimens_6"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingBottom="@dimen/dimens_6"
+            android:paddingRight="@dimen/dimens_4"
+            android:paddingTop="@dimen/dimens_6">
+
+            <TextView
+                android:id="@+id/tv_label_currency3"
+                style="@style/SendMoneyBeneficiaryDetailsText"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_label_name3"
+                style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                android:layout_below="@+id/tv_label_currency3"
+                android:text="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dimens_0.5"
+            android:layout_height="match_parent"
+            android:background="@color/colorB7B3B3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingBottom="@dimen/dimens_6"
+            android:paddingLeft="@dimen/dimens_10"
+            android:paddingTop="@dimen/dimens_6">
+
+            <TextView
+                android:id="@+id/tv_label_currency4"
+                style="@style/SendMoneyBeneficiaryDetailsText"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_label_name4"
+                style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                android:layout_below="@+id/tv_label_currency4"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_0.5"
+        android:background="@color/colorB7B3B3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimens_10"
+        android:paddingRight="@dimen/dimens_6"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingBottom="@dimen/dimens_6"
+            android:paddingRight="@dimen/dimens_4"
+            android:paddingTop="@dimen/dimens_6">
+
+            <TextView
+                android:id="@+id/tv_label_currency5"
+                style="@style/SendMoneyBeneficiaryDetailsText"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_label_name5"
+                style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                android:layout_below="@+id/tv_label_currency5"
+                android:text="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dimens_0.5"
+            android:layout_height="match_parent"
+            android:background="@color/colorB7B3B3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingBottom="@dimen/dimens_6"
+            android:paddingLeft="@dimen/dimens_10"
+            android:paddingTop="@dimen/dimens_6">
+
+            <TextView
+                android:id="@+id/tv_label_currency6"
+                style="@style/SendMoneyBeneficiaryDetailsText"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_label_name6"
+                style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                android:layout_below="@+id/tv_label_currency6"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_0.5"
+        android:background="@color/colorB7B3B3" />
+
+</LinearLayout>

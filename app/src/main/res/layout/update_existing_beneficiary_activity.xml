@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_171"
+        android:background="@drawable/login_register_header_bg" />
+
+    <include layout="@layout/toolbar_actionbar_transparent" />
+
+    <ScrollView
+        android:id="@+id/scrollview_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+        <!--android:layout_width="@dimen/layout_width"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/bg"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimens_75">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_toolbar_padding_minus"
+                android:background="@drawable/login_register_header_bg"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/top_toolbar_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimens_8"
+                    android:background="@color/bg"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dimens_6"
+                        android:paddingLeft="@dimen/dimens_10"
+                        android:paddingRight="@dimen/dimens_10"
+                        android:paddingTop="@dimen/dimens_6">
+
+                        <TextView
+                            android:id="@+id/name_label"
+                            style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                            android:text="@string/beneficiary_name" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            style="@style/SendMoneyBeneficiaryDetailsText"
+                            android:layout_below="@+id/name_label"
+                            android:text="Parveen Dala" />
+                    </RelativeLayout>
+
+                    <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dimens_10"
+                        android:paddingRight="@dimen/dimens_6"
+                        android:weightSum="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:paddingBottom="@dimen/dimens_6"
+                            android:paddingRight="@dimen/dimens_4"
+                            android:paddingTop="@dimen/dimens_6">
+
+                            <TextView
+                                android:id="@+id/bank_name_label"
+                                style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                                android:text="@string/beneficiary_agent_bank" />
+
+                            <TextView
+                                android:id="@+id/bank_name"
+                                style="@style/SendMoneyBeneficiaryDetailsText"
+                                android:layout_below="@+id/bank_name_label"
+                                android:text="Federal Bank" />
+                        </RelativeLayout>
+
+                        <View style="@style/SendMoneyBeneficiaryDetailsDividerVertical" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:paddingBottom="@dimen/dimens_6"
+                            android:paddingLeft="@dimen/dimens_10"
+                            android:paddingTop="@dimen/dimens_6">
+
+                            <TextView
+                                android:id="@+id/branch_name_label"
+                                style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                                android:text="@string/beneficiary_branch" />
+
+                            <TextView
+                                android:id="@+id/branch_name"
+                                style="@style/SendMoneyBeneficiaryDetailsText"
+                                android:layout_below="@+id/branch_name_label"
+                                android:text="Bengaluru" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dimens_6"
+                        android:paddingLeft="@dimen/dimens_10"
+                        android:paddingRight="@dimen/dimens_10"
+                        android:paddingTop="@dimen/dimens_6">
+
+                        <TextView
+                            android:id="@+id/account_number_label"
+                            style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                            android:text="@string/account_number" />
+
+                        <TextView
+                            android:id="@+id/account_number"
+                            style="@style/SendMoneyBeneficiaryDetailsText"
+                            android:layout_below="@+id/account_number_label"
+                            android:text="12345678901234" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <app.alansari.customviews.MultiStateView
+                android:id="@+id/multiStateView"
+                style="@style/MultiStateViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/account_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dimens_3"
+                    android:layout_marginRight="@dimen/dimens_3"
+                    android:layout_marginTop="@dimen/dimens_6"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="@dimen/dimens_5"
+                    app:cardElevation="@dimen/dimens_2"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/account_info_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </app.alansari.customviews.MultiStateView>
+
+            <LinearLayout
+                android:layout_margin="@dimen/dimens_10"
+                android:id="@+id/xLinLayError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/tv_error_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12345678901234"
+                    android:textColor="@color/colorPrimary_red"
+                    android:textSize="@dimen/dimens_8sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/confirm_btn"
+        style="@style/ConfirmBtnGreen"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:enabled="false" />
+
+</RelativeLayout>

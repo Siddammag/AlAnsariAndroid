@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".SelectCurrencyFlagTravelCardActivity">
+
+>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.80"
+            android:background="@color/colorBlack" />
+
+        <RelativeLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_42"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dimens_1"
+                android:layout_toLeftOf="@+id/close_btn"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:gravity="bottom"
+                android:hint="Search"
+                android:imeOptions="actionDone"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:padding="@dimen/dimens_12"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <ImageView
+                android:id="@+id/search_btn"
+                android:layout_width="@dimen/dimens_30"
+                android:layout_height="@dimen/dimens_30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimens_8"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:padding="@dimen/dimens_8"
+                android:tint="@color/colorWhite"
+                app:srcCompat="@drawable/svg_search" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_0.5"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color979797" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_layout">
+
+            <View
+                android:id="@+id/selected_item_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_105"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dimens_8"
+                android:background="@color/colorWhiteOverlay" />
+
+            <include layout="@layout/recycler_view_full" />
+        </RelativeLayout>
+    </RelativeLayout>
+

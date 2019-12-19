@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        - Created by Parveen Dala on 05 October, 2016
+        - Fugenx Technologies, Bengaluru
+        - AlAnsari
+        -->
+    <color name="default_big_button_text_color">@color/color3F3F3F</color>
+
+    <color name="default_big_button_sub_text_color">#ffffff</color>
+    <integer name="default_big_button_sub_text_size">0</integer>
+
+    <color name="default_small_button_text_color">#ffffff</color>
+    <integer name="default_small_button_text_size">12</integer>
+
+    <integer name="default_title_text_size">20</integer>
+    <color name="default_title_text_color">#ffffff</color>
+    <integer name="default_left_button_text_size">30</integer>
+    <color name="default_left_button_text_color">@color/color1E6AB3</color>
+    <integer name="default_right_button_text_size">30</integer>
+    <color name="default_right_button_text_color">@color/color1E6AB3</color>
+
+    <string-array name="default_big_button_text">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="default_big_button_sub_text">
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+
+    <integer name="default_blur_radius">11</integer>
+    <integer name="default_downsample_factor">6</integer>
+    <color name="default_overlay_color">#99999999</color>
+    <color name="default_button_press">@color/colorA4A4A4</color>
+    <color name="default_indicator">#99ffffff</color>
+
+</resources>

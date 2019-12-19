@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimens_155"
+    android:gravity="center_vertical"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/india_banner" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.80"
+        android:scaleType="centerCrop"
+        android:src="@color/colorBlueOverlay" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/toolbar"
+        android:paddingLeft="@dimen/dimens_20">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            fontPath="fonts/HelveticaNeue-Light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currency"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimens_26sp" />
+
+        <TextView
+            android:id="@+id/toolbar_title_2"
+            fontPath="fonts/HelveticaNeue.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_title"
+            android:paddingBottom="@dimen/dimens_5"
+            android:text="Calculator"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimens_28sp" />
+    </RelativeLayout>
+</RelativeLayout>

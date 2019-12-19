@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.alansari.customviews.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multiState_rview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    app:msv_emptyView="@layout/empty_view"
+    app:msv_errorView="@layout/error_view"
+    app:msv_loadingView="@layout/loading_view"
+    app:msv_viewState="content"
+    tools:context=".MyReferralActivity">
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_credit_card_confirm_layout"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:ignore="WebViewLayout">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_image_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/close_btn"
+                android:layout_width="@dimen/dimens_35"
+                android:layout_height="@dimen/dimens_35"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dimens_10"
+                android:padding="@dimen/dimens_6"
+                android:scaleType="fitXY"
+                android:tint="@color/colorPrimary_red"
+                app:srcCompat="@drawable/svg_close_icon_red" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_message1"
+            fontPath="fonts/Roboto-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimens_12"
+            android:paddingRight="@dimen/dimens_8"
+            android:textColor="@color/color3F3F3F"
+            android:textColorHint="@color/color504F51"
+            android:textSize="@dimen/dimens_12sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_message2"
+            fontPath="fonts/Roboto-Light.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimens_12"
+            android:paddingRight="@dimen/dimens_8"
+            android:textColor="@color/color3F3F3F"
+            android:textColorHint="@color/color504F51"
+            android:textSize="@dimen/dimens_12sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_image_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:scaleType="fitXY" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimens_12"
+            android:paddingRight="@dimen/dimens_8"
+            android:weightSum="1">
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_share_whatsapp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimens_40"
+                android:layout_margin="@dimen/dimens_2"
+                android:padding="@dimen/dimens_1"
+                android:scaleType="fitXY"
+                android:text="WhatsApp"
+                android:textColor="@color/white"
+                app:srcCompat="@drawable/ic_whatsapp_button" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_share_other"
+
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimens_40"
+                android:layout_margin="@dimen/dimens_2"
+                android:padding="@dimen/dimens_1"
+                android:scaleType="fitXY"
+                android:text="WhatsApp"
+                android:textColor="@color/white"
+                app:srcCompat="@drawable/ic_share_options" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_message3"
+            fontPath="fonts/Roboto-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimens_12"
+            android:paddingRight="@dimen/dimens_8"
+            android:textColor="@color/color3F3F3F"
+            android:textColorHint="@color/color504F51"
+            android:textSize="@dimen/dimens_12sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_message4"
+            fontPath="fonts/Roboto-Light.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimens_12"
+            android:paddingRight="@dimen/dimens_8"
+            android:textColor="@color/color3F3F3F"
+            android:textColorHint="@color/color504F51"
+            android:textSize="@dimen/dimens_12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_terms_and_conditions"
+            fontPath="fonts/Roboto-Light.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:background="@null"
+            android:paddingLeft="@dimen/dimens_12"
+            android:paddingRight="@dimen/dimens_8"
+            android:text="Terms and Conditions"
+            android:textColor="@color/color3F3F3F"
+            android:textColorHint="@color/color504F51"
+            android:textSize="@dimen/dimens_12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_message6"
+            fontPath="fonts/Roboto-Light.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:paddingLeft="@dimen/dimens_12"
+            android:paddingRight="@dimen/dimens_8"
+            android:textColor="@color/color3F3F3F"
+            android:textColorHint="@color/color504F51"
+            android:textSize="@dimen/dimens_12sp" />
+
+    </LinearLayout>
+    </ScrollView>
+</app.alansari.customviews.MultiStateView>

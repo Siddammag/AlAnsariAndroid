@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar_big_old" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimens_100">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimens_20"
+                android:paddingLeft="@dimen/dimens_8"
+                android:paddingRight="@dimen/dimens_8"
+                android:paddingTop="@dimen/dimens_20">
+
+                <TextView
+                    android:id="@+id/name_label"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="@dimen/dimens_10"
+                    android:paddingTop="@dimen/dimens_5"
+                    android:text="TO :"
+                    android:textColor="@color/colorA2A2A2"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimens_24"
+                    android:layout_toRightOf="@+id/name_label"
+                    android:textColor="@color/color373A49"
+                    android:textSize="@dimen/dimens_20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/flag"
+                    android:layout_width="@dimen/dimens_30"
+                    android:layout_height="@dimen/dimens_22"
+                    android:layout_alignBaseline="@+id/total_amount"
+                    android:layout_below="@+id/name"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:baselineAlignBottom="true"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/svg_flag_in" />
+
+                <TextView
+                    android:id="@+id/currency_code"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/total_amount"
+                    android:layout_alignLeft="@+id/name"
+                    android:layout_alignTop="@+id/total_amount"
+                    android:layout_toRightOf="@+id/name_label"
+                    android:gravity="center_vertical"
+                    android:text="INR"
+                    android:textColor="@color/color373A49"
+                    android:textSize="@dimen/dimens_18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_amount"
+                    fontPath="fonts/HelveticaNeue.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginLeft="@dimen/dimens_8"
+                    android:layout_marginTop="@dimen/dimens_10"
+                    android:layout_toRightOf="@+id/currency_code"
+                    android:maxLines="1"
+                    android:text="3,680.00"
+                    android:textColor="@color/color1E6AB3"
+                    android:textSize="@dimen/dimens_30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_1"
+                android:background="@color/colorDivider" />
+
+            <include layout="@layout/additional_info_dynamic_layout" />
+
+            <include layout="@layout/additional_info_dynamic_layout" />
+
+            <include layout="@layout/additional_info_dynamic_layout" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/next_btn"
+        style="@style/SubmitBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Next" />
+
+</RelativeLayout>

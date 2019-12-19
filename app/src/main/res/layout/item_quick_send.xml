@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg_layout"
+    android:layout_width="@dimen/dimens_68"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimens_8">
+
+    <!-- <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+         android:id="@+id/profile_pic"
+         android:layout_width="@dimen/dimens_36"
+         android:layout_height="@dimen/dimens_36"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="@dimen/dimens_6"
+         android:gravity="center"
+         android:scaleType="center"
+         app:civ_border_color="#FF000000"
+         app:civ_border_width="1dp"
+         app:srcCompat="@drawable/svg_avatar_black" />-->
+    <RelativeLayout
+        android:id="@+id/pic_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimens_6">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_pic"
+            android:layout_width="@dimen/dimens_36"
+            android:layout_height="@dimen/dimens_36"
+            app:srcCompat="@drawable/svg_avatar_black" />
+
+        <ImageView
+            android:id="@+id/profile_pic_text"
+            android:layout_width="@dimen/dimens_36"
+            android:layout_height="@dimen/dimens_36"
+            android:visibility="gone"
+            app:srcCompat="@drawable/svg_avatar_black" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/name"
+        fontPath="fonts/Roboto-Regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pic_layout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:maxLines="2"
+        tools:text="Homer Simpson"
+        android:textColor="@color/color3F3F3F"
+        android:textSize="@dimen/dimens_9sp" />
+
+</RelativeLayout>
+

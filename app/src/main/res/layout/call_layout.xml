@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/call_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/assistance_call"
+        fontPath="fonts/HelveticaNeue-Medium.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/assistance_call_icon"
+        android:layout_alignTop="@+id/assistance_call_icon"
+        android:layout_toRightOf="@+id/assistance_call_icon"
+        android:gravity="center"
+        android:text="@string/customer_care_mobile_number"
+        android:textColor="@color/color1E6AB3"
+        android:textSize="@dimen/dimens_16sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/assistance_call_icon"
+        android:layout_width="@dimen/dimens_26"
+        android:layout_height="@dimen/dimens_26"
+        android:layout_marginRight="@dimen/dimens_10"
+        app:srcCompat="@drawable/svg_phone_call_back" />
+</RelativeLayout>

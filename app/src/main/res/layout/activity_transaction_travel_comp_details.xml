@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".TransactionTravelCompDetailsActivity"
+    tools:ignore="MissingPrefix">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_210"
+        android:background="@drawable/login_register_header_bg" />
+
+    <include layout="@layout/toolbar_actionbar_transparent" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <!-- android:layout_width="@dimen/layout_width"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/bg"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimens_10">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_toolbar_padding_minus"
+                android:background="@drawable/login_register_header_bg"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/top_toolbar_padding">
+
+                <include layout="@layout/transaction_histroy_list_page" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimens_8"
+                    android:background="@color/bg"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dimens_10"
+                        android:paddingRight="@dimen/dimens_6"
+                        android:weightSum="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:paddingBottom="@dimen/dimens_6"
+                            android:paddingRight="@dimen/dimens_4"
+                            android:paddingTop="@dimen/dimens_6">
+
+                            <TextView
+                                android:id="@+id/temp_transaction_number_label"
+                                style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                                android:text="@string/your_txn_ref_num" />
+
+                            <TextView
+                                android:id="@+id/temp_transaction_number"
+                                style="@style/SendMoneyBeneficiaryDetailsText"
+                                fontPath="fonts/Roboto-Medium.ttf"
+                                android:layout_below="@+id/temp_transaction_number_label"
+                                android:text="90014200"
+                                android:textColor="@color/color1E6AB3" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="@dimen/dimens_0.5"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorB7B3B3" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:paddingBottom="@dimen/dimens_6"
+                            android:paddingLeft="@dimen/dimens_10"
+                            android:paddingTop="@dimen/dimens_6">
+
+                            <TextView
+                                android:id="@+id/pay_mode_label"
+                                style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                                android:text="@string/payment_mode" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/pay_mode_icon"
+                                android:layout_width="@dimen/dimens_12"
+                                android:layout_height="@dimen/dimens_11"
+                                android:layout_alignBottom="@+id/pay_mode"
+                                android:layout_marginBottom="@dimen/dimens_2"
+                                android:layout_marginRight="@dimen/dimens_8"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/svg_payment_mode_bank" />
+
+                            <TextView
+                                android:id="@+id/pay_mode"
+                                style="@style/SendMoneyBeneficiaryDetailsText"
+                                android:layout_below="@+id/pay_mode_label"
+                                android:layout_toRightOf="@+id/pay_mode_icon"
+                                android:text="@string/bank_transfer" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimens_0.5"
+                        android:background="@color/colorB7B3B3" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dimens_6"
+                        android:paddingLeft="@dimen/dimens_10"
+                        android:paddingRight="@dimen/dimens_10"
+                        android:paddingTop="@dimen/dimens_6">
+
+                        <TextView
+                            android:id="@+id/name_label"
+                            style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                            android:text="@string/beneficiary_name" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            style="@style/SendMoneyBeneficiaryDetailsText"
+                            android:layout_below="@+id/name_label"
+                            android:text="Parveen Dala" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimens_0.5"
+                        android:background="@color/colorB7B3B3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dimens_10"
+                        android:paddingRight="@dimen/dimens_6"
+                        android:weightSum="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:paddingBottom="@dimen/dimens_6"
+                            android:paddingRight="@dimen/dimens_4"
+                            android:paddingTop="@dimen/dimens_6">
+
+                            <TextView
+                                android:id="@+id/bank_name_label"
+                                style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                                android:text="@string/beneficiary_agent_bank" />
+
+                            <TextView
+                                android:id="@+id/bank_name"
+                                style="@style/SendMoneyBeneficiaryDetailsText"
+                                android:layout_below="@+id/bank_name_label"
+                                android:text="Federal Bank" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="@dimen/dimens_0.5"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorB7B3B3" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:paddingBottom="@dimen/dimens_6"
+                            android:paddingLeft="@dimen/dimens_10"
+                            android:paddingTop="@dimen/dimens_6">
+
+                            <TextView
+                                android:id="@+id/branch_name_label"
+                                style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                                android:text="@string/beneficiary_branch_payout" />
+
+                            <TextView
+                                android:id="@+id/branch_name"
+                                style="@style/SendMoneyBeneficiaryDetailsText"
+                                android:layout_below="@+id/branch_name_label"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimens_0.5"
+                        android:background="@color/colorB7B3B3" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dimens_6"
+                        android:paddingLeft="@dimen/dimens_10"
+                        android:paddingRight="@dimen/dimens_10"
+                        android:paddingTop="@dimen/dimens_6">
+
+                        <TextView
+                            android:id="@+id/account_number_label"
+                            style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                            android:text="@string/account_number" />
+
+                        <TextView
+                            android:id="@+id/account_number"
+                            style="@style/SendMoneyBeneficiaryDetailsText"
+                            android:layout_below="@+id/account_number_label"
+                            android:text="12345678901234" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <app.alansari.customviews.MultiStateView
+                android:id="@+id/multiStateView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:msv_emptyView="@layout/empty_view"
+                app:msv_errorView="@layout/error_view"
+                app:msv_loadingView="@layout/loading_view"
+                app:msv_viewState="content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/dimens_100"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dimens_10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dimens_10"
+                        android:layout_marginTop="@dimen/dimens_10">
+
+                        <LinearLayout
+                            android:id="@+id/bank_pay_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/dimens_10"
+                                android:paddingLeft="@dimen/dimens_18"
+                                android:paddingRight="@dimen/dimens_18"
+                                android:weightSum="1">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5">
+
+                                    <TextView
+                                        android:id="@+id/aae_bank_account_number_label"
+                                        style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                                        android:text="@string/aae_bank_account_number"
+                                        android:textColor="@color/color1E6AB3" />
+
+                                    <TextView
+                                        android:id="@+id/aae_bank_account_number"
+                                        style="@style/SendMoneyBeneficiaryDetailsText"
+                                        android:layout_below="@+id/aae_bank_account_number_label"
+                                        android:text="987654321123456"
+                                        android:textColor="@color/color1E6AB3"
+                                        android:textSize="@dimen/dimens_10sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:paddingLeft="@dimen/dimens_16">
+
+                                    <TextView
+                                        android:id="@+id/aae_bank_name_label"
+                                        style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                                        android:text="@string/aae_bank_name"
+                                        android:textColor="@color/color1E6AB3" />
+
+                                    <TextView
+                                        android:id="@+id/aae_bank_name"
+                                        style="@style/SendMoneyBeneficiaryDetailsText"
+                                        android:layout_below="@+id/aae_bank_name_label"
+                                        android:text="Axis Bank"
+                                        android:textColor="@color/color1E6AB3"
+                                        android:textSize="@dimen/dimens_10sp" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/dimens_10"
+                                android:paddingLeft="@dimen/dimens_18"
+                                android:paddingRight="@dimen/dimens_18"
+                                android:weightSum="1">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5">
+
+                                    <TextView
+                                        android:id="@+id/aae_iban_number_label"
+                                        style="@style/SendMoneyBeneficiaryDetailsTextLabel"
+                                        android:text="IBAN"
+                                        android:textColor="@color/color1E6AB3" />
+
+                                    <TextView
+                                        android:id="@+id/aae_iban_number"
+                                        style="@style/SendMoneyBeneficiaryDetailsText"
+                                        android:layout_below="@+id/aae_iban_number_label"
+                                        android:text="-"
+                                        android:textColor="@color/color1E6AB3"
+                                        android:textSize="@dimen/dimens_10sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:paddingLeft="@dimen/dimens_16">
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/reference_number_card_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/dimens_3"
+                                app:cardBackgroundColor="@color/colorWhite"
+                                app:cardCornerRadius="@dimen/dimens_4"
+                                app:cardElevation="@dimen/dimens_2"
+                                app:cardPreventCornerOverlap="false"
+                                app:cardUseCompatPadding="true">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/reference_number"
+                                    fontPath="fonts/Roboto-Medium.ttf"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dimens_38"
+                                    android:background="@null"
+                                    android:cursorVisible="true"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/ref_number_hint"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:paddingLeft="@dimen/dimens_12"
+                                    android:paddingRight="@dimen/dimens_8"
+                                    android:textColor="@color/colorE86768"
+                                    android:textColorHint="@color/colorE86768"
+                                    android:textSize="@dimen/dimens_12sp" />
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/branch_pay_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/visit_to_branch_msg"
+                                fontPath="fonts/Roboto-Light.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:lineSpacingMultiplier="1.2"
+                                android:padding="@dimen/dimens_16"
+                                android:text="@string/visit_to_nearest_branch_msg"
+                                android:textColor="@color/color3F3F3F"
+                                android:textSize="@dimen/dimens_12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/clock_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dimens_1">
+
+                        <LinearLayout
+                            android:id="@+id/chronometer_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/time_left_clock_icon"
+                                android:layout_width="@dimen/dimens_22"
+                                android:layout_height="@dimen/dimens_22"
+                                android:layout_marginRight="@dimen/dimens_12"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/svg_clock" />
+
+                            <Chronometer
+                                android:id="@+id/chronometer"
+                                fontPath="fonts/Roboto-Medium.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/time_left_clock_icon"
+                                android:layout_alignTop="@+id/time_left_clock_icon"
+                                android:layout_below="@+id/time_left_clock_icon"
+                                android:layout_toRightOf="@+id/time_left_clock_icon"
+                                android:format="00:%s"
+                                android:gravity="center"
+                                android:text="1h : 30m : 50s"
+                                android:textColor="@color/colorE86768"
+                                android:textSize="@dimen/dimens_12sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/time_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/chronometer_layout"
+                            android:layout_centerHorizontal="true"
+                            android:paddingTop="@dimen/dimens_4"
+                            android:text="Time Left"
+                            android:textColor="@color/color3F3F3F"
+                            android:textSize="@dimen/dimens_12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/time_left"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/question_mark"
+                                android:layout_width="@dimen/dimens_15"
+                                android:layout_height="@dimen/dimens_15"
+                                android:layout_marginRight="@dimen/dimens_5"
+                                android:visibility="gone"
+                                app:srcCompat="@drawable/ic_nav_question" />
+
+                            <TextView
+                                android:id="@+id/click_to_learn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/dimens_4"
+                                android:textColor="@color/colorRed_700"
+                                android:textSize="@dimen/dimens_12sp"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </app.alansari.customviews.MultiStateView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_btn_layout"
+                android:background="@color/colorWhite"
+                android:paddingBottom="@dimen/dimens_10">
+
+                <!-- <include
+                     layout="@layout/amount_summary_layout"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />-->
+
+                <include
+                    layout="@layout/amount_history_summary_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_btn_layout"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorWhite"
+                android:gravity="center_horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/next_btn"
+                    style="@style/ConfirmBtnGreen"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/dimens_4"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:maxWidth="@dimen/btn_confirm_green_width"
+                    android:textSize="@dimen/dimens_12sp" />
+
+                <Button
+                    android:id="@+id/save_to_gallery_btn"
+                    style="@style/SubmitBtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dimens_4"
+                    android:layout_weight="0.5"
+                    android:maxWidth="@dimen/btn_confirm_green_width"
+                    android:text="@string/btn_save_to_gallery"
+                    android:textSize="@dimen/dimens_12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+

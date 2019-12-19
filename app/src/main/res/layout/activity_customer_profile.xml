@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".newAdditions.CustomerProfile"
+    tools:ignore="MissingPrefix">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:background="@drawable/login_register_header_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/register_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_toolbar_padding_minus_verify_eid"
+                android:background="@drawable/login_register_header_bg"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/top_toolbar_padding_verify_eid">
+
+                <RelativeLayout
+                    android:id="@+id/mobile_layout"
+                    style="@style/MobileNumberLayout"
+                    android:layout_marginBottom="@dimen/dimens_24"
+                    android:layout_marginTop="@dimen/dimens_8">
+
+                    <TextView
+                        android:id="@+id/mobile_label"
+                        style="@style/LoginMobileNumberLabel" />
+
+                    <TextView
+                        android:id="@+id/country_code"
+                        style="@style/LoginCountryCode"
+                        android:layout_alignBottom="@+id/change_btn"
+                        android:layout_alignTop="@+id/change_btn" />
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        style="@style/LoginMobileNumber"
+                        android:layout_alignBottom="@+id/change_btn"
+                        android:layout_alignTop="@+id/change_btn"
+                        android:layout_toLeftOf="@+id/change_btn"
+                        android:layout_toRightOf="@+id/country_code" />
+
+                    <Button
+                        android:id="@+id/change_btn"
+                        style="@style/LoginChangeButton"
+                        android:layout_below="@+id/mobile_label" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_48"
+                    android:layout_marginBottom="-8dp"
+                    android:layout_marginTop="@dimen/dimens_6"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/svg_wave" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/min_width_view"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimens_20"
+                android:paddingRight="@dimen/dimens_20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/eid_name_layout"
+                        style="@style/VerifyEIDTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/eid_name"
+                            style="@style/VerifyEIDEditText"
+                            android:hint="Enter your name"
+                            android:imeOptions="actionDone"
+                            android:nextFocusDown="@+id/eid_email"
+                            android:paddingTop="@dimen/dimens_14" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View style="@style/VerifyEIDDivider" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/eid_email_layout"
+                        style="@style/VerifyEIDTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/eid_email"
+                            style="@style/VerifyEIDEditText"
+                            android:hint="Enter your email address"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:nextFocusDown="@+id/eid_company_name"
+                            android:paddingTop="@dimen/dimens_14" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View style="@style/VerifyEIDDivider" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/eid_company_layout"
+                        style="@style/VerifyEIDTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/eid_company_name"
+                            style="@style/VerifyEIDEditText"
+                            android:hint="Enter your company name"
+                            android:imeOptions="actionDone"
+                            android:paddingTop="@dimen/dimens_14" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View style="@style/VerifyEIDDivider" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_btn"
+                    style="@style/SubmitBtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_30"
+                    android:text="Submit" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/eid_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dimens_80"
+                android:paddingLeft="@dimen/dimens_8"
+                android:paddingRight="@dimen/dimens_8">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimens_20"
+                    android:paddingRight="@dimen/dimens_20"
+                    android:paddingTop="@dimen/dimens_30"
+                    app:srcCompat="@drawable/ic_logo" />
+
+                <TextView
+                    android:id="@+id/result_title"
+                    fontPath="fonts/Roboto-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_50"
+                    android:alpha="0.90"
+                    android:text="No Record Found"
+                    android:textColor="@color/colorRed_500"
+                    android:textSize="@dimen/dimens_18sp" />
+
+                <TextView
+                    android:id="@+id/result_details"
+                    fontPath="fonts/Roboto-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/result_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_30"
+                    android:ellipsize="start"
+                    android:text="Reference #123456"
+                    android:textColor="@color/color1E6AB3"
+                    android:textSize="@dimen/dimens_22sp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/result_desc"
+                    fontPath="fonts/Roboto-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/result_details"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimens_30"
+                    android:alpha="1"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="1.3dp"
+                    android:text="For More Information \nVisit to Branch."
+                    android:textColor="@color/color3F3F3F"
+                    android:textSize="@dimen/dimens_18sp" />
+            </RelativeLayout>
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/result_ok_btn"
+            style="@style/SubmitBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:text="Go Back" />
+    </RelativeLayout>
+
+
+    <include layout="@layout/toolbar_actionbar_transparent" />
+</RelativeLayout>
+

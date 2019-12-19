@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/time_message"
+        fontPath="fonts/Roboto-Light.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:paddingLeft="@dimen/dimens_8"
+        android:text="To redeem your points for discount on sending charges contact Western Union call center at 8000 3570 4469 prior to the transaction"
+        android:textColor="@color/color1E6AB3"
+        android:textSize="@dimen/dimens_8sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/fragment_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimens_8">
+
+            <TextView
+                android:id="@+id/send_label"
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/dimens_6"
+                android:text="Send"
+                android:textColor="@color/color373A49"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <TextView
+                android:id="@+id/get_label"
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/dimens_6"
+                android:text="Receive"
+                android:textColor="@color/color373A49"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <EditText
+                android:id="@+id/send"
+                fontPath="fonts/HelveticaNeue-UltraLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_40"
+                android:layout_below="@+id/send_label"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="0,00"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="9"
+                android:maxLines="1"
+                android:textColor="@color/color1E6AB3"
+                android:textColorHint="@color/color1E6AB3"
+                android:textSize="@dimen/dimens_28sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/success_image"
+                android:layout_width="@dimen/dimens_26"
+                android:layout_height="@dimen/dimens_26"
+                android:layout_alignBottom="@+id/send"
+                android:layout_alignTop="@+id/send"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                app:srcCompat="@drawable/svg_success" />
+
+            <app.alansari.customviews.progressbar.CircleProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="@dimen/dimens_26"
+                android:layout_height="@dimen/dimens_26"
+                android:layout_alignBottom="@+id/send"
+                android:layout_alignTop="@+id/send"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:mlpb_arrow_height="@dimen/dimens_3"
+                app:mlpb_arrow_width="@dimen/dimens_6"
+                app:mlpb_enable_circle_background="false"
+                app:mlpb_inner_radius="@dimen/dimens_12"
+                app:mlpb_max="100"
+                app:mlpb_progress="50"
+                app:mlpb_progress_color="@color/colorPrimary"
+                app:mlpb_progress_stoke_width="@dimen/dimens_1"
+                app:mlpb_progress_text_color="@color/colorPrimary"
+                app:mlpb_progress_text_visibility="invisible"
+                app:mlpb_show_arrow="true" />
+
+            <EditText
+                android:id="@+id/get"
+                fontPath="fonts/HelveticaNeue-UltraLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_40"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/get_label"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="0,00"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textColor="@color/color1E6AB3"
+                android:textColorHint="@color/color1E6AB3"
+                android:textSize="@dimen/dimens_28sp" />
+
+            <TextView
+                android:id="@+id/send_code"
+                fontPath="fonts/HelveticaNeue-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/send"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:text="AED"
+                android:textColor="@color/color373A49"
+                android:textSize="@dimen/dimens_14sp" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/dimens_85"
+                android:layout_height="@dimen/dimens_20"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/get"
+                android:layout_marginTop="@dimen/dimens_5">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_currency_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@color/colorTransparent"
+                    android:clickable="true"
+                    android:clipToPadding="false"
+                    android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+                <View
+                    android:layout_width="@dimen/dimens_20"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/currency_scroll_white_trans_bg"
+                    android:rotation="180" />
+
+                <View
+                    android:layout_width="@dimen/dimens_20"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/currency_scroll_white_trans_bg" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/rate"
+                fontPath="fonts/Roboto-Light.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/send_code"
+                android:layout_marginTop="@dimen/dimens_6"
+                android:text="Exchange Rate AED = INR 18.40"
+                android:textColor="@color/color3F3F3F"
+                android:textSize="@dimen/dimens_9sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/fragment_data_layout_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fragment_data_layout"
+            android:layout_alignTop="@+id/fragment_data_layout"
+            android:alpha="0.6"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="bottom|right"
+            android:paddingBottom="@dimen/dimens_8"
+            android:paddingRight="@dimen/dimens_8"
+            android:text="@string/currency_not_available_for_selected_country"
+            android:textColor="@color/colorE86768"
+            android:textSize="@dimen/dimens_9sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

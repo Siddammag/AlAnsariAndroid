@@ -1,0 +1,1702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <!--
+        - Created by Parveen Dala on 05 October, 2016
+        - Fugenx Technologies, Bengaluru
+        - AlAnsari
+        -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeSplash" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/splash_bg</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+        <item name="colorControlHighlight">@color/colorHighlight</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back_arrow</item>
+        <item name="popupTheme">@style/MyActionBar</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Theme.AppCompat.Light">
+        <item name="android:popupBackground">@color/colorWhite</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/colorWhite</item>
+    </style>
+
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more_vert_white</item>
+        <item name="android:maxHeight">48dp</item>
+    </style>
+
+    <style name="AppThemeBlackAccent" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorBlack</item>
+    </style>
+
+    <style name="AppThemePrimaryAccent" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryAccent</item>
+    </style>
+
+    <style name="Widget.Design.TextInputLayout" parent="AppTheme">
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="hintTextAppearance">@style/AppTheme.TextFloatLabelAppearance</item>
+        <item name="errorTextAppearance">@style/AppTheme.TextErrorAppearance</item>
+        <item name="counterTextAppearance">@style/TextAppearance.Design.Counter</item>
+        <item name="counterOverflowTextAppearance">@style/TextAppearance.Design.Counter.Overflow
+        </item>
+    </style>
+
+    <style name="AppTheme.TextFloatLabelAppearance" parent="TextAppearance.Design.Hint">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@color/color1E6AB3</item>
+        <item name="android:textSize">@dimen/dimens_10sp</item>
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+    </style>
+
+    <style name="AppTheme.TextErrorAppearance" parent="TextAppearance.Design.Error">
+        <!-- Error message appearance here -->
+        <item name="android:textColor">@color/colorRed_500</item>
+        <item name="android:textSize">@dimen/dimens_10sp</item>
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+    </style>
+
+    <style name="TextAppearance.Design.Counter" parent="TextAppearance.Design.Counter">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/dimens_10sp</item>
+    </style>
+
+    <style name="TextAppearance.Design.Counter.Overflow" parent="TextAppearance.Design.Counter.Overflow">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/dimens_10sp</item>
+    </style>
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorRed_500</item>
+        <item name="android:textSize">@dimen/dimens_8</item>
+    </style>
+
+    //Tab Layout Text Size
+
+    <style name="TabLayoutTextStyle" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    //Input Text Layout
+
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color3F3F3F</item>
+    </style>
+
+
+    //Progress Dialog Theme
+
+    <style name="ProgressDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/dimens_8</item>
+        <item name="android:paddingLeft">@dimen/dimens_16</item>
+        <item name="android:paddingRight">@dimen/dimens_16</item>
+        <item name="android:paddingBottom">@dimen/dimens_8</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/white</item>
+        <item name="android:bottomDark">@color/white</item>
+        <item name="android:bottomMedium">@color/white</item>
+        <item name="android:centerBright">@color/white</item>
+        <item name="android:centerDark">@color/white</item>
+        <item name="android:centerMedium">@color/white</item>
+        <item name="android:fullBright">@color/white</item>
+        <item name="android:fullDark">@color/white</item>
+        <item name="android:topBright">@color/white</item>
+        <item name="android:topDark">@color/white</item>
+    </style>
+
+
+    <style name="AppThemeTranslucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="19">true</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="19">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.NotTransparent" parent="AppTheme.NotTransparent.Base">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Transparent.BlackPrimaryDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NotTransparent.Base" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorPrimary" tools:targetApi="21">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark" tools:targetApi="21">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent" tools:targetApi="21">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="21">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+        <item name="colorControlHighlight">@color/colorHighlight</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back_white</item>
+        <item name="popupTheme">@style/MyActionBar</item>
+    </style>
+
+    <style name="AppTheme_Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/colorBlackOverlay</item>
+        <item name="android:gravity">center</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomDialogThemeLightBg" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/colorBlackOverlay</item>
+        <item name="android:gravity">center</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="CustomDialogThemeLightBgPopUP" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/colorTransparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:layout_margin">@dimen/dimens_20</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomDialogThemeLightBgCountry" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/colorBlackOverlay</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme_Permission_Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="InternetErrorDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/colorBlackOverlay</item>
+        <item name="android:gravity">center</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/color9E9E9E</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme_Loading_Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">@color/colorTransparent</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NavDrawer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/nav_drawer_margin_offset</item>
+    </style>
+
+    <style name="FensterTheme" parent="android:Theme.Holo.Light.DarkActionBar"></style>
+
+    <style name="FensterFullscreenTheme" parent="android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/FensterFullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FensterFullscreenActionBarStyle" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@color/bg_light_background</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Progress Bar Button Style-->
+
+    <declare-styleable name="CircularProgressButton">
+        <attr name="cpb_selectorIdle" format="reference" />
+        <attr name="cpb_selectorComplete" format="reference" />
+        <attr name="cpb_selectorError" format="reference" />
+        <attr name="cpb_textComplete" format="string" />
+        <attr name="cpb_textIdle" format="string" />
+        <attr name="cpb_textError" format="string" />
+        <attr name="cpb_textProgress" format="string" />
+        <attr name="cpb_colorProgress" format="color" />
+        <attr name="cpb_colorIndicator" format="color" />
+        <attr name="cpb_colorIndicatorBackground" format="color" />
+        <attr name="cpb_iconError" format="reference" />
+        <attr name="cpb_iconComplete" format="reference" />
+        <attr name="cpb_cornerRadius" format="dimension" />
+        <attr name="cpb_paddingProgress" format="dimension" />
+    </declare-styleable>
+
+
+    <style name="MultiStateViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="msv_animateViewChanges">false</item>
+        <item name="msv_emptyView">@layout/empty_view</item>
+        <item name="msv_errorView">@layout/error_view</item>
+        <item name="msv_loadingView">@layout/loading_view</item>
+        <item name="msv_viewState">content</item>
+    </style>
+
+    <style name="CardViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardCornerRadius">@dimen/dimens_8</item>
+        <item name="cardElevation">@dimen/dimens_4</item>
+    </style>
+
+    <style name="RightMenuButton">
+        <item name="android:layout_width">@dimen/dimens_46</item>
+        <item name="android:layout_height">@dimen/dimens_46</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:padding">@dimen/dimens_12</item>
+        <item name="srcCompat">@drawable/svg_menu</item>
+    </style>
+
+    <!--KeyPad View -->
+    <style name="BigButtonStyleKeyPadView">
+        <item name="fontPath">fonts/HelveticaNeue-Medium.ttf</item>
+        <item name="android:layout_width">@dimen/login_keypad_btn_width</item>
+        <item name="android:layout_height">@dimen/login_keypad_btn_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="text">2</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+
+    <!--Register -->
+    <style name="RegisterTextLayout">
+        <item name="android:layout_width">@dimen/min_width_register</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@dimen/dimens_24</item>
+        <item name="android:paddingRight">@dimen/dimens_24</item>
+        <item name="android:paddingTop">@dimen/dimens_28</item>
+        <item name="android:paddingBottom">@dimen/dimens_28</item>
+    </style>
+
+    <style name="RegisterTextTitle">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textSize">@dimen/dimens_20sp</item>
+    </style>
+
+    <style name="RegisterTextDetails">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color7F8486</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+        <item name="android:paddingTop">@dimen/dimens_4</item>
+    </style>
+
+    <style name="RegisterDivider">
+        <item name="android:layout_width">@dimen/min_width_register</item>
+        <item name="android:layout_height">@dimen/dimens_0.5</item>
+        <item name="android:alpha">0.7</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_14</item>
+        <item name="android:layout_marginRight">@dimen/dimens_14</item>
+        <item name="android:background">@color/colorBAB6B6</item>
+    </style>
+
+    <!-- Register Email -->
+    <style name="RegisterEmailTextInputLayout" parent="VerifyEIDTextInputLayout"></style>
+
+    <style name="RegisterEmailEditText" parent="VerifyEIDEditText"></style>
+
+    <style name="RegisterEmailDivider" parent="VerifyEIDDivider"></style>
+
+
+    <!-- Login PIN Screen -->
+    <style name="MobileNumberLayout">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">@dimen/min_width_view</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dimens_16</item>
+        <item name="android:paddingRight">@dimen/dimens_16</item>
+    </style>
+
+    <style name="LoginMobileNumberLabel">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_8</item>
+        <item name="android:layout_marginTop">@dimen/dimens_6</item>
+        <item name="android:text">@string/mobile_number</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorECEAEA</item>
+        <item name="android:textSize">@dimen/dimens_12sp</item>
+    </style>
+
+    <style name="LoginCountryCode">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">+971</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorCAC7C7</item>
+        <item name="android:textSize">@dimen/dimens_22sp</item>
+    </style>
+
+    <style name="LoginMobileNumber">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_4</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:letterSpacing" tools:ignore="NewApi">0.05</item>
+        <item name="android:text">@string/dummy_mobile_number</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/dimens_22sp</item>
+    </style>
+
+    <style name="LoginChangeButton">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/login_change_btn_height</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_6</item>
+        <item name="android:background">@drawable/btn_login_change</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">@dimen/dimens_14</item>
+        <item name="android:paddingRight">@dimen/dimens_14</item>
+        <item name="android:text">Change</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/dimens_12sp</item>
+    </style>
+
+    <!-- Login And Register -->
+    <style name="RegisterCardViewStyle">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_4</item>
+        <item name="android:layout_marginLeft">@dimen/card_padding_left</item>
+        <item name="android:layout_marginRight">@dimen/card_padding_right</item>
+        <item name="android:layout_marginTop">@dimen/card_margin</item>
+        <item name="android:focusable">true</item>
+        <item name="cardCornerRadius">@dimen/dimens_4</item>
+        <item name="cardElevation">@dimen/dimens_4</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="LoginViewPINText">
+        <item name="fontPath">fonts/HelveticaNeue-Medium.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:paddingLeft">@dimen/dimens_8</item>
+        <item name="android:paddingRight">@dimen/dimens_8</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/dimens_28sp</item>
+    </style>
+
+    <style name="LoginViewPINBall">
+        <item name="android:layout_width">@dimen/dimens_18</item>
+        <item name="android:layout_height">@dimen/dimens_18</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_3</item>
+        <item name="android:layout_marginRight">@dimen/dimens_3</item>
+        <item name="android:background">@drawable/pin_code_round_empty</item>
+    </style>
+
+    <style name="PINViewTextLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@dimen/dimens_5</item>
+        <item name="android:paddingRight">@dimen/dimens_5</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="PINViewText">
+        <item name="fontPath">fonts/HelveticaNeue.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_4</item>
+        <item name="android:paddingLeft">@dimen/dimens_3</item>
+        <item name="android:paddingRight">@dimen/dimens_3</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:focusable">true</item>
+        <item name="android:ems">1</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/dimens_26sp</item>
+    </style>
+
+    <style name="PINViewTextBottomDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimens_2</item>
+        <item name="android:background">@color/colorCECCCC</item>
+    </style>
+
+    <style name="OTPViewEditTextLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dimens_8</item>
+        <item name="android:paddingRight">@dimen/dimens_8</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="OTPViewEditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">none</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:paddingLeft">@dimen/dimens_8</item>
+        <item name="android:paddingRight">@dimen/dimens_8</item>
+        <item name="android:paddingBottom">@dimen/dimens_6</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/dimens_30sp</item>
+    </style>
+
+    <!-- Verify EID Screen -->
+    <style name="VerifyEIDTextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_8</item>
+        <item name="android:layout_marginTop">@dimen/dimens_20</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/color8B8989</item>
+    </style>
+
+    <style name="VerifyEIDEditText">
+        <item name="fontPath">fonts/HelveticaNeue.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+        <item name="android:paddingTop">@dimen/dimens_8</item>
+        <item name="android:paddingLeft">@dimen/dimens_2</item>
+        <item name="android:paddingRight">@dimen/dimens_2</item>
+        <item name="android:paddingBottom">@dimen/dimens_2</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">@dimen/dimens_12</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textSize">@dimen/dimens_16sp</item>
+    </style>
+
+    <style name="VerifyEIDDivider">
+        <item name="fontPath">fonts/HelveticaNeue.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimens_0.5</item>
+        <item name="android:background">@color/colorBlack</item>
+    </style>
+
+    <style name="SelectBeneficiaryCardTextLabel">
+        <item name="fontPath">fonts/HelveticaNeue-Medium.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingTop">@dimen/dimens_4</item>
+        <item name="android:textColor">@color/colorD3DDE6</item>
+        <item name="android:textSize">@dimen/dimens_8sp</item>
+    </style>
+
+    <style name="SelectBeneficiaryCardText">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:paddingTop">@dimen/dimens_3</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/dimens_12sp</item>
+    </style>
+
+    <style name="CoverFlowBeneficiary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/b_item_height</item>
+        <item name="adjustPositionMultiplier">1.2</item>
+        <item name="adjustPositionThreshold">0.7</item>
+        <item name="coverHeight">@dimen/cover_height</item>
+        <item name="coverWidth">@dimen/cover_width</item>
+        <item name="maxScaleFactor">1.2</item>
+        <item name="paddingStart">0dp</item>
+        <item name="reflectionBackroundColor">@color/bg</item>
+        <item name="reflectionGap">0px</item>
+        <item name="reflectionHeight">0.1</item>
+        <item name="reflectionOpacity">0</item>
+        <item name="rotationThreshold">1</item>
+        <item name="scalingThreshold">1</item>
+        <item name="spacing">0.5</item>
+        <item name="verticalPaddingTop">0dp</item>
+    </style>
+
+    <!-- Payment Modes Screen -->
+
+
+    <style name="PaymentModeCardViewStyle">
+        <item name="android:layout_width">@dimen/payment_mode_card_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginBottom">@dimen/minus_dimens_2</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_8</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:focusable">true</item>
+        <item name="cardCornerRadius">@dimen/dimens_8</item>
+        <item name="cardElevation">@dimen/dimens_4</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="PaymentModeLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/pay_mode_branch_card_bg</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dimens_16</item>
+    </style>
+
+    <style name="PaymentModeTextLabelStyle">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dimens_12</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:paddingRight">@dimen/dimens_8</item>
+        <item name="android:textSize">@dimen/dimens_15sp</item>
+        <item name="android:paddingBottom">@dimen/dimens_8sp</item>
+    </style>
+
+    <style name="PaymentModeTextDescStyle">
+        <item name="fontPath">fonts/Roboto-Light.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:paddingRight">@dimen/dimens_48</item>
+        <item name="android:text">@string/payment_mode_dummy</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textSize">@dimen/dimens_10sp</item>
+        <item name="android:paddingBottom">@dimen/dimens_10sp</item>
+    </style>
+
+    <style name="PaymentModeContinueBtn">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimens_25</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dimens_24</item>
+        <item name="android:paddingRight">@dimen/dimens_24</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_12</item>
+        <item name="android:layout_marginTop">@dimen/dimens_6</item>
+        <item name="android:text">@string/btn_continue</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/btn_pay_mode_continue</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/dimens_11sp</item>
+    </style>
+
+    <!-- DropDown View Style -->
+    <style name="DropDownCardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardCornerRadius">@dimen/dimens_4</item>
+        <item name="cardElevation">@dimen/dimens_2</item>
+    </style>
+
+    <style name="DropDownRelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimens_38</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="DropDownAutoCompleteTextView">
+        <item name="fontPath">fonts/Roboto-Light.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:clickable">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:inputType">textNoSuggestions|none</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">@dimen/dimens_12</item>
+        <item name="android:paddingRight">@dimen/dimens_12</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textColorHint">@color/color504F50</item>
+        <item name="android:textSize">@dimen/dimens_12sp</item>
+    </style>
+
+    <style name="dropdownArrowStyle">
+        <item name="android:layout_width">@dimen/dimens_28</item>
+        <item name="android:layout_height">@dimen/dimens_28</item>
+        <item name="android:background">@drawable/custom_item_trans_over_bg</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:padding">@dimen/dimens_8</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:tint">@color/color9F9F9F</item>
+        <item name="srcCompat">@drawable/ic_down_arrow</item>
+    </style>
+
+    <!-- Send Money Beneficiary Details Layout -->
+
+    <style name="BigAmountEditText">
+        <item name="fontPath">fonts/HelveticaNeue-UltraLight.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimens_40</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:hint">0,00</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/color1E6AB3</item>
+        <item name="android:textColorHint">@color/color1E6AB3</item>
+        <item name="android:textSize">@dimen/dimens_28sp</item>
+    </style>
+
+    <style name="BeneficiaryMultiStateViewStyle" parent="MultiStateViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/b_item_height</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="SendMoneyBeneficiaryDetailsLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dimens_6</item>
+        <item name="android:paddingRight">@dimen/dimens_6</item>
+        <item name="android:paddingTop">@dimen/dimens_6</item>
+        <item name="android:paddingBottom">@dimen/dimens_8</item>
+    </style>
+
+    <style name="SendMoneyBeneficiaryDetailsTextLabel">
+        <item name="fontPath">fonts/Roboto-Light.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textSize">@dimen/dimens_8sp</item>
+    </style>
+
+    <style name="SendMoneyBeneficiaryDetailsText">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingTop">@dimen/dimens_2</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textSize">@dimen/dimens_12sp</item>
+    </style>
+
+    <style name="SendMoneyBeneficiaryDetailsDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimens_0.5</item>
+        <item name="android:background">@color/colorB7B3B3</item>
+    </style>
+
+    <style name="SendMoneyBeneficiaryDetailsDividerVertical">
+        <item name="android:layout_width">@dimen/dimens_0.5</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorB7B3B3</item>
+    </style>
+
+    <style name="TabTextStyle" parent="@android:style/Widget.Holo.Light.ActionBar.TabText">
+        <item name="android:textColor">@color/colorWhite_240</item>
+        <item name="android:textSize">@dimen/dimens_13sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ConfirmViewTextLabel">
+        <item name="fontPath">fonts/Roboto-Light.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textSize">@dimen/dimens_13sp</item>
+    </style>
+
+    <style name="ConfirmViewText">
+        <item name="android:ellipsize">marquee</item>
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingTop">@dimen/dimens_5</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textSize">@dimen/dimens_16sp</item>
+    </style>
+
+    <style name="AddBeneficiaryText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorHint">@color/colorDivider</item>
+    </style>
+
+    <style name="AddBeneficiaryHint" parent="@android:style/TextAppearance">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/colorDivider</item>
+    </style>
+
+    <!-- Account Management Screen -->
+
+    <style name="accountManagementCardViewStyle">
+        <item name="android:layout_width">@dimen/account_management_card_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginBottom">@dimen/minus_dimens_3</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_8</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:focusable">true</item>
+        <item name="cardCornerRadius">@dimen/dimens_8</item>
+        <item name="cardElevation">@dimen/dimens_4</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="accountManagementLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/pay_mode_branch_card_bg</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dimens_16</item>
+    </style>
+
+    <style name="accountManagementTextLabelStyle">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dimens_12</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:paddingRight">@dimen/dimens_8</item>
+        <item name="android:textSize">@dimen/dimens_15sp</item>
+        <item name="android:paddingBottom">@dimen/dimens_8</item>
+    </style>
+
+    <style name="accountManagementTextDescStyle">
+        <item name="fontPath">fonts/Roboto-Light.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:paddingRight">@dimen/dimens_48</item>
+        <item name="android:text">@string/payment_mode_dummy</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textSize">@dimen/dimens_10sp</item>
+        <item name="android:paddingBottom">@dimen/dimens_10</item>
+    </style>
+
+    <style name="accountManagementContinueBtn">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimens_25</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dimens_24</item>
+        <item name="android:paddingRight">@dimen/dimens_24</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_12</item>
+        <item name="android:layout_marginTop">@dimen/dimens_6</item>
+        <item name="android:text">@string/btn_continue</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/btn_pay_mode_continue</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/dimens_11sp</item>
+    </style>
+
+    <style name="accountManagementAddCardViewStyle">
+        <item name="android:layout_width">@dimen/layout_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/dimens_8</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_8</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:focusable">true</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="cardCornerRadius">@dimen/dimens_8</item>
+        <item name="cardElevation">@dimen/dimens_4</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="accountManagementAddTextInputLayout">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/dimens_8</item>
+        <item name="android:paddingLeft">@dimen/dimens_6</item>
+        <item name="android:paddingRight">@dimen/dimens_4</item>
+        <item name="android:paddingBottom">@dimen/dimens_6</item>
+        <item name="android:textColorHint">@color/color8F8C8C</item>
+    </style>
+
+    <style name="accountManagementAddEditText">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+        <item name="android:paddingTop">@dimen/dimens_7</item>
+        <item name="android:paddingLeft">@dimen/dimens_6</item>
+        <item name="android:paddingRight">@dimen/dimens_4</item>
+        <item name="android:paddingBottom">@dimen/dimens_4</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textSize">@dimen/dimens_13sp</item>
+    </style>
+
+    <!-- Credit Card Screen-->
+    <style name="creditCardNumberAddEditText">
+        <item name="fontPath">fonts/HelveticaNeue.ttf</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textSize">@dimen/dimens_15sp</item>
+    </style>
+
+    <style name="creditCardNumberTextView">
+        <item name="fontPath">fonts/HelveticaNeue-Medium.ttf</item>
+        <item name="android:layout_width">@dimen/dimens_0</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:letterSpacing" tools:ignore="NewApi">0.1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:hint">****</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/dimens_15sp</item>
+    </style>
+
+
+    <!-- Add/List Beneficiary -->
+
+    <style name="BeneficiaryListArrow">
+        <item name="android:layout_width">@dimen/dimens_50</item>
+        <item name="android:layout_height">@dimen/dimens_45</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/minus_dimens_20</item>
+        <item name="android:background">@drawable/beneficiary_arrow_circle</item>
+        <item name="android:paddingBottom">@dimen/dimens_15</item>
+        <item name="android:paddingLeft">@dimen/dimens_6</item>
+        <item name="android:paddingRight">@dimen/dimens_16</item>
+        <item name="android:paddingTop">@dimen/dimens_15</item>
+        <item name="android:visibility">gone</item>
+        <item name="srcCompat">@drawable/svg_benf_arrow</item>
+    </style>
+
+    <style name="BeneficiaryListLeftArrow" parent="BeneficiaryListArrow">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_alignParentRight">false</item>
+        <item name="android:layout_marginLeft">@dimen/minus_dimens_20</item>
+        <item name="android:paddingLeft">@dimen/dimens_16</item>
+        <item name="android:paddingRight">@dimen/dimens_6</item>
+        <item name="srcCompat">@drawable/svg_benf_left_arrow</item>
+    </style>
+
+    <style name="BeneficiaryFlagImageView">
+        <item name="android:layout_width">@dimen/dimens_42</item>
+        <item name="android:layout_height">@dimen/dimens_30</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:padding">@dimen/dimens_1</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="BeneficiaryCountryTextView">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/dimens_1</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingTop">@dimen/dimens_2</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:text">Receiving country</item>
+        <item name="android:textColor">@color/color377EC4</item>
+        <item name="android:textSize">@dimen/dimens_10sp</item>
+    </style>
+
+    <style name="BeneficiaryChangeCountryTextView">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/dimens_1</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingTop">@dimen/dimens_2</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:text">Click to change country</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textSize">@dimen/dimens_10sp</item>
+    </style>
+
+    <style name="ClickToChangeCountryTextView">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/dimens_1</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingTop">@dimen/dimens_2</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:text">Click to change Country</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textSize">@dimen/dimens_10sp</item>
+    </style>
+
+    <style name="ReceivingCountryTextView">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/dimens_1</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingTop">@dimen/dimens_2</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:text">Receiving country</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dimens_10sp</item>
+    </style>
+
+    <!-- Add Beneficiary Select Screen -->
+
+    <style name="addBeneficiarySelectTypeLabel">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginTop">@dimen/dimens_14</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">@dimen/dimens_8</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorE86768</item>
+        <item name="android:textSize">@dimen/dimens_12sp</item>
+    </style>
+
+    <style name="addBeneficiarySelectTypeCardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimens_6</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardCornerRadius">@dimen/dimens_4</item>
+        <item name="cardElevation">@dimen/dimens_2</item>
+    </style>
+
+    <style name="addBeneficiarySelectTypeRelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimens_38</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="addBeneficiarySelectTypeAutoTextView">
+        <item name="fontPath">fonts/Roboto-Light.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:clickable">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:inputType">textNoSuggestions|none</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">@dimen/dimens_12</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textColorHint">@color/color9B9B9B</item>
+        <item name="android:textSize">@dimen/dimens_12sp</item>
+    </style>
+
+    <!-- Add Beneficiary Form Screen -->
+
+    <style name="AddBeneficiaryInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:padding">@dimen/dimens_4</item>
+        <item name="android:textColorHint">@color/color8F8C8C</item>
+    </style>
+
+    <style name="AddBeneficiaryEditText">
+        <item name="fontPath">fonts/HelveticaNeue.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+        <item name="android:paddingTop">@dimen/dimens_4</item>
+        <item name="android:paddingLeft">@dimen/dimens_2</item>
+        <item name="android:paddingRight">@dimen/dimens_2</item>
+        <item name="android:paddingBottom">@dimen/dimens_2</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">@dimen/dimens_10</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+    <style name="AddBeneficiaryDividerView">
+        <item name="fontPath">fonts/HelveticaNeue.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimens_1</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+
+    <!-- Add Beneficiary Confirm Details Dialog Screen -->
+
+    <style name="AddBeneficiaryConfirmDetailsLayout" parent="SendMoneyBeneficiaryDetailsLayout"></style>
+
+    <style name="AddBeneficiaryConfirmDetailsTextLabel" parent="SendMoneyBeneficiaryDetailsTextLabel"></style>
+
+    <style name="AddBeneficiaryConfirmDetailsText" parent="SendMoneyBeneficiaryDetailsText"></style>
+
+    <style name="AddBeneficiaryConfirmDetailsDividerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimens_0.5</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+    <!-- Notifications Screen -->
+    <style name="notificationTextView">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dimens_18</item>
+        <item name="android:paddingLeft">@dimen/dimens_15</item>
+        <item name="android:paddingRight">@dimen/dimens_10</item>
+        <item name="android:paddingBottom">@dimen/dimens_18</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/color373A49</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+    <style name="notificationSwitch">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">@dimen/dimens_48</item>
+        <item name="android:layout_height">@dimen/dimens_48</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_6</item>
+        <item name="android:layout_marginTop">@dimen/dimens_6</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_6</item>
+        <item name="android:layout_marginRight">@dimen/dimens_16</item>
+    </style>
+
+
+    <!-- Rating Bar -->
+    <style name="transactionRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/txn_rating_bar</item>
+
+    </style>
+
+
+    <!-- Contact Us FeedBack FAQ  -->
+
+    <style name="contactUsCardViewStyle">
+        <item name="android:layout_width">@dimen/layout_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/dimens_8</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_8</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:focusable">true</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="cardCornerRadius">@dimen/dimens_8</item>
+        <item name="cardElevation">@dimen/dimens_4</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="contactUsTextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/dimens_8</item>
+        <item name="android:paddingLeft">@dimen/dimens_6</item>
+        <item name="android:paddingRight">@dimen/dimens_4</item>
+        <item name="android:paddingBottom">@dimen/dimens_6</item>
+        <item name="android:textColorHint">@color/color8F8C8C</item>
+    </style>
+
+    <style name="contactUsEditText">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+        <item name="android:paddingTop">@dimen/dimens_6</item>
+        <item name="android:paddingLeft">@dimen/dimens_6</item>
+        <item name="android:paddingRight">@dimen/dimens_4</item>
+        <item name="android:paddingBottom">@dimen/dimens_4</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+    <!-- Buttons -->
+    <style name="FloatingRoundButton">
+        <item name="android:layout_width">@dimen/dimens_42</item>
+        <item name="android:layout_height">@dimen/dimens_42</item>
+        <item name="android:layout_margin">@dimen/dimens_10</item>
+        <item name="android:padding">@dimen/dimens_8</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:background">@drawable/circle_btn_blue</item>
+        <item name="android:elevation" tools:ignore="NewApi">@dimen/dimens_4</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="FloatingRoundButtonNew">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimens_42</item>
+        <item name="android:layout_margin">@dimen/dimens_10</item>
+        <item name="android:padding">@dimen/dimens_8</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:elevation" tools:ignore="NewApi">@dimen/dimens_4</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="addBeneficiaryButton">
+        <item name="android:layout_width">@dimen/dimens_32</item>
+        <item name="android:layout_height">@dimen/dimens_32</item>
+        <item name="android:layout_margin">@dimen/dimens_2</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:background">@drawable/circle_btn_blue</item>
+        <item name="android:elevation" tools:ignore="NewApi">@dimen/dimens_4</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="addBeneficiaryButtonNew">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimens_32</item>
+        <item name="android:layout_margin">@dimen/dimens_2</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:elevation" tools:ignore="NewApi">@dimen/dimens_4</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="SubmitBtn">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">@dimen/submit_btn_width</item>
+        <item name="android:layout_height">@dimen/submit_btn_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_10</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_8</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:text">Submit</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/btn_primary_round</item>
+        <item name="android:textColor">@color/btn_text_color_primary_grey</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+    <style name="SubmitOutlineBtn">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">@dimen/submit_btn_width</item>
+        <item name="android:layout_height">@dimen/submit_btn_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_10</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_8</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:text">Submit</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/btn_primary_round_outline</item>
+        <item name="android:textColor">@color/btn_text_color_primary_grey_outline</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+    <style name="BlueRectBtn">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/submit_btn_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:text">Submit</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/btn_primary_rect</item>
+        <item name="android:textColor">@color/btn_text_color_primary_grey</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+    <style name="SendMoneySendBtn">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimens_50</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_5</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_8</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:text">Submit</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/btn_send_money_send</item>
+        <item name="android:textColor">@color/btn_text_color_primary_grey</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+    <style name="ConfirmBtnGreen">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">@dimen/btn_confirm_green_width</item>
+        <item name="android:layout_height">@dimen/btn_confirm_green_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_10</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_8</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:text">Confirm</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/btn_confirm_green</item>
+        <item name="android:textColor">@color/btn_text_color_primary_grey</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+    <style name="SaveBtnEmptyGreen1">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">@dimen/btn_confirm_green_width</item>
+        <item name="android:layout_height">@dimen/btn_confirm_green_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_10</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_8</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:text">Confirm</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/btn_confirm_green</item>
+        <item name="android:textColor">@color/send_money_send_btn_text_color</item>
+        <item name="android:textSize">@dimen/dimens_16sp</item>
+    </style>
+
+    <style name="CircularProgressSaveBtn">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">@dimen/btn_circular_progress_save_width</item>
+        <item name="android:layout_height">@dimen/btn_circular_progress_save_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_10</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_8</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:text">@string/btn_save</item>
+        <item name="android:maxLines">1</item>
+        <item name="cpb_cornerRadius">@dimen/dimens_40</item>
+        <item name="cpb_iconComplete">@drawable/svg_success_tick</item>
+        <item name="cpb_textIdle">@string/save</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+    <style name="CurrencyCalculatorSubmitBtn">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimens_50</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_5</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_8</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:text">Submit</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/btn_primary_round</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dimens_16sp</item>
+    </style>
+
+    <style name="CircularProgressSubmitBtn">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">@dimen/btn_circular_progress_save_width</item>
+        <item name="android:layout_height">@dimen/btn_circular_progress_save_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_10</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_8</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:text">Submit</item>
+        <item name="android:maxLines">1</item>
+        <item name="cpb_cornerRadius">48dp</item>
+        <item name="cpb_iconComplete">@drawable/ic_action_accept</item>
+        <item name="cpb_iconError">@drawable/ic_action_cancel</item>
+        <item name="cpb_textIdle">@string/btn_upload</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dimens_16sp</item>
+    </style>
+
+    <!-- Dialog Box -->
+
+    <!-- Dialog Card View -->
+
+    <style name="DialogScrollView" parent="CardViewStyle">
+        <item name="android:layout_width">@dimen/layout_width</item>
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:padding">@dimen/dimens_14</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="DialogCardView" parent="CardViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/dimens_14</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_15</item>
+        <item name="android:layout_marginTop">@dimen/dimens_15</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_14</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="DialogTitleTextView">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/dimens_10</item>
+        <item name="android:text">@string/dialog_title</item>
+        <item name="android:textColor">@color/color1E6AB3</item>
+        <item name="android:textSize">@dimen/dimens_18sp</item>
+    </style>
+
+
+    <style name="DialogTextView">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:letterSpacing" tools:ignore="NewApi">0.13</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:paddingLeft">@dimen/dimens_4</item>
+        <item name="android:paddingRight">@dimen/dimens_4</item>
+        <item name="android:paddingTop">@dimen/dimens_30</item>
+        <item name="android:text">@string/dialog_text</item>
+        <item name="android:textColor">@color/colorA4A4A4</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+
+    <style name="DialogTextViewRegular">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:letterSpacing" tools:ignore="NewApi">0.13</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:paddingLeft">@dimen/dimens_4</item>
+        <item name="android:paddingRight">@dimen/dimens_4</item>
+        <item name="android:paddingTop">@dimen/dimens_30</item>
+        <item name="android:text">@string/dialog_text</item>
+        <item name="android:textColor">@color/colorA4A4A4</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+    <style name="SubmitBtnDialog" parent="SubmitBtn">
+        <item name="android:layout_width">@dimen/submit_dialog_btn_width</item>
+        <item name="android:layout_height">@dimen/submit_dialog_btn_height</item>
+        <item name="android:textSize">@dimen/dimens_12sp</item>
+    </style>
+
+    <style name="SubmitOutlineBtnDialog" parent="SubmitOutlineBtn">
+        <item name="android:layout_width">@dimen/submit_dialog_btn_width</item>
+        <item name="android:layout_height">@dimen/submit_dialog_btn_height</item>
+        <item name="android:textSize">@dimen/dimens_12sp</item>
+    </style>
+
+
+    <style name="DialogTextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_4</item>
+        <item name="android:layout_marginRight">@dimen/dimens_4</item>
+        <item name="android:layout_marginTop">@dimen/dimens_30</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/color8B8989</item>
+    </style>
+
+    <style name="DialogEditText">
+        <item name="fontPath">fonts/HelveticaNeue.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/dimens_16</item>
+        <item name="android:paddingLeft">@dimen/dimens_2</item>
+        <item name="android:paddingRight">@dimen/dimens_2</item>
+        <item name="android:paddingBottom">@dimen/dimens_2</item>
+        <item name="android:inputType">textEmailAddress|textNoSuggestions</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textColor">@color/color3F3F3F</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+
+    <!-- Dynamic Layout Dialog Screen -->
+
+    <style name="dynamicLayoutDialogDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimens_0.5</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_14</item>
+        <item name="android:layout_marginRight">@dimen/dimens_14</item>
+    </style>
+
+
+    <style name="RadioButtonStyle" parent="AppTheme">
+        <item name="colorControlNormal">@color/list_group_title</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="InputLayoutStyle" parent="TextAppearance.AppCompat">
+        <item name="colorControlNormal">@color/list_group_title</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="DialogCardView2" parent="CardViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimens_200</item>
+        <item name="android:layout_marginRight">@dimen/dimens_14</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_15</item>
+        <item name="android:layout_marginTop">@dimen/dimens_15</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_14</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <style name="DialogTextView2">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!--<item name="android:letterSpacing" tools:ignore="NewApi">0.13</item>-->
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:paddingLeft">@dimen/dimens_4</item>
+        <item name="android:paddingRight">@dimen/dimens_4</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingTop">@dimen/dimens_15</item>
+        <item name="android:text">@string/dialog_text</item>
+        <item name="android:textColor">@color/colorA4A4A4</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+    <style name="DialogTextView3">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:letterSpacing" tools:ignore="NewApi">0.13</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:paddingLeft">@dimen/dimens_4</item>
+        <item name="android:paddingRight">@dimen/dimens_4</item>
+        <item name="android:paddingTop">@dimen/dimens_20</item>
+        <item name="android:text">@string/dialog_text</item>
+        <item name="android:textColor">@color/splash_bg</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+
+
+    <style name="addTransactionTextView">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginTop">@dimen/dimens_14</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorTrans6F92BE</item>
+        <item name="android:textSize">@dimen/dimens_16sp</item>
+    </style>
+
+
+
+    <style name="signUpLoginSendBtn">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimens_50</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_5</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_8</item>
+        <item name="android:layout_marginRight">@dimen/dimens_8</item>
+        <item name="android:text">Submit</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:background">@drawable/btn_send_money_send</item>
+        <item name="android:textColor">@color/btn_text_color_primary_grey</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+    </style>
+
+
+
+</resources>

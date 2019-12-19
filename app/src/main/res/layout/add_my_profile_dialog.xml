@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_credit_card_confirm_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimens_6">
+
+        <!--<include layout="@layout/toolbar_actionbar_transparent" />-->
+        <include layout="@layout/toolbar_actionbar_menu" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/confirm_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dimens_20"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:layout_marginRight="@dimen/dimens_20"
+            android:foreground="@drawable/cardview_title_selector"
+            app:cardCornerRadius="@dimen/dimens_8"
+            app:cardElevation="@dimen/dimens_3"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/bg_layout_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_my_profile_card_01"
+                android:padding="@dimen/dimens_12">
+
+                <RelativeLayout
+                    android:id="@+id/top_layout_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimens_14">
+
+                    <ImageView
+                        android:id="@+id/card_chip_c"
+                        android:layout_width="@dimen/dimens_32"
+                        android:layout_height="@dimen/dimens_32"
+                        android:gravity="center"
+                        android:scaleType="fitCenter"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/icn_card_chip" />
+
+                    <TextView
+                        android:id="@+id/bank_name_c"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/card_chip_c"
+                        android:gravity="right"
+                        android:hint="@string/bank_name"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dimens_12"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dimens_15sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/card_num_layout_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_layout_c"
+                    android:layout_marginBottom="@dimen/dimens_12"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/card_holder_name"
+                        style="@style/creditCardNumberTextView"
+                        android:hint=""
+                        android:textSize="@dimen/dimens_12sp"
+                        android:maxLines="2" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_num_layout_c"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:id="@+id/card_type_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/membership_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Membership No:"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/dimens_9sp" />
+
+                        <TextView
+                            android:id="@+id/card_type_membership_no"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/membership_type"
+                            android:layout_marginTop="@dimen/minus_dimens_4"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/dimens_10sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/card_type_layout_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/dimens_8"
+                        android:layout_weight="0.5">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/card_type_c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Points"
+                            android:gravity="end"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/dimens_9sp" />
+
+                        <TextView
+                            android:id="@+id/card_type_point"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/card_type_c"
+                            android:layout_marginTop="@dimen/minus_dimens_4"
+                            android:maxLines="1"
+                            android:gravity="end"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/dimens_10sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_marginTop="@dimen/dimens_5"
+            android:layout_below="@+id/confirm_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1E000000"/>
+
+    </RelativeLayout>
+</ScrollView>

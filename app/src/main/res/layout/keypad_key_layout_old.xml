@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dimens_20"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_456">
+
+        <app.alansari.keypadview.BigButtonView
+            android:id="@+id/button_1"
+            android:layout_width="@dimen/login_keypad_btn_width"
+            android:layout_height="@dimen/login_keypad_btn_height"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_toStartOf="@+id/button_2" />
+
+        <app.alansari.keypadview.BigButtonView
+            android:id="@+id/button_2"
+            android:layout_width="@dimen/login_keypad_btn_width"
+            android:layout_height="@dimen/login_keypad_btn_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/button_margin" />
+
+        <app.alansari.keypadview.BigButtonView
+            android:id="@+id/button_3"
+            android:layout_width="@dimen/login_keypad_btn_width"
+            android:layout_height="@dimen/login_keypad_btn_height"
+            android:layout_marginStart="@dimen/button_margin"
+            android:layout_toEndOf="@id/button_2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_456"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <app.alansari.keypadview.BigButtonView
+            android:id="@+id/button_4"
+            android:layout_width="@dimen/login_keypad_btn_width"
+            android:layout_height="@dimen/login_keypad_btn_height"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_toStartOf="@+id/button_5" />
+
+        <app.alansari.keypadview.BigButtonView
+            android:id="@+id/button_5"
+            android:layout_width="@dimen/login_keypad_btn_width"
+            android:layout_height="@dimen/login_keypad_btn_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/button_margin" />
+
+        <app.alansari.keypadview.BigButtonView
+            android:id="@+id/button_6"
+            android:layout_width="@dimen/login_keypad_btn_width"
+            android:layout_height="@dimen/login_keypad_btn_height"
+            android:layout_marginStart="@dimen/button_margin"
+            android:layout_toEndOf="@id/button_5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_789"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_456">
+
+        <app.alansari.keypadview.BigButtonView
+            android:id="@+id/button_7"
+            android:layout_width="@dimen/login_keypad_btn_width"
+            android:layout_height="@dimen/login_keypad_btn_height"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_toStartOf="@+id/button_8" />
+
+        <app.alansari.keypadview.BigButtonView
+            android:id="@+id/button_8"
+            android:layout_width="@dimen/login_keypad_btn_width"
+            android:layout_height="@dimen/login_keypad_btn_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/button_margin" />
+
+        <app.alansari.keypadview.BigButtonView
+            android:id="@+id/button_9"
+            android:layout_width="@dimen/login_keypad_btn_width"
+            android:layout_height="@dimen/login_keypad_btn_height"
+            android:layout_marginStart="@dimen/button_margin"
+            android:layout_toEndOf="@id/button_8" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_012"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_789">
+
+        <TextView
+            android:id="@+id/left_button"
+            fontPath="fonts/HelveticaNeue-Medium.ttf"
+            android:layout_width="@dimen/login_keypad_btn_width"
+            android:layout_height="@dimen/login_keypad_btn_height"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_toStartOf="@+id/button_0"
+            android:alpha="0.78"
+            android:gravity="center"
+            android:text="Hide"
+            android:textColor="@color/color3F3F3F"
+            android:textSize="@dimen/dimens_16sp"
+            android:textStyle="bold" />
+
+        <app.alansari.keypadview.BigButtonView
+            android:id="@+id/button_0"
+            android:layout_width="@dimen/login_keypad_btn_width"
+            android:layout_height="@dimen/login_keypad_btn_height"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/right_button"
+            fontPath="fonts/HelveticaNeue-Medium.ttf"
+            android:layout_width="@dimen/login_keypad_btn_width"
+            android:layout_height="@dimen/login_keypad_btn_height"
+            android:layout_marginStart="@dimen/button_margin"
+            android:layout_toEndOf="@id/button_0"
+            android:alpha="0.78"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="@color/color3F3F3F"
+            android:textSize="@dimen/dimens_16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

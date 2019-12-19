@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        - Created by Parveen Dala on 05 October, 2016
+        - Fugenx Technologies, Bengaluru
+        - AlAnsari
+        -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="AppThemeBlackAccent" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="colorAccent">@color/colorBlack</item>
+    </style>
+
+    <style name="AppThemePrimaryAccent" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="colorAccent">@color/colorPrimaryAccent</item>
+    </style>
+
+</resources>

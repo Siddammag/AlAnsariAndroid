@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dimens_15">
+
+    <ImageView
+        android:id="@+id/empty_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/empty_textView"
+        fontPath="fonts/HelveticaNeue.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_5"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.02"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="@dimen/dimens_8"
+        android:text="@string/empty_result"
+        android:textColor="@color/color3F3F3F"
+        android:textSize="@dimen/dimens_12sp" />
+
+    <app.alansari.customviews.flatbutton.ButtonFlat
+        android:id="@+id/empty_button"
+        fontPath="fonts/Roboto-Medium.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:gravity="fill"
+        android:padding="@dimen/dimens_5"
+        android:text="Refresh"></app.alansari.customviews.flatbutton.ButtonFlat>
+
+</LinearLayout>

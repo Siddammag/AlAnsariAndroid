@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    tools:ignore="MissingPrefix">
+
+    <!-- android:background="@drawable/pin_code_round_empty"-->
+    <ImageView
+        android:id="@+id/accept_image"
+        android:layout_width="@dimen/dimens_20"
+        android:layout_height="@dimen/dimens_20"
+         />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_toRightOf="@+id/accept_image"
+        android:layout_toLeftOf="@+id/iv_arrow"
+        fontPath="fonts/Roboto-Light.ttf"
+        android:layout_marginLeft="@dimen/dimens_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color3F3F3F"
+        android:maxLines="1"
+        android:text="c dc bdc "
+        android:textSize="@dimen/dimens_12sp" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_alignParentEnd="true"
+        android:layout_width="@dimen/dimens_24"
+        android:layout_height="@dimen/dimens_24"
+        android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+    <View
+        android:layout_marginTop="@dimen/dimens_5"
+        android:layout_below="@+id/iv_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1E000000"/>
+
+</RelativeLayout>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="app.alansari">
+    <!--
+    - Created by Parveen Dala on 05 October, 2016
+    - Fugenx Technologies, Bengaluru
+    - AlAnsari
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <permission
+        android:name="android.permission.BLUETOOTH"
+        android:label="BLUETOOTH" />
+    <permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <permission
+        android:name="android.permission.INTERACT_ACROSS_USERS"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="false"
+        android:appComponentFactory="android:supportsRtl,android:allowBackup"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory,android:allowBackup,android:supportsRtl">
+        <activity android:name=".MyProfileDetailsNew"></activity>
+        <!--         tools:replace="android:supportsRtl,android:allowBackup,android:appComponentFactory"> -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyD1nSFzWyRy84BeusyaqDVt3-pb7zAaSZI" />
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+<service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        -->
+        <service
+            android:name=".fcm.MyFirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+        ATTENTION: This was auto-generated to add Google Play services to your project for
+        App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" /> <!-- Login Register Activities -->
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LandingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VerifyEIDActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".KeypadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoToBranchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DashboardActivity"
+            android:screenOrientation="portrait" /> <!-- Account Management Activities -->
+        <activity
+            android:name=".modules.accountmanagement.BeneficiaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.AddBeneficiarySelectTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.AddBeneficiaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.AddBeneficiaryCeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.AddBeneficiaryCeDropdownActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.AccountManagementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.BankAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.AddBankAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.CreditCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.AddCreditCardActivity"
+            android:screenOrientation="portrait" /> <!-- Send Money Activities -->
+        <activity
+            android:name=".modules.sendmoney.SendMoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.AdditionalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.AdditionalInfoCeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.PaymentModeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.PaymentGatewayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.PaymentDetailsBankPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.PaymentDetailsBranchPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.TransactionDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.TransactionRateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.PendingTransactionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.TransactionHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.TransactionCompletedActivity"
+            android:screenOrientation="portrait" /> <!-- Western Uninon Activities -->
+        <activity
+            android:name=".modules.accountmanagement.WUEnrollActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.WUBeneficiaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.WUSendMoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.AdditionalInfoActivityWu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.UpdateExistingBeneficiaryActivityWu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.WUAddBeneficiarySelectTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.WUAddBeneficiaryActivity"
+            android:screenOrientation="portrait" /> <!-- Calculator Activities -->
+        <activity
+            android:name=".CreditCardPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.ratealert.RateAlertActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.currencycalculator.CurrencyConverterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.currencycalculator.ForeignCurrencyActivity"
+            android:screenOrientation="portrait" /> <!-- Select Item -->
+        <activity
+            android:name=".SelectItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectCountryFlagActivity"
+            android:theme="@style/AppTheme.Transparent.BlackPrimaryDark" />
+        <activity
+            android:name=".SelectCurrencyFlagActivity"
+            android:theme="@style/AppTheme.Transparent.BlackPrimaryDark" /> <!-- Contact Us, FeedBack, Branch Locator -->
+        <activity
+            android:name=".modules.branchlocator.BranchLocatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.branchlocator.BranchLocatorCityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.branchlocator.BranchLocatorMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.notification.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.feedback.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.feedback.FaqActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.promotions.PromotionsActivity"
+            android:screenOrientation="portrait" />
+        <!--
+ <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        -->
+        <activity
+            android:name=".modules.accountmanagement.UpdateExistingBeneficiaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accountmanagement.UpdateExistingBeneficiaryCeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.sendmoney.PendingTransActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="3fb9d30d1b9b76bf06a3fd42b972f980b292aee0" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.facebook.sdk.CodelessDebugLogEnabled"
+            android:value="true" />
+
+        <activity
+            android:name=".newAdditions.Main2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyEmiratesIdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".newAdditions.CustomerProfile"
+            android:screenOrientation="portrait" />
+        <activity android:name=".newAdditions.ImageCaptureActivity" />
+        <activity
+            android:name=".TravelCardReloadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.travelcardreload.AddTravelCardReload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TravelCardReloadCurrencyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectCurrencyFlagTravelCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".travelcardreload.AddingTravelCardCurrencyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransactionHistroyCompletedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransactionTravelDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdditionalInfoTravelCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransactionTravelCompDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransactionPageTravelCardComp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransactionPagePendingTravelCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentGatewayActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyReferralActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdditionalInfoCESelectModeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentDetailsSelectBankPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdditionalInfoSelectModeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentSelectModeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransactionCompletedRemittanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransactionTrackerDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransactionTrackerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyProfileDetails"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

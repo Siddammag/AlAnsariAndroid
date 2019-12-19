@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:parentTag="LinearLayout">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout"
+        style="@style/AddBeneficiaryInputLayout">
+
+        <EditText
+            android:id="@+id/edit_text"
+            style="@style/AddBeneficiaryEditText"
+            android:clickable="false"
+            android:focusable="false"
+            android:hint="Beneficiary Hint"
+            android:inputType="none" />
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:id="@+id/divider"
+        style="@style/AddBeneficiaryDividerView" />
+</LinearLayout>

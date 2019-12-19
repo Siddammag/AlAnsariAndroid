@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/verify_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar_big_old" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/dialog_btn"
+        android:layout_below="@+id/toolbar_layout"
+        android:clipToPadding="false"
+        android:padding="@dimen/dimens_20"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/account_name_label"
+                        style="@style/ConfirmViewTextLabel"
+                        android:text="Account Name" />
+
+                    <TextView
+                        android:id="@+id/account_name"
+                        style="@style/ConfirmViewText"
+                        android:layout_below="@+id/account_name_label"
+                        android:text="Parveen D" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/bank_name_label"
+                        style="@style/ConfirmViewTextLabel"
+                        android:text="Bank Name" />
+
+                    <TextView
+                        android:id="@+id/bank_name"
+                        style="@style/ConfirmViewText"
+                        android:layout_below="@+id/bank_name_label"
+                        android:text="Federal Bank" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_25"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/branch_name_label"
+                        style="@style/ConfirmViewTextLabel"
+                        android:text="Branch Name" />
+
+                    <TextView
+                        android:id="@+id/branch_name"
+                        style="@style/ConfirmViewText"
+                        android:layout_below="@+id/branch_name_label"
+                        android:text="Bengaluru" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/iban_number_label"
+                        style="@style/ConfirmViewTextLabel"
+                        android:text="IBAN Number" />
+
+                    <TextView
+                        android:id="@+id/iban_number"
+                        style="@style/ConfirmViewText"
+                        android:layout_below="@+id/iban_number_label"
+                        android:text="12345678901234" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_25"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/account_number_label"
+                        style="@style/ConfirmViewTextLabel"
+                        android:text="Account Number" />
+
+                    <TextView
+                        android:id="@+id/account_number"
+                        style="@style/ConfirmViewText"
+                        android:layout_below="@+id/account_number_label"
+                        android:text="98574123456756423" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <app.alansari.customviews.progressbutton.CircularProgressButton
+        android:id="@+id/dialog_btn"
+        style="@style/CircularProgressSubmitBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        app:cpb_paddingProgress="@dimen/dimens_8" />
+
+</RelativeLayout>

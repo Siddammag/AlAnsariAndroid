@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dimens_10"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/reg_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimens_12"
+        android:paddingTop="@dimen/dimens_2"
+        android:paddingRight="@dimen/dimens_12"
+        android:background="@color/colorEFEFF4"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/flag_image"
+            android:layout_width="@dimen/dimens_32"
+            android:layout_height="@dimen/dimens_32"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/svg_flag_aed" />
+
+        <TextView
+            android:id="@+id/amount"
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/flag_image"
+            android:paddingLeft="@dimen/dimens_7"
+            android:text="Value Transfer"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimens_13sp" />
+
+
+        <TextView
+            android:id="@+id/title"
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/amount"
+            android:layout_centerVertical="true"
+            android:text="1 - 3 days"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimens_13sp" />
+    </RelativeLayout>
+
+    <View
+        android:visibility="gone"
+        style="@style/AddBeneficiaryDividerView"
+        android:layout_below="@+id/reg_label" />
+
+    <RelativeLayout
+        android:id="@+id/reg_currency_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/bg"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/amount_cal_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimens_2"
+            android:layout_marginRight="@dimen/dimens_2"
+            android:minHeight="@dimen/dimens_150"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/dimens_4"
+            app:cardElevation="@dimen/dimens_4"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/fragment_data_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimens_12">
+
+
+                <TextView
+                    android:id="@+id/currency"
+                    fontPath="fonts/Roboto-Medium.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimens_8"
+                    android:layout_marginRight="@dimen/dimens_8"
+                    android:layout_marginBottom="@dimen/dimens_2"
+                    android:text="Currency"
+                    android:textColor="@color/color373A49"
+                    android:textSize="@dimen/dimens_12sp" />
+
+                <TextView
+                    android:id="@+id/select_currency"
+                    fontPath="fonts/Roboto-Light.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/currency"
+                    android:layout_marginLeft="@dimen/dimens_8"
+                    android:layout_marginRight="@dimen/dimens_8"
+                    android:layout_marginBottom="@dimen/dimens_12"
+                    android:text="Select Currency"
+                    android:textColor="@color/color373A49"
+                    android:textSize="@dimen/dimens_15sp" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    style="@style/dropdownArrowStyle"
+                    android:layout_below="@id/currency" />
+
+                <View
+                    android:id="@+id/currency_divider"
+                    style="@style/AddBeneficiaryDividerView"
+                    android:layout_below="@id/select_currency"
+                    android:layout_marginLeft="@dimen/dimens_8"
+                    android:layout_marginRight="@dimen/dimens_8" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/from_flag"
+                    android:layout_width="@dimen/dimens_28"
+                    android:layout_height="@dimen/dimens_22"
+                    android:layout_below="@+id/currency_divider"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimens_8"
+                    android:layout_marginTop="@dimen/dimens_10"
+                    android:background="@color/colorWhite_240"
+                    android:padding="@dimen/dimens_1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/svg_flag_aed" />
+
+                <TextView
+                    android:id="@+id/from_code"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/from_flag"
+                    android:layout_alignBottom="@+id/from_flag"
+                    android:layout_toRightOf="@+id/from_flag"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimens_8"
+                    android:text="AED"
+                    android:textColor="@color/color373A49"
+                    android:textSize="@dimen/dimens_14sp" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/to_flag"
+                    android:layout_width="@dimen/dimens_28"
+                    android:layout_height="@dimen/dimens_22"
+                    android:layout_below="@+id/currency_divider"
+                    android:layout_marginTop="@dimen/dimens_10"
+                    android:layout_toLeftOf="@+id/to_code"
+                    android:background="@color/colorWhite_240"
+                    android:padding="@dimen/dimens_1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/svg_flag_aed" />
+
+                <TextView
+                    android:id="@+id/to_code"
+                    fontPath="fonts/HelveticaNeue-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/to_flag"
+                    android:layout_alignBottom="@+id/to_flag"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimens_8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimens_8"
+                    android:text="INR"
+                    android:textColor="@color/color373A49"
+                    android:textSize="@dimen/dimens_14sp" />
+
+                <app.alansari.customviews.CurrencyEditText
+                    android:id="@+id/from"
+                    style="@style/BigAmountEditText"
+                    android:layout_below="@+id/from_flag"
+                    android:layout_marginLeft="@dimen/dimens_8"
+                    android:fontFamily="sans-serif-thin"
+                    android:textDirection="inherit"
+                    android:gravity="left"
+                    android:maxLength="9"
+                    />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/swap_btn"
+                    android:layout_width="@dimen/dimens_26"
+                    android:layout_height="@dimen/dimens_26"
+                    android:layout_alignTop="@+id/from"
+                    android:layout_alignBottom="@+id/from"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/svg_success" />
+
+                <app.alansari.customviews.progressbar.CircleProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="@dimen/dimens_26"
+                    android:layout_height="@dimen/dimens_26"
+                    android:layout_alignTop="@+id/from"
+                    android:layout_alignBottom="@+id/from"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"
+                    app:mlpb_arrow_height="@dimen/dimens_3"
+                    app:mlpb_arrow_width="@dimen/dimens_6"
+                    app:mlpb_enable_circle_background="false"
+                    app:mlpb_inner_radius="@dimen/dimens_12"
+                    app:mlpb_max="100"
+                    app:mlpb_progress="50"
+                    app:mlpb_progress_color="@color/colorPrimary"
+                    app:mlpb_progress_stoke_width="@dimen/dimens_1"
+                    app:mlpb_progress_text_color="@color/colorPrimary"
+                    app:mlpb_progress_text_visibility="invisible"
+                    app:mlpb_show_arrow="true" />
+
+                <app.alansari.customviews.CurrencyEditText
+                    android:id="@+id/to"
+                    style="@style/BigAmountEditText"
+                    android:layout_below="@+id/to_flag"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimens_8"
+                    android:gravity="left"
+                    android:maxLength="11"
+                    android:textDirection="inherit"
+                    android:fontFamily="sans-serif-thin"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/rate"
+                    fontPath="fonts/Roboto-Light.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/from"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimens_8"
+                    android:layout_marginTop="@dimen/dimens_12"
+                    android:text="Exchange Rate AED = INR 0.00"
+                    android:textColor="@color/color3F3F3F"
+                    android:visibility="gone"
+                    android:textSize="@dimen/dimens_9sp" />
+
+                <TextView
+                    fontPath="fonts/Roboto-Light.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rate"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimens_8"
+                    android:layout_marginTop="@dimen/dimens_5"
+                    android:textColor="@color/color3F3F3F"
+                    android:textSize="@dimen/dimens_9sp"
+                    android:visibility="gone" />
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/tv_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rate"
+                    android:layout_margin="@dimen/dimens_2"
+                    android:background="@color/cpb_red"
+                    android:padding="@dimen/dimens_1"
+                    android:scaleType="fitXY"
+                    android:textAllCaps="false"
+                    android:text="Delete Currency"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_marginTop="@dimen/dimens_10"
+        android:id="@+id/tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_2"
+        android:background="@drawable/btn_round_white"
+        android:padding="@dimen/dimens_1"
+        android:textAllCaps="false"
+        android:scaleType="fitXY"
+        android:text="(+)Add Currency"
+        android:textColor="@color/colorBlack" />
+</LinearLayout>

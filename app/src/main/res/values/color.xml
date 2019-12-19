@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        - Created by Parveen Dala on 05 October, 2016
+        - Fugenx Technologies, Bengaluru
+        - AlAnsari
+        -->
+    <color name="list_group_title">#808080</color>
+
+    <color name="list_item_title">#AAAAAA</color>
+
+    <color name="group_divider_color">#80CBC4</color>
+
+
+    <!-- <color name="colorPrimary">#FFC107</color> -->
+    <!-- <color name="colorPrimaryDark"></color> -->
+    <color name="colorPrimary">#0B64BC</color>
+    <color name="colorPrimaryDark">#084a8c</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+    <color name="colorPrimaryAccent">@color/colorPrimary</color>
+    <color name="colorButton">#1E6AB3</color>
+    <color name="colorDivider">#B7B3B3</color>
+    <color name="bg">#FFFFFF</color>
+    <color name="splash_bg">#2676BA</color>
+
+    <color name="card_bg">#F4F4F4</color>
+    <color name="color_Grey">#A9A9A9</color>
+
+
+    //Login
+    <color name="login_submit_btn_bg">#1E6AB3</color>
+    <color name="login_change_btn_bg">#E86768</color>
+    <color name="login_done_btn_bg">#1E6AB3</color>
+    <color name="login_keypad_btn_bg">#A4A4A4</color>
+
+    <color name="color024B54">#024B54</color>
+    <color name="color046974">#046974</color>
+    <color name="color08466D">#08466D</color>
+    <color name="color086687">#086687</color>
+    <color name="color0B4F8F">#0B4F8F</color>
+    <color name="color9E9E9E">#9E9E9E</color>
+    <color name="color1E6AB3">#1E6AB3</color>
+    <color name="color1B5FA1">#1b5fa1</color>
+    <color name="color2576BB">#2576BB</color>
+    <color name="color2887C6">#2887C6</color>
+    <color name="color373A49">#373A49</color>
+    <color name="color377EC4">#377EC4</color>
+    <color name="color3F3F3F">#3F3F3F</color>
+    <color name="color3FA3DA">#3FA3DA</color>
+    <color name="color002043">#002043</color>
+
+    <color name="color504F51">#504F51</color>
+    <color name="color504F50">#504F50</color>
+    <color name="color7F8486">#7F8486</color>
+    <color name="color8B8989">#8B8989</color>
+    <color name="color8F8C8C">#8F8C8C</color>
+    <color name="color979797">#979797</color>
+    <color name="colorA19F9F">#A19F9F</color>
+    <color name="colorA2A2A2">#A2A2A2</color>
+    <color name="colorEBEBF1">#EBEBF1</color>
+    <color name="colorA3CEF8">#A3CEF8</color>
+    <color name="colorA4A4A4">#A4A4A4</color>
+    <color name="colorBAB6B6">#BAB6B6</color>
+    <color name="colorB2BDBF">#B2BDBF</color>
+    <color name="colorB4B5B7">#B4B5B7</color>
+    <color name="colorB7B3B3">#B7B3B3</color>
+    <color name="colorCAC7C7">#CAC7C7</color>
+    <color name="colorCECCCC">#CECCCC</color>
+    <color name="colorDDEAF6">#DDEAF6</color>
+    <color name="colorD05C5D">#d05c5d</color>
+    <color name="colorD1CECE">#D1CECE</color>
+    <color name="colorD3DDE6">#D3DDE6</color>
+    <color name="colorE2DFDF">#E2DFDF</color>
+    <color name="colorE6E7E7">#E6E7E7</color>
+    <color name="colorE7E8E9">#E7E8E9</color>
+    <color name="colorE86768">#E86768</color>
+    <color name="colorECEAEA">#ECEAEA</color>
+    <color name="colorEDEBEB">#EDEBEB</color>
+    <color name="colorF4F3F3">#F4F3F3</color>
+    <color name="colorF8F9FA">#F8F9FA</color>
+    <color name="color54A700">#54A700</color>
+    <color name="color556180">#556180</color>
+    <color name="color58982B">#58982b</color>
+    <color name="color6A7273">#6A7273</color>
+    <color name="color626060">#626060</color>
+    <color name="color62A930">#62A930</color>
+    <color name="color70D303">#70D303</color>
+    <color name="color408000">#408000</color>
+    <color name="color9B9B9B">#9B9B9B</color>
+    <color name="color9F9F9F">#9F9F9F</color>
+    <color name="color929292">#929292</color>
+    <color name="colorEFEFF4">#EFEFF4</color>
+
+    <color name="colorYellowOverlay">#eecb2d</color>
+    <color name="green">#8FCC85</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="color3372BA">#3372BA</color>
+    <color name="white">#ffffff</color>
+    <color name="colorPrimary_blue">#2196F3</color>
+    <color name="colorPrimaryDark_blue">#1976D2</color>
+    <color name="colorPrimary_orange1">#FF6100</color>
+    <color name="colorPrimaryDark_orange1">#e65700</color>
+    <color name="window_background">#FFF5F5F5</color>
+
+    <!-- Currency Converter -->
+    <color name="colorBlueOverlay">#0B64BC</color>
+
+
+    <!-- Amm -->
+
+    <color name="colorPrimary_yellow">#FFC107</color>
+    <color name="colorPrimaryDark_yello">#FFA000</color>
+    <color name="colorPrimary_brown">#795548</color>
+    <color name="colorPrimaryDark_brown">#5D4037</color>
+    <color name="colorPrimary_red">#E16C6C</color>
+    <color name="colorPrimaryDark_red">#b45656</color>
+    <color name="colorPrimary_purp">#673AB7</color>
+    <color name="colorPrimaryDark_purp">#512DA8</color>
+    <color name="color1">#74CEE4</color>
+    <color name="color2">#EDBF47</color>
+    <color name="color3">#EC774B</color>
+    <color name="color4">#6FC191</color>
+    <color name="colorSecondaryBlue">#00B6DE</color>
+    <color name="colorSecondaryYellow">#FEEE49</color>
+    <color name="colorSecondaryBluePressed">#09b1d5</color>
+    <color name="colorSecondaryYellowPressed">#e8b900</color>
+    <color name="rippleBlackOverlay">@color/colorBlackOverlay</color>
+    <color name="rippleBlack_B6">#B6B6B6</color>
+    <color name="ripplePrimaryDark">@color/colorPrimaryDark</color>
+    <color name="colorHighlight">#B6B6B6</color>
+    <color name="colorWindowBackground2">#333333</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorDraggerTransparent">#BF000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack_3">#333333</color>
+    <color name="colorBlackTranslucent">#80000000</color>
+    <color name="colorBlack_128">#808080</color>
+    <color name="colorBlack_75">#757575</color>
+    <color name="colorBlackOverlay_75">#BF000000</color>
+    <color name="colorBlackOverlayLight">#60606060</color>
+    <color name="colorBlackOverlay">#66000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite_240">#F0F0F0</color>
+    <color name="colorWhite_220">#DCDCDC</color>
+    <color name="colorWhite_192">#C0C0C0</color>
+    <color name="colorWhiteOverlay">#66FFFFFF</color>
+    <color name="colorWhite_trans_15">#26FFFFFF</color>
+    <color name="colorWhite_trans_10">#1AFFFFFF</color>
+    <color name="bg_light_background">#F2F2F2</color>
+
+    <color name="colorRed_500">#F44336</color>
+    <color name="colorRed_700">#D32F2F</color>
+    <color name="colorRegisterIcon">#414141</color>
+
+
+    <!-- User Tile -->
+    <color name="colorUserName">#212121</color>
+    <color name="colorUserDetail">#7d7d7d</color>
+    <color name="colorTileBackground">#fafafa</color>
+
+    <!-- Scroll Tab -->
+    <color name="colorTabUnchecked">#8c8c8c</color>
+    <color name="colorWindowBackground">#e5e5e5</color>
+
+
+    <!-- Progress Button -->
+    <color name="cpb_grey">#ffdedede</color>
+    <color name="cpb_blue">#1E6AB3</color>
+    <color name="cpb_blue_dark">#084a8c</color>
+    <color name="cpb_red">#ffff4444</color>
+    <color name="cpb_red_dark">#ffcd3a3a</color>
+    <color name="cpb_green">#ff99cc00</color>
+    <color name="cpb_green_dark">#ff6d9b00</color>
+    <color name="cpb_white">@android:color/white</color>
+
+
+
+    <!--Transaction Transfer-->
+    <color name="colorTrans6F92BE">#6F92BE</color>
+    <color name="color2887C7">#2887C7</color>
+
+
+
+</resources>

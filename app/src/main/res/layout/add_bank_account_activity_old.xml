@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/verify_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="android.alansari.app.alansari.LoginActivity"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/next_btn"
+        android:layout_below="@+id/toolbar"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/dimens_20"
+        android:paddingTop="@dimen/dimens_20"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimens_8"
+                android:background="@color/colorDivider">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimens_1"
+                    android:background="@color/card_bg"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/account_name_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimens_8"
+                        android:textColorHint="@color/color8F8C8C">
+
+                        <EditText
+                            android:id="@+id/account_name"
+                            style="@style/VerifyEIDEditText"
+                            android:hint="Account Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:nextFocusDown="@+id/bank_name" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimens_1"
+                        android:background="@color/colorDivider" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/bank_name_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimens_8"
+                        android:textColorHint="@color/color8F8C8C">
+
+                        <EditText
+                            android:id="@+id/bank_name"
+                            style="@style/VerifyEIDEditText"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:hint="Bank Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="none"
+                            android:nextFocusDown="@+id/account_number" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimens_1"
+                        android:background="@color/colorDivider" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/account_number_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimens_8"
+                        android:textColorHint="@color/color8F8C8C">
+
+                        <EditText
+                            android:id="@+id/account_number"
+                            style="@style/VerifyEIDEditText"
+                            android:hint="Account Number"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:nextFocusDown="@+id/branch_name" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimens_1"
+                        android:background="@color/colorDivider" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/branch_name_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:clipToPadding="false"
+                            android:padding="@dimen/dimens_8"
+                            android:textColorHint="@color/color8F8C8C">
+
+                            <EditText
+                                android:id="@+id/branch_name"
+                                style="@style/VerifyEIDEditText"
+                                android:hint="Branch Name"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:nextFocusDown="@+id/iban_number" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:layout_width="@dimen/dimens_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorDivider" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/iban_number_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:clipToPadding="false"
+                            android:padding="@dimen/dimens_8"
+                            android:textColorHint="@color/color8F8C8C">
+
+                            <EditText
+                                android:id="@+id/iban_number"
+                                style="@style/VerifyEIDEditText"
+                                android:hint="IBAN Number"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/next_btn"
+        style="@style/SubmitBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Next" />
+</RelativeLayout>

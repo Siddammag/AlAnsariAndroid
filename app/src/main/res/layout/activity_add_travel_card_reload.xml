@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/add_travel_card_reload_confirm_dialog" />
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_credit_card_confirm_layout"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/dimens_80"
+        android:scrollbars="none">
+
+        <!--   android:layout_width="@dimen/layout_width"
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dimens_8"
+            android:layout_marginRight="@dimen/dimens_8"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/name_layout"
+                style="@style/accountManagementAddTextInputLayout">
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/accountManagementAddEditText"
+                    fontPath="fonts/HelveticaNeue.ttf"
+                    android:hint="@string/cardholder_name"
+                    android:imeOptions="actionNext"
+                    android:nextFocusDown="@+id/card_num" />
+            </android.support.design.widget.TextInputLayout>
+
+            <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/card_num_layout"
+                    style="@style/accountManagementAddTextInputLayout">
+
+                    <EditText
+                        android:id="@+id/card_num"
+                        style="@style/accountManagementAddEditText"
+                        fontPath="fonts/HelveticaNeue.ttf"
+                        android:hint="@string/enter_card_number"
+                        android:maxLength="16"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|textNoSuggestions"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/next_btn"
+        style="@style/SubmitBtn"
+        android:layout_width="@dimen/btn_confirm_green_width_big"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_next" />
+
+    <View
+        android:id="@+id/add_credit_card_confirm_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_credit_card_confirm_layout"
+        android:background="@color/colorBlackOverlay_75"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

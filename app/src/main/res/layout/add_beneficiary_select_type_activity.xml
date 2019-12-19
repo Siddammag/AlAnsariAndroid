@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar_actionbar_middle" />
+
+    <LinearLayout
+        android:id="@+id/country_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_marginTop="@dimen/minus_dimens_15"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:layout_collapseMode="parallax">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/flag"
+            style="@style/BeneficiaryFlagImageView" />
+
+        <TextView
+            android:id="@+id/country_name"
+            style="@style/BeneficiaryCountryTextView" />
+
+        <TextView
+            android:id="@+id/click_to_change"
+            style="@style/BeneficiaryChangeCountryTextView" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/country_layout"
+        android:layout_marginTop="@dimen/dimens_6"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/dimens_60"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/beneficiary_c_layout"
+                style="@style/accountManagementCardViewStyle"
+                android:layout_width="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/beneficiary_layout"
+                    style="@style/accountManagementLayoutStyle">
+
+                    <TextView
+                        android:id="@+id/beneficiary_label"
+                        style="@style/accountManagementTextLabelStyle"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="@dimen/dimens_25"
+                        android:text="SEND MONEY BENEFICIARY"
+                        android:textSize="@dimen/dimens_14sp" />
+
+                    <TextView
+                        android:id="@+id/beneficiary_desc"
+                        style="@style/accountManagementTextDescStyle"
+                        android:layout_below="@+id/beneficiary_label"
+                        android:paddingBottom="@dimen/dimens_25"
+                        android:paddingTop="@dimen/dimens_4"
+                        android:text="@string/am_beneficiary_message" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="@dimen/dimens_80"
+                        android:layout_height="@dimen/dimens_70"
+                        android:layout_alignBottom="@+id/beneficiary_desc"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/minus_dimens_2"
+                        android:layout_marginRight="@dimen/dimens_1"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/svg_am_beneficiary_icon" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:id="@+id/text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:paddingLeft="@dimen/dimens_8"
+                android:textSize="@dimen/dimens_12sp"
+                android:textColor="@color/colorPrimary_red"
+                android:layout_marginTop="@dimen/dimens_5"/>
+
+            <app.alansari.customviews.MultiStateView
+                android:id="@+id/multiStateView"
+                style="@style/MultiStateViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/dynamic_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg"
+                    android:minHeight="@dimen/dimens_200"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimens_12"
+                    android:paddingRight="@dimen/dimens_12">
+
+                    <TextView
+                        android:id="@+id/transaction_mode_label"
+                        style="@style/addBeneficiarySelectTypeLabel"
+                        android:text="@string/transaction_mode" />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/transaction_mode_card_view"
+                        style="@style/addBeneficiarySelectTypeCardView">
+
+                        <RelativeLayout style="@style/addBeneficiarySelectTypeRelativeLayout">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/transaction_mode_text"
+                                style="@style/addBeneficiarySelectTypeAutoTextView"
+                                android:hint="@string/transaction_mode" />
+
+                            <ImageView style="@style/dropdownArrowStyle" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/bank_name_label"
+                        style="@style/addBeneficiarySelectTypeLabel"
+                        android:text="@string/beneficiary_bank_agent" />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/bank_name_card_view"
+                        style="@style/addBeneficiarySelectTypeCardView">
+
+                        <RelativeLayout style="@style/addBeneficiarySelectTypeRelativeLayout">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/bank_name_text"
+                                style="@style/addBeneficiarySelectTypeAutoTextView"
+                                android:hint="@string/bank_name_agent" />
+
+                            <ImageView style="@style/dropdownArrowStyle" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/service_type_label"
+                        style="@style/addBeneficiarySelectTypeLabel"
+                        android:text="@string/service_type" />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/service_type_card_view"
+                        style="@style/addBeneficiarySelectTypeCardView">
+
+                        <RelativeLayout style="@style/addBeneficiarySelectTypeRelativeLayout">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/service_type_text"
+                                style="@style/addBeneficiarySelectTypeAutoTextView"
+                                android:hint="@string/service_type" />
+
+                            <ImageView style="@style/dropdownArrowStyle" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </app.alansari.customviews.MultiStateView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/next_btn"
+        style="@style/ConfirmBtnGreen"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:text="@string/btn_next" />
+
+</RelativeLayout>

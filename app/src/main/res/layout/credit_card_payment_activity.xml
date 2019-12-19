@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_actionbar_menu" />
+
+        <include layout="@layout/search_view_layout" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/fab"
+            style="@style/addBeneficiaryButtonNew"
+            app:srcCompat="@drawable/ic_add_new" />
+
+        <app.alansari.customviews.MultiStateView
+            android:id="@+id/multiState_rview"
+            style="@style/MultiStateViewStyle">
+
+            <com.loopeer.cardstack.CardStackView
+                android:id="@+id/stackview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:clipToPadding="false"
+                android:paddingLeft="@dimen/dimens_2"
+                android:paddingRight="@dimen/dimens_2" />
+
+
+          <!--  <com.loopeer.cardstack.CardStackView
+                android:id="@+id/stackview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:clipToPadding="false"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"/>-->
+
+
+        </app.alansari.customviews.MultiStateView>
+    </LinearLayout>
+
+    <!--<android.support.v7.widget.AppCompatImageView
+        android:id="@+id/fab"
+        style="@style/FloatingRoundButton"
+        android:src="@drawable/ic_action_add" />-->
+
+</FrameLayout>

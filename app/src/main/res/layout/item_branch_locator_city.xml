@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_item_trans_over_bg">
+
+    <TextView
+        android:id="@+id/name"
+        fontPath="fonts/HelveticaNeue.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/colorWhite"
+        android:paddingBottom="@dimen/dimens_20"
+        android:paddingLeft="@dimen/dimens_65"
+        android:paddingRight="@dimen/dimens_16"
+        android:paddingTop="@dimen/dimens_20"
+        android:text="Parveen D"
+        android:textColor="@color/color3F3F3F"
+        android:textSize="@dimen/dimens_12sp" />
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="@dimen/dimens_30"
+        android:layout_height="@dimen/dimens_30"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimens_16"
+        android:gravity="center"
+        android:scaleType="center"
+        app:srcCompat="@drawable/svg_avatar_black" />
+
+</RelativeLayout>
