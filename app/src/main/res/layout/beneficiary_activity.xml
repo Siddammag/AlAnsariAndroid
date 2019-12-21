@@ -68,7 +68,7 @@
 
             </RelativeLayout>
 
-            <android.support.v4.widget.NestedScrollView
+            <androidx.core.widget.NestedScrollView
                 android:layout_marginTop="@dimen/minus_dimens_10"
                 android:id="@+id/nested_scrollview"
                 android:layout_width="match_parent"
@@ -512,7 +512,7 @@
 
                     </LinearLayout>
                 </app.alansari.customviews.MultiStateView>
-            </android.support.v4.widget.NestedScrollView>
+            </androidx.core.widget.NestedScrollView>
         </LinearLayout>
     </ScrollView>
 

@@ -18,9 +18,9 @@ import android.provider.MediaStore;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.content.ContextCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.DialogFragment;
+import androidx.core.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatImageView;
@@ -28,7 +28,6 @@ import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.InputType;
-import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -56,7 +55,7 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.List;
+
 import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
 import app.alansari.Utils.LogOutTimerUtil;
@@ -92,7 +91,6 @@ import app.alansari.modules.accountmanagement.models.FundsSourceCeData;
 import app.alansari.modules.accountmanagement.models.IdDateTypeCeData;
 import app.alansari.modules.accountmanagement.models.IdProofCeData;
 import app.alansari.modules.accountmanagement.models.ProfessionCeData;
-import app.alansari.modules.accountmanagement.models.PurposeCeData;
 import app.alansari.modules.accountmanagement.models.ResidentialStatusCeData;
 import app.alansari.modules.accountmanagement.models.SubBusinessTypeCeData;
 import app.alansari.modules.accountmanagement.models.SubPurposeCeData;
@@ -105,7 +103,6 @@ import app.alansari.preferences.SharedPreferenceManger;
 import de.hdodenhof.circleimageview.CircleImageView;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-import static app.alansari.Utils.Constants.SELECT_ITEM_BENF_FIELD_ID_10;
 import static app.alansari.Utils.LogOutTimerUtil.stopLogoutTimer;
 public class MyProfileDetails extends AppCompatActivity implements View.OnClickListener, OnWebServiceResult, LogOutTimerUtil.LogOutListener {
 

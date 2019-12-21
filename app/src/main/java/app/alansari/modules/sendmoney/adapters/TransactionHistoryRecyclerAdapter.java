@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -21,9 +21,7 @@ import app.alansari.Utils.Constants;
 import app.alansari.Utils.OnLoadMoreListener;
 import app.alansari.Utils.Validation;
 import app.alansari.models.TxnDetailsData;
-import app.alansari.models.transactionhistroy.TxnDetailsHistroyTravelCard;
 import app.alansari.modules.sendmoney.TransactionCompletedActivity;
-import app.alansari.newAdditions.Main2Activity;
 import app.alansari.textdrawable.ColorGenerator;
 import app.alansari.textdrawable.TextDrawable;
 

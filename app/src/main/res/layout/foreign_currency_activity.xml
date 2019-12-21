@@ -13,7 +13,7 @@
 
     <include layout="@layout/toolbar_actionbar_big" />
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom_layout"
@@ -351,7 +351,7 @@
                 android:layout_centerHorizontal="true" />
 
         </RelativeLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <View
         android:id="@+id/transparent_view"

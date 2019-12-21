@@ -7,7 +7,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.Toolbar;
@@ -16,7 +16,6 @@ import android.text.Html;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
@@ -56,7 +55,6 @@ import app.alansari.newAdditions.LogoutCalling;
 import app.alansari.preferences.SharedPreferenceManger;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.LOGIN;
 import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.SUBMIT_REFERENCE_NUM_REMITTANCE_API;
 import static app.alansari.Utils.LogOutTimerUtil.stopLogoutTimer;
 

@@ -4,7 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatImageView;
@@ -24,18 +24,14 @@ import com.android.volley.toolbox.JsonObjectRequest;
 
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-
 import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
 import app.alansari.Utils.LogOutTimerUtil;
 import app.alansari.Utils.Validation;
 import app.alansari.listeners.OnWebServiceResult;
 import app.alansari.models.TxnDetailsCeCashPayout;
-import app.alansari.models.TxnDetailsData;
 import app.alansari.modules.accountmanagement.BeneficiaryActivity;
 import app.alansari.modules.remittance.TXNHISTORYDATAItem;
-import app.alansari.modules.sendmoney.TransactionRateActivity;
 import app.alansari.network.APIRequestParams;
 import app.alansari.network.CallAddr;
 import app.alansari.network.NetworkStatus;

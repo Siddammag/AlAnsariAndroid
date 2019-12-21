@@ -15,8 +15,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.security.keystore.KeyGenParameterSpec;
 import android.security.keystore.KeyProperties;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
@@ -37,7 +37,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.getkeepsafe.taptargetview.TapTargetSequence;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -64,7 +63,6 @@ import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
 import app.alansari.Utils.LogOutTimerUtil;
 import app.alansari.Utils.LogUtils;
-import app.alansari.Utils.TapTargetViewUtils;
 import app.alansari.fcm.FCMUtils;
 import app.alansari.keypadview.BigButtonView;
 import app.alansari.listeners.OnFingerprintAuthentication;

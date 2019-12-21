@@ -2,14 +2,12 @@ package app.alansari.modules.accountmanagement.adapters;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.Typeface;
-import android.support.v4.content.ContextCompat;
+
+import androidx.core.content.ContextCompat;
 import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,8 +18,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONObject;
@@ -32,7 +28,6 @@ import app.alansari.AppController;
 import app.alansari.R;
 import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
-import app.alansari.Utils.RoundedImageView;
 import app.alansari.Utils.Validation;
 import app.alansari.listeners.CustomClickListener;
 import app.alansari.listeners.OnWebServiceResult;
@@ -42,8 +37,6 @@ import app.alansari.network.CallAddr;
 import app.alansari.network.NetworkStatus;
 import app.alansari.newAdditions.LogoutCalling;
 import app.alansari.preferences.SharedPreferenceManger;
-import app.alansari.textdrawable.TextDrawable;
-import de.hdodenhof.circleimageview.CircleImageView;
 
 import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.DELETE_BENEFICIARY;
 

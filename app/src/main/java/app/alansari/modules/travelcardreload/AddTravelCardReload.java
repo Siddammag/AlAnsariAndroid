@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.TextInputLayout;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.Toolbar;
@@ -45,7 +45,6 @@ import app.alansari.Utils.Constants;
 import app.alansari.Utils.LogOutTimerUtil;
 import app.alansari.customviews.progressbutton.CircularProgressButton;
 import app.alansari.listeners.OnWebServiceResult;
-import app.alansari.models.CreditCardData;
 import app.alansari.models.TravelCardReloadModel.TravelCardInfo;
 import app.alansari.network.APIRequestParams;
 import app.alansari.network.CallAddr;
@@ -54,7 +53,6 @@ import app.alansari.newAdditions.LogoutCalling;
 import app.alansari.preferences.SharedPreferenceManger;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.DELETE_TRAVEL_CARD;
 import static app.alansari.Utils.LogOutTimerUtil.stopLogoutTimer;
 
 public class AddTravelCardReload extends AppCompatActivity implements View.OnClickListener, OnWebServiceResult, LogOutTimerUtil.LogOutListener {

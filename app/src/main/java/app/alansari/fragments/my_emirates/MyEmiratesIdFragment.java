@@ -2,7 +2,6 @@ package app.alansari.fragments.my_emirates;
 
 
 import android.Manifest;
-import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -26,9 +25,9 @@ import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.Fragment;
+import androidx.core.content.ContextCompat;
 import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;
@@ -57,7 +56,6 @@ import java.io.InputStream;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 
 import app.alansari.AppController;
@@ -66,11 +64,9 @@ import app.alansari.SelectItemActivity;
 import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
 import app.alansari.Utils.LogUtils;
-import app.alansari.Utils.Validation;
 import app.alansari.listeners.OnWebServiceResult;
 import app.alansari.models.ProfessionalLoadList;
 import app.alansari.models.profiledetails.ProfileDetails;
-import app.alansari.network.APIRequestParams;
 import app.alansari.network.CallAddr;
 import app.alansari.network.NetworkStatus;
 import app.alansari.newAdditions.ImageCaptureActivity;
@@ -78,9 +74,7 @@ import app.alansari.newAdditions.LogoutCalling;
 import app.alansari.preferences.SharedPreferenceManger;
 
 import static android.app.Activity.RESULT_OK;
-import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.LOAD_MY_ID_DETAILS;
 import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.UPDATE_MY_ID_DETAILS;
-import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.WU_CURRENCY_URL;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -1,8 +1,8 @@
 package app.alansari;
 
 import android.content.Context;
-import android.media.Image;
-import android.support.v4.content.ContextCompat;
+
+import androidx.core.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatImageView;

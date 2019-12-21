@@ -14,7 +14,7 @@
         android:layout_marginRight="@dimen/card_padding_right"
         -->
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/details_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -261,7 +261,7 @@
                 android:text="Confirm" />
 
         </RelativeLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 
 
