@@ -7,16 +7,20 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import androidx.core.app.FragmentTransaction;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.crashlytics.android.Crashlytics;
 
 import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
@@ -68,11 +72,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         tvMobileDetails = ((TextView) findViewById(R.id.reg_mobile_details));
         tvId = ((TextView) findViewById(R.id.reg_id));
         tvIdDetails = ((TextView) findViewById(R.id.reg_id_details));
-        ivMobile = ((ImageView) findViewById(R.id.reg_mobile_image));
+        //ivMobile = ((ImageView) findViewById(R.id.reg_mobile_image));
         ivMobile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Crashlytics.getInstance().crash();
+          //      Crashlytics.getInstance().crash();
             }
         });
         ivId = ((ImageView) findViewById(R.id.reg_id_image));

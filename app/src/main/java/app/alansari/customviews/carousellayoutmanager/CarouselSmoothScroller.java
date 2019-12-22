@@ -1,12 +1,13 @@
 package app.alansari.customviews.carousellayoutmanager;
 
 import android.content.Context;
-import android.support.v7.widget.LinearSmoothScroller;
 import android.view.View;
+
+import androidx.recyclerview.widget.LinearSmoothScroller;
 
 
 /**
- * Custom implementation of {@link android.support.v7.widget.RecyclerView.SmoothScroller} that can work only with {@link CarouselLayoutManager}.
+ * Custom implementation of {@link androidx.recyclerview.widget.RecyclerView.SmoothScroller} that can work only with {@link CarouselLayoutManager}.
  *
  * @see CarouselLayoutManager
  */

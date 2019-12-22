@@ -26,7 +26,7 @@ import app.alansari.modules.accountmanagement.models.SubPurposeCeData;
 import app.alansari.modules.accountmanagement.models.TradeLicenseDateTypeCeData;
 import app.alansari.modules.accountmanagement.models.TradeLicenseTypeCeData;
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;

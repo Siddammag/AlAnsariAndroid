@@ -4,8 +4,9 @@ import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.multidex.MultiDexApplication;
 import android.text.TextUtils;
+
+import androidx.multidex.MultiDexApplication;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -24,7 +25,7 @@ import io.fabric.sdk.android.Fabric;
  * AlAnsari
  */
 
-public class AppController extends MultiDexApplication{
+public class AppController extends MultiDexApplication {
 
     public static final String TAG = AppController.class.getSimpleName();
     private static AppController mInstance;

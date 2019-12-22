@@ -26,7 +26,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/beneficiary_c_layout"
                     style="@style/accountManagementCardViewStyle">
 
@@ -60,9 +60,9 @@
                             android:scaleType="centerCrop"
                             app:srcCompat="@drawable/svg_am_beneficiary_icon" />
                     </RelativeLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/credit_card_c_layout"
                     style="@style/accountManagementCardViewStyle"
                     android:layout_below="@+id/branch_pay_c_layout">
@@ -98,9 +98,9 @@
                             android:scaleType="fitCenter"
                             app:srcCompat="@drawable/svg_am_credit_card_icon" />
                     </RelativeLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/bank_account_c_layout"
                     style="@style/accountManagementCardViewStyle"
                     android:layout_below="@+id/credit_card_c_layout">
@@ -135,7 +135,7 @@
                             android:layout_marginRight="@dimen/dimens_1"
                             app:srcCompat="@drawable/svg_am_bank_account_icon" />
                     </RelativeLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
         </app.alansari.customviews.MultiStateView>
     </ScrollView>

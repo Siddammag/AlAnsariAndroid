@@ -24,11 +24,11 @@ android {
         dexInProcess = true
 
     }*/
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
         applicationId "app.alansari"
         minSdkVersion 17
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 51
         versionName "4.50"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -68,64 +68,70 @@ allprojects {
 
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    androidTestCompile('androidx.test.espresso:espresso-core:3.1.0', {
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile files('libs/date4j.jar')
-    implementation 'com.google.android.gms:play-services-location:11.4.0'
-    implementation 'com.google.android.gms:play-services-maps:11.4.0'
-    implementation 'androidx.multidex:multidex:2.0.0'
-    compile 'androidx.appcompat:appcompat:1.0.0'
-    compile 'com.google.android.material:material:1.0.0'
-    compile 'androidx.recyclerview:recyclerview:1.0.0'
-    compile 'androidx.palette:palette:1.0.0'
-    compile 'androidx.cardview:cardview:1.0.0'
-    implementation 'com.android.volley:volley:1.1.0'
+    implementation files('libs/date4j.jar')
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.android.volley:volley:1.1.1'
     implementation 'com.google.code.ksoap2-android:ksoap2-android:3.6.2'
     implementation 'uk.co.chrisjenx:calligraphy:2.2.0'
-    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'com.specyci:residemenu:1.6'
     implementation 'com.loopeer.library:cardstack:1.0.2'
     implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:1.0.1'
     //implementation 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
-    //compile 'com.squareup.picasso:picasso:2.5.2'
+    //implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation 'com.getkeepsafe.taptargetview:taptargetview:1.9.1'
-    implementation 'com.google.firebase:firebase-messaging:11.4.0'
-    //compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    //implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
     //Image
     //implementation 'com.mikhaellopez:circularimageview:3.2.0'
 
     implementation 'com.github.demoNo:AutoScrollViewPager:v1.0.2'
-    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
 
-    //compile 'com.facebook.android:facebook-core:4.33.0'
+    //implementation 'com.facebook.android:facebook-core:4.33.0'
     //implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
     implementation 'com.facebook.android:facebook-core:5.1.1'
     //implementation 'com.facebook.android:facebook-marketing:[4,5)'
 
     implementation 'com.squareup.picasso:picasso:2.71828'
 
-    /*compile 'com.google.firebase:firebase-core:16.0.6'*/
+    implementation 'com.google.firebase:firebase-core:17.2.1'
+
 
 /*3rd Party Webview*/
 
     implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
 
 /*Finish*/
-    testCompile 'junit:junit:4.12'
-    compile('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
+    testImplementation 'junit:junit:4.12'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
         transitive = true
     }
-    implementation 'com.github.bumptech.glide:glide:4.7.1'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
 
     // (Recommended) Add the Google Analytics dependency.
     implementation 'com.google.firebase:firebase-analytics:17.2.1'
 
     // Add the Firebase Crashlytics dependency.
     implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+
+    implementation 'com.android.support:support-annotations:28.0.0'
+    annotationProcessor 'com.android.support:support-annotations:28.0.0'
+
 }
 apply plugin: 'com.google.gms.google-services'

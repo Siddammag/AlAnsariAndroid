@@ -1,8 +1,5 @@
 package app.alansari.modules.sendmoney.fragments;
 
-import android.support.annotation.Nullable;
-import androidx.core.app.Fragment;
-import androidx.core.widget.SwipeRefreshLayout;
 
 /**
  * Created by Parveen Dala on 14 October, 2016

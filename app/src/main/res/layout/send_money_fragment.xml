@@ -135,14 +135,14 @@
                 android:layout_below="@+id/get"
                 android:layout_marginTop="@dimen/dimens_5">
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerView_currency_code"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:cacheColorHint="@color/colorTransparent"
                     android:clickable="true"
                     android:clipToPadding="false"
-                    android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+                    android:scrollbars="none"></androidx.recyclerview.widget.RecyclerView>
 
                 <View
                     android:layout_width="@dimen/dimens_20"

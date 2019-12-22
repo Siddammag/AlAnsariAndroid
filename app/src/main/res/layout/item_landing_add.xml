@@ -7,7 +7,7 @@
     android:orientation="horizontal"
     tools:ignore="MissingPrefix">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         style="@style/CardViewStyle"
         android:layout_below="@+id/reg_header_layout"
         android:foreground="@drawable/cardview_title_selector">
@@ -36,7 +36,7 @@
 
 
         </RelativeLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 
 </RelativeLayout>

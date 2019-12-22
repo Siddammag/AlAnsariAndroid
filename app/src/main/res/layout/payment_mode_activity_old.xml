@@ -108,7 +108,7 @@
                     android:textColor="@color/colorE86768"
                     android:textSize="@dimen/verify_eid_desc_text_size" />
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/branch_payment_c_layout"
                     style="@style/PaymentModeCardViewStyle"
                     android:layout_below="@+id/payment_mode_details">
@@ -145,9 +145,9 @@
                             android:textSize="@dimen/dimens_20sp" />
                     </RelativeLayout>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/bank_payment_c_layout"
                     style="@style/PaymentModeCardViewStyle"
                     android:layout_below="@+id/branch_payment_c_layout"
@@ -185,9 +185,9 @@
                             android:textSize="@dimen/dimens_20sp" />
                     </RelativeLayout>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/priority_pay_c_layout"
                     style="@style/PaymentModeCardViewStyle"
                     android:layout_below="@+id/bank_payment_c_layout"
@@ -224,7 +224,7 @@
                             android:textColor="@color/color3F3F3F"
                             android:textSize="@dimen/dimens_20sp" />
                     </RelativeLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
             </RelativeLayout>
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>

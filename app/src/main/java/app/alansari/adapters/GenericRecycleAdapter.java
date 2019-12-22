@@ -3,7 +3,7 @@ package app.alansari.adapters;
 import app.alansari.models.BeneficiaryData;
 import app.alansari.modules.accountmanagement.adapters.CreditCardRecyclerAdapter_old;
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.widget.Filter;
 import android.widget.Filterable;
 

@@ -45,7 +45,7 @@
                     app:srcCompat="@drawable/svg_wave" />
             </RelativeLayout>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/send_money_layout"
                 style="@style/CardViewStyle"
                 android:layout_below="@+id/reg_header_layout"
@@ -118,7 +118,7 @@
                         android:textColor="@color/colorWhite"
                         android:textSize="@dimen/dimens_10sp" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <LinearLayout
                 android:id="@+id/options_layout"
@@ -133,7 +133,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/rate_calculator_layout"
                         style="@style/CardViewStyle"
                         android:layout_width="@dimen/dimens_0"
@@ -194,9 +194,9 @@
                             </LinearLayout>
 
                         </RelativeLayout>
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:visibility="gone"
                         android:id="@+id/currency_convertor_layout"
                         style="@style/CardViewStyle"
@@ -255,9 +255,9 @@
                             </LinearLayout>
 
                         </RelativeLayout>
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/transaction_tracker_layout"
                         style="@style/CardViewStyle"
                         android:layout_width="@dimen/dimens_0"
@@ -315,7 +315,7 @@
                             </LinearLayout>
 
                         </RelativeLayout>
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 
@@ -325,7 +325,7 @@
                     android:layout_marginTop="@dimen/minus_dimens_6"
                     android:orientation="horizontal">
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/get_in_touch_layout"
                         style="@style/CardViewStyle"
                         android:layout_width="@dimen/dimens_0"
@@ -384,9 +384,9 @@
                             </LinearLayout>
 
                         </RelativeLayout>
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/branch_locator_layout"
                         style="@style/CardViewStyle"
                         android:layout_width="@dimen/dimens_0"
@@ -444,7 +444,7 @@
                             </LinearLayout>
 
                         </RelativeLayout>
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
             </LinearLayout>

@@ -62,7 +62,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/branch_pay_c_layout"
                     style="@style/PaymentModeCardViewStyle">
 
@@ -106,9 +106,9 @@
                             android:scaleType="fitXY"
                             app:srcCompat="@drawable/svg_branch_pay_img_2" />
                     </RelativeLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView >
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/bank_pay_c_layout"
                     style="@style/PaymentModeCardViewStyle"
                     android:layout_below="@+id/branch_pay_c_layout">
@@ -144,9 +144,9 @@
                             android:scaleType="centerCrop"
                             app:srcCompat="@drawable/svg_bank_pay_img" />
                     </RelativeLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView >
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/priority_pay_c_layout"
                     style="@style/PaymentModeCardViewStyle"
                     android:layout_below="@+id/bank_pay_c_layout">
@@ -178,7 +178,7 @@
                             android:layout_alignParentRight="true"
                             app:srcCompat="@drawable/svg_priority_pay_img" />
                     </RelativeLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView >
 
                 <EditText
                     android:id="@+id/test"

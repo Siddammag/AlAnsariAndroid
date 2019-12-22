@@ -3,12 +3,13 @@ package app.alansari.customviews;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Typeface;
-import android.support.v7.widget.AppCompatEditText;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.EditText;
+
+import androidx.appcompat.widget.AppCompatEditText;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -17,7 +18,7 @@ import java.util.Locale;
 import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Validation;
 
-public class CurrencyEditText extends android.support.v7.widget.AppCompatEditText {
+public class CurrencyEditText extends AppCompatEditText {
 
     public CurrencyEditText(Context context) {
         super(context);

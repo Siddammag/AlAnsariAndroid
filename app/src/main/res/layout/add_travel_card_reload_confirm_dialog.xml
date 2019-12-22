@@ -16,7 +16,7 @@
         <include layout="@layout/toolbar_actionbar_transparent" />
 
         <!--android:layout_width="@dimen/credit_card_width"-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/confirm_data_layout"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimens_130"
@@ -83,7 +83,7 @@
                     android:textSize="@dimen/dimens_12sp" />
 
             </RelativeLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <app.alansari.customviews.progressbutton.CircularProgressButton
             android:id="@+id/dialog_btn"

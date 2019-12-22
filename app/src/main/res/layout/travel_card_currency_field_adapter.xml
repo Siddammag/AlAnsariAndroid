@@ -63,7 +63,7 @@
         android:background="@color/bg"
         android:orientation="vertical">
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/amount_cal_card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                     android:textColor="@color/color373A49"
                     android:textSize="@dimen/dimens_15sp" />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     style="@style/dropdownArrowStyle"
                     android:layout_below="@id/currency" />
 
@@ -271,7 +271,7 @@
 
 
             </RelativeLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
     <android.support.v7.widget.AppCompatButton

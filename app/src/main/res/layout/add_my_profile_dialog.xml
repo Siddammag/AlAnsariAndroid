@@ -15,7 +15,7 @@
         <!--<include layout="@layout/toolbar_actionbar_transparent" />-->
         <include layout="@layout/toolbar_actionbar_menu" />
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/confirm_data_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -157,7 +157,7 @@
 
             </RelativeLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView >
 
         <View
             android:layout_marginTop="@dimen/dimens_5"

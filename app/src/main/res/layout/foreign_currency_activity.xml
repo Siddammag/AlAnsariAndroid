@@ -33,7 +33,7 @@
             android:orientation="vertical"
             android:paddingBottom="@dimen/dimens_24">
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/amount_cal_card_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -283,7 +283,7 @@
                         android:textColor="@color/color3F3F3F"
                         android:textSize="@dimen/dimens_9sp" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView >
 
             <TextView
                 android:id="@+id/message"

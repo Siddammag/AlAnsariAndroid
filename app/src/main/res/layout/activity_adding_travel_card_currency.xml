@@ -15,7 +15,7 @@
         android:orientation="vertical"
         android:paddingBottom="@dimen/dimens_24">
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/amount_cal_card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -215,7 +215,7 @@
                     android:visibility="gone"
                     android:textColor="@color/white" />
             </RelativeLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
 

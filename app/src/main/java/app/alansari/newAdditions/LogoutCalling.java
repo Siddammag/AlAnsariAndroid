@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
 import android.provider.Settings;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.android.volley.Request;

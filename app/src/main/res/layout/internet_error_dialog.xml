@@ -29,7 +29,7 @@
                 android:paddingLeft="@dimen/dimens_16"
                 android:paddingRight="@dimen/dimens_16">
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/cloud_img"
                     android:layout_width="@dimen/dimens_110"
                     android:layout_height="@dimen/dimens_90"
@@ -139,7 +139,7 @@
         </RelativeLayout>
     </ScrollView>
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/close_btn"
         android:layout_width="@dimen/dimens_42"
         android:layout_height="@dimen/dimens_42"

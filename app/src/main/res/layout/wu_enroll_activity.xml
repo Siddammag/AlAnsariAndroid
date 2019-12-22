@@ -93,7 +93,7 @@
                             android:textColor="@color/list_group_title"
                             android:theme="@style/RadioButtonStyle" />
 
-                        <android.support.v7.widget.CardView
+                        <androidx.cardview.widget.CardView
                             android:id="@+id/transaction_mode_card_view"
                             style="@style/addBeneficiarySelectTypeCardView"
                             android:layout_marginBottom="@dimen/dimens_5"
@@ -114,7 +114,7 @@
                                     android:inputType="number"
                                     android:maxLength="9" />
                             </android.support.design.widget.TextInputLayout>
-                        </android.support.v7.widget.CardView>
+                        </androidx.cardview.widget.CardView >
 
                         <android.support.v7.widget.AppCompatRadioButton
                             android:id="@+id/rb_new_user"

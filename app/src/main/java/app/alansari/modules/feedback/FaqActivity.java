@@ -15,11 +15,12 @@ import app.alansari.network.NetworkStatus;
 
 import android.content.Context;
 import android.os.Bundle;
-import androidx.core.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;

@@ -163,7 +163,7 @@
                     android:textColor="@color/color1E6AB3"
                     android:textSize="@dimen/dimens_8sp" />
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/service_type_card_view"
                     style="@style/addBeneficiarySelectTypeCardView"
                     android:layout_marginLeft="@dimen/dimens_4"
@@ -178,10 +178,10 @@
 
                         <ImageView style="@style/dropdownArrowStyle" />
                     </RelativeLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     style="@style/addBeneficiarySelectTypeCardView"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/dimens_4"
@@ -211,7 +211,7 @@
                             android:textColorHint="@color/colorPrimary"
                             android:textSize="@dimen/dimens_12sp" />
                     </LinearLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
 
                 <RelativeLayout
@@ -223,7 +223,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                        <android.support.v7.widget.CardView
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -246,7 +246,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent" />
                             </LinearLayout>
-                        </android.support.v7.widget.CardView>
+                        </androidx.cardview.widget.CardView>
                     </RelativeLayout>
 
                     <View

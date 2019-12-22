@@ -1,10 +1,11 @@
 package app.alansari.customviews;
 
 import android.content.Context;
-import androidx.core.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * Created by Parveen Dala on 24 October, 2016

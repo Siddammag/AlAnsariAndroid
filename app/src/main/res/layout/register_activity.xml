@@ -26,7 +26,7 @@
                 android:background="@drawable/login_register_header_bg">
 
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/reg_logo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
