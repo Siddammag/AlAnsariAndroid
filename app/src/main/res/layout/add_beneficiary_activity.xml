@@ -149,7 +149,7 @@
 
                                     <ImageView style="@style/dropdownArrowStyle" />
 
-                                    <android.support.design.widget.TextInputLayout
+                                    <com.google.android.material.textfield.TextInputLayout
                                         android:id="@+id/beneficiary_type_layout"
                                         style="@style/AddBeneficiaryInputLayout"
                                         android:clickable="true">
@@ -162,7 +162,7 @@
                                             android:hint="@string/beneficiary_type"
                                             android:imeOptions="actionNext"
                                             android:inputType="text" />
-                                    </android.support.design.widget.TextInputLayout>
+                                    </com.google.android.material.textfield.TextInputLayout>
                                 </RelativeLayout>
 
                                 <View
@@ -175,7 +175,7 @@
                                     android:orientation="horizontal"
                                     android:weightSum="1">
 
-                                    <android.support.design.widget.TextInputLayout
+                                    <com.google.android.material.textfield.TextInputLayout
                                         android:id="@+id/arabic_name_layout"
                                         style="@style/AddBeneficiaryInputLayout"
                                         android:layout_weight="0.5">
@@ -187,7 +187,7 @@
                                             android:hint="Full Name In Arabic*"
                                             android:imeOptions="actionNext"
                                             android:inputType="text" />
-                                    </android.support.design.widget.TextInputLayout>
+                                    </com.google.android.material.textfield.TextInputLayout>
 
                                 </LinearLayout>
 
@@ -196,7 +196,7 @@
                                     android:layout_height="wrap_content"
                                     android:orientation="horizontal">
 
-                                    <android.support.design.widget.TextInputLayout
+                                    <com.google.android.material.textfield.TextInputLayout
                                         android:id="@+id/company_name_layout"
                                         style="@style/AddBeneficiaryInputLayout">
 
@@ -207,7 +207,7 @@
                                             android:imeOptions="actionNext"
                                             android:inputType="text"
                                             android:nextFocusDown="@+id/last_name" />
-                                    </android.support.design.widget.TextInputLayout>
+                                    </com.google.android.material.textfield.TextInputLayout>
 
                                 </LinearLayout>
 
@@ -217,7 +217,7 @@
                                     android:orientation="horizontal"
                                     android:weightSum="1">
 
-                                    <android.support.design.widget.TextInputLayout
+                                    <com.google.android.material.textfield.TextInputLayout
                                         android:id="@+id/first_name_layout"
                                         style="@style/AddBeneficiaryInputLayout"
                                         android:layout_weight="0.5">
@@ -229,14 +229,14 @@
                                             android:imeOptions="actionNext"
                                             android:inputType="text"
                                             android:nextFocusDown="@+id/last_name" />
-                                    </android.support.design.widget.TextInputLayout>
+                                    </com.google.android.material.textfield.TextInputLayout>
 
                                     <View
                                         android:layout_width="@dimen/dimens_1"
                                         android:layout_height="match_parent"
                                         android:background="@color/colorDivider" />
 
-                                    <android.support.design.widget.TextInputLayout
+                                    <com.google.android.material.textfield.TextInputLayout
                                         android:id="@+id/last_name_layout"
                                         style="@style/AddBeneficiaryInputLayout"
                                         android:layout_weight="0.5">
@@ -246,7 +246,7 @@
                                             style="@style/AddBeneficiaryEditText"
                                             android:hint="Second and Last Name*"
                                             android:inputType="text" />
-                                    </android.support.design.widget.TextInputLayout>
+                                    </com.google.android.material.textfield.TextInputLayout>
                                 </LinearLayout>
 
                                 <View
@@ -259,7 +259,7 @@
                                     android:orientation="horizontal"
                                     android:weightSum="1">
 
-                                    <android.support.design.widget.TextInputLayout
+                                    <com.google.android.material.textfield.TextInputLayout
                                         android:id="@+id/country_layout"
                                         style="@style/AddBeneficiaryInputLayout"
                                         android:layout_weight="0.5">
@@ -273,7 +273,7 @@
                                             android:imeOptions="actionNext"
                                             android:inputType="textNoSuggestions|none"
                                             android:nextFocusDown="@+id/nationality" />
-                                    </android.support.design.widget.TextInputLayout>
+                                    </com.google.android.material.textfield.TextInputLayout>
 
                                     <View
                                         android:id="@+id/nationality_divider"
@@ -281,7 +281,7 @@
                                         android:layout_height="match_parent"
                                         android:background="@color/colorDivider" />
 
-                                    <android.support.design.widget.TextInputLayout
+                                    <com.google.android.material.textfield.TextInputLayout
                                         android:id="@+id/nationality_layout"
                                         style="@style/AddBeneficiaryInputLayout"
                                         android:layout_weight="0.5">
@@ -295,7 +295,7 @@
                                             android:imeOptions="actionNext"
                                             android:inputType="textNoSuggestions|none"
                                             android:nextFocusDown="@+id/mobile" />
-                                    </android.support.design.widget.TextInputLayout>
+                                    </com.google.android.material.textfield.TextInputLayout>
                                 </LinearLayout>
 
                             </LinearLayout>

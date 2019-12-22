@@ -29,7 +29,7 @@
             android:layout_marginRight="@dimen/dimens_8"
             android:orientation="vertical">
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/name_layout"
                 style="@style/accountManagementAddTextInputLayout">
 
@@ -40,7 +40,7 @@
                     android:hint="@string/cardholder_name"
                     android:imeOptions="actionNext"
                     android:nextFocusDown="@+id/card_num" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
 
@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/card_num_layout"
                     style="@style/accountManagementAddTextInputLayout">
 
@@ -60,7 +60,7 @@
                         android:imeOptions="actionDone"
                         android:inputType="number|textNoSuggestions"
                          />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -113,7 +113,7 @@
                     android:layout_weight="0.4"
                     android:background="@color/colorEBEBF1">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/scheme_name_layout"
                         style="@style/accountManagementAddTextInputLayout"
                         android:paddingLeft="@dimen/dimens_6"
@@ -129,7 +129,7 @@
                             android:imeOptions="actionNext"
                             android:textColor="@color/colorBlack"
                             android:nextFocusDown="@+id/branch_name" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <View
                         style="@style/SendMoneyBeneficiaryDetailsDivider"
@@ -143,7 +143,7 @@
 
                     android:layout_weight="0.6">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/bank_name_layout"
                         style="@style/accountManagementAddTextInputLayout"
                         android:paddingLeft="@dimen/dimens_2"
@@ -158,9 +158,9 @@
                             android:hint="@string/bank_name"
                             android:imeOptions="actionNext"
                             android:nextFocusDown="@+id/account_number" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.v7.widget.AppCompatImageView style="@style/dropdownArrowStyle" />
+                    <androidx.appcompat.widget.AppCompatImageView style="@style/dropdownArrowStyle" />
 
                     <View
                         style="@style/SendMoneyBeneficiaryDetailsDivider"
@@ -173,7 +173,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/payment_date_layout"
                     style="@style/accountManagementAddTextInputLayout"
                     app:hintAnimationEnabled="false">
@@ -186,9 +186,9 @@
                         android:hint="@string/payment_date"
                         android:imeOptions="actionNext"
                         android:nextFocusDown="@+id/account_number" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="@dimen/dimens_28"
                     android:layout_height="@dimen/dimens_28"
                     android:layout_alignParentRight="true"
@@ -216,7 +216,7 @@
                     android:textColor="@color/color3F3F3F"
                     android:textSize="@dimen/dimens_13sp" />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/minus_btn"
                     android:layout_width="@dimen/dimens_26"
                     android:layout_height="@dimen/dimens_26"
@@ -236,7 +236,7 @@
                     android:textColor="@color/color3F3F3F"
                     android:textSize="@dimen/dimens_14sp" />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/plus_btn"
                     android:layout_width="@dimen/dimens_26"
                     android:layout_height="@dimen/dimens_26"

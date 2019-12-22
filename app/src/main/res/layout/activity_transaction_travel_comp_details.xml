@@ -104,7 +104,7 @@
                                 style="@style/SendMoneyBeneficiaryDetailsTextLabel"
                                 android:text="@string/payment_mode" />
 
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/pay_mode_icon"
                                 android:layout_width="@dimen/dimens_12"
                                 android:layout_height="@dimen/dimens_11"
@@ -428,7 +428,7 @@
                             android:layout_centerHorizontal="true"
                             android:orientation="horizontal">
 
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/time_left_clock_icon"
                                 android:layout_width="@dimen/dimens_22"
                                 android:layout_height="@dimen/dimens_22"

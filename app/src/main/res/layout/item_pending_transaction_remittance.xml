@@ -127,7 +127,7 @@
                 android:textColor="@color/color3F3F3F"
                 android:textSize="@dimen/dimens_9sp" />
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/circle"
                 android:layout_width="@dimen/dimens_5"
                 android:layout_height="@dimen/dimens_2"
@@ -154,7 +154,7 @@
                 android:textColor="@color/color3F3F3F"
                 android:textSize="@dimen/dimens_9sp" />
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/status"
                 android:layout_width="@dimen/dimens_15"
                 android:layout_height="@dimen/dimens_15"

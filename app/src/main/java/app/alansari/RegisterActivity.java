@@ -72,13 +72,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         tvMobileDetails = ((TextView) findViewById(R.id.reg_mobile_details));
         tvId = ((TextView) findViewById(R.id.reg_id));
         tvIdDetails = ((TextView) findViewById(R.id.reg_id_details));
-        //ivMobile = ((ImageView) findViewById(R.id.reg_mobile_image));
-        ivMobile.setOnClickListener(new View.OnClickListener() {
+        ivMobile = ((ImageView) findViewById(R.id.reg_mobile_image));
+        /*ivMobile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-          //      Crashlytics.getInstance().crash();
+                Crashlytics.getInstance().crash();
             }
-        });
+        });*/
         ivId = ((ImageView) findViewById(R.id.reg_id_image));
         home = ((RelativeLayout) findViewById(R.id.home));
         home.setOnClickListener(new View.OnClickListener() {

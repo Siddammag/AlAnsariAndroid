@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/dimens_6"
     tools:ignore="MissingPrefix">
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/tab_icon"
         android:layout_width="@dimen/dimens_15"
         android:layout_height="@dimen/dimens_15"
@@ -16,7 +16,7 @@
         android:layout_marginRight="@dimen/dimens_4"
         android:tint="@color/colorBlack" />
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tab_text"
         fontPath="fonts/Roboto-Regular.ttf"
         android:layout_width="wrap_content"

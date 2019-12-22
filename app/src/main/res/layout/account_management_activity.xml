@@ -50,7 +50,7 @@
                             style="@style/accountManagementContinueBtn"
                             android:layout_below="@+id/beneficiary_desc" />
 
-                        <android.support.v7.widget.AppCompatImageView
+                        <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="@dimen/dimens_80"
                             android:layout_height="@dimen/dimens_70"
                             android:layout_alignBottom="@+id/beneficiary_continue_btn"
@@ -88,7 +88,7 @@
                             style="@style/accountManagementContinueBtn"
                             android:layout_below="@+id/credit_card_desc" />
 
-                        <android.support.v7.widget.AppCompatImageView
+                        <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="@dimen/dimens_90"
                             android:layout_height="@dimen/dimens_70"
                             android:layout_alignBottom="@+id/credit_card_continue_btn"
@@ -126,7 +126,7 @@
                             style="@style/accountManagementContinueBtn"
                             android:layout_below="@+id/bank_account_desc" />
 
-                        <android.support.v7.widget.AppCompatImageView
+                        <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="@dimen/dimens_80"
                             android:layout_height="@dimen/dimens_85"
                             android:layout_alignBottom="@+id/bank_account_continue_btn"

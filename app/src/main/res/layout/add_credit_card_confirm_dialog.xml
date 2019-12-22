@@ -123,7 +123,7 @@
                     android:layout_below="@+id/card_num_layout_c"
                     android:layout_marginLeft="@dimen/dimens_8">
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/card_type_c"
                         android:layout_width="@dimen/dimens_32"
                         android:layout_height="@dimen/dimens_32"

@@ -120,7 +120,7 @@
                     android:layout_marginLeft="@dimen/dimens_8"
                     android:layout_marginRight="@dimen/dimens_8" />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/from_flag"
                     android:layout_width="@dimen/dimens_28"
                     android:layout_height="@dimen/dimens_22"
@@ -147,7 +147,7 @@
                     android:textColor="@color/color373A49"
                     android:textSize="@dimen/dimens_14sp" />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/to_flag"
                     android:layout_width="@dimen/dimens_28"
                     android:layout_height="@dimen/dimens_22"
@@ -185,7 +185,7 @@
                     android:maxLength="9"
                     />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/swap_btn"
                     android:layout_width="@dimen/dimens_26"
                     android:layout_height="@dimen/dimens_26"

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:parentTag="LinearLayout">
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_layout"
         style="@style/AddBeneficiaryInputLayout">
 
@@ -18,7 +18,7 @@
             android:focusable="false"
             android:hint="Beneficiary Hint"
             android:inputType="none" />
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <View
         android:id="@+id/divider"

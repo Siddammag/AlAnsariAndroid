@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/close_btn"
                 android:layout_width="@dimen/dimens_35"
                 android:layout_height="@dimen/dimens_35"

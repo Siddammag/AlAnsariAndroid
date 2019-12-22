@@ -49,7 +49,7 @@ public class AppController extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        Fabric.with(this, new Crashlytics());
+        //Fabric.with(this, new Crashlytics());
         mInstance = this;
         new RSASecurityUtils().setSecurityKeys(this);
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {

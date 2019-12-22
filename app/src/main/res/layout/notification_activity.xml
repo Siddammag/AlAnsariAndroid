@@ -33,7 +33,7 @@
                 android:paddingBottom="@dimen/dimens_5"
                 android:text="Email notification" />
 
-            <android.support.v7.widget.SwitchCompat
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/email_notification_switch"
                 style="@style/notificationSwitch"
                 android:layout_alignBottom="@id/email_notification"
@@ -87,7 +87,7 @@
                 android:layout_toLeftOf="@+id/sms_notification_switch"
                 android:text="SMS notification" />
 
-            <android.support.v7.widget.SwitchCompat
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/sms_notification_switch"
                 style="@style/notificationSwitch"
                 android:layout_alignBottom="@id/sms_notification"
@@ -105,7 +105,7 @@
                 android:layout_toLeftOf="@+id/aae_alert_switch"
                 android:text="Receive alerts from AAE" />
 
-            <android.support.v7.widget.SwitchCompat
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/aae_alert_switch"
                 style="@style/notificationSwitch"
                 android:layout_alignBottom="@id/aae_alert"

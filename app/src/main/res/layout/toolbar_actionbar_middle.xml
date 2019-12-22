@@ -19,7 +19,7 @@
         android:scaleType="centerCrop"
         android:src="@color/colorBlueOverlay" />
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimens_40"
@@ -38,5 +38,5 @@
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/dimens_14sp"
             android:visibility="visible" />
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 </RelativeLayout>

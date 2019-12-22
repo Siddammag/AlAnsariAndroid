@@ -68,7 +68,7 @@
                         android:layout_below="@+id/mobile_label" />
                 </RelativeLayout>
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dimens_48"
                     android:layout_marginBottom="-8dp"
@@ -90,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/eid_name_layout"
                         style="@style/VerifyEIDTextInputLayout">
 
@@ -101,11 +101,11 @@
                             android:imeOptions="actionDone"
                             android:nextFocusDown="@+id/eid_email"
                             android:paddingTop="@dimen/dimens_14" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <View style="@style/VerifyEIDDivider" />
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/eid_email_layout"
                         style="@style/VerifyEIDTextInputLayout">
 
@@ -117,11 +117,11 @@
                             android:inputType="textEmailAddress"
                             android:nextFocusDown="@+id/eid_company_name"
                             android:paddingTop="@dimen/dimens_14" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <View style="@style/VerifyEIDDivider" />
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/eid_company_layout"
                         style="@style/VerifyEIDTextInputLayout">
 
@@ -131,7 +131,7 @@
                             android:hint="Enter your company name"
                             android:imeOptions="actionDone"
                             android:paddingTop="@dimen/dimens_14" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <View style="@style/VerifyEIDDivider" />
                 </LinearLayout>
@@ -168,7 +168,7 @@
                 android:paddingLeft="@dimen/dimens_8"
                 android:paddingRight="@dimen/dimens_8">
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/logo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

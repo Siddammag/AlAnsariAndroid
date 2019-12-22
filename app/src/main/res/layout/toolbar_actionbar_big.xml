@@ -21,7 +21,7 @@
         android:scaleType="centerCrop"
         android:src="@color/colorBlueOverlay" />
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimens_40"
@@ -34,7 +34,7 @@
             android:layout_width="@dimen/dimens_40"
             android:layout_height="@dimen/dimens_40"
             android:padding="@dimen/dimens_8" />
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout
         android:id="@+id/toolbar_title_layout"

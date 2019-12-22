@@ -31,14 +31,14 @@
             android:layout_gravity="center"
             tools:ignore="WebViewLayout">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/iv_image_top"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY" />
 
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/close_btn"
                 android:layout_width="@dimen/dimens_35"
                 android:layout_height="@dimen/dimens_35"
@@ -84,7 +84,7 @@
             android:textColorHint="@color/color504F51"
             android:textSize="@dimen/dimens_12sp" />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_image_middle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
             android:weightSum="1">
 
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/iv_share_whatsapp"
                 android:layout_weight="0.4"
                 android:layout_width="0dp"
@@ -115,7 +115,7 @@
                 android:textColor="@color/white"
                 app:srcCompat="@drawable/ic_whatsapp_button" />
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/iv_share_other"
 
                 android:layout_weight="0.4"

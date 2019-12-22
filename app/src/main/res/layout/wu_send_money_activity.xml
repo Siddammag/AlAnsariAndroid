@@ -37,7 +37,7 @@
                 android:orientation="vertical"
                 app:layout_collapseMode="parallax">
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/flag"
                     style="@style/BeneficiaryFlagImageView"
                     android:layout_below="@+id/toolbar_layout" />
@@ -134,7 +134,7 @@
                             android:paddingLeft="@dimen/dimens_7"
                             android:paddingRight="@dimen/dimens_3">
 
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/iv_wu"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"

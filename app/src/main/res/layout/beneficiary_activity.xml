@@ -44,7 +44,7 @@
                         style="@style/ReceivingCountryTextView"
                         android:paddingBottom="@dimen/dimens_2"/>
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/flag"
                         style="@style/BeneficiaryFlagImageView" />
 
@@ -58,7 +58,7 @@
 
                 </LinearLayout>
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/fab"
                     style="@style/addBeneficiaryButtonNew"
                     android:layout_centerInParent="true"
@@ -117,12 +117,12 @@
                                         android:paddingTop="@dimen/dimens_0"
                                         android:paddingBottom="@dimen/dimens_0" />
 
-                                    <android.support.v7.widget.AppCompatImageView
+                                    <androidx.appcompat.widget.AppCompatImageView
                                         android:id="@+id/arex_left_arrow_btn"
                                         style="@style/BeneficiaryListLeftArrow" />
 
 
-                                    <android.support.v7.widget.AppCompatImageView
+                                    <androidx.appcompat.widget.AppCompatImageView
                                         android:id="@+id/arex_arrow_btn"
                                         style="@style/BeneficiaryListArrow" />
 
@@ -294,7 +294,7 @@
                                                 android:textColorHint="@color/color1E6AB3"
                                                 android:textSize="@dimen/dimens_28sp" />
 
-                                            <android.support.v7.widget.AppCompatImageView
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/success_image"
                                                 android:layout_width="@dimen/dimens_26"
                                                 android:layout_height="@dimen/dimens_26"
@@ -500,7 +500,7 @@
                             android:paddingLeft="@dimen/dimens_22"
                             android:paddingRight="@dimen/dimens_22">
 
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/iv_wu"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"

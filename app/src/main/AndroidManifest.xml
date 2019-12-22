@@ -263,9 +263,9 @@
             android:name=".modules.sendmoney.PendingTransActivity"
             android:screenOrientation="portrait" />
 
-        <meta-data
+        <!--<meta-data
             android:name="io.fabric.ApiKey"
-            android:value="3fb9d30d1b9b76bf06a3fd42b972f980b292aee0" />
+            android:value="3fb9d30d1b9b76bf06a3fd42b972f980b292aee0" />-->
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />

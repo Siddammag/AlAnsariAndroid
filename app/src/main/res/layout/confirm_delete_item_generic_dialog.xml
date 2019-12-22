@@ -22,7 +22,7 @@
                 android:text="@string/confirm_delete_bank_account"
                 android:visibility="visible" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/email_layout"
                 style="@style/DialogTextInputLayout"
                 android:layout_below="@+id/dialog_text"
@@ -33,7 +33,7 @@
                     android:id="@+id/email"
                     style="@style/DialogEditText"
                     android:hint="@string/enter_email_id" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <View
                 android:id="@+id/email_view"

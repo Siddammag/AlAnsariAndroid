@@ -69,7 +69,7 @@
         </RelativeLayout>
     </ScrollView>
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/close_btn"
         android:layout_width="@dimen/dimens_42"
         android:layout_height="@dimen/dimens_42"
@@ -79,7 +79,7 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/svg_rate_close_icon" />
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimens_48"
         android:layout_above="@+id/bottom_layout"

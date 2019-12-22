@@ -7,7 +7,7 @@
     android:background="@drawable/custom_item_trans_over_bg"
     android:padding="@dimen/dimens_6">
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/flag"
         android:layout_width="@dimen/dimens_90"
         android:layout_height="@dimen/dimens_65"

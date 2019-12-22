@@ -122,7 +122,7 @@
                         android:textColor="@color/color373A49"
                         android:textSize="@dimen/dimens_15sp" />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         style="@style/dropdownArrowStyle"
                         android:layout_below="@id/currency" />
 
@@ -155,7 +155,7 @@
                          android:textColor="@color/color373A49"
                          android:textSize="@dimen/dimens_12sp" />-->
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/from_flag"
                         android:layout_width="@dimen/dimens_28"
                         android:layout_height="@dimen/dimens_22"
@@ -182,7 +182,7 @@
                         android:textColor="@color/color373A49"
                         android:textSize="@dimen/dimens_14sp" />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/to_flag"
                         android:layout_width="@dimen/dimens_28"
                         android:layout_height="@dimen/dimens_22"
@@ -217,7 +217,7 @@
                         android:gravity="center_vertical"
                         android:maxLength="9" />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/swap_btn"
                         android:layout_width="@dimen/dimens_26"
                         android:layout_height="@dimen/dimens_26"

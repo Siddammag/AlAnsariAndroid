@@ -22,7 +22,7 @@
         android:orientation="vertical"
         app:layout_collapseMode="parallax">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/flag"
             style="@style/BeneficiaryFlagImageView" />
 
@@ -76,7 +76,7 @@
                         android:paddingTop="@dimen/dimens_4"
                         android:text="@string/am_beneficiary_message" />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="@dimen/dimens_80"
                         android:layout_height="@dimen/dimens_70"
                         android:layout_alignBottom="@+id/beneficiary_desc"

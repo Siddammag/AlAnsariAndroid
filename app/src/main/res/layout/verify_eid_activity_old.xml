@@ -128,7 +128,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/verify_eid_number_layout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
                                 android:imeOptions="actionDone"
                                 android:inputType="text"
                                 android:nextFocusDown="@+id/verify_eid_expiry" />
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
 
                         <View
                             android:layout_width="match_parent"
@@ -157,7 +157,7 @@
                             android:orientation="horizontal"
                             android:weightSum="1">
 
-                            <android.support.design.widget.TextInputLayout
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:id="@+id/verify_eid_expiry_layout"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -175,14 +175,14 @@
                                     android:imeOptions="actionNext"
                                     android:inputType="none"
                                     android:nextFocusDown="@+id/verify_eid_dob" />
-                            </android.support.design.widget.TextInputLayout>
+                            </com.google.android.material.textfield.TextInputLayout>
 
                             <View
                                 android:layout_width="@dimen/dimens_1"
                                 android:layout_height="match_parent"
                                 android:background="@color/colorDivider" />
 
-                            <android.support.design.widget.TextInputLayout
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:id="@+id/verify_eid_dob_layout"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -199,7 +199,7 @@
                                     android:hint="Enter DOB"
                                     android:imeOptions="actionDone"
                                     android:inputType="none" />
-                            </android.support.design.widget.TextInputLayout>
+                            </com.google.android.material.textfield.TextInputLayout>
                         </LinearLayout>
                     </LinearLayout>
 

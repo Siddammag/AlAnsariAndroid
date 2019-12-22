@@ -59,7 +59,7 @@
                                 android:paddingLeft="@dimen/dimens_7"
                                 android:paddingRight="@dimen/dimens_3">
 
-                                <android.support.v7.widget.AppCompatImageView
+                                <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/iv_wu"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -100,7 +100,7 @@
                             android:layout_marginLeft="@dimen/dimens_5"
                             android:layout_marginRight="@dimen/dimens_10">
 
-                            <android.support.design.widget.TextInputLayout
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:id="@+id/name_layout"
                                 style="@style/accountManagementAddTextInputLayout"
                                 android:padding="@dimen/dimens_0">
@@ -113,7 +113,7 @@
                                     android:imeOptions="actionDone"
                                     android:inputType="number"
                                     android:maxLength="9" />
-                            </android.support.design.widget.TextInputLayout>
+                            </com.google.android.material.textfield.TextInputLayout>
                         </androidx.cardview.widget.CardView >
 
                         <android.support.v7.widget.AppCompatRadioButton

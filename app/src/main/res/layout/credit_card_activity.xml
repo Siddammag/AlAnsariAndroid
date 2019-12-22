@@ -19,7 +19,7 @@
 
         <include layout="@layout/search_view_layout" />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/fab"
             style="@style/addBeneficiaryButtonNew"
             app:srcCompat="@drawable/ic_add_new" />
@@ -27,7 +27,7 @@
         <include layout="@layout/recycler_view_full" />
     </LinearLayout>
 
-    <!--<android.support.v7.widget.AppCompatImageView
+    <!--<androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/fab"
         style="@style/FloatingRoundButton"
         android:src="@drawable/ic_action_add" />-->

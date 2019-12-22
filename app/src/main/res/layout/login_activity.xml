@@ -74,7 +74,7 @@
 
                 <include layout="@layout/keypad_pin_layout_login" />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dimens_48"
                     android:layout_marginBottom="@dimen/minus_dimens_8"

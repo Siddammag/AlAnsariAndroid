@@ -29,7 +29,7 @@
             android:paddingRight="@dimen/dimens_10"
             android:paddingTop="@dimen/dimens_8">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/profile_pic"
                 android:layout_width="@dimen/beneficiary_card_pic_witdh"
                 android:layout_height="@dimen/beneficiary_card_pic_height"

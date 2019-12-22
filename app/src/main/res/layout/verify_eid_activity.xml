@@ -68,7 +68,7 @@
                         android:layout_below="@+id/mobile_label" />
                 </RelativeLayout>
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dimens_48"
                     android:layout_marginBottom="-8dp"
@@ -90,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/eid_number_layout"
                         style="@style/VerifyEIDTextInputLayout">
 
@@ -103,11 +103,11 @@
                             android:maxLength="18"
                             android:nextFocusDown="@+id/eid_expiry"
                             android:paddingTop="@dimen/dimens_14" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <View style="@style/VerifyEIDDivider" />
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/eid_expiry_layout"
                         style="@style/VerifyEIDTextInputLayout">
 
@@ -121,11 +121,11 @@
                             android:inputType="none"
                             android:nextFocusDown="@+id/eid_dob"
                             android:paddingTop="@dimen/dimens_14" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <View style="@style/VerifyEIDDivider" />
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/eid_dob_layout"
                         style="@style/VerifyEIDTextInputLayout">
 
@@ -138,7 +138,7 @@
                             android:imeOptions="actionDone"
                             android:inputType="none"
                             android:paddingTop="@dimen/dimens_14" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <View style="@style/VerifyEIDDivider" />
                 </LinearLayout>
@@ -175,7 +175,7 @@
                 android:paddingLeft="@dimen/dimens_8"
                 android:paddingRight="@dimen/dimens_8">
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/logo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

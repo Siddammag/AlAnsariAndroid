@@ -105,7 +105,7 @@
                                                 style="@style/SendMoneyBeneficiaryDetailsTextLabel"
                                                 android:text="@string/payment_mode" />
 
-                                            <android.support.v7.widget.AppCompatImageView
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/pay_mode_icon"
                                                 android:layout_width="@dimen/dimens_12"
                                                 android:layout_height="@dimen/dimens_11"
@@ -414,7 +414,7 @@
                 android:gravity="center"
                 android:minHeight="@dimen/dimens_100">
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/txn_status_image"
                     android:layout_width="@dimen/dimens_45"
                     android:layout_height="@dimen/dimens_45"

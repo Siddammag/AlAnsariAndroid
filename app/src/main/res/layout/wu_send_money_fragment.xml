@@ -67,7 +67,7 @@
                 android:textColorHint="@color/color1E6AB3"
                 android:textSize="@dimen/dimens_28sp" />
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/success_image"
                 android:layout_width="@dimen/dimens_26"
                 android:layout_height="@dimen/dimens_26"

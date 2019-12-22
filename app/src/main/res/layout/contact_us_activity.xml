@@ -33,7 +33,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/name_layout"
                         style="@style/contactUsTextInputLayout">
 
@@ -43,11 +43,11 @@
                             android:hint="Name"
                             android:imeOptions="actionNext"
                             android:nextFocusDown="@+id/mobile" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/mobile_layout"
                         style="@style/contactUsTextInputLayout">
 
@@ -58,11 +58,11 @@
                             android:imeOptions="actionNext"
                             android:inputType="none"
                             android:nextFocusDown="@+id/email" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/email_layout"
                         style="@style/contactUsTextInputLayout">
 
@@ -73,12 +73,12 @@
                             android:imeOptions="actionNext"
                             android:inputType="textEmailAddress"
                             android:nextFocusDown="@+id/subject" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
 
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/subject_layout"
                         style="@style/contactUsTextInputLayout">
 
@@ -88,11 +88,11 @@
                             android:hint="Subject"
                             android:imeOptions="actionNext"
                             android:nextFocusDown="@+id/message" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/message_layout"
                         style="@style/contactUsTextInputLayout">
 
@@ -107,7 +107,7 @@
                             android:overScrollMode="always"
                             android:scrollbarStyle="insideInset"
                             android:scrollbars="vertical" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
                 </LinearLayout>

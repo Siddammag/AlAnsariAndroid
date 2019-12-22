@@ -10,7 +10,7 @@
         style="@style/MultiStateViewStyle"
         app:msv_animateViewChanges="false">
 
-        <androidx.core.widget.SwipeRefreshLayout
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/swipeRefreshLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -27,7 +27,7 @@
                 android:paddingBottom="@dimen/dimens_24"
                 android:paddingTop="@dimen/dimens_6"
                 android:scrollbars="none" />
-        </androidx.core.widget.SwipeRefreshLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     </app.alansari.customviews.MultiStateView>
 

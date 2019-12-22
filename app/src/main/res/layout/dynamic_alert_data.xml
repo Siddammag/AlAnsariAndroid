@@ -19,7 +19,7 @@
             style="@style/DialogTextView2"
             android:textColor="@color/splash_bg"/>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/dynamic_layout1"
             style="@style/DialogTextInputLayout"
             app:hintEnabled="true"
@@ -35,9 +35,9 @@
                 fontPath="fonts/HelveticaNeue.ttf"
                 android:textColor="@color/colorBlack"
                 android:inputType="textEmailAddress" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/dynamic_layout2"
             style="@style/DialogTextInputLayout"
             app:hintEnabled="true"
@@ -51,7 +51,7 @@
                 fontPath="fonts/HelveticaNeue.ttf"
                 android:textColor="@color/colorBlack"
                 android:inputType="textEmailAddress" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <EditText

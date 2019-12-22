@@ -107,7 +107,7 @@
         </LinearLayout>
 
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/close_btn"
             android:layout_width="@dimen/dimens_25"
             android:layout_height="@dimen/dimens_25"

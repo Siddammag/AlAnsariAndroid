@@ -84,7 +84,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/add_bank_btn"
                 android:layout_width="@dimen/dimens_40"
                 android:layout_height="@dimen/dimens_40"
@@ -270,7 +270,7 @@
                                     android:textColor="@color/color3F3F3F"
                                     android:textSize="@dimen/dimens_14sp" />
 
-                                <android.support.v7.widget.AppCompatImageView
+                                <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/assistance_call_icon"
                                     android:layout_width="@dimen/dimens_26"
                                     android:layout_height="@dimen/dimens_26"
@@ -416,7 +416,7 @@
 
                         </androidx.cardview.widget.CardView>
 
-                        <android.support.v7.widget.AppCompatImageView
+                        <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/add_bank_btn"
                             android:layout_width="@dimen/dimens_40"
                             android:layout_height="@dimen/dimens_40"
@@ -593,7 +593,7 @@
                                         android:textColor="@color/color1E6AB3"
                                         android:textSize="@dimen/dimens_16sp" />
 
-                                    <android.support.v7.widget.AppCompatImageView
+                                    <androidx.appcompat.widget.AppCompatImageView
                                         android:id="@+id/assistance_call_icon"
                                         android:layout_width="@dimen/dimens_26"
                                         android:layout_height="@dimen/dimens_26"
@@ -640,7 +640,7 @@
                                         android:textColor="@color/color3F3F3F"
                                         android:textSize="@dimen/dimens_14sp" />
 
-                                    <android.support.v7.widget.AppCompatImageView
+                                    <androidx.appcompat.widget.AppCompatImageView
                                         android:layout_marginLeft="@dimen/dimens_5"
                                         android:id="@+id/assistance_call_icon"
                                         android:layout_width="@dimen/dimens_26"

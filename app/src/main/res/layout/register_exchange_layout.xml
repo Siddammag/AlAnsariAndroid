@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/reg_email_layout"
                     style="@style/RegisterEmailTextInputLayout">
 
@@ -87,11 +87,11 @@
                         android:inputType="textEmailAddress"
                         android:nextFocusDown="@+id/reg_password"
                         android:paddingTop="@dimen/dimens_14" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <View style="@style/RegisterEmailDivider" />
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/reg_password_layout"
                     style="@style/RegisterEmailTextInputLayout">
 
@@ -102,7 +102,7 @@
                         android:imeOptions="actionDone"
                         android:inputType="textPassword"
                         android:paddingTop="@dimen/dimens_14" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <View style="@style/RegisterEmailDivider" />
             </LinearLayout>

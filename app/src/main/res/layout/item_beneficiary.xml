@@ -57,7 +57,7 @@
                     android:gravity="center"
                     android:visibility="gone"/>
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/edit_btn"
                     android:layout_width="@dimen/dimens_15"
                     android:layout_height="@dimen/dimens_10"
@@ -89,7 +89,7 @@
                     android:layout_marginTop="@dimen/minus_dimens_3"
                     />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:layout_weight="0.5"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
                     android:padding="@dimen/dimens_20"
                    />
 
-              <!--  <android.support.v7.widget.AppCompatImageView
+              <!--  <androidx.appcompat.widget.AppCompatImageView
                     android:layout_weight="0.5"
                     android:id="@+id/from_flag"
                     android:layout_width="0dp"
@@ -253,7 +253,7 @@
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/dimens_12sp" />
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/delete_btn"
                 android:layout_width="@dimen/dimens_20"
                 android:layout_height="@dimen/dimens_20"

@@ -38,7 +38,7 @@
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/dimens_12sp" />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/question_arrow"
             android:layout_width="@dimen/dimens_15"
             android:layout_height="@dimen/dimens_15"

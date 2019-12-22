@@ -60,7 +60,7 @@
 
         <include layout="@layout/recycler_view_full" />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/add_bank_btn"
             style="@style/FloatingRoundButtonNew"
             android:visibility="gone"

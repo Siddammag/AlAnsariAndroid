@@ -31,7 +31,7 @@
             android:layout_marginRight="@dimen/dimens_8"
             android:orientation="vertical">
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/name_layout"
                 style="@style/accountManagementAddTextInputLayout">
 
@@ -42,11 +42,11 @@
                     android:hint="@string/cardholder_name"
                     android:imeOptions="actionNext"
                     android:nextFocusDown="@+id/card_num" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/card_num_layout"
                     style="@style/accountManagementAddTextInputLayout">
 
@@ -59,7 +59,7 @@
                         android:imeOptions="actionDone"
                         android:inputType="number|textNoSuggestions"
                         />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
             <View style="@style/SendMoneyBeneficiaryDetailsDivider" />
         </LinearLayout>

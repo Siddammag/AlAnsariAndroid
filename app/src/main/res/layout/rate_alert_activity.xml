@@ -20,7 +20,7 @@
         android:layout_marginTop="@dimen/minus_dimens_35"
         android:paddingBottom="@dimen/dimens_2" />
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/flag"
         style="@style/BeneficiaryFlagImageView"
         android:layout_below="@+id/receiving_country" />
@@ -69,7 +69,7 @@
                     android:textColor="@color/color373A49"
                     android:textSize="@dimen/dimens_14sp" />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/from_flag"
                     android:layout_width="@dimen/dimens_28"
                     android:layout_height="@dimen/dimens_22"
@@ -90,7 +90,7 @@
                     android:textColor="@color/color373A49"
                     android:textSize="@dimen/dimens_14sp" />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/swap"
                     android:layout_width="@dimen/dimens_28"
                     android:layout_height="@dimen/dimens_22"
@@ -109,7 +109,7 @@
                     android:textColor="@color/color373A49"
                     android:textSize="@dimen/dimens_14sp" />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/to_flag"
                     android:layout_width="@dimen/dimens_28"
                     android:layout_height="@dimen/dimens_22"

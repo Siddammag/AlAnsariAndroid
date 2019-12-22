@@ -35,7 +35,7 @@
                     style="@style/ReceivingCountryTextView"
                     android:paddingBottom="@dimen/dimens_2" />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/flag"
                     style="@style/BeneficiaryFlagImageView"
                     android:layout_below="@+id/toolbar_layout" />
@@ -70,7 +70,7 @@
                     android:paddingTop="@dimen/dimens_12"
                     android:paddingBottom="@dimen/dimens_10">
 
-                    <android.support.design.widget.TabLayout
+                    <com.google.android.material.tabs.TabLayout
                         android:id="@+id/tab_layout_transfer_type"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/dimens_40"
@@ -83,7 +83,7 @@
                         app:tabMaxWidth="0dp"
                         app:tabMode="fixed"
                         app:tabSelectedTextColor="@color/colorBlack"
-                        app:tabTextColor="@color/colorBlack_75"></android.support.design.widget.TabLayout>
+                        app:tabTextColor="@color/colorBlack_75"></com.google.android.material.tabs.TabLayout>
 
                     <View
                         android:layout_width="match_parent"
@@ -162,7 +162,7 @@
                                     android:hint="0,00"
                                     android:maxLength="9" />
 
-                                <android.support.v7.widget.AppCompatImageView
+                                <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/success_image"
                                     android:layout_width="@dimen/dimens_26"
                                     android:layout_height="@dimen/dimens_26"
