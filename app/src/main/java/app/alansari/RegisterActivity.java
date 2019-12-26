@@ -21,6 +21,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.crashlytics.android.Crashlytics;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
@@ -50,7 +51,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private TextView tvMobile, tvMobileDetails, tvId, tvIdDetails;
     private ImageView ivMobile, ivId;
     private RelativeLayout home;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -73,18 +74,19 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         tvId = ((TextView) findViewById(R.id.reg_id));
         tvIdDetails = ((TextView) findViewById(R.id.reg_id_details));
         ivMobile = ((ImageView) findViewById(R.id.reg_mobile_image));
-        /*ivMobile.setOnClickListener(new View.OnClickListener() {
+        ivMobile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Crashlytics.getInstance().crash();
+                //Crashlytics.getInstance().crash();
             }
-        });*/
+        });
         ivId = ((ImageView) findViewById(R.id.reg_id_image));
         home = ((RelativeLayout) findViewById(R.id.home));
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
+                //Crashlytics.getInstance().crash();
             }
         });
     }
@@ -94,6 +96,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_activity);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setBackgroundColor(ContextCompat.getColor(context, R.color.colorTransparent));
         toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.colorWhite));
@@ -110,6 +113,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             findViewById(R.id.login_link).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    mFirebaseAnalytics.logEvent("App_Loading", null);
                     intent = new Intent(context, LandingActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);

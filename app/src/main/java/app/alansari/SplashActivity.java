@@ -19,6 +19,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import org.json.JSONObject;
 
@@ -62,6 +63,7 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
     private boolean isAnimationDone, isConditionsChecked, isValidLocation;
     private int valueCheck = -1;
 
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     private void init() {
         //printhashkey();
@@ -85,6 +87,7 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.splash_activity);
         context = SplashActivity.this;
         AppController.setIsPinVerified(false);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         String name = CommonUtils.getDeviceID(this);
         init();
         if (NetworkStatus.getInstance(context).isOnline2(context)) {
@@ -230,6 +233,7 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
                 } else {
                     intent = new Intent(context, RegisterActivity.class);
                 }*/
+                mFirebaseAnalytics.logEvent("App_Loading", null);
                 startActivity(new Intent(context, LandingActivity.class));
                 finish();
             }

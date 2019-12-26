@@ -38,6 +38,7 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -123,6 +124,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private String mobileNum = null, source, target, statusCode, message;
     private Dialog appVersionDialog;
     private String sessionTime;
+
+
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -238,6 +242,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         sessionTime = (String) SharedPreferenceManger.getPrefVal(Constants.SESSION_ID, null, SharedPreferenceManger.VALUE_TYPE.STRING);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.colorWhite));

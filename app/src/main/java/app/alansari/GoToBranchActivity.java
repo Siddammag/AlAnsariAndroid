@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
 import app.alansari.Utils.LogOutTimerUtil;
@@ -31,7 +33,7 @@ public class GoToBranchActivity extends AppCompatActivity implements LogOutTimer
     private String message;
     private RelativeLayout home;
 
-
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -57,6 +59,7 @@ public class GoToBranchActivity extends AppCompatActivity implements LogOutTimer
         super.onCreate(savedInstanceState);
         setContentView(R.layout.go_to_branch_activity);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         tvReferenceNum = (TextView) findViewById(R.id.reference_num);
         tvMessage = (TextView) findViewById(R.id.message);
         tvMessage.setText((String) SharedPreferenceManger.getPrefVal(Constants.MESSAGE, "", SharedPreferenceManger.VALUE_TYPE.STRING));
@@ -98,6 +101,7 @@ public class GoToBranchActivity extends AppCompatActivity implements LogOutTimer
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mFirebaseAnalytics.logEvent("App_Loading", null);
                 startActivity(new Intent(context, LandingActivity.class));
                 finish();
             }

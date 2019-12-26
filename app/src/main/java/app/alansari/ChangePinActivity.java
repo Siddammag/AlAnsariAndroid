@@ -38,6 +38,7 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 
 import org.json.JSONObject;
@@ -101,6 +102,8 @@ public class ChangePinActivity extends AppCompatActivity implements BigButtonVie
     private TextView tvResultTitle, tvResultText;
     private Button btnResultOk;
     private String sessionTime;
+
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     public void alertBox(final Context context, String message) {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(
@@ -173,6 +176,7 @@ public class ChangePinActivity extends AppCompatActivity implements BigButtonVie
         super.onCreate(savedInstanceState);
         setContentView(R.layout.change_pin_activity);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         ((TextView) findViewById(R.id.toolbar_title)).setText("PIN CHANGE");
         setSupportActionBar(toolbar);
@@ -268,6 +272,7 @@ public class ChangePinActivity extends AppCompatActivity implements BigButtonVie
             @Override
             public void onClick(View v) {
                 intent = new Intent(context, LandingActivity.class);
+                mFirebaseAnalytics.logEvent("App_Loading", null);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY);
                 startActivity(intent);
                 finish();

@@ -47,7 +47,6 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:appComponentFactory,android:allowBackup,android:supportsRtl">
-        <activity android:name=".MyProfileDetailsNew"></activity>
         <!--         tools:replace="android:supportsRtl,android:allowBackup,android:appComponentFactory"> -->
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"

@@ -540,8 +540,8 @@ public class Constants {
 
 ////////////**********************************************************************************//////////Sidduuu
     //public static final String BASE_URL_TESTING = "http://barshaoffice.dyndns.org:9106/ProjectGateway2/api/";
-    public static final String BASE_URL_TESTING = "https://mobileapp.eexchange.ae:9106/ProjectGateway3/api/";
-    //public static final String BASE_URL_TESTING = "https://mobileapp.eexchange.ae:9106/ProjectGateway2/api/";
+    //public static final String BASE_URL_TESTING = "https://mobileapp.eexchange.ae:9106/ProjectGateway3/api/";
+    public static final String BASE_URL_TESTING = "https://mobileapp.eexchange.ae:9106/ProjectGateway2/api/";
     //public static final String BASE_URL_TESTING = "http://barshaoffice.dyndns.org:9106/ProjectGateway/api/";
 ////////////**********************************************************************************//////////Sidduuu
 

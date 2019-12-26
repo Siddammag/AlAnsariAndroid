@@ -256,7 +256,7 @@
                     android:visibility="gone" />
 
 
-                <android.support.v7.widget.AppCompatButton
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/tv_delete"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -274,7 +274,7 @@
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_marginTop="@dimen/dimens_10"
         android:id="@+id/tv_add"
         android:layout_width="match_parent"
