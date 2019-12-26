@@ -8,12 +8,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import org.json.JSONObject;
 
@@ -65,13 +68,14 @@ public class NavigationBaseActivity extends AppCompatActivity implements CustomC
     private LeftMenuAdapter leftMenuAdapter;
     private ArrayList<LeftMenu> leftMenuArrayList;
     private ResideMenu.OnMenuListener menuListener;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.navigation_base_activity);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         setResideMenu();
         // CommonUtils.checkConnection(context, resideMenu);
         //-------------------------------------DKG--------------------------------------------------
@@ -193,9 +197,11 @@ public class NavigationBaseActivity extends AppCompatActivity implements CustomC
 
                 break;
             case 3:
-                if (!(context instanceof TransactionTrackerActivity))
+                if (!(context instanceof TransactionTrackerActivity)) {
+                    mFirebaseAnalytics.logEvent("Prelogin_TransactionTracker", null);
+                    Log.i("Prelogin_TransactionTracker", "Success in Naviga Screen");
                     startActivity(new Intent(context, TransactionTrackerActivity.class));
-                else {
+                }else {
                     resideMenu.closeMenu();
                     return;
                 }
@@ -225,9 +231,12 @@ public class NavigationBaseActivity extends AppCompatActivity implements CustomC
                 break;
 
             case 6:
-                if (!(context instanceof RateAlertActivity))
+                if (!(context instanceof RateAlertActivity)) {
+
+                    mFirebaseAnalytics.logEvent("Prelogin_RateCalculator", null);
+                    Log.i("Prelogin_RateCalculator", "Success in Navigation Screen");
                     startActivity(new Intent(context, RateAlertActivity.class));
-                else {
+                }else {
                     resideMenu.closeMenu();
                     return;
                 }

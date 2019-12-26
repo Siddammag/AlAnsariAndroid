@@ -69,6 +69,7 @@ public class SendMoneyCurrencyCodeRecyclerAdapter extends RecyclerView.Adapter<R
         notifyDataSetChanged();
     }
 
+
     @Override
     public int getItemCount() {
         return itemList.size();

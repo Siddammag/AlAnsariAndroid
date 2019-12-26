@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 
 import org.json.JSONObject;
@@ -51,6 +52,9 @@ public class RegisterEmailFragment extends Fragment implements OnWebServiceResul
     private int reqCodeAdd = 192;
     private JSONObject response;
 
+     private  Context mContext;
+
+    private FirebaseAnalytics mFirebaseAnalytics;
     /**
      * User E Exchange registration SOAP.
      */
@@ -105,6 +109,8 @@ public class RegisterEmailFragment extends Fragment implements OnWebServiceResul
                                     mobileNum = userData.getMobileNum();
 
                                     if (CommonUtils.isLoggedIn() && CommonUtils.getUserMobile().equalsIgnoreCase(mobileNum)) {
+
+                                        mFirebaseAnalytics.logEvent("Login", null);
                                         intent = new Intent(context, LoginActivity.class);
                                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                         startActivity(intent);
@@ -239,6 +245,9 @@ public class RegisterEmailFragment extends Fragment implements OnWebServiceResul
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.register_exchange_layout, container, false);
+        mContext = getActivity();
+        assert mContext != null;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(mContext);
         return view;
     }
 

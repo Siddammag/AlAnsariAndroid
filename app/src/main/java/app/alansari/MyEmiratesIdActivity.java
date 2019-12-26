@@ -20,12 +20,14 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -55,6 +57,7 @@ public class MyEmiratesIdActivity extends NavigationBaseActivity implements View
     private Dialog imagePickDialog;
     private ProfileDetails.TEMPLATELISTItem dataObject;
     boolean hideDialog;
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -100,7 +103,7 @@ public class MyEmiratesIdActivity extends NavigationBaseActivity implements View
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_emirates_id);
         context = this;
-
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         Toolbar toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
         ((TextView) findViewById(app.alansari.R.id.toolbar_title_2)).setText("My Emirates ID");
         findViewById(app.alansari.R.id.nav_menu).setOnClickListener(this);
@@ -144,6 +147,9 @@ public class MyEmiratesIdActivity extends NavigationBaseActivity implements View
             myEmiratesPersonalInfo.setArguments(bundle);
             fragmentTransaction.add(R.id.fragment_layout, myEmiratesPersonalInfo).addToBackStack(null);
         }else {
+            mFirebaseAnalytics.logEvent("AML_Pending", null);
+            Log.i("AML_Pending", "Success in MyEmiratesId Acitivity");
+
             MyEmiratesIdFragment myEmiratesIdFragment=new MyEmiratesIdFragment();
             myEmiratesIdFragment.setArguments(bundle);
             fragmentTransaction.add(R.id.fragment_layout,myEmiratesIdFragment).addToBackStack(null);

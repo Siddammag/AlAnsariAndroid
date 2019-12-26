@@ -18,6 +18,7 @@ import androidx.core.app.NotificationCompat;
 import android.text.Html;
 
 
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
@@ -55,7 +56,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     private static final String TYPE_RATE_ALERT = "RATE_ALERT";
     private static final String TYPE_CREDIT_CARD = "CREDIT_CARD";
     private static final String TYPE_LOGOUT = "LOGOUT";
-
     /**
      * Called when message is received.
      *

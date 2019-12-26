@@ -115,7 +115,7 @@ public class ChangePinActivity extends AppCompatActivity implements BigButtonVie
         alertDialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
+                mFirebaseAnalytics.logEvent("Login", null);
                 Intent intent = new Intent(context, LoginActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 context.startActivity(intent);
@@ -273,6 +273,7 @@ public class ChangePinActivity extends AppCompatActivity implements BigButtonVie
             public void onClick(View v) {
                 intent = new Intent(context, LandingActivity.class);
                 mFirebaseAnalytics.logEvent("App_Loading", null);
+                Log.i("App_Loading" , "Success in Change pin activity");
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY);
                 startActivity(intent);
                 finish();

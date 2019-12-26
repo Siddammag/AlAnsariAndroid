@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -234,6 +235,7 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
                     intent = new Intent(context, RegisterActivity.class);
                 }*/
                 mFirebaseAnalytics.logEvent("App_Loading", null);
+                Log.i("App_Loading" , "Success in Splash activity");
                 startActivity(new Intent(context, LandingActivity.class));
                 finish();
             }

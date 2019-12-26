@@ -27,6 +27,7 @@ import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.crashlytics.android.Crashlytics;
 import com.github.demono.AutoScrollViewPager;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -97,7 +98,7 @@ public class LandingActivity extends NavigationBaseActivity implements View.OnCl
     private String arexUserId;
     private String sessionTime;
     private CountDownTimer mCountDownTimer;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -132,6 +133,7 @@ public class LandingActivity extends NavigationBaseActivity implements View.OnCl
         super.onCreate(savedInstanceState);
         setContentView(R.layout.landing_activity);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         if (!CommonUtils.isLoggedIn() && CommonUtils.getUserId() == null && CommonUtils.getUserMobile() == null && CommonUtils.getPIN() == null) {
             FCMUtils.setFcmToken(context);
         }
@@ -549,6 +551,8 @@ public class LandingActivity extends NavigationBaseActivity implements View.OnCl
                         }
                     } else if (popupData.get(0).getScreen_type_key().equals("RT_ALERT")) {
                         if (CommonUtils.isLoggedIn()) {
+                            mFirebaseAnalytics.logEvent("Prelogin_RateCalculator", null);
+                            Log.i("Prelogin_RateCalculator", "Success in Landing Screen");
                             startActivity(new Intent(context, RateAlertActivity.class));
                         } else {
                             // login here
@@ -604,7 +608,10 @@ public class LandingActivity extends NavigationBaseActivity implements View.OnCl
                         }
                     } else if (popupData.get(0).getScreen_type_key().equals("LOGIN_PG")) {
                         if (CommonUtils.isLoggedIn()) {
+                            mFirebaseAnalytics.logEvent("Login", null);
                             startActivity(new Intent(context, LoginActivity.class));
+
+
                         } else {
                             //login here
                         }
@@ -691,7 +698,9 @@ public class LandingActivity extends NavigationBaseActivity implements View.OnCl
                     Intent intent = null;
                     SharedPreferenceManger.setPrefVal(Constants.FETCH_COUNTRY_DATA_OFF, false, SharedPreferenceManger.VALUE_TYPE.BOOLEAN);
                     if (CommonUtils.isLoggedIn() && CommonUtils.getUserId() != null && CommonUtils.getUserMobile() != null && CommonUtils.getPIN() != null) {
+                        mFirebaseAnalytics.logEvent("Login", null);
                         intent = new Intent(context, LoginActivity.class);
+
                     } else {
                         intent = new Intent(context, RegisterActivity.class);
                     }
@@ -699,6 +708,8 @@ public class LandingActivity extends NavigationBaseActivity implements View.OnCl
                     //Crashlytics.getInstance().crash();
                     break;
                 case R.id.rate_calculator_layout:
+                    mFirebaseAnalytics.logEvent("Prelogin_RateCalculator", null);
+                    Log.i("Prelogin_RateCalculator", "Success in Landing Screen");
                     intent = new Intent(context, CurrencyConverterActivity.class);
                     intent.putExtra(Constants.HIDE_BURGER_MENU, true);
                     startActivity(intent);
@@ -706,6 +717,8 @@ public class LandingActivity extends NavigationBaseActivity implements View.OnCl
                     //88023000006643
                     //88023000006647
                 case R.id.transaction_tracker_layout:
+                    mFirebaseAnalytics.logEvent("Prelogin_TransactionTracker", null);
+                    Log.i("Prelogin_TransactionTracker", "Success in Landing Screen");
                     startActivity(new Intent(context,TransactionTrackerActivity.class).putExtra(Constants.HIDE_BURGER_MENU,true));
                     break;
                 case R.id.get_in_touch_layout:

@@ -33,6 +33,7 @@ import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -120,7 +121,7 @@ public class CurrencyConverterActivity extends NavigationBaseActivity implements
     private String modeDescription,name,id;
     private JSONObject jsonObjectRequestPayment;
 
-
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -310,6 +311,7 @@ public class CurrencyConverterActivity extends NavigationBaseActivity implements
         setContentView(app.alansari.R.layout.currency_converter_activity);
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         Toolbar toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
         ((TextView) findViewById(app.alansari.R.id.toolbar_title)).setText("Rate Calculator");
         setSupportActionBar(toolbar);
@@ -631,6 +633,7 @@ public class CurrencyConverterActivity extends NavigationBaseActivity implements
                     Intent intent = null;
                     SharedPreferenceManger.setPrefVal(Constants.FETCH_COUNTRY_DATA_OFF, false, SharedPreferenceManger.VALUE_TYPE.BOOLEAN);
                     if (CommonUtils.isLoggedIn() && CommonUtils.getUserId() != null && CommonUtils.getUserMobile() != null && CommonUtils.getPIN() != null) {
+                        mFirebaseAnalytics.logEvent("Login", null);
                         intent = new Intent(context, LoginActivity.class);
                     } else {
                         intent = new Intent(context, RegisterActivity.class);

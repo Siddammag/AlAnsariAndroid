@@ -11,6 +11,8 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,6 +32,7 @@ import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.crashlytics.android.Crashlytics;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -103,6 +106,8 @@ public class DashboardActivity extends NavigationBaseActivity implements View.On
     private Dialog dialog;
     private WebView webView;
 
+    private FirebaseAnalytics mFirebaseAnalytics;
+
     /*"REFERRAL_ACTIVE_IND":"Y",
     "REFERRAL_CODE":"TEST1",*/
     @Override
@@ -140,6 +145,7 @@ public class DashboardActivity extends NavigationBaseActivity implements View.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_activity);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         checkSource();
         init();
         if (SharedPreferenceManger.justLoggedIn()) {
@@ -636,6 +642,8 @@ public class DashboardActivity extends NavigationBaseActivity implements View.On
                 } else if (popupData.get(0).getScreen_type_key().equals("CC_PAY")) {
                     startActivity(new Intent(context, CreditCardPaymentActivity.class));
                 } else if (popupData.get(0).getScreen_type_key().equals("RT_ALERT")) {
+                    mFirebaseAnalytics.logEvent("Prelogin_RateCalculator", null);
+                    Log.i("Prelogin_RateCalculator", "Success in Dashboard Screen");
                     startActivity(new Intent(context, RateAlertActivity.class));
                 } else if (popupData.get(0).getScreen_type_key().equals("TXN_HSTRY")) {
                     startActivity(new Intent(context, TransactionHistoryActivity.class));
@@ -724,6 +732,8 @@ public class DashboardActivity extends NavigationBaseActivity implements View.On
                 startActivity(intent);
                 break;
             case R.id.transaction_tracker_layout:
+                mFirebaseAnalytics.logEvent("Prelogin_TransactionTracker", null);
+                Log.i("Prelogin_TransactionTracker", "Success in Dashboard Screen");
                 startActivity(new Intent(context, TransactionTrackerActivity.class));
                 break;
         }
