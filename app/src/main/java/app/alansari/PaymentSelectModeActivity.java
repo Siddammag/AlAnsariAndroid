@@ -18,6 +18,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
@@ -106,6 +107,7 @@ public class PaymentSelectModeActivity extends AppCompatActivity implements View
     private RelativeLayout topLayout;
     private String PreLogin = "";
 
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -143,6 +145,7 @@ public class PaymentSelectModeActivity extends AppCompatActivity implements View
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_select_mode);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
         ((TextView) findViewById(app.alansari.R.id.toolbar_title)).setText("Payment Mode");
         ((ImageView) findViewById(app.alansari.R.id.close)).setVisibility(View.VISIBLE);
@@ -355,6 +358,8 @@ public class PaymentSelectModeActivity extends AppCompatActivity implements View
                 break;
             case app.alansari.R.id.branch_pay_continue_btn:
                 branchType = "PB";
+                mFirebaseAnalytics.logEvent("Remittance_PayAtBranch_Initate", null);
+                Log.i("PayAtBranch_Initate", "Success in PayAtBranch_Initate");
                 try{
                     modeDescription = paymentModeData.get(0).getDescription();
                     modeName = paymentModeData.get(0).getMapping();
@@ -374,6 +379,8 @@ public class PaymentSelectModeActivity extends AppCompatActivity implements View
                 break;
             case app.alansari.R.id.bank_pay_continue_btn:
                 branchType = "BT";
+                mFirebaseAnalytics.logEvent("Remittance_BankTransfer_Initate", null);
+                Log.i("BankTransfer_Initate", "Success in BankTransfer_Initate");
                 try{
                     modeDescription = paymentModeData.get(1).getDescription();
                     modeName = paymentModeData.get(1).getMapping();
@@ -391,6 +398,8 @@ public class PaymentSelectModeActivity extends AppCompatActivity implements View
                 break;
             case app.alansari.R.id.priority_pay_continue_btn:
                 branchType = "PP";
+                mFirebaseAnalytics.logEvent("Remittance_CreditCard_Initate", null);
+                Log.i("CreditCard_Initate", "Success in BankTransfer_Initate");
                 try{
                     modeDescription = paymentModeData.get(2).getDescription();
                     modeName = paymentModeData.get(2).getMapping();
