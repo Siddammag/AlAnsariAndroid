@@ -21,6 +21,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,6 +33,7 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -87,7 +89,7 @@ public class TravelCardReloadActivity extends NavigationBaseActivity implements 
     private String requestMode="delete";
     private String wcPkId;
     private TravelCardInfo travelCardInfo;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
 
 
     @Override
@@ -157,6 +159,7 @@ public class TravelCardReloadActivity extends NavigationBaseActivity implements 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(app.alansari.R.layout.activity_travel_card_reload);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         Toolbar toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
         ((TextView) findViewById(R.id.toolbar_title)).setText("Travel Card Reload");
         findViewById(app.alansari.R.id.nav_menu).setOnClickListener(this);
@@ -448,6 +451,11 @@ public class TravelCardReloadActivity extends NavigationBaseActivity implements 
                         if (response.getString(Constants.STATUS_MSG).equals(Constants.SUCCESS)) {
                             ArrayList<TravelCardFlag> travelCardFlags= (ArrayList<TravelCardFlag>)new Gson().fromJson(response.getJSONArray(Constants.RESULT).toString(),new TypeToken<ArrayList<TravelCardFlag>>(){}.getType());
                             if(travelCardFlags.size()>0 && travelCardFlags !=null){
+
+                                mFirebaseAnalytics.logEvent("WC_Initate", null);
+                                Log.i("WC_Initate", "Success in WC_TravelCard");
+                                //Siddu 123
+
                                 Intent intent = new Intent(context, TravelCardReloadCurrencyActivity.class);
                                 intent.putExtra(Constants.OBJECT, travelCardInfo);
                                 intent.putExtra(Constants.PROFILE_UPDATE_FLAG,travelCardFlags);

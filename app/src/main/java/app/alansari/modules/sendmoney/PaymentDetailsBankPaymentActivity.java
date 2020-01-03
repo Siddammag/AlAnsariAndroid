@@ -12,6 +12,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +22,7 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -115,7 +118,7 @@ public class PaymentDetailsBankPaymentActivity extends AppCompatActivity impleme
     //private CarouselLayoutManager layoutManagerValue;
     private LinearLayoutManager layoutManagerValue;
     private PaymentDetailAdapterPayType paymentDetailAdapterPayType;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -151,6 +154,7 @@ public class PaymentDetailsBankPaymentActivity extends AppCompatActivity impleme
         super.onCreate(savedInstanceState);
         setContentView(R.layout.payment_details_bank_payment_activity);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
         ((TextView) findViewById(app.alansari.R.id.toolbar_title)).setText("Payments Details");
         setSupportActionBar(toolbar);
@@ -615,6 +619,9 @@ public class PaymentDetailsBankPaymentActivity extends AppCompatActivity impleme
                                     TxnDetailsData txnDetails = txnDetailsData.get(0);
                                     txnDetails.setUrl(url);
                                     txnDetails.setSuccessUrl(CommonUtils.getSuccessUrl());
+                                    mFirebaseAnalytics.logEvent("WC_BankTransfer_Complete", null);
+                                    Log.i("WC_BankTransfer", "Success in BankTransfer_Complete ");
+                                    //Siddu 123
                                     intent = new Intent(context, PaymentGatewayActivity2.class);
                                     intent.putExtra(Constants.OBJECT, txnDetails);
                                     intent.putExtra(Constants.GATEWAY_URL, txnDetails.getUrl());
@@ -622,6 +629,10 @@ public class PaymentDetailsBankPaymentActivity extends AppCompatActivity impleme
                                     startActivity(intent);
                                     pendingTransactionDialog.dismiss();
                                 } else if (txnDetailsData != null && txnDetailsData.size() > 0) {
+
+                                  /*  mFirebaseAnalytics.logEvent("WC_BankTransfer_Complete", null);
+                                    Log.i("WC_BankTransfer", "Success in PayAtBranch_Complete ");
+                                    Toast.makeText(this, "1111", Toast.LENGTH_SHORT).show();*/
                                     intent = new Intent(context, TransactionTravelCompDetailsActivity.class);
                                     intent.putExtra(Constants.SOURCE,"Payment");
                                     intent.putExtra(Constants.OBJECT, txnDetailsData.get(0));
