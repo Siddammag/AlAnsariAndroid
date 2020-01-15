@@ -2,12 +2,12 @@ package app.alansari;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -176,7 +176,7 @@ public class SelectCurrencyFlagActivity extends AppCompatActivity implements OnC
     }
 
     private void swipeRefreshLayout() {
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+        swipeRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
             @Override
             public void onRefresh() {
                 if (NetworkStatus.getInstance(context).isOnline2(context)) {

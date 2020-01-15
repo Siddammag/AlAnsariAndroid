@@ -73,7 +73,7 @@
                         android:textColor="@color/color504F51"
                         android:textSize="@dimen/dimens_16sp" />
 
-                </androidx.cardview.widget.CardView >
+                </androidx.cardview.widget.CardView>
 
                 <ImageView
                     android:id="@+id/add_bank_btn"

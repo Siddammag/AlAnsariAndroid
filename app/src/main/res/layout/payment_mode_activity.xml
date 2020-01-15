@@ -106,7 +106,7 @@
                             android:scaleType="fitXY"
                             app:srcCompat="@drawable/svg_branch_pay_img_2" />
                     </RelativeLayout>
-                </androidx.cardview.widget.CardView >
+                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/bank_pay_c_layout"
@@ -144,7 +144,7 @@
                             android:scaleType="centerCrop"
                             app:srcCompat="@drawable/svg_bank_pay_img" />
                     </RelativeLayout>
-                </androidx.cardview.widget.CardView >
+                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/priority_pay_c_layout"
@@ -178,7 +178,7 @@
                             android:layout_alignParentRight="true"
                             app:srcCompat="@drawable/svg_priority_pay_img" />
                     </RelativeLayout>
-                </androidx.cardview.widget.CardView >
+                </androidx.cardview.widget.CardView>
 
                 <EditText
                     android:id="@+id/test"

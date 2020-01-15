@@ -8,12 +8,11 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.fragment.app.DialogFragment;
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.DialogFragment;
-
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -28,7 +27,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 
@@ -368,7 +366,8 @@ public class VerifyEIDActivity extends AppCompatActivity implements View.OnClick
         try {
             SharedPreferenceManger.setPrefVal(Constants.IS_LOGGED_IN, true, SharedPreferenceManger.VALUE_TYPE.BOOLEAN);
             mFirebaseAnalytics.logEvent("Reference_Number_Screen", null);
-            Log.i("Reference_Number_Screen", "Success in VerifyEID Screen");
+            Log.i("Reference_Number_Screen", "Success Reference_Number_Screen");
+
             Intent intent = new Intent(context, GoToBranchActivity.class);
             intent.putExtra(Constants.PROFILE_UPDATE_FLAG,"N");
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY);
@@ -385,8 +384,8 @@ public class VerifyEIDActivity extends AppCompatActivity implements View.OnClick
 
     private void goToBranchErrorTimes() {
         try {
-            Log.i("Reference_Number_Screen", "Success in VerifyEID Screen");
             mFirebaseAnalytics.logEvent("Reference_Number_Screen", null);
+            Log.i("Reference_Number_Screen", "Success in VerifyEID Screen");
             Intent intent = new Intent(context, GoToBranchActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY);
             startActivity(intent);
@@ -409,8 +408,6 @@ public class VerifyEIDActivity extends AppCompatActivity implements View.OnClick
 
 
     private void onEIDVerificationError() {
-        Log.i("Reference_Number_Screen", "Success in VerifyEID Screen");
-        mFirebaseAnalytics.logEvent("Reference_Number_Screen", null);
         startActivity(new Intent(context, GoToBranchActivity.class));
     }
 

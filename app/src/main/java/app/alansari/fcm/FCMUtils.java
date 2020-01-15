@@ -41,7 +41,7 @@ public class FCMUtils implements OnWebServiceResult {
         LogUtils.d("FCM", "getFCMToken : " + CommonUtils.getFCMToken());
         LogUtils.d("FCM", "getFCMServerStatus : " + CommonUtils.getFCMServerStatus());
 
-        if (CommonUtils.getUserId() != null)
+        if (CommonUtils.getUserId() == null)
             return;
         if (CommonUtils.getFCMToken() == null || !CommonUtils.getFCMServerStatus()) {
             LogUtils.d("FCM", "FCM Not OK");
@@ -62,13 +62,19 @@ public class FCMUtils implements OnWebServiceResult {
     public void sendRegistrationToServer(Context context, String fcmToken) {
         this.context = context;
         // TODO: Implement this method to send token to your app server.
-        if (NetworkStatus.getInstance(context).isOnline2(context) && CommonUtils.getUserId() != null && !TextUtils.isEmpty(CommonUtils.getUserId()) && !TextUtils.isEmpty(fcmToken)) {
-            JsonObjectRequest jsonObjReq = new CallAddr().executeApi(new APIRequestParams().saveFCMToServer(CommonUtils.getUserId(), CommonUtils.getDeviceID(context), fcmToken),
+        if (NetworkStatus.getInstance(context).isOnline2(context)
+                && CommonUtils.getUserId() != null
+                && !TextUtils.isEmpty(CommonUtils.getUserId())
+                && !TextUtils.isEmpty(fcmToken)) {
+            JsonObjectRequest jsonObjReq = new CallAddr().executeApi(new APIRequestParams().
+                            saveFCMToServer(CommonUtils.getUserId(), CommonUtils.getDeviceID(context), fcmToken),
+
                     Constants.SAVE_FCM_TOKEN_URL, SAVE_FCM_TOKEN, Request.Method.POST, this);
             AppController.getInstance().addToRequestQueue(jsonObjReq, SAVE_FCM_TOKEN.toString());
         } else
             LogUtils.d(TAG, "FCM To Server:- Internet Error");
     }
+
 
     public void sendRegistrationToServerNew(Context context, String fcmToken) {
         this.context = context;
@@ -111,7 +117,7 @@ public class FCMUtils implements OnWebServiceResult {
         @Override
         protected String doInBackground(String... params) {
             try {
-                    FirebaseInstanceId.getInstance().deleteInstanceId();
+                FirebaseInstanceId.getInstance().deleteInstanceId();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -139,8 +145,10 @@ public class FCMUtils implements OnWebServiceResult {
         protected void onProgressUpdate(String... text) {
 
         }
-
     }
+
+
+
 
     public static void setFcmToken(Context mContext){
         String refreshedToken = FirebaseInstanceId.getInstance().getToken();

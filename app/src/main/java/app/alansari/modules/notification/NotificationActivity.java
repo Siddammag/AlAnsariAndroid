@@ -2,6 +2,9 @@ package app.alansari.modules.notification;
 
 import android.content.Context;
 import android.os.Bundle;
+
+import androidx.appcompat.widget.SwitchCompat;
+import androidx.appcompat.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,9 +14,6 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.widget.SwitchCompat;
-import androidx.appcompat.widget.Toolbar;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;

@@ -6,13 +6,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.textfield.TextInputLayout;
 import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.text.Editable;
 import android.text.Html;
 import android.text.InputType;
@@ -32,7 +32,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.textfield.TextInputLayout;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -59,6 +58,7 @@ import app.alansari.models.TravelCardReloadModel.TravelCardInfo;
 import app.alansari.models.additioninfowc.RESULTItem;
 import app.alansari.models.getCharges.ResultItem;
 import app.alansari.models.travalcardvalidateflag.TravelCardAdapterItem;
+import app.alansari.models.travalcardvalidateflag.TravelCardFlag;
 import app.alansari.modules.sendmoney.PaymentModeActivity;
 import app.alansari.network.APIRequestParams;
 import app.alansari.network.CallAddr;

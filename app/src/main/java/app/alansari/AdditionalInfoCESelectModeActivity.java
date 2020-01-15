@@ -9,16 +9,15 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Handler;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
-import android.os.Bundle;
-
+import com.google.android.material.textfield.TextInputLayout;
 import androidx.fragment.app.DialogFragment;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.text.Editable;
 import android.text.Html;
 import android.text.InputFilter;
@@ -41,7 +40,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.textfield.TextInputLayout;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -80,7 +78,9 @@ import app.alansari.modules.accountmanagement.models.BeneficiaryTypeCeData;
 import app.alansari.modules.accountmanagement.models.BusinessActivitiesCeData;
 import app.alansari.modules.accountmanagement.models.BusinessTypeCeData;
 import app.alansari.modules.accountmanagement.models.CompanyTypeCeData;
+import app.alansari.modules.accountmanagement.models.ContributionCeData;
 import app.alansari.modules.accountmanagement.models.DistrictCeData;
+import app.alansari.modules.accountmanagement.models.FundsSourceCeData;
 import app.alansari.modules.accountmanagement.models.IdDateTypeCeData;
 import app.alansari.modules.accountmanagement.models.IdProofCeData;
 import app.alansari.modules.accountmanagement.models.ProfessionCeData;
@@ -417,13 +417,13 @@ public class AdditionalInfoCESelectModeActivity extends AppCompatActivity implem
 //---------------------------AMOUNT-----------------------------------------------------------------
             try {
                 setVat(new JSONObject(getIntent().getStringExtra(Constants.PAYMENT_DATA)));
-                String recAmt = CommonUtils.addCommaToString(getIntent().getStringExtra(Constants.TOTAL_RECIEVE));
+                String recAmt =(getIntent().getStringExtra(Constants.TOTAL_RECIEVE));
                 if (recAmt.equalsIgnoreCase("")) {
                     tvTotalReceive.setText(getIntent().getStringExtra(Constants.TOTAL_RECIEVE));
                 } else {
                     tvTotalReceive.setText(recAmt);
                 }
-                tvTotalReceive.setText(CommonUtils.addCommaToString(getIntent().getStringExtra(Constants.TOTAL_RECIEVE)));
+                //tvTotalReceive.setText(CommonUtils.addCommaToString(getIntent().getStringExtra(Constants.TOTAL_RECIEVE)));
                 tvTotalReceiveCurrencyCode.setText(getIntent().getStringExtra(Constants.TOTAL_RECIEVE_CURRENCY));
                 tvTotalToPay.setText(CommonUtils.addCommaToString(totalToPay));
                 tvTotalToPayCurrencyCode.setText("AED");

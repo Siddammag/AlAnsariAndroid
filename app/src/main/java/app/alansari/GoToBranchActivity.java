@@ -3,12 +3,12 @@ package app.alansari;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
 
@@ -33,8 +33,8 @@ public class GoToBranchActivity extends AppCompatActivity implements LogOutTimer
     private TextView tvMessage;
     private String message;
     private RelativeLayout home;
-
     private FirebaseAnalytics mFirebaseAnalytics;
+
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -102,8 +102,6 @@ public class GoToBranchActivity extends AppCompatActivity implements LogOutTimer
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mFirebaseAnalytics.logEvent("App_Loading", null);
-                Log.i("App_Loading" , "Success in GO TO Branch activity");
                 startActivity(new Intent(context, LandingActivity.class));
                 finish();
             }
@@ -124,6 +122,7 @@ public class GoToBranchActivity extends AppCompatActivity implements LogOutTimer
 
     private void addFragment() {
         mFirebaseAnalytics.logEvent("AML_Pending", null);
+        Log.i("AML_Pending","Success in AML_Pending");
         Intent intent = new Intent(getApplicationContext(), MyEmiratesIdActivity.class);
         intent.putExtra(Constants.HIDE_BURGER_MENU, true);
         intent.putExtra("HideDialog", false);

@@ -5,13 +5,12 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 
 import android.util.Log;
 import android.view.MenuItem;
@@ -406,6 +405,7 @@ public class PaymentDetailsBankPaymentActivity extends AppCompatActivity impleme
         }
     }
 
+
     @Override
     public void onResponse(int status, JSONObject response, CommonUtils.SERVICE_TYPE sType) {
         switch (sType) {
@@ -514,6 +514,8 @@ public class PaymentDetailsBankPaymentActivity extends AppCompatActivity impleme
                                     TxnDetailsData txnDetails = txnDetailsData.get(0);
                                     txnDetails.setUrl(url);
                                     txnDetails.setSuccessUrl(CommonUtils.getSuccessUrl());
+
+                                    //Siddu123
                                     intent = new Intent(context, PaymentGatewayActivity.class);
                                     intent.putExtra(Constants.OBJECT, txnDetails);
                                     intent.putExtra(Constants.GATEWAY_URL, txnDetails.getUrl());
@@ -521,6 +523,7 @@ public class PaymentDetailsBankPaymentActivity extends AppCompatActivity impleme
                                     startActivity(intent);
                                     pendingTransactionDialog.dismiss();
                                 } else if (txnDetailsData != null && txnDetailsData.size() > 0) {
+
                                     intent = new Intent(context, TransactionDetailsActivity.class);
                                     intent.putExtra(Constants.SOURCE, Constants.SOURCE_BANK_PAYMENT_ACTIVITY);
                                     intent.putExtra(Constants.SOURCE_TYPE, Constants.TYPE_SEND_MONEY);
@@ -566,6 +569,7 @@ public class PaymentDetailsBankPaymentActivity extends AppCompatActivity impleme
                                     TxnDetailsData txnDetails = txnDetailsData.get(0);
                                     txnDetails.setUrl(url);
                                     txnDetails.setSuccessUrl(CommonUtils.getSuccessUrl());
+
                                     intent = new Intent(context, PaymentGatewayActivity.class);
                                     intent.putExtra(Constants.OBJECT, txnDetails);
                                     intent.putExtra(Constants.GATEWAY_URL, txnDetails.getUrl());
@@ -574,6 +578,7 @@ public class PaymentDetailsBankPaymentActivity extends AppCompatActivity impleme
                                     startActivity(intent);
                                     pendingTransactionDialog.dismiss();
                                 } else if (txnDetailsData != null && txnDetailsData.size() > 0) {
+
                                     intent = new Intent(context, TransactionDetailsActivity.class);
                                     intent.putExtra(Constants.SOURCE, Constants.SOURCE_BANK_PAYMENT_ACTIVITY);
                                     intent.putExtra(Constants.SOURCE_TYPE, Constants.TYPE_CREDIT_CARD);
@@ -621,7 +626,6 @@ public class PaymentDetailsBankPaymentActivity extends AppCompatActivity impleme
                                     txnDetails.setSuccessUrl(CommonUtils.getSuccessUrl());
                                     mFirebaseAnalytics.logEvent("WC_BankTransfer_Complete", null);
                                     Log.i("WC_BankTransfer", "Success in BankTransfer_Complete ");
-                                    //Siddu 123
                                     intent = new Intent(context, PaymentGatewayActivity2.class);
                                     intent.putExtra(Constants.OBJECT, txnDetails);
                                     intent.putExtra(Constants.GATEWAY_URL, txnDetails.getUrl());
@@ -629,10 +633,9 @@ public class PaymentDetailsBankPaymentActivity extends AppCompatActivity impleme
                                     startActivity(intent);
                                     pendingTransactionDialog.dismiss();
                                 } else if (txnDetailsData != null && txnDetailsData.size() > 0) {
-
-                                  /*  mFirebaseAnalytics.logEvent("WC_BankTransfer_Complete", null);
-                                    Log.i("WC_BankTransfer", "Success in PayAtBranch_Complete ");
-                                    Toast.makeText(this, "1111", Toast.LENGTH_SHORT).show();*/
+                                    mFirebaseAnalytics.logEvent("Remittance_BankTransfer_Complete", null);
+                                    Log.i("Remittance_BankTransfer_Complete22222", "Success in PayAtBranch_Complete ");
+                                    //Toast.makeText(this, "2222", Toast.LENGTH_SHORT).show();
                                     intent = new Intent(context, TransactionTravelCompDetailsActivity.class);
                                     intent.putExtra(Constants.SOURCE,"Payment");
                                     intent.putExtra(Constants.OBJECT, txnDetailsData.get(0));

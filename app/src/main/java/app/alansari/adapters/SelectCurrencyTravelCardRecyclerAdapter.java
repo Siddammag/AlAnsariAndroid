@@ -1,7 +1,6 @@
 package app.alansari.adapters;
 
 import android.content.Context;
-
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;

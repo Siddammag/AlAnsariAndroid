@@ -29,10 +29,8 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.net.Uri;
-
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.core.view.ViewCompat;
-
+import androidx.appcompat.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.view.animation.Animation;
 

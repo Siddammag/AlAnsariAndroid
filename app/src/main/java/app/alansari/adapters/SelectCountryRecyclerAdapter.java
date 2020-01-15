@@ -6,7 +6,6 @@ import app.alansari.customviews.MultiStateView;
 import app.alansari.listeners.CustomClickListener;
 import app.alansari.models.CountryData;
 import android.content.Context;
-
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;

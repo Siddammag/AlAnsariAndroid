@@ -340,7 +340,7 @@
 
         <include layout="@layout/toolbar_actionbar_transparent" />
 
-        <android.support.v4.widget.NestedScrollView
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/toolbar"
@@ -678,7 +678,7 @@
                 </app.alansari.customviews.MultiStateView>
             </LinearLayout>
 
-        </android.support.v4.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
 
         <Button
             android:id="@+id/proceed_btn"

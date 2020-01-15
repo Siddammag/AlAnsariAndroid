@@ -6,13 +6,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -63,7 +62,6 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
     private GifDrawable gifDrawable;
     private boolean isAnimationDone, isConditionsChecked, isValidLocation;
     private int valueCheck = -1;
-
     private FirebaseAnalytics mFirebaseAnalytics;
 
     private void init() {
@@ -235,7 +233,7 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
                     intent = new Intent(context, RegisterActivity.class);
                 }*/
                 mFirebaseAnalytics.logEvent("App_Loading", null);
-                Log.i("App_Loading" , "Success in Splash activity");
+                Log.i("App_Loading" , "Success in App_Loading");
                 startActivity(new Intent(context, LandingActivity.class));
                 finish();
             }

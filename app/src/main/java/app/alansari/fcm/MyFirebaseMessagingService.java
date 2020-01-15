@@ -12,13 +12,11 @@ import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
-
-import androidx.annotation.NonNull;
-import androidx.core.app.NotificationCompat;
 import android.text.Html;
 
 
-import com.google.firebase.analytics.FirebaseAnalytics;
+import androidx.core.app.NotificationCompat;
+
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
@@ -56,6 +54,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     private static final String TYPE_RATE_ALERT = "RATE_ALERT";
     private static final String TYPE_CREDIT_CARD = "CREDIT_CARD";
     private static final String TYPE_LOGOUT = "LOGOUT";
+
     /**
      * Called when message is received.
      *
@@ -132,7 +131,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             }
         }
     }
-
 
     /**
      * Create and show a simple notification containing the received FCM message.
@@ -296,7 +294,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         return isInBackground;
     }
 
-    @Override
+  /*  @Override
     public void onNewToken(@NonNull String s) {
         super.onNewToken(s);
         String refreshedToken = FirebaseInstanceId.getInstance().getToken();
@@ -304,7 +302,5 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         CommonUtils.setFCMToken(refreshedToken);
         CommonUtils.setFCMServerStatus(false);
         new FCMUtils().sendRegistrationToServer(this, refreshedToken);
-    }
-
-
+    }*/
 }

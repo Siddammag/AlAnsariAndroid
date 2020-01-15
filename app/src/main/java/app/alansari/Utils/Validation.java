@@ -1,11 +1,10 @@
 package app.alansari.Utils;
 
+import com.google.android.material.textfield.TextInputLayout;
 import android.text.TextUtils;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import com.google.android.material.textfield.TextInputLayout;
 
 import org.json.JSONArray;
 

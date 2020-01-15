@@ -1,11 +1,12 @@
 package app.alansari;
 
 import android.content.Context;
-
+import android.media.Image;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
-import android.os.Bundle;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.MenuItem;

@@ -2498,7 +2498,7 @@ public class APIRequestParams {
 
             jsonObject.put(Constants.DEVICE_ID, deviceId);
             jsonObject.put(Constants.APP_VERSION, BuildConfig.VERSION_NAME);
-            jsonObject.put(Constants.SESSION_ID,sessionTime);
+            jsonObject.put(Constants.SESSION_ID, sessionTime);
 
         } catch (JSONException e) {
             e.printStackTrace();

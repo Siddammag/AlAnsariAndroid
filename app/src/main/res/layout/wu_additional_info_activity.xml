@@ -165,7 +165,7 @@
                         android:orientation="vertical">
 
                     </LinearLayout>
-                </androidx.cardview.widget.CardView >
+                </androidx.cardview.widget.CardView>
             </app.alansari.customviews.MultiStateView>
 
             <LinearLayout

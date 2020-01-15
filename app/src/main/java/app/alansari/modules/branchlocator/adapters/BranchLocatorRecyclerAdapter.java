@@ -3,9 +3,8 @@ package app.alansari.modules.branchlocator.adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.core.content.ContextCompat;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;

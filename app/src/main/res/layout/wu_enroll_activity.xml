@@ -114,7 +114,7 @@
                                     android:inputType="number"
                                     android:maxLength="9" />
                             </com.google.android.material.textfield.TextInputLayout>
-                        </androidx.cardview.widget.CardView >
+                        </androidx.cardview.widget.CardView>
 
                         <android.support.v7.widget.AppCompatRadioButton
                             android:id="@+id/rb_new_user"

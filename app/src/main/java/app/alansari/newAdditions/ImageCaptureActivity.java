@@ -6,11 +6,10 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Base64;
 import android.util.Log;
 import android.widget.ImageView;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import app.alansari.R;
 

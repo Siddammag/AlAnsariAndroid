@@ -6,12 +6,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-
+import androidx.core.content.ContextCompat;
+import androidx.core.widget.NestedScrollView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
-import androidx.core.widget.NestedScrollView;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -268,16 +267,12 @@ public class AddBeneficiarySelectTypeActivity extends AppCompatActivity implemen
                         intent.putExtra(Constants.ITEM_TYPE, Constants.SELECT_ITEM_ADD_BENEFICIARY_SERVICE_TYPE);
                         ArrayList<ServiceTypeData> serviceTypeUpdated = new ArrayList<>();
                         if (selectedTransactionMode != null) {
-
-
                             if (selectedTransactionMode.getMapping().equalsIgnoreCase(Constants.TRANSFER_TYPE_BANK_TRANSFER)) {
                                 if (selectedBank.getAREX_BT().equalsIgnoreCase("1"))
                                     serviceTypeUpdated.add(getServiceType(Constants.AREX_MAPPING));
                                 if (selectedBank.getCE_BT().equalsIgnoreCase("1"))
                                     serviceTypeUpdated.add(getServiceType(Constants.CE_MAPPING));
-
-
-                            } else if (selectedTransactionMode.getMapping().equalsIgnoreCase(Constants.TRANSFER_TYPE_CASH_PICK_UP)) { // If selected this only instant is comming...
+                            } else if (selectedTransactionMode.getMapping().equalsIgnoreCase(Constants.TRANSFER_TYPE_CASH_PICK_UP)) {
                                 if (selectedBank.getAREX_CP().equalsIgnoreCase("1"))
                                     serviceTypeUpdated.add(getServiceType(Constants.AREX_MAPPING));
                                 if (selectedBank.getCE_CP().equalsIgnoreCase("1"))

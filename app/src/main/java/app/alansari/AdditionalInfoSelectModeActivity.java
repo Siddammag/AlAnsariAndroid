@@ -5,15 +5,14 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.textfield.TextInputLayout;
 import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.text.Editable;
 import android.text.Html;
 import android.text.InputFilter;
@@ -35,7 +34,7 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -83,6 +82,7 @@ import app.alansari.modules.accountmanagement.models.SubBusinessTypeCeData;
 import app.alansari.modules.accountmanagement.models.SubPurposeCeData;
 import app.alansari.modules.accountmanagement.models.TradeLicenseDateTypeCeData;
 import app.alansari.modules.accountmanagement.models.TradeLicenseTypeCeData;
+import app.alansari.modules.sendmoney.PaymentDetailsBankPaymentActivity;
 import app.alansari.modules.sendmoney.PaymentGatewayActivity;
 import app.alansari.modules.sendmoney.PaymentModeActivity;
 import app.alansari.modules.sendmoney.TransactionDetailsActivity;
@@ -143,7 +143,7 @@ public class AdditionalInfoSelectModeActivity extends AppCompatActivity implemen
     private String ceServiceId="";
     private ArrayList<BeneficiaryDynamicFieldsCe> beneficiaryDynamicFieldsCeList;
     private String purposeId;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -269,6 +269,7 @@ public class AdditionalInfoSelectModeActivity extends AppCompatActivity implemen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_additional_info_select_mode);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         Toolbar toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
         ((TextView) findViewById(app.alansari.R.id.toolbar_title)).setText("Additional Info");
         setSupportActionBar(toolbar);
@@ -418,13 +419,14 @@ public class AdditionalInfoSelectModeActivity extends AppCompatActivity implemen
 //---------------------------AMOUNT-----------------------------------------------------------------
             try {
                 setVat(new JSONObject(getIntent().getStringExtra(Constants.PAYMENT_DATA)));
-                String recAmt = CommonUtils.addCommaToString(getIntent().getStringExtra(Constants.TOTAL_RECIEVE));
+                //String recAmt = CommonUtils.addCommaToString(getIntent().getStringExtra(Constants.TOTAL_RECIEVE));
+                String recAmt = (getIntent().getStringExtra(Constants.TOTAL_RECIEVE));
                 if (recAmt.equalsIgnoreCase("")) {
                     tvTotalReceive.setText(getIntent().getStringExtra(Constants.TOTAL_RECIEVE));
                 } else {
                     tvTotalReceive.setText(recAmt);
                 }
-                tvTotalReceive.setText(CommonUtils.addCommaToString(getIntent().getStringExtra(Constants.TOTAL_RECIEVE)));
+                //tvTotalReceive.setText(CommonUtils.addCommaToString(getIntent().getStringExtra(Constants.TOTAL_RECIEVE)));
                 tvTotalReceiveCurrencyCode.setText(getIntent().getStringExtra(Constants.TOTAL_RECIEVE_CURRENCY));
                 tvTotalToPay.setText(CommonUtils.addCommaToString(totalToPay));
                 tvTotalToPayCurrencyCode.setText("AED");
@@ -1187,6 +1189,9 @@ public class AdditionalInfoSelectModeActivity extends AppCompatActivity implemen
                                     txnDetailsData = CommonUtils.getTxnDetailsData(txnDetailsCeCashPayout);
                                 }*/
                                 if (txnDetailsData != null && txnDetailsData.size() > 0) {
+                                    mFirebaseAnalytics.logEvent("WC_PayAtBranch_Complete", null);
+                                    Log.i("WC_PayAtBranch_Complete", "Success in PayAtBranch_Complete ");
+
                                     intent = new Intent(context, TransactionDetailsActivity.class);
                                     intent.putExtra(Constants.SOURCE, Constants.SOURCE_PAYMENT_MODE);
                                     intent.putExtra(Constants.SOURCE_TYPE, Constants.TYPE_SEND_MONEY);

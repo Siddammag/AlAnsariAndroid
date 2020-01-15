@@ -2,16 +2,14 @@ package app.alansari.modules.sendmoney;
 
 import android.content.Context;
 import android.os.Bundle;
-
-import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.tabs.TabLayout;
 import androidx.core.content.ContextCompat;
+import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-
-import com.google.android.material.tabs.TabLayout;
 
 import app.alansari.NavigationBaseActivity;
 import app.alansari.Utils.CommonUtils;

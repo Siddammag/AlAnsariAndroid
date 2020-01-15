@@ -21,7 +21,10 @@ import app.alansari.TransactionCompletedRemittanceActivity;
 import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
 import app.alansari.Utils.OnLoadMoreListener;
+import app.alansari.models.transactionhistroy.TxnDetailsHistroyTravelCard;
 import app.alansari.modules.remittance.TXNHISTORYDATAItem;
+import app.alansari.modules.remittance.TxnRemittanceModel;
+import app.alansari.modules.sendmoney.TransactionCompletedActivity;
 import app.alansari.textdrawable.ColorGenerator;
 import app.alansari.textdrawable.TextDrawable;
 

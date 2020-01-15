@@ -3,13 +3,12 @@ package app.alansari.customviews;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Typeface;
+import androidx.appcompat.widget.AppCompatEditText;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.EditText;
-
-import androidx.appcompat.widget.AppCompatEditText;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;

@@ -6,13 +6,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.textfield.TextInputLayout;
 import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.text.Editable;
 import android.text.Html;
 import android.text.InputType;
@@ -30,7 +30,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.textfield.TextInputLayout;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -792,11 +791,9 @@ public class AdditionalInfoActivityWu extends AppCompatActivity implements View.
                         }
                     } catch (Exception ex) {
                         ex.printStackTrace();
-
                         CommonUtils.setViewState(multiStateView, MultiStateView.VIEW_STATE_WRONG, tvError, null, null);
                     }
                 } else {
-
                     CommonUtils.setViewState(multiStateView, MultiStateView.VIEW_STATE_WRONG, tvError, null, null);
                 }
                 break;
@@ -808,11 +805,9 @@ public class AdditionalInfoActivityWu extends AppCompatActivity implements View.
                         }
                     } catch (Exception ex) {
                         ex.printStackTrace();
-
                         CommonUtils.setViewState(multiStateView, MultiStateView.VIEW_STATE_WRONG, tvError, null, null);
                     }
                 } else {
-
                     CommonUtils.setViewState(multiStateView, MultiStateView.VIEW_STATE_WRONG, tvError, null, null);
                 }
                 break;
@@ -863,12 +858,10 @@ public class AdditionalInfoActivityWu extends AppCompatActivity implements View.
                                 btnConfirm.setEnabled(true);
                             }
                         } else {
-
                             CommonUtils.setViewState(multiStateView, MultiStateView.VIEW_STATE_EMPTY, tvEmpty, null, null);
                         }
                     } catch (Exception ex) {
                         ex.printStackTrace();
-
                         CommonUtils.setViewState(multiStateView, MultiStateView.VIEW_STATE_WRONG, tvError, null, null);
                     }
                 } else {
@@ -882,8 +875,7 @@ public class AdditionalInfoActivityWu extends AppCompatActivity implements View.
                         if ((response.getInt(Constants.STATUS_CODE) == Constants.WU_RATE_CHARGE_SUCCESS_CODE) && response.getString(Constants.MESSAGE).equalsIgnoreCase("Validation successful")) {
                             onSuccess();
                         } else {
-                            Toast.makeText(context, response.getString(Constants.MESSAGE), Toast.LENGTH_LONG).show();
-
+                            //Toast.makeText(context, response.getString(Constants.MESSAGE), Toast.LENGTH_LONG).show();
                             String fieldPkId = response.getString(Constants.ID);
                             if (Validation.isValidString(fieldPkId)) {
                                 for (int i = 0; i < additionalInfoFields.size(); i++) {

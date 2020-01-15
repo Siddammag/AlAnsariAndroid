@@ -115,7 +115,7 @@
                         android:textColor="@color/colorWhite"
                         android:textSize="@dimen/dimens_10sp" />
                 </RelativeLayout>
-            </androidx.cardview.widget.CardView >
+            </androidx.cardview.widget.CardView>
 
             <LinearLayout
                 android:id="@+id/recip_trans_layout"
@@ -166,7 +166,7 @@
                             android:textColor="@color/colorWhite"
                             android:textSize="@dimen/dimens_12sp" />
                     </RelativeLayout>
-                </androidx.cardview.widget.CardView >
+                </androidx.cardview.widget.CardView>
 
 
 <!--          My Referral   -->
@@ -238,7 +238,7 @@
 
 
                     </RelativeLayout>-->
-              <!--  </androidx.cardview.widget.CardView >-->
+              <!--  </androidx.cardview.widget.CardView>-->
 
                 <RelativeLayout
                     android:layout_marginTop="@dimen/dimens_5"
@@ -305,7 +305,7 @@
                             android:textColor="@color/colorWhite"
                             android:textSize="@dimen/dimens_12sp" />
                     </RelativeLayout>
-                </androidx.cardview.widget.CardView >
+                </androidx.cardview.widget.CardView>
 
 <!-- ENd   -->
                 <androidx.cardview.widget.CardView

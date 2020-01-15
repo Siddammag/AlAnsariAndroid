@@ -11,13 +11,11 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-
-import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -90,7 +88,6 @@ public class TravelCardReloadActivity extends NavigationBaseActivity implements 
     private String wcPkId;
     private TravelCardInfo travelCardInfo;
     private FirebaseAnalytics mFirebaseAnalytics;
-
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -451,11 +448,8 @@ public class TravelCardReloadActivity extends NavigationBaseActivity implements 
                         if (response.getString(Constants.STATUS_MSG).equals(Constants.SUCCESS)) {
                             ArrayList<TravelCardFlag> travelCardFlags= (ArrayList<TravelCardFlag>)new Gson().fromJson(response.getJSONArray(Constants.RESULT).toString(),new TypeToken<ArrayList<TravelCardFlag>>(){}.getType());
                             if(travelCardFlags.size()>0 && travelCardFlags !=null){
-
                                 mFirebaseAnalytics.logEvent("WC_Initate", null);
                                 Log.i("WC_Initate", "Success in WC_TravelCard");
-                                //Siddu 123
-
                                 Intent intent = new Intent(context, TravelCardReloadCurrencyActivity.class);
                                 intent.putExtra(Constants.OBJECT, travelCardInfo);
                                 intent.putExtra(Constants.PROFILE_UPDATE_FLAG,travelCardFlags);

@@ -157,7 +157,7 @@
 
             </RelativeLayout>
 
-        </androidx.cardview.widget.CardView >
+        </androidx.cardview.widget.CardView>
 
         <View
             android:layout_marginTop="@dimen/dimens_5"

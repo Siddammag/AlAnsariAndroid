@@ -1,10 +1,9 @@
 package app.alansari.newAdditions;
 
 import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
-
-import androidx.appcompat.widget.Toolbar;
 
 import app.alansari.NavigationBaseActivity;
 import app.alansari.R;

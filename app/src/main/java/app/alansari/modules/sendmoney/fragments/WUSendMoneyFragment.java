@@ -1,16 +1,17 @@
+//Final Code of WU
 package app.alansari.modules.sendmoney.fragments;
 
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.fragment.app.Fragment;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -65,6 +66,7 @@ import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.WU_CURRENCY_URL;
 /**
  * Created by Parveen Dala on 14 October, 2016
  * Fugenx Technologies, Bengaluru
+ * DKG
  * Al Ansari
  */
 public class WUSendMoneyFragment extends Fragment implements View.OnClickListener, OnWebServiceResult, CustomClickListener {
@@ -76,8 +78,6 @@ public class WUSendMoneyFragment extends Fragment implements View.OnClickListene
     private String arexUserId;
     private CountryData countryData;
     private CountryData.CurrencyData selectedCurrencyData;
-
-    private CountryData selectedCurrencyData1;
     private BankData bankData;
     private ServiceTypeData serviceTypeData;
 
@@ -96,8 +96,8 @@ public class WUSendMoneyFragment extends Fragment implements View.OnClickListene
     private CarouselLayoutManager layoutManagerCurrencyCode;
     private RecyclerView recyclerViewCurrencyCode;
     private SendMoneyCurrencyCodeRecyclerAdapter recyclerAdapterCurrencyCode;
-    private String sessionTime,userPkId;
-
+    private String sessionTime,userPkId,WuCcyCode=" ";
+    //dataObject.getReceiverCurrencyCode()
     private void init() {
         sessionTime = (String) SharedPreferenceManger.getPrefVal(Constants.SESSION_ID, null, SharedPreferenceManger.VALUE_TYPE.STRING);
         userPkId=(String) SharedPreferenceManger.getPrefVal(Constants.USER_ID, null, SharedPreferenceManger.VALUE_TYPE.STRING);
@@ -207,17 +207,16 @@ public class WUSendMoneyFragment extends Fragment implements View.OnClickListene
         layoutManagerCurrencyCode.addOnItemSelectionListener(new CarouselLayoutManager.OnCenterItemSelectionListener() {
             @Override
             public void onCenterItemChanged(int adapterPosition) {
-                if (adapterPosition >= 0 && (selectedCurrencyData == null
-                        || (selectedCurrencyData.getCurrencyCode() != null
-                                && recyclerAdapterCurrencyCode.getItemAt(adapterPosition) != null
-                                && recyclerAdapterCurrencyCode.getItemAt(adapterPosition).getCurrencyCode() != null
-                                && !selectedCurrencyData.getCurrencyCode().equalsIgnoreCase(recyclerAdapterCurrencyCode.getItemAt(adapterPosition).getCurrencyCode())))) {
+                if (adapterPosition >= 0 && (selectedCurrencyData == null || (selectedCurrencyData.getCurrencyCode() != null && recyclerAdapterCurrencyCode.getItemAt(adapterPosition) != null && recyclerAdapterCurrencyCode.getItemAt(adapterPosition).getCurrencyCode() != null && !selectedCurrencyData.getCurrencyCode().equalsIgnoreCase(recyclerAdapterCurrencyCode.getItemAt(adapterPosition).getCurrencyCode())))) {
                     selectedCurrencyData = recyclerAdapterCurrencyCode.getItemAt(adapterPosition);
-
+                    Log.i("Siddu", selectedCurrencyData.getCurrencyCode() + "");
 
                     dataObject.setReceiverCurrencyCode(selectedCurrencyData.getName());
+                    Log.i("Name", selectedCurrencyData.getName() + "");
 
-                    calculateCurrency();
+                    WuCcyCode=dataObject.getReceiverCurrencyCode();
+                    Log.i("Siddu1", dataObject.getReceiverCurrencyCode() + "");
+                    calculateCurrencyNew();
                 }
             }
         });
@@ -255,6 +254,7 @@ public class WUSendMoneyFragment extends Fragment implements View.OnClickListene
             dataObject = getArguments().getParcelable(Constants.OBJECT);
             countryData = getArguments().getParcelable(Constants.COUNTRY_DATA);
             arexUserId = getArguments().getString(Constants.AREX_MEM_PK_ID);
+            WuCcyCode=dataObject.getReceiverCurrencyCode();
             serviceTypeData = null;
             fetchCeCurrencyData();
         } else {
@@ -264,8 +264,7 @@ public class WUSendMoneyFragment extends Fragment implements View.OnClickListene
 
     private void fetchCeCurrencyData() {
         if (NetworkStatus.getInstance(context).isOnline2(context)) {
-            JsonObjectRequest jsonObjReq = new CallAddr().executeApi(new APIRequestParams().fetchWuCurrencyList(countryData.getCountryCodeAREX(), countryData.getWuCountryCode(),userPkId,LogoutCalling.getDeviceID(context),sessionTime),
-                    Constants.WU_CURRENCY_URL, WU_CURRENCY_URL, Request.Method.POST, this);
+            JsonObjectRequest jsonObjReq = new CallAddr().executeApi(new APIRequestParams().fetchWuCurrencyList(countryData.getCountryCodeAREX(), countryData.getWuCountryCode(),userPkId,LogoutCalling.getDeviceID(context),sessionTime), Constants.WU_CURRENCY_URL, WU_CURRENCY_URL, Request.Method.POST, this);
             AppController.getInstance().getRequestQueue().cancelAll(WU_CURRENCY_URL.toString());
             AppController.getInstance().addToRequestQueue(jsonObjReq, WU_CURRENCY_URL.toString());
         } else {
@@ -294,97 +293,13 @@ public class WUSendMoneyFragment extends Fragment implements View.OnClickListene
     private void setDefaultCurrency() {
         selectedCurrencyData = recyclerAdapterCurrencyCode.getItemCount() > 0 ? recyclerAdapterCurrencyCode.getItemAt(0) : null;
         for (int i = 0; i < recyclerAdapterCurrencyCode.getItemCount(); i++) {
-            if (recyclerAdapterCurrencyCode.getItemAt(i).getDefaultStatus() == null
-                   || recyclerAdapterCurrencyCode.getItemAt(i).getDefaultStatus().equalsIgnoreCase("1")) {
-                selectedCurrencyData = recyclerAdapterCurrencyCode.getItemAt(i);
-                //layoutManagerCurrencyCode.scrollToPosition(i);
-                recyclerViewCurrencyCode.smoothScrollToPosition(i);
-                break;
-            }
-
-        }
-
-
-        /*selectedCurrencyData = recyclerAdapterCurrencyCode.getItemCount() > 0 ? recyclerAdapterCurrencyCode.getItemAt(0) : null;
-        for (int i = 0; i <= recyclerAdapterCurrencyCode.getItemCount(); i++) {
-            if (recyclerAdapterCurrencyCode.getItemAt(i).getDefaultStatus() == null
-                    || recyclerAdapterCurrencyCode.getItemAt(i).getDefaultStatus().equalsIgnoreCase("1")) {
-                selectedCurrencyData = recyclerAdapterCurrencyCode.getItemAt(i);
-                //layoutManagerCurrencyCode.scrollToPosition(i);
-                recyclerViewCurrencyCode.smoothScrollToPosition(i);
-                recyclerAdapterCurrencyCode.notifyDataSetChanged();
-                //break;
-            }else{
-                selectedCurrencyData = recyclerAdapterCurrencyCode.getItemAt(i);
-                recyclerViewCurrencyCode.smoothScrollToPosition(i);
-                recyclerAdapterCurrencyCode.notifyDataSetChanged();
-            }
-
-
-
-        }*/
-
-    }
-    private void setDefaultCurrencyNew() {
-        selectedCurrencyData = recyclerAdapterCurrencyCode.getItemCount() > 0 ? recyclerAdapterCurrencyCode.getItemAt(0) : null;
-        for (int i = 0; i < recyclerAdapterCurrencyCode.getItemCount(); i++) {
-
-
-            if (recyclerAdapterCurrencyCode.getItemAt(i).getDefaultStatus()== null
-                    || recyclerAdapterCurrencyCode.getItemAt(i).getDefaultStatus()
-                    .equalsIgnoreCase("1")) {
-                selectedCurrencyData = recyclerAdapterCurrencyCode.getItemAt(i);
-                recyclerViewCurrencyCode.smoothScrollToPosition(i);
-                recyclerAdapterCurrencyCode.notifyDataSetChanged();
-                Toast.makeText(context, "Siddu11", Toast.LENGTH_SHORT).show();
-                break;
-
-
-            }else{
-                selectedCurrencyData = recyclerAdapterCurrencyCode.getItemAt(i);
-                //layoutManagerCurrencyCode.scrollToPosition(i);
-                recyclerAdapterCurrencyCode.getItemId(i);
-                recyclerViewCurrencyCode.smoothScrollToPosition(i);
-                recyclerAdapterCurrencyCode.notifyDataSetChanged();
-                Toast.makeText(context, "Siddu22", Toast.LENGTH_SHORT).show();
-            }
-
-
-          /* if (!recyclerAdapterCurrencyCode.getItemAt(i).getDefaultStatus().equals("")
-                    && recyclerAdapterCurrencyCode.getItemAt(i).getDefaultStatus().equals("1")) {
-                selectedCurrencyData = recyclerAdapterCurrencyCode.getItemAt(i);
-                //layoutManagerCurrencyCode.scrollToPosition(i);
-                recyclerViewCurrencyCode.scrollToPosition(i);
-               // break;
-            }*/
-
-          /*  if ( recyclerAdapterCurrencyCode.getItemAt(i).getDefaultStatus().equals("1")) {
-                selectedCurrencyData = recyclerAdapterCurrencyCode.getItemAt(i);
-                //layoutManagerCurrencyCode.scrollToPosition(i);
-                recyclerViewCurrencyCode.scrollToPosition(i);
-                break;
-            }*/
-
-           /* if (recyclerAdapterCurrencyCode.getItemAt(i).getDefaultStatus().equals("1")) {
-                selectedCurrencyData = recyclerAdapterCurrencyCode.getItemAt(i);
-                //layoutManagerCurrencyCode.scrollToPosition(i);
-                recyclerViewCurrencyCode.scrollToPosition(i);
-               // recyclerAdapterCurrencyCode.getItemId(i);
-                //recyclerAdapterCurrencyCode.notifyDataSetChanged();
-
-                break;
-            }*/
-        }
-
-    }
-
-    private void setDefaultCurrency(int pos) {
-        selectedCurrencyData = recyclerAdapterCurrencyCode.getItemCount() > 0 ? recyclerAdapterCurrencyCode.getItemAt(pos) : null;
-        for (int i = 0; i < recyclerAdapterCurrencyCode.getItemCount(); i++) {
             if (recyclerAdapterCurrencyCode.getItemAt(i).getDefaultStatus() == null || recyclerAdapterCurrencyCode.getItemAt(i).getDefaultStatus().equalsIgnoreCase("1")) {
                 selectedCurrencyData = recyclerAdapterCurrencyCode.getItemAt(i);
-                recyclerViewCurrencyCode.smoothScrollToPosition(i);
-                recyclerAdapterCurrencyCode.notifyDataSetChanged();
+                layoutManagerCurrencyCode.scrollToPosition(i);
+
+                selectedCurrencyData = recyclerAdapterCurrencyCode.getItemAt(i);
+                dataObject.setReceiverCurrencyCode(selectedCurrencyData.getName());
+                WuCcyCode=dataObject.getReceiverCurrencyCode();
                 break;
             }
         }
@@ -451,6 +366,54 @@ public class WUSendMoneyFragment extends Fragment implements View.OnClickListene
         super.onDestroy();
     }
 
+    private void calculateCurrencyNew() {
+        try {
+            if (((WUSendMoneyActivity) getActivity()).getServiceType().equalsIgnoreCase("")) {
+                Toast.makeText(context, "Select Service Type!!", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            if ((currentDirection == 1 && Validation.isValidEditTextValue(etSend)) || (currentDirection == 2 && Validation.isValidEditTextValue(etGet))) {
+                if (NetworkStatus.getInstance(context).isOnline2(context)) {
+                    JsonObjectRequest jsonObjReq = null;
+                    String promoCode = ((WUSendMoneyActivity) getActivity()).getPromoCode();
+                    String BENEF_TYPE = ((WUSendMoneyActivity) getActivity()).getBenefType();
+                    String CLIENT_IP_ADDRESS = "somthing";
+                    String SERVICE_TYPE = ((WUSendMoneyActivity) context).getServiceType();
+                    String TOTAL_VALUE_AED_DISP = "";
+                    String FCY_AMOUNT = "";
+                    String USE_MY_WU_PROMO_CODE = "";
+                    String WU_LOOKUP_PROMO_CODE = "";
+                    if (currentDirection == 1) {
+                        TOTAL_VALUE_AED_DISP = CommonUtils.getTextFromEditText(etSend);
+                        jsonObjReq = new CallAddr().executeApi(fetchRateAndChargeData(/*dataObject.getArexCurrencyCode(), dataObject.getArexCountryCode()*/selectedCurrencyData.getCurrencyCode(),selectedCurrencyData.getCurrencyCode(), BENEF_TYPE,
+                                CLIENT_IP_ADDRESS, FCY_AMOUNT, arexUserId, promoCode, SERVICE_TYPE, TOTAL_VALUE_AED_DISP, USE_MY_WU_PROMO_CODE,
+                                CommonUtils.getUserId(), WuCcyCode, dataObject.getReceiverCountryCode(), WU_LOOKUP_PROMO_CODE, LogoutCalling.getDeviceID(context),sessionTime), Constants.WU_CALCULATE_CURRENCY_SEND_MONEY_URL, CommonUtils.SERVICE_TYPE.WU_CALCULATE_CURRENCY_SEND_MONEY, Request.Method.PUT, this);
+                    } else {
+                        FCY_AMOUNT = CommonUtils.getTextFromEditText(etGet);
+                        jsonObjReq = new CallAddr().executeApi(fetchRateAndChargeData(/*dataObject.getArexCurrencyCode(), dataObject.getArexCountryCode(),*/ selectedCurrencyData.getCurrencyCode(),selectedCurrencyData.getCurrencyCode(),BENEF_TYPE,
+                                CLIENT_IP_ADDRESS, FCY_AMOUNT, arexUserId, promoCode, SERVICE_TYPE, TOTAL_VALUE_AED_DISP, USE_MY_WU_PROMO_CODE,
+                                CommonUtils.getUserId(), WuCcyCode, dataObject.getReceiverCountryCode(), WU_LOOKUP_PROMO_CODE, LogoutCalling.getDeviceID(context),sessionTime), Constants.WU_CALCULATE_CURRENCY_SEND_MONEY_URL, CommonUtils.SERVICE_TYPE.WU_CALCULATE_CURRENCY_SEND_MONEY, Request.Method.PUT, this);
+                    }
+                    cancelPendingRequests();
+                    ((WUSendMoneyActivity) getActivity()).setSendBtnState(false);
+                    isCalculatingCurrency = true;
+                    ((WUSendMoneyActivity) getActivity()).setTransparentCoverVisibility(View.VISIBLE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    ivSuccess.setVisibility(View.GONE);
+                    AppController.getInstance().addToRequestQueue(jsonObjReq, CommonUtils.SERVICE_TYPE.CALCULATE_CURRENCY_SEND_MONEY.toString());
+                } else {
+                    Toast.makeText(context, getString(app.alansari.R.string.error_no_internet), Toast.LENGTH_SHORT).show();
+                }
+            } else {
+                progressBar.setVisibility(View.GONE);
+                ((WUSendMoneyActivity) getActivity()).setTransparentCoverVisibility(View.GONE);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            Toast.makeText(context, getString(app.alansari.R.string.please_try_again), Toast.LENGTH_SHORT).show();
+        }
+    }
+
     private void calculateCurrency() {
         try {
             if (((WUSendMoneyActivity) getActivity()).getServiceType().equalsIgnoreCase("")) {
@@ -468,20 +431,16 @@ public class WUSendMoneyFragment extends Fragment implements View.OnClickListene
                     String FCY_AMOUNT = "";
                     String USE_MY_WU_PROMO_CODE = "";
                     String WU_LOOKUP_PROMO_CODE = "";
-
-                    // Sidduuuuuuu
                     if (currentDirection == 1) {
                         TOTAL_VALUE_AED_DISP = CommonUtils.getTextFromEditText(etSend);
                         jsonObjReq = new CallAddr().executeApi(fetchRateAndChargeData(dataObject.getArexCurrencyCode(), dataObject.getArexCountryCode(), BENEF_TYPE,
                                 CLIENT_IP_ADDRESS, FCY_AMOUNT, arexUserId, promoCode, SERVICE_TYPE, TOTAL_VALUE_AED_DISP, USE_MY_WU_PROMO_CODE,
-                                CommonUtils.getUserId(), dataObject.getReceiverCurrencyCode(), dataObject.getReceiverCountryCode(), WU_LOOKUP_PROMO_CODE, LogoutCalling.getDeviceID(context),sessionTime),
-                                Constants.WU_CALCULATE_CURRENCY_SEND_MONEY_URL, CommonUtils.SERVICE_TYPE.WU_CALCULATE_CURRENCY_SEND_MONEY, Request.Method.PUT, this);
+                                CommonUtils.getUserId(), WuCcyCode/*dataObject.getReceiverCurrencyCode()*/, dataObject.getReceiverCountryCode(), WU_LOOKUP_PROMO_CODE, LogoutCalling.getDeviceID(context),sessionTime), Constants.WU_CALCULATE_CURRENCY_SEND_MONEY_URL, CommonUtils.SERVICE_TYPE.WU_CALCULATE_CURRENCY_SEND_MONEY, Request.Method.PUT, this);
                     } else {
                         FCY_AMOUNT = CommonUtils.getTextFromEditText(etGet);
                         jsonObjReq = new CallAddr().executeApi(fetchRateAndChargeData(dataObject.getArexCurrencyCode(), dataObject.getArexCountryCode(), BENEF_TYPE,
                                 CLIENT_IP_ADDRESS, FCY_AMOUNT, arexUserId, promoCode, SERVICE_TYPE, TOTAL_VALUE_AED_DISP, USE_MY_WU_PROMO_CODE,
-                                CommonUtils.getUserId(), dataObject.getReceiverCurrencyCode(), dataObject.getReceiverCountryCode(), WU_LOOKUP_PROMO_CODE, LogoutCalling.getDeviceID(context),sessionTime),
-                                Constants.WU_CALCULATE_CURRENCY_SEND_MONEY_URL, CommonUtils.SERVICE_TYPE.WU_CALCULATE_CURRENCY_SEND_MONEY, Request.Method.PUT, this);
+                                CommonUtils.getUserId(), WuCcyCode, dataObject.getReceiverCountryCode(), WU_LOOKUP_PROMO_CODE, LogoutCalling.getDeviceID(context),sessionTime), Constants.WU_CALCULATE_CURRENCY_SEND_MONEY_URL, CommonUtils.SERVICE_TYPE.WU_CALCULATE_CURRENCY_SEND_MONEY, Request.Method.PUT, this);
                     }
                     cancelPendingRequests();
                     ((WUSendMoneyActivity) getActivity()).setSendBtnState(false);
@@ -545,32 +504,20 @@ public class WUSendMoneyFragment extends Fragment implements View.OnClickListene
                 if (status == 1) {
                     try {
                         if (response.getJSONArray(Constants.RESULT) != null && response.getJSONArray(Constants.RESULT).length() > 0) {
-                            ArrayList<WuCurrencyData> currencyData = (ArrayList<WuCurrencyData>) new Gson().fromJson(response.getJSONArray(Constants.RESULT).toString(),
-                                    new TypeToken<ArrayList<WuCurrencyData>>() {
+                            ArrayList<WuCurrencyData> currencyData = (ArrayList<WuCurrencyData>) new Gson().fromJson(response.getJSONArray(Constants.RESULT).toString(), new TypeToken<ArrayList<WuCurrencyData>>() {
                             }.getType());
                             if (currencyData != null && currencyData.size() > 0) {
                                 ArrayList<CountryData.CurrencyData> newCurrencyData = new ArrayList<CountryData.CurrencyData>();
                                 for (int i = 0; i < currencyData.size(); i++) {
                                     CountryData.CurrencyData data = new CountryData.CurrencyData();
-
-                                   /* if(currencyData.get(i).getDefaultStatus().equals("0")) {
-                                        //setDefaultCurrency(0);
-                                        data.setCurrencyCode(currencyData.get(i).getCurrencyCode());
-                                    }else {
-                                        //setDefaultCurrency(1);
-                                        data.setCurrencyCode(currencyData.get(i).getCurrencyCode());
-                                    }*/
                                     data.setCurrencyCode(currencyData.get(i).getCurrencyCode());
                                     data.setName(currencyData.get(i).getWuCurrencyCode());
                                     data.setDefaultStatus(currencyData.get(i).getDefaultStatus());
-
                                     newCurrencyData.add(data);
-
                                 }
                                 countryData.setCurrencyData(newCurrencyData);
-                                recyclerAdapterCurrencyCode.addArrayList(newCurrencyData); //siddu
+                                recyclerAdapterCurrencyCode.addArrayList(newCurrencyData);
                                 setDefaultCurrency();
-
                                 fragmentDataCoverLayout.setVisibility(View.GONE);
                                 return;
                             }
@@ -643,7 +590,7 @@ public class WUSendMoneyFragment extends Fragment implements View.OnClickListene
                             onSuccessInCalculation();
 
                         } else if (response.getString(Constants.STATUS_MSG).equals(Constants.FAILURE) || response.getString(Constants.STATUS_MSG).equals(Constants.REJECTED)) {
-                           // Toast.makeText(context, response.getString(Constants.MESSAGE), Toast.LENGTH_SHORT).show();
+                            // Toast.makeText(context, response.getString(Constants.MESSAGE), Toast.LENGTH_SHORT).show();
                             CommonUtils.showLimitDialog(context, response.getString(Constants.MESSAGE));
                             onErrorInCalculation();
                         } else {
@@ -698,6 +645,8 @@ public class WUSendMoneyFragment extends Fragment implements View.OnClickListene
             jsonObject.put(Constants.TOTAL_VALUE_AED_DISP, totValAedDisp);
             jsonObject.put(Constants.USE_MY_WU_PROMO_CODE, myWuPromoCode);
             jsonObject.put(Constants.USER_PK_ID, userPkId);
+
+            //Siddu
             jsonObject.put(Constants.WU_CCY_CODE, wuCcyCode);
             jsonObject.put(Constants.WU_COUNTRY_CODE, wuCountryCode);
             if(!otherPromoCode.equalsIgnoreCase("")){
@@ -716,5 +665,9 @@ public class WUSendMoneyFragment extends Fragment implements View.OnClickListene
         }
         LogUtils.d("ok", "fetchRateAndChargeData:-  " + jsonObject.toString());
         return jsonObject;
+    }
+
+    public String getWuCcyCode() {
+        return WuCcyCode /*selectedCurrencyData.getCurrencyCode()*/;
     }
 }

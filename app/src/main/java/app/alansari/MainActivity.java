@@ -5,12 +5,11 @@ import app.alansari.Utils.LogOutTimerUtil;
 import app.alansari.adapters.TestStackAdapter;
 import android.os.Bundle;
 import android.os.Handler;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.loopeer.cardstack.AllMoveDownAnimatorAdapter;
 import com.loopeer.cardstack.CardStackView;

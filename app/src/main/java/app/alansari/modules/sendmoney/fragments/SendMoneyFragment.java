@@ -3,10 +3,9 @@ package app.alansari.modules.sendmoney.fragments;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.fragment.app.Fragment;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.RecyclerView;
 import android.text.Editable;
 import android.text.InputFilter;

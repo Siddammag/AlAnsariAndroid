@@ -1,9 +1,8 @@
 package app.alansari.customviews.carousellayoutmanager;
 
 import android.content.Context;
-import android.view.View;
-
 import androidx.recyclerview.widget.LinearSmoothScroller;
+import android.view.View;
 
 
 /**

@@ -3,15 +3,15 @@ package app.alansari;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.net.http.SslError;
 import android.os.Bundle;
-
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.core.content.ContextCompat;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -32,6 +32,7 @@ import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.crashlytics.android.Crashlytics;
+import com.getkeepsafe.taptargetview.TapTargetSequence;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -44,6 +45,7 @@ import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
 import app.alansari.Utils.LogOutTimerUtil;
 import app.alansari.Utils.LogUtils;
+import app.alansari.Utils.TapTargetViewUtils;
 import app.alansari.Utils.Validation;
 import app.alansari.adapters.QuickSendRecyclerAdapter;
 import app.alansari.customviews.ShimmerFrameLayout;
@@ -106,10 +108,9 @@ public class DashboardActivity extends NavigationBaseActivity implements View.On
     private Dialog dialog;
     private WebView webView;
 
-    private FirebaseAnalytics mFirebaseAnalytics;
-
     /*"REFERRAL_ACTIVE_IND":"Y",
     "REFERRAL_CODE":"TEST1",*/
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -638,12 +639,12 @@ public class DashboardActivity extends NavigationBaseActivity implements View.On
                 } else if (popupData.get(0).getScreen_type_key().equals("FRGN_CY")) {
                     startActivity(new Intent(context, ForeignCurrencyActivity.class));
                 } else if (popupData.get(0).getScreen_type_key().equals("RT_CLCTR")) {
+                    mFirebaseAnalytics.logEvent("Prelogin_RateCalculator", null);
+                    Log.i("Prelogin_RateCalculator", "Success in Dashboard Screen");
                     startActivity(new Intent(context, CurrencyConverterActivity.class));
                 } else if (popupData.get(0).getScreen_type_key().equals("CC_PAY")) {
                     startActivity(new Intent(context, CreditCardPaymentActivity.class));
                 } else if (popupData.get(0).getScreen_type_key().equals("RT_ALERT")) {
-                    mFirebaseAnalytics.logEvent("Prelogin_RateCalculator", null);
-                    Log.i("Prelogin_RateCalculator", "Success in Dashboard Screen");
                     startActivity(new Intent(context, RateAlertActivity.class));
                 } else if (popupData.get(0).getScreen_type_key().equals("TXN_HSTRY")) {
                     startActivity(new Intent(context, TransactionHistoryActivity.class));
@@ -733,7 +734,7 @@ public class DashboardActivity extends NavigationBaseActivity implements View.On
                 break;
             case R.id.transaction_tracker_layout:
                 mFirebaseAnalytics.logEvent("Prelogin_TransactionTracker", null);
-                Log.i("Prelogin_TransactionTracker", "Success in Dashboard Screen");
+                Log.i("Prelogin_Transac", "Success in Dashboard Screen");
                 startActivity(new Intent(context, TransactionTrackerActivity.class));
                 break;
         }

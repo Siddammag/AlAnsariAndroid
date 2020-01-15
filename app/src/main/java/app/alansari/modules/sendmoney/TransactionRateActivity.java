@@ -6,6 +6,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatRatingBar;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -13,9 +16,6 @@ import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatRatingBar;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;

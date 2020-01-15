@@ -4,14 +4,15 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +22,7 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import org.json.JSONObject;
 
@@ -68,7 +69,7 @@ public class TransactionCompletedActivity extends AppCompatActivity implements V
     private String message = "";
     private TxnDetailsCeCashPayout mPayout;
     private String sessionTime;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -169,6 +170,7 @@ public class TransactionCompletedActivity extends AppCompatActivity implements V
         super.onCreate(savedInstanceState);
         setContentView(app.alansari.R.layout.transaction_completed_activity);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
         ((TextView) findViewById(app.alansari.R.id.toolbar_title)).setText("Transaction Details");
         setSupportActionBar(toolbar);
@@ -187,8 +189,18 @@ public class TransactionCompletedActivity extends AppCompatActivity implements V
 
             if (!(getIntent().getExtras().getString(Constants.SOURCE_TYPE) == null)) {
                 sourceType = getIntent().getExtras().getString(Constants.SOURCE_TYPE);
+                Log.i("Siddu", sourceType + "");
+                //Toast.makeText(this, "" + sourceType, Toast.LENGTH_SHORT).show();
             } else {
                 sourceType = getIntent().getExtras().getString(Constants.SOURCE_TYPE, Constants.TYPE_SEND_MONEY);
+
+                Log.i("Siddu22", sourceType + "");
+                //Toast.makeText(this, "Sidduuu" + sourceType, Toast.LENGTH_SHORT).show();
+
+                if(sourceType.equals("TYPE_SEND_MONEY")){
+                    mFirebaseAnalytics.logEvent("Remittance_CreditCard_Complete", null);
+                    Log.i("Remitta_Credit_Complete", "Success in PayAtBranch_Complete ");
+                }
             }
 
             // sourceType = getIntent().getExtras().getString(Constants.SOURCE_TYPE);
@@ -360,7 +372,8 @@ public class TransactionCompletedActivity extends AppCompatActivity implements V
                         ivPaymentMode.setImageResource(app.alansari.R.drawable.svg_payment_mode_priority_pay);
                     }
 
-                } else if (txnDetailsData.getTxnType().equalsIgnoreCase("CP") && getIntent().getExtras().getString(Constants.SOURCE).equalsIgnoreCase(Constants.SOURCE_TRANSACTION_PENDING_LIST)) {
+                }
+                else if (txnDetailsData.getTxnType().equalsIgnoreCase("CP") && getIntent().getExtras().getString(Constants.SOURCE).equalsIgnoreCase(Constants.SOURCE_TRANSACTION_PENDING_LIST)) {
                     if (txnDetailsData.getServiceType().equalsIgnoreCase(Constants.AREX_MAPPING) && txnDetailsData.getTxnType().equalsIgnoreCase("TT")) {
                         txnDetailsData.setBeneficiaryData(txnDetailsData.getBeneficiaryDataTt());
                         txnDetailsData.setTransactionData(txnDetailsData.getTransactionDataTt());

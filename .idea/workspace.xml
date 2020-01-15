@@ -1,0 +1,1422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="CallA" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="806b6d62-88aa-4647-954b-4d79e17a8a8d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="AlAnsariNew" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/models/TxnDetailsData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21828">
+              <caret line="1705" column="35" selection-start-line="1705" selection-start-column="35" selection-end-line="1705" selection-end-column="35" />
+              <folding>
+                <element signature="e#14102#14103#0" expanded="true" />
+                <element signature="e#14142#14143#0" expanded="true" />
+                <element signature="e#60830#60831#0" expanded="true" />
+                <element signature="e#60873#60874#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/PendingTransActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1360">
+              <caret line="99" column="13" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_transaction_travel_comp_details.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6341">
+              <caret line="373" column="28" selection-start-line="373" selection-start-column="28" selection-end-line="373" selection-end-column="28" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/TransactionTravelCompDetailsActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="97" column="13" lean-forward="true" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1023">
+              <caret line="304" column="9" selection-start-line="304" selection-start-column="9" selection-end-line="304" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#17358#21227#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pending_trans_activity.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/Utils/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12512">
+              <caret line="738" column="41" selection-start-line="738" selection-start-column="41" selection-end-line="738" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/PaymentModeActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10404">
+              <caret line="675" column="48" selection-start-line="675" selection-start-column="48" selection-end-line="675" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/transaction_details_activity.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7922">
+              <caret line="466" column="38" selection-start-line="466" selection-start-column="38" selection-end-line="466" selection-end-column="38" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/captures/app.alansari_2020.01.14_23.16.li">
+          <provider selected="true" editor-type-id="capture-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getReceiverCountryCode</find>
+      <find>CHECK_TXN_LIMITS</find>
+      <find>Siddu</find>
+      <find>DEFAULT_STATUS</find>
+      <find>defaultStatus</find>
+      <find>//siddu</find>
+      <find>pending_transactions_layout</find>
+      <find>response</find>
+      <find>currenciesWu</find>
+      <find>switch</find>
+      <find>WU_CURRENCY_URL</find>
+      <find>WuCcyCode</find>
+      <find>adapter</find>
+      <find>recyclerViewCurrencyCode</find>
+      <find>recyclerAdapterCurrencyCode</find>
+      <find>layoutManagerCurrencyCode</find>
+      <find>siddu</find>
+      <find>intent</find>
+      <find>total_re</find>
+      <find>performsendmoneystorehold</find>
+      <find>WU_CCY_CODE</find>
+      <find>WU_PERFORM_SEND_MONEY</find>
+      <find>total_receive_currency_code</find>
+      <find>getCurrencyDesc</find>
+      <find>tvTotalReceiveCurrencyCode</find>
+      <find>currencyDesc</find>
+      <find>pending_trans_activity</find>
+      <find>Time Left</find>
+      <find>pending_trans_frag</find>
+      <find>activity_transaction_travel_comp_details</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>import androidx.recyclerview.widget.DefaultItemAnimator;</replace>
+      <replace>import androidx.recyclerview.widget.LinearLayoutManager;</replace>
+      <replace>import androidx.recyclerview.widget.RecyclerView;</replace>
+      <replace>import androidx.appcompat.widget.Toolbar;</replace>
+      <replace>import androidx.appcompat.widget.AppCompatImageView;</replace>
+      <replace>androidx.cardview.widget.CardView</replace>
+      <replace>androidx.appcompat.widget.AppCompatImageView</replace>
+      <replace>com.google.android.material.textfield.TextInputLayout</replace>
+      <replace>androidx.appcompat.widget.AppCompatButton</replace>
+      <replace>androidx.core.widget.NestedScrollView</replace>
+      <replace>androidx.recyclerview.widget.RecyclerView</replace>
+      <replace>androidx.appcompat.widget.Toolbar</replace>
+      <replace>com.google.android.material.tabs.TabLayout</replace>
+      <replace>androidx.appcompat.widget.AppCompatTextView</replace>
+      <replace>androidx.swiperefreshlayout.widget.SwipeRefreshLayout</replace>
+      <replace>import androidx.appcompat.app.AppCompatDelegate;</replace>
+      <replace>import androidx.annotation.Nullable;</replace>
+      <replace>import androidx.fragment.app.Fragment;</replace>
+      <replace>import androidx.annotation.NonNull;</replace>
+      <replace>import androidx.fragment.app.FragmentTransaction;</replace>
+      <replace>import androidx.annotation.ColorInt;</replace>
+      <replace>import androidx.annotation.DrawableRes;</replace>
+      <replace>import com.google.android.material.snackbar.Snackbar;</replace>
+      <replace>import androidx.core.content.res.ResourcesCompat;</replace>
+      <replace>import androidx.core.graphics.drawable.DrawableCompat;</replace>
+      <replace>import androidx.annotation.IntDef;</replace>
+      <replace>import androidx.annotation.LayoutRes;</replace>
+      <replace>import androidx.recyclerview.widget.ItemTouchHelper;</replace>
+      <replace>import androidx.appcompat.widget.AppCompatEditText;</replace>
+      <replace>import androidx.core.view.ViewCompat;</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/fragments/my_emirates/MyEmiratesIdFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/fragments/my_emirates/MyEmiratesResultPage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/AddBeneficiaryActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/AddBeneficiaryCeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/BeneficiaryActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/WUAddBeneficiaryActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/branchlocator/BranchLocatorActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/notification/NotificationActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/PendingTransactionActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/PendingTransActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/SendMoneyActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionHistoryActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionRateActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/MyProfileDetails.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/newAdditions/LogoutCalling.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/Utils/RealTimePermission.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/currencycalculator/CurrencyConverterActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/VerifyEIDActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/MyEmiratesIdActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/NavigationBaseActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/TravelCardReloadActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/DashboardActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/LandingActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/ChangePinActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/GoToBranchActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/RegisterActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/AdditionalInfoSelectModeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/pending_transaction_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/transaction_rate_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/wu_send_money_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionCompletedActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentGatewayActivity2.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentDetailsSelectBankPaymentActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/TransactionTravelDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/TransactionTravelCompDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/PaymentDetailsBankPaymentActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/PaymentModeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/fragments/RegisterMobileFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/wu_add_beneficiary_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/UpdateExistingBeneficiaryActivityWu.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/SplashActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/fragments/TransactionHistoryReloadFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/Utils/CommonUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1370" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AlAnsariAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlAnsariAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlAnsariAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlAnsariAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlAnsariAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="alansari" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlAnsariAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="alansari" type="462c0819:PsiDirectoryNode" />
+              <item name="adapters" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DEBUGGABLE_DEVICE" value="emulator-5554" />
+    <property name="DEBUGGABLE_PROCESS" value="app.alansari" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Nexus_5X_API_28" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-01-14T06:21:16.265Z" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="806b6d62-88aa-4647-954b-4d79e17a8a8d" name="Default Changelist" comment="" />
+      <created>1578309645126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578309645126</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.26172465" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.44727892" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49924356" weight="0.68537414" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32993197" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.49489796" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50075644" side_tool="true" weight="0.6938776" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32993197" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Preview" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.32980332" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.26172465" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.44727892" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49924356" weight="0.68537414" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32993197" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.49489796" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50075644" side_tool="true" weight="0.6938776" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32993197" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Preview" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.32980332" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java</url>
+          <line>153</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java</url>
+          <line>166</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java</url>
+          <line>167</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java</url>
+          <line>168</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java</url>
+          <line>170</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java</url>
+          <line>172</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java</url>
+          <line>174</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java</url>
+          <line>175</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java</url>
+          <line>149</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java</url>
+          <line>150</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/AdditionalInfoSelectModeActivity.java</url>
+          <line>436</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/AdditionalInfoSelectModeActivity.java</url>
+          <line>437</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/BeneficiaryActivity.java</url>
+          <line>2077</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/BeneficiaryActivity.java</url>
+          <line>2104</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/BeneficiaryActivity.java</url>
+          <line>2106</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/BeneficiaryActivity.java</url>
+          <line>2107</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java</url>
+          <line>428</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java</url>
+          <line>943</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java</url>
+          <line>869</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java</url>
+          <line>413</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java</url>
+          <line>411</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java</url>
+          <line>1099</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java</url>
+          <line>1105</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java</url>
+          <line>1107</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java</url>
+          <line>1256</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java</url>
+          <line>1258</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java</url>
+          <line>1260</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java</url>
+          <line>1262</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/PaymentSelectModeActivity.java</url>
+          <line>1264</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/BeneficiaryActivity.java</url>
+          <line>2105</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/BeneficiaryActivity.java</url>
+          <line>1437</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/BeneficiaryActivity.java</url>
+          <line>1439</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/AdditionalInfoSelectModeActivity.java</url>
+          <line>659</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/AdditionalInfoSelectModeActivity.java</url>
+          <line>658</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/AdditionalInfoSelectModeActivity.java</url>
+          <line>1225</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/AdditionalInfoSelectModeActivity.java</url>
+          <line>1228</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/AdditionalInfoSelectModeActivity.java</url>
+          <line>1229</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/AdditionalInfoSelectModeActivity.java</url>
+          <line>1231</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/AdditionalInfoSelectModeActivity.java</url>
+          <line>1241</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>118</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/PaymentGatewayActivity.java</url>
+          <line>537</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionCompletedActivity.java</url>
+          <line>425</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>213</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/LandingActivity.java</url>
+          <line>143</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>422</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>693</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>682</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>680</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>351</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>641</line>
+          <properties />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>421</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>419</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>511</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>515</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>518</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>519</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>521</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>522</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>670</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>320</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>321</line>
+          <properties />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>323</line>
+          <properties />
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>322</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>326</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>694</line>
+          <properties />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>696</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>672</line>
+          <properties />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>513</line>
+          <properties />
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>515</line>
+          <properties />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>517</line>
+          <properties />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>518</line>
+          <properties />
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>519</line>
+          <properties />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>297</line>
+          <properties />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>277</line>
+          <properties />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>288</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/DashboardActivity.java</url>
+          <line>728</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>370</line>
+          <properties />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>266</line>
+          <properties />
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>270</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>521</line>
+          <properties />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java</url>
+          <line>216</line>
+          <properties />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java</url>
+          <line>319</line>
+          <properties class="app.alansari.modules.sendmoney.WUSendMoneyActivity" method="getReceiverCountryCode" />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/GoToBranchActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/fragments/RegisterMobileFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="278" lean-forward="true" selection-start-line="278" selection-end-line="278" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_benificiary_new.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/beneficiary_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="494" column="50" selection-start-line="494" selection-start-column="45" selection-end-line="494" selection-end-column="50" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/wu_beneficiary_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="146" column="28" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/WUBeneficiaryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="198" column="70" selection-start-line="198" selection-start-column="70" selection-end-line="198" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/wu_add_beneficiary_select_type_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="186" column="33" selection-start-line="186" selection-start-column="25" selection-end-line="186" selection-end-column="33" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/wu_add_beneficiary_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="142" column="33" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="33" />
+          <folding>
+            <element signature="e#768#6887#0" />
+            <element signature="e#953#972#0" expanded="true" />
+            <element signature="e#1288#1307#0" expanded="true" />
+            <element signature="e#1498#1515#0" expanded="true" />
+            <element signature="e#1832#1849#0" expanded="true" />
+            <element signature="e#1901#1918#0" expanded="true" />
+            <element signature="e#2066#2083#0" expanded="true" />
+            <element signature="e#2508#2528#0" expanded="true" />
+            <element signature="e#2956#2976#0" expanded="true" />
+            <element signature="e#3371#3388#0" expanded="true" />
+            <element signature="e#3438#3456#0" expanded="true" />
+            <element signature="e#3508#3525#0" expanded="true" />
+            <element signature="e#3639#3656#0" expanded="true" />
+            <element signature="e#3699#3716#0" expanded="true" />
+            <element signature="e#4301#4319#0" expanded="true" />
+            <element signature="e#4507#4524#0" expanded="true" />
+            <element signature="e#4703#4721#0" expanded="true" />
+            <element signature="e#4780#4798#0" expanded="true" />
+            <element signature="e#4935#4952#0" expanded="true" />
+            <element signature="e#5337#5359#0" expanded="true" />
+            <element signature="e#5482#5502#0" expanded="true" />
+            <element signature="e#5681#5699#0" expanded="true" />
+            <element signature="e#5758#5776#0" expanded="true" />
+            <element signature="e#6134#6151#0" expanded="true" />
+            <element signature="e#6582#6599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_beneficiary_ce_confirm_dialog_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/adapters/TravelCardReloadDynamicListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2493">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/WUAddBeneficiarySelectTypeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="284" column="46" selection-start-line="284" selection-start-column="46" selection-end-line="284" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/WUAddBeneficiaryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/WUEnrollActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="114" column="37" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/wu_enroll_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/network/APIRequestParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39950">
+          <caret line="2365" column="56" selection-start-line="2365" selection-start-column="56" selection-end-line="2365" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/UpdateExistingBeneficiaryActivityWu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/AdditionalInfoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10302">
+          <caret line="682" column="33" selection-start-line="682" selection-start-column="33" selection-end-line="682" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/LandingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="244" column="5" lean-forward="true" selection-start-line="244" selection-start-column="5" selection-end-line="244" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/wu_send_money_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="137" column="16" selection-start-line="137" selection-start-column="16" selection-end-line="137" selection-end-column="16" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/fragments/TransactionHistoryReloadFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="346" column="295" selection-start-line="346" selection-start-column="295" selection-end-line="346" selection-end-column="295" />
+          <folding>
+            <element signature="e#5601#5857#0" expanded="true" />
+            <element signature="e#5856#5857#0" expanded="true" />
+            <element signature="e#11338#11382#0" expanded="true" />
+            <element signature="e#12256#12606#0" expanded="true" />
+            <element signature="e#12605#12606#0" expanded="true" />
+            <element signature="e#12647#12648#0" expanded="true" />
+            <element signature="e#12702#12703#0" expanded="true" />
+            <element signature="e#18317#18359#0" expanded="true" />
+            <element signature="e#18664#18710#0" expanded="true" />
+            <element signature="e#18976#18977#0" expanded="true" />
+            <element signature="e#19034#19035#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="225" selection-start-line="225" selection-end-line="225" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/wu_send_money_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="221" column="63" selection-start-line="221" selection-start-column="41" selection-end-line="221" selection-end-column="63" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/models/WUBeneficiaryData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="228" column="5" lean-forward="true" selection-start-line="228" selection-start-column="5" selection-end-line="228" selection-end-column="5" />
+          <folding>
+            <element signature="e#7097#7098#0" expanded="true" />
+            <element signature="e#7139#7140#0" expanded="true" />
+            <element signature="e#8986#8987#0" expanded="true" />
+            <element signature="e#9029#9030#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/models/WuCurrencyData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/models/CountryData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-601">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="e#8445#8446#0" expanded="true" />
+            <element signature="e#8489#8490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dashboard_activity.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/network/CallAddr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="123" column="29" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="54" column="29" lean-forward="true" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.volley/volley/1.1.1/3fb00d0da53c4e9f35a519da6e22bc2de7463816/volley-1.1.1-sources.jar!/com/android/volley/toolbox/BasicNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/DashboardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="727" column="59" selection-start-line="727" selection-start-column="59" selection-end-line="727" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/customviews/carousellayoutmanager/CarouselLayoutManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="402" selection-start-line="402" selection-end-line="402" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/Utils/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="413" selection-start-line="413" selection-end-line="413" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/accountmanagement/BeneficiaryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-571">
+          <caret line="803" column="5" lean-forward="true" selection-start-line="803" selection-start-column="5" selection-end-line="803" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/AdditionalInfoSelectModeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/wu_additional_info_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="249" selection-start-line="249" selection-end-line="249" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/WUSendMoneyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="163" column="38" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/captures/app.alansari_2020.01.14_23.12.li">
+      <provider selected="true" editor-type-id="capture-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/captures/app.alansari_2020.01.14_23.12-1.li">
+      <provider selected="true" editor-type-id="capture-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/AdditionalInfoActivityWu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="278" column="3" selection-start-line="278" selection-start-column="3" selection-end-line="278" selection-end-column="3" />
+          <folding>
+            <element signature="e#4710#9007#0" />
+            <element signature="e#9013#9932#0" />
+            <element signature="e#10617#12450#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/TransactionDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5474">
+          <caret line="385" column="99" selection-start-line="385" selection-start-column="99" selection-end-line="385" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/models/TxnDetailsData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21828">
+          <caret line="1705" column="35" selection-start-line="1705" selection-start-column="35" selection-end-line="1705" selection-end-column="35" />
+          <folding>
+            <element signature="e#14102#14103#0" expanded="true" />
+            <element signature="e#14142#14143#0" expanded="true" />
+            <element signature="e#60830#60831#0" expanded="true" />
+            <element signature="e#60873#60874#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/PendingTransActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="99" column="13" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_transaction_travel_comp_details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6341">
+          <caret line="373" column="28" selection-start-line="373" selection-start-column="28" selection-end-line="373" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pending_trans_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/Utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12512">
+          <caret line="738" column="41" selection-start-line="738" selection-start-column="41" selection-end-line="738" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/PaymentModeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10404">
+          <caret line="675" column="48" selection-start-line="675" selection-start-column="48" selection-end-line="675" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/transaction_details_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7922">
+          <caret line="466" column="38" selection-start-line="466" selection-start-column="38" selection-end-line="466" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/captures/app.alansari_2020.01.14_23.16.li">
+      <provider selected="true" editor-type-id="capture-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/modules/sendmoney/fragments/WUSendMoneyFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1023">
+          <caret line="304" column="9" selection-start-line="304" selection-start-column="9" selection-end-line="304" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#17358#21227#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/alansari/TransactionTravelCompDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="97" column="13" lean-forward="true" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

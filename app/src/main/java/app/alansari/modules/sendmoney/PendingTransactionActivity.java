@@ -2,12 +2,12 @@ package app.alansari.modules.sendmoney;
 
 import android.content.Context;
 import android.os.Bundle;
-
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
@@ -18,13 +18,12 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.google.android.material.tabs.TabLayout;
-
 import app.alansari.NavigationBaseActivity;
 import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
 import app.alansari.Utils.LogOutTimerUtil;
 
+import app.alansari.modules.sendmoney.fragments.TransactionHistoryFragment;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 import static app.alansari.Utils.LogOutTimerUtil.stopLogoutTimer;

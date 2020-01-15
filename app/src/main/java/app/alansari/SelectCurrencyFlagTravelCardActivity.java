@@ -2,12 +2,10 @@ package app.alansari;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import androidx.recyclerview.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -35,6 +33,7 @@ import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
 import app.alansari.Utils.LogOutTimerUtil;
 import app.alansari.Utils.Validation;
+import app.alansari.adapters.SelectCurrencyRecyclerAdapter;
 import app.alansari.adapters.SelectCurrencyTravelCardRecyclerAdapter;
 import app.alansari.customviews.MultiStateView;
 import app.alansari.customviews.carousellayoutmanager.CarouselLayoutManager;

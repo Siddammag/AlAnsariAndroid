@@ -6,6 +6,8 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,9 +16,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -73,7 +72,6 @@ public class RegisterMobileFragment extends Fragment implements OnWebServiceResu
     private AsteriskPasswordTransformationMethod pwdMethod;
     private String GNAV_MESSAGE = "";
     private FirebaseAnalytics mFirebaseAnalytics;
-    private  Context mContext;
 
     /**
      * From the button views.
@@ -240,9 +238,7 @@ public class RegisterMobileFragment extends Fragment implements OnWebServiceResu
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(app.alansari.R.layout.register_mobile_layout, container, false);
-        mContext = getActivity();
-        assert mContext != null;
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(mContext);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
         return view;
     }
 
@@ -366,7 +362,8 @@ public class RegisterMobileFragment extends Fragment implements OnWebServiceResu
         try {
             SharedPreferenceManger.setPrefVal(Constants.IS_LOGGED_IN, true, SharedPreferenceManger.VALUE_TYPE.BOOLEAN);
             mFirebaseAnalytics.logEvent("Reference_Number_Screen", null);
-            Log.i("Reference_Number_Screen", "Success in ResisterMobile Screen");
+            Log.i("Reference_Number_Screen", "Success in Login Screen");
+
             intent = new Intent(context, GoToBranchActivity.class);
             intent.putExtra(Constants.MESSAGE, message);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -387,7 +384,6 @@ public class RegisterMobileFragment extends Fragment implements OnWebServiceResu
                 if (tvMobile.getText().length() == passwordLength) {
                     mobileNum = Constants.MOBILE_CODE + tvMobile.getText().toString().trim();
                     if (CommonUtils.isLoggedIn() && CommonUtils.getUserMobile().equalsIgnoreCase(mobileNum)) {
-                        mFirebaseAnalytics.logEvent("Login", null);
                         intent = new Intent(context, LoginActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(intent);

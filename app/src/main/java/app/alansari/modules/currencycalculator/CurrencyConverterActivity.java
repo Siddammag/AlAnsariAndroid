@@ -6,16 +6,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-
+import android.provider.ContactsContract;
+import com.google.android.material.tabs.TabLayout;
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
-import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -32,7 +34,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -120,8 +121,8 @@ public class CurrencyConverterActivity extends NavigationBaseActivity implements
     private String serviceType;
     private String modeDescription,name,id;
     private JSONObject jsonObjectRequestPayment;
-
     private FirebaseAnalytics mFirebaseAnalytics;
+
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -634,6 +635,7 @@ public class CurrencyConverterActivity extends NavigationBaseActivity implements
                     SharedPreferenceManger.setPrefVal(Constants.FETCH_COUNTRY_DATA_OFF, false, SharedPreferenceManger.VALUE_TYPE.BOOLEAN);
                     if (CommonUtils.isLoggedIn() && CommonUtils.getUserId() != null && CommonUtils.getUserMobile() != null && CommonUtils.getPIN() != null) {
                         mFirebaseAnalytics.logEvent("Login", null);
+                        Log.i("Login", "Success in Login");
                         intent = new Intent(context, LoginActivity.class);
                     } else {
                         intent = new Intent(context, RegisterActivity.class);

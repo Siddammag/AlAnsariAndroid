@@ -5,11 +5,10 @@ import app.alansari.models.BeneficiaryData;
 import app.alansari.modules.sendmoney.PaymentModeActivity;
 import android.content.Context;
 import android.content.Intent;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;

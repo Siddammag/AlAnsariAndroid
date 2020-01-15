@@ -7,12 +7,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-
+import androidx.fragment.app.FragmentTransaction;
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
@@ -52,6 +52,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private ImageView ivMobile, ivId;
     private RelativeLayout home;
     private FirebaseAnalytics mFirebaseAnalytics;
+
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -76,7 +77,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         ivMobile = ((ImageView) findViewById(R.id.reg_mobile_image));
         ivMobile.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
+                onBackPressed();
                 //Crashlytics.getInstance().crash();
             }
         });
@@ -114,6 +116,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 @Override
                 public void onClick(View v) {
                     mFirebaseAnalytics.logEvent("App_Loading", null);
+                    Log.i("App_Loading","Success App_Loading");
                     intent = new Intent(context, LandingActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);

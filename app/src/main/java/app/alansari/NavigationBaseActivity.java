@@ -3,7 +3,6 @@ package app.alansari;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -197,11 +196,13 @@ public class NavigationBaseActivity extends AppCompatActivity implements CustomC
 
                 break;
             case 3:
+
                 if (!(context instanceof TransactionTrackerActivity)) {
                     mFirebaseAnalytics.logEvent("Prelogin_TransactionTracker", null);
-                    Log.i("Prelogin_TransactionTracker", "Success in Naviga Screen");
+                    Log.i("Prelogin_Transaction", "Success in Naviga Screen");
                     startActivity(new Intent(context, TransactionTrackerActivity.class));
-                }else {
+                }
+                else {
                     resideMenu.closeMenu();
                     return;
                 }
@@ -231,12 +232,9 @@ public class NavigationBaseActivity extends AppCompatActivity implements CustomC
                 break;
 
             case 6:
-                if (!(context instanceof RateAlertActivity)) {
-
-                    mFirebaseAnalytics.logEvent("Prelogin_RateCalculator", null);
-                    Log.i("Prelogin_RateCalculator", "Success in Navigation Screen");
+                if (!(context instanceof RateAlertActivity))
                     startActivity(new Intent(context, RateAlertActivity.class));
-                }else {
+                else {
                     resideMenu.closeMenu();
                     return;
                 }

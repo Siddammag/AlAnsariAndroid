@@ -4,15 +4,15 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -62,6 +62,7 @@ import app.alansari.newAdditions.LogoutCalling;
 import app.alansari.preferences.SharedPreferenceManger;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
+import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.COUNTRY_TYPE;
 import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.CURRENCY_URL;
 import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.FETCH_ACCOUNT_TYPE;
 import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.FETCH_ALL_BANKS;
@@ -300,7 +301,7 @@ public class SelectItemActivity extends AppCompatActivity implements OnClickList
     }
 
     private void swipeRefreshLayout() {
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+        swipeRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
             @Override
             public void onRefresh() {
                 if (NetworkStatus.getInstance(context).isOnline2(context)) {
@@ -518,12 +519,8 @@ public class SelectItemActivity extends AppCompatActivity implements OnClickList
                         AppController.getInstance().getRequestQueue().cancelAll(CURRENCY_URL.toString());
                         AppController.getInstance().addToRequestQueue(jsonObjReq, CURRENCY_URL.toString());
                         break;
-
-                        //Siddu
                     case WU_SELECT_ITEM_CURRENCY:
-                        jsonObjReq = new CallAddr().executeApi(new APIRequestParams().fetchWuCurrencyList(getIntent().getStringExtra(Constants.COUNTRY_ID), getIntent().getStringExtra(Constants.WU_ISO_COUNTRY_CODE), userPkIdAll, LogoutCalling.getDeviceID(context), sessionTimeAll),
-
-                                Constants.WU_CURRENCY_URL, WU_CURRENCY_URL, Request.Method.POST, this);
+                        jsonObjReq = new CallAddr().executeApi(new APIRequestParams().fetchWuCurrencyList(getIntent().getStringExtra(Constants.COUNTRY_ID), getIntent().getStringExtra(Constants.WU_ISO_COUNTRY_CODE), userPkIdAll, LogoutCalling.getDeviceID(context), sessionTimeAll), Constants.WU_CURRENCY_URL, WU_CURRENCY_URL, Request.Method.POST, this);
                         AppController.getInstance().getRequestQueue().cancelAll(WU_CURRENCY_URL.toString());
                         AppController.getInstance().addToRequestQueue(jsonObjReq, WU_CURRENCY_URL.toString());
                         break;
@@ -648,8 +645,6 @@ public class SelectItemActivity extends AppCompatActivity implements OnClickList
         overridePendingTransition(R.anim.hold, R.anim.pull_out_to_down);
     }
 
-
-    //Sidduuu
     @Override
     public void itemClicked(View view, int position, Object dataItem) {
         CommonUtils.hideKeyboard(context);
@@ -834,8 +829,6 @@ public class SelectItemActivity extends AppCompatActivity implements OnClickList
                                     }
                                     setViewState(VIEW_STATE_EMPTY);
                                     break;
-
-                                 //Sidduuu
                                 case WU_CURRENCY_URL:
                                     if (response.getJSONArray(Constants.RESULT) != null && response.getJSONArray(Constants.RESULT).length() > 0) {
                                         ArrayList<WuCurrencyData> currencyData = (ArrayList<WuCurrencyData>) new Gson().fromJson(response.getJSONArray(Constants.RESULT).toString(), new TypeToken<ArrayList<WuCurrencyData>>() {

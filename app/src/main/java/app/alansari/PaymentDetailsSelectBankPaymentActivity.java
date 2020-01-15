@@ -4,15 +4,15 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatImageView;
-import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -37,6 +38,8 @@ import app.alansari.Utils.LogOutTimerUtil;
 import app.alansari.Utils.LogUtils;
 import app.alansari.adapters.PaymentDetailAdapterPayType;
 import app.alansari.customviews.MultiStateView;
+import app.alansari.customviews.carousellayoutmanager.CarouselLayoutManager;
+import app.alansari.customviews.carousellayoutmanager.CarouselZoomPostLayoutListener;
 import app.alansari.customviews.flatbutton.ButtonFlat;
 import app.alansari.listeners.CustomClickListener;
 import app.alansari.listeners.OnWebServiceResult;
@@ -109,7 +112,7 @@ public class PaymentDetailsSelectBankPaymentActivity extends AppCompatActivity i
     //private CarouselLayoutManager layoutManagerValue;
     private LinearLayoutManager layoutManagerValue;
     private PaymentDetailAdapterPayType paymentDetailAdapterPayType;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -147,6 +150,7 @@ public class PaymentDetailsSelectBankPaymentActivity extends AppCompatActivity i
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_details_select_bank_payment);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
         ((TextView) findViewById(app.alansari.R.id.toolbar_title)).setText("Payments Details");
         setSupportActionBar(toolbar);
@@ -621,6 +625,8 @@ public class PaymentDetailsSelectBankPaymentActivity extends AppCompatActivity i
                                     TxnDetailsData txnDetails = txnDetailsData.get(0);
                                     txnDetails.setUrl(url);
                                     txnDetails.setSuccessUrl(CommonUtils.getSuccessUrl());
+
+                                    //Siddu123
                                     intent = new Intent(context, PaymentGatewayActivity2.class);
                                     intent.putExtra(Constants.OBJECT, txnDetails);
                                     intent.putExtra(Constants.GATEWAY_URL, txnDetails.getUrl());
@@ -628,6 +634,7 @@ public class PaymentDetailsSelectBankPaymentActivity extends AppCompatActivity i
                                     startActivity(intent);
                                     pendingTransactionDialog.dismiss();
                                 } else if (txnDetailsData != null && txnDetailsData.size() > 0) {
+
                                     intent = new Intent(context, TransactionTravelCompDetailsActivity.class);
                                     intent.putExtra(Constants.SOURCE, "Payment");
                                     intent.putExtra(Constants.OBJECT, txnDetailsData.get(0));

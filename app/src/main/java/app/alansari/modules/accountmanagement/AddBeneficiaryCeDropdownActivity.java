@@ -4,20 +4,21 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
-
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.inputmethod.EditorInfo;
 import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -44,11 +45,14 @@ import app.alansari.modules.accountmanagement.adapters.AddBeneficiaryCeDropdownR
 import app.alansari.modules.accountmanagement.models.BankPurposeCeData;
 import app.alansari.modules.accountmanagement.models.BeneficiaryAccountTypeCeData;
 import app.alansari.modules.accountmanagement.models.BeneficiaryBranchCeData;
+import app.alansari.modules.accountmanagement.models.BeneficiaryDynamicFields;
 import app.alansari.modules.accountmanagement.models.BeneficiaryTypeCeData;
 import app.alansari.modules.accountmanagement.models.BusinessActivitiesCeData;
 import app.alansari.modules.accountmanagement.models.BusinessTypeCeData;
 import app.alansari.modules.accountmanagement.models.CompanyTypeCeData;
+import app.alansari.modules.accountmanagement.models.ContributionCeData;
 import app.alansari.modules.accountmanagement.models.DistrictCeData;
+import app.alansari.modules.accountmanagement.models.FundsSourceCeData;
 import app.alansari.modules.accountmanagement.models.IdProofCeData;
 import app.alansari.modules.accountmanagement.models.ProfessionCeData;
 import app.alansari.modules.accountmanagement.models.PurposeCeData;
@@ -202,7 +206,7 @@ public class AddBeneficiaryCeDropdownActivity extends AppCompatActivity implemen
     }
 
     private void swipeRefreshLayout() {
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+        swipeRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
             @Override
             public void onRefresh() {
                 if (NetworkStatus.getInstance(context).isOnline2(context)) {

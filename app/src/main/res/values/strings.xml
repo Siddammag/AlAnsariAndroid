@@ -98,7 +98,6 @@
     <string name="total_paid">Total paid</string>
     <string name="total_to_pay">Total to pay</string>
     <string name="fee_aed_0_00">Fee : AED 0.00</string>
-    <string name="vat_changes_ade_0_00">VAT Changes : AED 0.00</string>
     <string name="fee_aed">Fee : AED </string>
 
     <item name="VIEW_TAG_CODE_ID" type="id" />
@@ -223,6 +222,7 @@
     <string name="empty_completed_ce">No transactions yet. Why not send money to your loved ones with best rates ever using send money - instant transfer</string>
 
     <string name="empty_completed_credit">No transactions yet. Why not pay your credit card dues using the credit card payment available in the side menu</string>
+    <string name="empty_completed_travel_card">No transactions yet. Why not pay your travel card dues using the credit card payment available in the side menu</string>
     <string name="error_completed_arex">Whoops! We are unable to show your completed transactions at the moment.</string>
 
     <!-- Select Item Screen -->

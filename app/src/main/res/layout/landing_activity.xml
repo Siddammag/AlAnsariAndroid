@@ -38,7 +38,7 @@
                 <ImageView
                     android:id="@+id/wave"
                     android:layout_width="match_parent"
-                    android:layout_height="52dp"
+                    android:layout_height="@dimen/dimens_48"
                     android:layout_below="@+id/reg_logo"
                     android:layout_marginBottom="@dimen/minus_dimens_8"
                     android:scaleType="fitXY"

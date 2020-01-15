@@ -1,4 +1,5 @@
 package app.alansari;
+
 import android.Manifest;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
@@ -15,19 +16,21 @@ import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.MediaStore;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputLayout;
 
 import androidx.annotation.RequiresApi;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.DialogFragment;
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.DialogFragment;
-
-import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.InputType;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -46,8 +49,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.textfield.TextInputLayout;
 
 
 import org.json.JSONException;
@@ -57,6 +58,7 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
@@ -93,6 +95,7 @@ import app.alansari.modules.accountmanagement.models.FundsSourceCeData;
 import app.alansari.modules.accountmanagement.models.IdDateTypeCeData;
 import app.alansari.modules.accountmanagement.models.IdProofCeData;
 import app.alansari.modules.accountmanagement.models.ProfessionCeData;
+import app.alansari.modules.accountmanagement.models.PurposeCeData;
 import app.alansari.modules.accountmanagement.models.ResidentialStatusCeData;
 import app.alansari.modules.accountmanagement.models.SubBusinessTypeCeData;
 import app.alansari.modules.accountmanagement.models.SubPurposeCeData;
@@ -105,7 +108,9 @@ import app.alansari.preferences.SharedPreferenceManger;
 import de.hdodenhof.circleimageview.CircleImageView;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
+import static app.alansari.Utils.Constants.SELECT_ITEM_BENF_FIELD_ID_10;
 import static app.alansari.Utils.LogOutTimerUtil.stopLogoutTimer;
+
 public class MyProfileDetails extends AppCompatActivity implements View.OnClickListener, OnWebServiceResult, LogOutTimerUtil.LogOutListener {
 
     public static final int PERMISSIONS_MULTIPLE_REQUEST = 123;
@@ -143,6 +148,7 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
     private int mYear, mMonth, mDay, mHour, mMinute;
     private ArrayList<GenderSelection> mArrayList;
     private Dialog alertShowDialog;
+
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -185,24 +191,24 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_profile_detail);
         context = this;
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        ((TextView) findViewById(R.id.toolbar_title)).setVisibility(View.GONE);
-        ((TextView) findViewById(R.id.toolbar_title_2)).setText("My Profile");
+        Toolbar toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
+        ((TextView) findViewById(app.alansari.R.id.toolbar_title)).setVisibility(View.GONE);
+        ((TextView) findViewById(app.alansari.R.id.toolbar_title_2)).setText("My Profile");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back_arrow);
-        findViewById(R.id.toolbar_layout).setBackground(ContextCompat.getDrawable(context, R.drawable.am_beneficiary_header_bg));
-        ((AppCompatImageView) findViewById(R.id.toolbar_right_icon)).setImageResource(R.drawable.svg_am_beneficiary_icon);
-        ((CircleImageView) findViewById(R.id.beneficiary_pic)).setImageResource(R.drawable.ic_new_user);
+        getSupportActionBar().setHomeAsUpIndicator(app.alansari.R.drawable.ic_back_arrow);
+        findViewById(app.alansari.R.id.toolbar_layout).setBackground(ContextCompat.getDrawable(context, app.alansari.R.drawable.am_beneficiary_header_bg));
+        ((AppCompatImageView) findViewById(app.alansari.R.id.toolbar_right_icon)).setImageResource(app.alansari.R.drawable.svg_am_beneficiary_icon);
+        ((CircleImageView) findViewById(app.alansari.R.id.beneficiary_pic)).setImageResource(R.drawable.ic_new_user);
         //TODO Remove Line
-        findViewById(R.id.toolbar_right_icon).setOnClickListener(this);
-        findViewById(R.id.nav_menu).setVisibility(View.GONE);
-        CommonUtils.setStatusBarColor(getWindow(), ContextCompat.getColor(context, R.color.color086687));
+        findViewById(app.alansari.R.id.toolbar_right_icon).setOnClickListener(this);
+        findViewById(app.alansari.R.id.nav_menu).setVisibility(View.GONE);
+        CommonUtils.setStatusBarColor(getWindow(), ContextCompat.getColor(context, app.alansari.R.color.color086687));
 
         init();
-        Toolbar toolbarConfirm = (Toolbar) confirmLayout.findViewById(R.id.toolbar);
-        toolbarConfirm.setNavigationIcon(R.drawable.ic_back_arrow);
+        Toolbar toolbarConfirm = (Toolbar) confirmLayout.findViewById(app.alansari.R.id.toolbar);
+        toolbarConfirm.setNavigationIcon(app.alansari.R.drawable.ic_back_arrow);
         toolbarConfirm.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -215,7 +221,7 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
             beneficiaryDynamicFieldsCeList = (ArrayList<ProfileDetails.TEMPLATELISTItem.TEMPALTEDETAILSItem>) dataObject.getTEMPALTEDETAILS();
             Log.e("alchjbchjbs", "" + beneficiaryDynamicFieldsCeList);
             Log.e("alchjbchjbs22", "" + dataObject.getTEMPALTEDETAILS());
-            ((TextView) findViewById(R.id.title_info)).setText(dataObject.getCATEGORYDESC());
+            ((TextView) findViewById(app.alansari.R.id.title_info)).setText(dataObject.getCATEGORYDESC());
 
             if (dataObject != null) {
                 updateDynamicFields();
@@ -229,45 +235,45 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
     private void init() {
         picLayout = (RelativeLayout) findViewById(R.id.profile_pic_layout);
         profilePic = (CircleImageView) findViewById(R.id.beneficiary_pic);
-        multiStateView = (MultiStateView) findViewById(R.id.multiStateView);
-        multiStateView.findViewById(R.id.empty_button).setOnClickListener(this);
-        multiStateView.findViewById(R.id.error_button).setOnClickListener(this);
-        tvEmpty = ((TextView) multiStateView.findViewById(R.id.empty_textView));
-        tvError = ((TextView) multiStateView.findViewById(R.id.error_textView));
+        multiStateView = (MultiStateView) findViewById(app.alansari.R.id.multiStateView);
+        multiStateView.findViewById(app.alansari.R.id.empty_button).setOnClickListener(this);
+        multiStateView.findViewById(app.alansari.R.id.error_button).setOnClickListener(this);
+        tvEmpty = ((TextView) multiStateView.findViewById(app.alansari.R.id.empty_textView));
+        tvError = ((TextView) multiStateView.findViewById(app.alansari.R.id.error_textView));
 
-        topInfoLayout = findViewById(R.id.top_info_layout);
-        accountExpandLayout = (LinearLayout) findViewById(R.id.account_info_layout);
+        topInfoLayout = findViewById(app.alansari.R.id.top_info_layout);
+        accountExpandLayout = (LinearLayout) findViewById(app.alansari.R.id.account_info_layout);
 
-        ivAccountLoading = (ImageView) findViewById(R.id.account_loading_image);
-        ivAccountArrow = (ImageView) findViewById(R.id.account_arrow_image);
-        btnNext = (Button) findViewById(R.id.next_btn);
-        findViewById(R.id.account_title_layout).setOnClickListener(this);
+        ivAccountLoading = (ImageView) findViewById(app.alansari.R.id.account_loading_image);
+        ivAccountArrow = (ImageView) findViewById(app.alansari.R.id.account_arrow_image);
+        btnNext = (Button) findViewById(app.alansari.R.id.next_btn);
+        findViewById(app.alansari.R.id.account_title_layout).setOnClickListener(this);
         btnNext.setOnClickListener(this);
         picLayout.setOnClickListener(this);
         picLayout.setVisibility(View.GONE);
 
         //Confirm Layout
-        confirmLayout = findViewById(R.id.add_beneficiary_confirm_layout);
-        confirmLayoutBg = findViewById(R.id.add_beneficiary_confirm_bg);
+        confirmLayout = findViewById(app.alansari.R.id.add_beneficiary_confirm_layout);
+        confirmLayoutBg = findViewById(app.alansari.R.id.add_beneficiary_confirm_bg);
 
 
-        confirmDynamicLayout = (LinearLayout) findViewById(R.id.confirm_dynamic_layout);
-        tvBankName = (TextView) findViewById(R.id.bank_name_c);
-        tvCountryName = (TextView) findViewById(R.id.country_name_c);
+        confirmDynamicLayout = (LinearLayout) findViewById(app.alansari.R.id.confirm_dynamic_layout);
+        tvBankName = (TextView) findViewById(app.alansari.R.id.bank_name_c);
+        tvCountryName = (TextView) findViewById(app.alansari.R.id.country_name_c);
 
 
-        btnSave = (CircularProgressButton) findViewById(R.id.dialog_btn);
+        btnSave = (CircularProgressButton) findViewById(app.alansari.R.id.dialog_btn);
         btnSave.setIndeterminateProgressMode(true);
-        btnSave.setStrokeColor(ContextCompat.getColor(context, R.color.colorWhite));
+        btnSave.setStrokeColor(ContextCompat.getColor(context, app.alansari.R.color.colorWhite));
         btnSave.setOnClickListener(this);
 
-        slideUpAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide_up_animation);
-        slideDownAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide_down_animation);
+        slideUpAnimation = AnimationUtils.loadAnimation(getApplicationContext(), app.alansari.R.anim.slide_up_animation);
+        slideDownAnimation = AnimationUtils.loadAnimation(getApplicationContext(), app.alansari.R.anim.slide_down_animation);
 
-        imagePickDialog = new Dialog(context, R.style.CustomDialogThemeLightBg);
+        imagePickDialog = new Dialog(context, app.alansari.R.style.CustomDialogThemeLightBg);
         imagePickDialog.setCanceledOnTouchOutside(true);
         imagePickDialog.setContentView(R.layout.image_pick_dialog);
-        imagePickDialog.findViewById(R.id.camera).setOnClickListener(new View.OnClickListener() {
+        imagePickDialog.findViewById(app.alansari.R.id.camera).setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View v) {
@@ -276,7 +282,7 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
             }
         });
 
-        imagePickDialog.findViewById(R.id.gallery).setOnClickListener(new View.OnClickListener() {
+        imagePickDialog.findViewById(app.alansari.R.id.gallery).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 imagePickDialog.dismiss();
@@ -284,7 +290,7 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
             }
         });
 
-        imagePickDialog.findViewById(R.id.cancel).setOnClickListener(new View.OnClickListener() {
+        imagePickDialog.findViewById(app.alansari.R.id.cancel).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 imagePickDialog.dismiss();
@@ -328,15 +334,15 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
     @RequiresApi(api = Build.VERSION_CODES.M)
     private void checkCameraPermission() {
         if (ContextCompat.checkSelfPermission(MyProfileDetails.this,
-                Manifest.permission.READ_EXTERNAL_STORAGE) + ContextCompat
+                android.Manifest.permission.READ_EXTERNAL_STORAGE) + ContextCompat
                 .checkSelfPermission(MyProfileDetails.this,
-                        Manifest.permission.CAMERA)
+                        android.Manifest.permission.CAMERA)
                 != PackageManager.PERMISSION_GRANTED) {
 
             if (ActivityCompat.shouldShowRequestPermissionRationale
-                    (MyProfileDetails.this, Manifest.permission.READ_EXTERNAL_STORAGE) ||
+                    (MyProfileDetails.this, android.Manifest.permission.READ_EXTERNAL_STORAGE) ||
                     ActivityCompat.shouldShowRequestPermissionRationale
-                            (MyProfileDetails.this, Manifest.permission.CAMERA)) {
+                            (MyProfileDetails.this, android.Manifest.permission.CAMERA)) {
 
                 Snackbar.make(MyProfileDetails.this.findViewById(android.R.id.content),
                         "Please Grant Permissions to upload profile photo",
@@ -345,15 +351,15 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
                             @Override
                             public void onClick(View v) {
                                 requestPermissions(
-                                        new String[]{Manifest.permission
-                                                .READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA},
+                                        new String[]{android.Manifest.permission
+                                                .READ_EXTERNAL_STORAGE, android.Manifest.permission.CAMERA},
                                         PERMISSIONS_MULTIPLE_REQUEST);
                             }
                         }).show();
             } else {
                 requestPermissions(
-                        new String[]{Manifest.permission
-                                .READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA},
+                        new String[]{android.Manifest.permission
+                                .READ_EXTERNAL_STORAGE, android.Manifest.permission.CAMERA},
                         PERMISSIONS_MULTIPLE_REQUEST);
             }
         } else {
@@ -393,9 +399,9 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
         }
 
         if (specialCharacterValidation && accountLayoutStatus) {
-            ivAccountLoading.setImageResource(R.drawable.ic_success);
+            ivAccountLoading.setImageResource(app.alansari.R.drawable.ic_success);
         } else {
-            ivAccountLoading.setImageResource(R.drawable.ic_loading);
+            ivAccountLoading.setImageResource(app.alansari.R.drawable.ic_loading);
         }
 
         if (specialCharacterValidation && accountLayoutStatus)
@@ -407,8 +413,8 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
     }
 
     private void checkGalleryPermission() {
-        if (ActivityCompat.checkSelfPermission(MyProfileDetails.this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(MyProfileDetails.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, PICK_FROM_GALLERY);
+        if (ActivityCompat.checkSelfPermission(MyProfileDetails.this, android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(MyProfileDetails.this, new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE, android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, PICK_FROM_GALLERY);
         } else {
             pickPhotos();
         }
@@ -442,96 +448,91 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
                 break;
             case app.alansari.R.id.account_title_layout:
                 if (accountExpandLayout.getVisibility() == View.VISIBLE) {
-                    ivAccountArrow.setImageResource(R.drawable.ic_down_arrow);
+                    ivAccountArrow.setImageResource(app.alansari.R.drawable.ic_down_arrow);
                     accountExpandLayout.setVisibility(View.GONE);
                 } else {
                     accountExpandLayout.setVisibility(View.VISIBLE);
-                    ivAccountArrow.setImageResource(R.drawable.ic_up_arrow);
+                    ivAccountArrow.setImageResource(app.alansari.R.drawable.ic_up_arrow);
                 }
                 checkLayoutFilledStatus(null, null, false);
                 break;
             case app.alansari.R.id.input_layout:
             case app.alansari.R.id.edit_text:
-
                 if (view.getTag() != null) {
-                   final String  fieldId = ((ProfileDetails.TEMPLATELISTItem.TEMPALTEDETAILSItem) view.getTag()).getFIELDID();
+                    final String fieldId = ((ProfileDetails.TEMPLATELISTItem.TEMPALTEDETAILSItem) view.getTag()).getFIELDID();
                     String fieldEditCheck = ((ProfileDetails.TEMPLATELISTItem.TEMPALTEDETAILSItem) view.getTag()).getEDITALLOWED();
                     String title = ((ProfileDetails.TEMPLATELISTItem.TEMPALTEDETAILSItem) view.getTag()).getFIELD();
-                   // String fieldInputType = ((ProfileDetails.TEMPLATELISTItem.TEMPALTEDETAILSItem) view.getTag()).getINPUTTYPE();
-                    //beneficiaryDynamicFieldsCeList.get((ProfileDetails.TEMPLATELISTItem.TEMPALTEDETAILSItem) view.getTag()).getINPUTTYPE();
+                    if (fieldEditCheck.equalsIgnoreCase("Y")) {
+                        if (fieldId.equalsIgnoreCase(("1")) || fieldId.equalsIgnoreCase("5") || fieldId.equalsIgnoreCase("9")) {
+                            intent = new Intent(context, SelectCountryFlagActivity.class);
+                            intent.putExtra("hideFirstItem", true);
+                            intent.putExtra(Constants.ITEM_TYPE, Constants.SELECT_ITEM_COUNTRY);
+                            intent.putExtra(Constants.IS_FOR_NATIONANLITY, true);
+                            startActivityForResult(intent, Integer.valueOf(((ProfileDetails.TEMPLATELISTItem.TEMPALTEDETAILSItem) view.getTag()).getFIELDID()));
+                        } else if (fieldId.equalsIgnoreCase("3")) {
+                            final Calendar c = Calendar.getInstance();
+                            mYear = c.get(Calendar.YEAR);
+                            mMonth = c.get(Calendar.MONTH);
+                            mDay = c.get(Calendar.DAY_OF_MONTH);
+                            DatePickerDialog datePickerDialog = new DatePickerDialog(this, AlertDialog.THEME_HOLO_LIGHT,
+                                    new DatePickerDialog.OnDateSetListener() {
 
-                    //if (fieldInputType.equalsIgnoreCase("D")) { // Siddu
-                        if (fieldEditCheck.equalsIgnoreCase("Y")) {
-                            if (fieldId.equalsIgnoreCase(("1")) || fieldId.equalsIgnoreCase("5") || fieldId.equalsIgnoreCase("9")) {
-                                intent = new Intent(context, SelectCountryFlagActivity.class);
-                                intent.putExtra("hideFirstItem", true);
-                                intent.putExtra(Constants.ITEM_TYPE, Constants.SELECT_ITEM_COUNTRY);
-                                intent.putExtra(Constants.IS_FOR_NATIONANLITY, true);
-                                startActivityForResult(intent, Integer.valueOf(((ProfileDetails.TEMPLATELISTItem.TEMPALTEDETAILSItem) view.getTag()).getFIELDID()));
-                            } else if (fieldId.equalsIgnoreCase("3")) {
-                                final Calendar c = Calendar.getInstance();
-                                mYear = c.get(Calendar.YEAR);
-                                mMonth = c.get(Calendar.MONTH);
-                                mDay = c.get(Calendar.DAY_OF_MONTH);
-                                DatePickerDialog datePickerDialog = new DatePickerDialog(this, AlertDialog.THEME_HOLO_LIGHT,
-                                        new DatePickerDialog.OnDateSetListener() {
+                                        @Override
+                                        public void onDateSet(DatePicker view, int year,
+                                                              int monthOfYear, int dayOfMonth) {
 
-                                            @Override
-                                            public void onDateSet(DatePicker view, int year,
-                                                                  int monthOfYear, int dayOfMonth) {
-
-                                                setDataToEditText(getPositionFromId(fieldId), ((CommonUtils.getMonthName(monthOfYear + 1)) + " " + dayOfMonth + ", " + year), fieldId);
-                                                dynamicInputLayout[getPositionFromId(fieldId)].setHint(beneficiaryDynamicFieldsCeList.get(getPositionFromId(fieldId)).getFIELD());
+                                            setDataToEditText(getPositionFromId(fieldId), ((CommonUtils.getMonthName(monthOfYear + 1)) + " " + dayOfMonth + ", " + year), fieldId);
+                                            dynamicInputLayout[getPositionFromId(fieldId)].setHint(beneficiaryDynamicFieldsCeList.get(getPositionFromId(fieldId)).getFIELD());
 
 
-                                            }
-                                        }, mYear, mMonth, mDay);
-                                datePickerDialog.setTitle(beneficiaryDynamicFieldsCeList.get(getPositionFromId(fieldId)).getFIELDVALUE());
-                                datePickerDialog.show();
-                                break;
-                            } else if (fieldId.equalsIgnoreCase("2")) {
-                                //GenderSelection currentView = ((GenderSelection) view.getTag());
-                                mArrayList = new ArrayList<>();
-                                mArrayList.add(new GenderSelection("Male", 0));
-                                mArrayList.add(new GenderSelection("Female", 1));
-                                intent = new Intent(context, SelectItemActivity.class);
-                                intent.putExtra(Constants.ITEM_TYPE, Constants.SELECT_ITEM_ADDITIONAL_FIELD_GENDER);
-                                intent.putExtra(Constants.ID, Integer.valueOf(fieldId));
-                                intent.putExtra(Constants.TITLE, title);
-                                intent.putParcelableArrayListExtra(Constants.LIST, mArrayList);
-                                startActivityForResult(intent, 2);
-                            } else if (fieldId.equalsIgnoreCase("6")) {
+                                        }
+                                    }, mYear, mMonth, mDay);
+                            datePickerDialog.setTitle(beneficiaryDynamicFieldsCeList.get(getPositionFromId(fieldId)).getFIELDVALUE());
+                            datePickerDialog.show();
+                            break;
+                        } else if (fieldId.equalsIgnoreCase("2")) {
+                            //GenderSelection currentView = ((GenderSelection) view.getTag());
+                            mArrayList = new ArrayList<>();
+                            mArrayList.add(new GenderSelection("Male", 0));
+                            mArrayList.add(new GenderSelection("Female", 1));
+                            intent = new Intent(context, SelectItemActivity.class);
+                            intent.putExtra(Constants.ITEM_TYPE, Constants.SELECT_ITEM_ADDITIONAL_FIELD_GENDER);
+                            intent.putExtra(Constants.ID, Integer.valueOf(fieldId));
+                            intent.putExtra(Constants.TITLE, title);
+                            intent.putParcelableArrayListExtra(Constants.LIST, mArrayList);
+                            startActivityForResult(intent, 2);
+                        } else if (fieldId.equalsIgnoreCase("6")) {
                            /* intent = new Intent(context, SelectItemActivity.class);
                             intent.putExtra(Constants.ITEM_TYPE, Constants.SELECT_PROFESIONAL_AND_DESIGANATION);
                             intent.putExtra(Constants.ID, Integer.valueOf(fieldId));
                             intent.putExtra(Constants.TITLE, title);*/
-                                // intent.putParcelableArrayListExtra(Constants.LIST, mArrayList);
-                                Intent i = new Intent(context, SelectItemActivity.class);
-                                i.putExtra(Constants.ITEM_TYPE, Constants.SELECT_PROFESIONAL_AND_DESIGANATION);
-                                i.putExtra(Constants.ID, fieldId);
-                                i.putExtra(Constants.TITLE, Constants.SERVICE_TYPE);
-                                startActivityForResult(i, 6);
+                            // intent.putParcelableArrayListExtra(Constants.LIST, mArrayList);
+                            Intent i = new Intent(context, SelectItemActivity.class);
+                            i.putExtra(Constants.ITEM_TYPE, Constants.SELECT_PROFESIONAL_AND_DESIGANATION);
+                            i.putExtra(Constants.ID, fieldId);
+                            i.putExtra(Constants.TITLE, Constants.SERVICE_TYPE);
+                            startActivityForResult(i, 6);
 
-                            } else if (fieldId.equalsIgnoreCase("10")) {
-                                Intent i = new Intent(context, SelectItemActivity.class);
-                                i.putExtra(Constants.ITEM_TYPE, Constants.SELECT_COUNTRY_TYPE);
-                                i.putExtra(Constants.ID, fieldId);
-                                i.putExtra(Constants.TITLE, Constants.SERVICE_TYPE);
-                                startActivityForResult(i, 10);
-                            }
-                            overridePendingTransition(R.anim.pump_top_to_up, R.anim.hold);
-
+                        } else if (fieldId.equalsIgnoreCase("10")) {
+                            Intent i = new Intent(context, SelectItemActivity.class);
+                            i.putExtra(Constants.ITEM_TYPE, Constants.SELECT_COUNTRY_TYPE);
+                            i.putExtra(Constants.ID, fieldId);
+                            i.putExtra(Constants.TITLE, Constants.SERVICE_TYPE);
+                            startActivityForResult(i, 10);
                         }
-                    //}
-                 }
+                        overridePendingTransition(app.alansari.R.anim.pump_top_to_up, app.alansari.R.anim.hold);
+
+                    }
+
+                }
                 break;
-            case R.id.next_btn:
+            case app.alansari.R.id.next_btn:
                 validateData();
                 break;
-            case R.id.profile_pic_layout:
+            case app.alansari.R.id.profile_pic_layout:
                 imagePickDialog.show();
                 break;
-            case R.id.dialog_btn:
+            case app.alansari.R.id.dialog_btn:
                 if (btnSave.getProgress() == -1) {
                     btnSave.setProgress(0);
                 } else if (btnSave.getProgress() == 100) {
@@ -567,9 +568,9 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
         try {
             confirmDynamicLayout.removeAllViews();
             for (int i = 0; i < beneficiaryDynamicFieldsCeList.size(); i++) {
-                final View childLayout = LayoutInflater.from(context).inflate(R.layout.add_beneficiary_ce_confirm_dialog_layout, null);
-                TextView label = (TextView) childLayout.findViewById(R.id.label);
-                TextView text = (TextView) childLayout.findViewById(R.id.text);
+                final View childLayout = LayoutInflater.from(context).inflate(app.alansari.R.layout.add_beneficiary_ce_confirm_dialog_layout, null);
+                TextView label = (TextView) childLayout.findViewById(app.alansari.R.id.label);
+                TextView text = (TextView) childLayout.findViewById(app.alansari.R.id.text);
                 label.setText(beneficiaryDynamicFieldsCeList.get(i).getFIELDVALUE());
                 text.setText(dynamicEditText[i].getText().toString().trim());
                 confirmDynamicLayout.addView(childLayout);
@@ -654,16 +655,15 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
             return;
         }
         try {
-
             dynamicEditText = new EditText[beneficiaryDynamicFieldsCeList.size()];
             dynamicInputLayout = new TextInputLayout[beneficiaryDynamicFieldsCeList.size()];
             accountExpandLayout.removeAllViews();
             for (int i = 0; i < beneficiaryDynamicFieldsCeList.size(); i++) {
-                final View childLayout = LayoutInflater.from(context).inflate(R.layout.add_beneficiary_dynamic_view, null);
-                TextInputLayout inputLayout = (TextInputLayout) childLayout.findViewById(R.id.input_layout);
-                final EditText editText = (EditText) childLayout.findViewById(R.id.edit_text);
+                final View childLayout = LayoutInflater.from(context).inflate(app.alansari.R.layout.add_beneficiary_dynamic_view, null);
+                TextInputLayout inputLayout = (TextInputLayout) childLayout.findViewById(app.alansari.R.id.input_layout);
+                final EditText editText = (EditText) childLayout.findViewById(app.alansari.R.id.edit_text);
                 if (i == beneficiaryDynamicFieldsCeList.size() - 1)
-                    childLayout.findViewById(R.id.divider).setVisibility(View.INVISIBLE);
+                    childLayout.findViewById(app.alansari.R.id.divider).setVisibility(View.INVISIBLE);
 
                /* if (beneficiaryDynamicFieldsCeList.get(i).getMinLength() == null || Integer.valueOf(beneficiaryDynamicFieldsCeList.get(i).getMinLength()) == 0) {
                     beneficiaryDynamicFieldsCeList.get(i).setMinLength("1");
@@ -701,7 +701,7 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
                     editText.setHint(beneficiaryDynamicFieldsCeList.get(i).getFIELD());
                     inputLayout.setHint(beneficiaryDynamicFieldsCeList.get(i).getFIELD());
                     if(beneficiaryDynamicFieldsCeList.get(i).getFIELDVALUE()!=null)
-                    editText.setText(beneficiaryDynamicFieldsCeList.get(i).getFIELDVALUE());
+                        editText.setText(beneficiaryDynamicFieldsCeList.get(i).getFIELDVALUE());
                     else
                         editText.setText("");
                     editText.setTag(beneficiaryDynamicFieldsCeList.get(i));
@@ -725,107 +725,6 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
     }
 
     private void setFieldType(final EditText editText, final TextInputLayout inputLayout, final ProfileDetails.TEMPLATELISTItem.TEMPALTEDETAILSItem currentView) {
-        if (currentView.getINPUTTYPE().equalsIgnoreCase("D")) {
-            editText.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS | InputType.TYPE_NULL);
-            editText.setFocusable(false);
-            editText.setClickable(false);
-            editText.setFocusableInTouchMode(false);
-            editText.setOnClickListener(this);
-            inputLayout.setHintAnimationEnabled(false);
-        } else if (currentView.getINPUTTYPE().equalsIgnoreCase("T")) {
-            String fieldEditCheck = currentView.getEDITALLOWED();
-            if (fieldEditCheck.equalsIgnoreCase("Y")) {
-           /* if (currentView.getINPUTTYPE() != null && currentView.getINPUTTYPE().equalsIgnoreCase("T")) {
-                editText.setInputType(InputType.TYPE_CLASS_NUMBER);
-            } else {
-                editText.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS | InputType.TYPE_CLASS_TEXT);
-            }*/
-                editText.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS | InputType.TYPE_CLASS_TEXT);
-                editText.setFocusable(true);
-                editText.setClickable(true);
-                editText.setFocusableInTouchMode(true);
-                editText.setOnClickListener(null);
-                if (getEditTextLength(editText) != 0)
-                    setTextLimit(editText, getEditTextLength(editText));
-            }
-        }
-        editText.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                validateSingleField(editText, inputLayout);
-            }
-        });
-    }
-
-
-    private void setFieldTypeOLD(final EditText editText, final TextInputLayout inputLayout, final ProfileDetails.TEMPLATELISTItem.TEMPALTEDETAILSItem currentView) {
-        /*if (currentView.getINPUTTYPE().equalsIgnoreCase("D")) {
-            String fieldEditCheck = currentView.getEDITALLOWED();
-            if (fieldEditCheck.equalsIgnoreCase("Y")){
-               Toast.makeText(MyProfileDetails.this, "Drop down", Toast.LENGTH_SHORT).show();
-
-            }else{
-
-            }
-
-
-
-        }*/ if (currentView.getINPUTTYPE().equalsIgnoreCase("D")) {
-            editText.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS | InputType.TYPE_NULL);
-            editText.setFocusable(false);
-            editText.setClickable(false);
-            editText.setFocusableInTouchMode(false);
-            editText.setOnClickListener(this);
-            inputLayout.setHintAnimationEnabled(false);
-        } else if (currentView.getINPUTTYPE().equalsIgnoreCase("T")) {
-            String fieldEditCheck = currentView.getEDITALLOWED();
-            if (fieldEditCheck.equalsIgnoreCase("Y")) {
-           /* if (currentView.getINPUTTYPE() != null && currentView.getINPUTTYPE().equalsIgnoreCase("T")) {
-                editText.setInputType(InputType.TYPE_CLASS_NUMBER);
-            } else {
-                editText.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS | InputType.TYPE_CLASS_TEXT);
-            }*/
-                editText.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS | InputType.TYPE_CLASS_TEXT);
-                editText.setFocusable(true);
-                editText.setClickable(true);
-                editText.setFocusableInTouchMode(true);
-                editText.setOnClickListener(null);
-                if (getEditTextLength(editText) != 0)
-                    setTextLimit(editText, getEditTextLength(editText));
-            }else{
-                editText.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS | InputType.TYPE_NULL);
-                editText.setFocusable(false);
-                editText.setClickable(false);
-                editText.setFocusableInTouchMode(false);
-                editText.setOnClickListener(this);
-                inputLayout.setHintAnimationEnabled(false);
-            }
-        }
-        editText.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                validateSingleField(editText, inputLayout);
-            }
-        });
-    }
-
-    private void setFieldTypeOld(final EditText editText, final TextInputLayout inputLayout, final ProfileDetails.TEMPLATELISTItem.TEMPALTEDETAILSItem currentView) {
         if (currentView.getINPUTTYPE().equalsIgnoreCase("D")) {
             editText.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS | InputType.TYPE_NULL);
             editText.setFocusable(false);
@@ -904,9 +803,9 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
                 JsonObjectRequest jsonObjReq = new CallAddr().executeApi(jsonObject, Constants.VALIDATE_MY_PROFILE_PROFILE_URL, CommonUtils.SERVICE_TYPE.VALIDATE_BENEFICIARY_CE, Request.Method.PUT, this);
                 AppController.getInstance().getRequestQueue().cancelAll(CommonUtils.SERVICE_TYPE.VALIDATE_BENEFICIARY_CE.toString());
                 AppController.getInstance().addToRequestQueue(jsonObjReq, CommonUtils.SERVICE_TYPE.VALIDATE_BENEFICIARY_CE.toString());
-                CommonUtils.showLoading(context, getString(R.string.please_wait), CommonUtils.SERVICE_TYPE.VALIDATE_BENEFICIARY_CE.toString(), false);
+                CommonUtils.showLoading(context, getString(app.alansari.R.string.please_wait), CommonUtils.SERVICE_TYPE.VALIDATE_BENEFICIARY_CE.toString(), false);
             } else {
-                Toast.makeText(context, getString(R.string.error_no_internet), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, getString(app.alansari.R.string.error_no_internet), Toast.LENGTH_SHORT).show();
             }
             //Toast.makeText(context, "Under Development", Toast.LENGTH_SHORT).show();
         } catch (Exception ex) {
@@ -937,16 +836,16 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
                             btnSave.setProgress(0);
                             submitData();
                         } else if (response.getString(Constants.STATUS_MSG).equals(Constants.OTP_FAILURE)) {
-                            Toast.makeText(context, getString(R.string.error_unable_to_process), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, getString(app.alansari.R.string.error_unable_to_process), Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(context, getString(R.string.error_unable_to_process), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, getString(app.alansari.R.string.error_unable_to_process), Toast.LENGTH_SHORT).show();
                         }
                     } catch (Exception ex) {
-                        Toast.makeText(context, getString(R.string.error_something_wrong), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, getString(app.alansari.R.string.error_something_wrong), Toast.LENGTH_SHORT).show();
                         ex.printStackTrace();
                     }
                 } else {
-                    Toast.makeText(context, getString(R.string.error_unable_to_process), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, getString(app.alansari.R.string.error_unable_to_process), Toast.LENGTH_SHORT).show();
                 }
                 break;
             case VALIDATE_BENEFICIARY_CE:
@@ -994,7 +893,7 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
 
     private void onError() {
         btnSave.setProgress(-1);
-        Toast.makeText(context, getString(R.string.error_something_wrong), Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, getString(app.alansari.R.string.error_something_wrong), Toast.LENGTH_SHORT).show();
     }
 
     private void snackbar(String message) {
@@ -1019,13 +918,13 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
         snackbar.show();*/
 
 
-        alertShowDialog = new Dialog(this, R.style.CustomDialogThemeLightBg);
+        alertShowDialog = new Dialog(this, app.alansari.R.style.CustomDialogThemeLightBg);
         alertShowDialog.setCanceledOnTouchOutside(false);
-        alertShowDialog.setContentView(R.layout.generic_single_btn_dialog);
-        ((TextView) alertShowDialog.findViewById(R.id.dialog_title)).setVisibility(View.GONE);
-        ((TextView) alertShowDialog.findViewById(R.id.dialog_text)).setText(message);
+        alertShowDialog.setContentView(app.alansari.R.layout.generic_single_btn_dialog);
+        ((TextView) alertShowDialog.findViewById(app.alansari.R.id.dialog_title)).setVisibility(View.GONE);
+        ((TextView) alertShowDialog.findViewById(app.alansari.R.id.dialog_text)).setText(message);
         ((TextView) alertShowDialog.findViewById(R.id.dialog_btn)).setText("OK");
-        alertShowDialog.findViewById(R.id.dialog_btn).setOnClickListener(new View.OnClickListener() {
+        alertShowDialog.findViewById(app.alansari.R.id.dialog_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -1233,8 +1132,8 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
                                     @Override
                                     public void onClick(View v) {
                                         requestPermissions(
-                                                new String[]{Manifest.permission
-                                                        .READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA},
+                                                new String[]{android.Manifest.permission
+                                                        .READ_EXTERNAL_STORAGE, android.Manifest.permission.CAMERA},
                                                 PERMISSIONS_MULTIPLE_REQUEST);
                                     }
                                 }).show();
@@ -1253,7 +1152,7 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
                                 @RequiresApi(api = Build.VERSION_CODES.M)
                                 @Override
                                 public void onClick(View v) {
-                                    ActivityCompat.requestPermissions(MyProfileDetails.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, PICK_FROM_GALLERY);
+                                    ActivityCompat.requestPermissions(MyProfileDetails.this, new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, PICK_FROM_GALLERY);
                                 }
                             }).show();
                 }
@@ -1297,10 +1196,10 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
                     JsonObjectRequest jsonObjReq = new CallAddr().executeApi(jsonObject, Constants.SUBMIT_MY_PROFILE_PROFILE_URL, CommonUtils.SERVICE_TYPE.ADD_BENEFICIARY_CE, Request.Method.PUT, this);
                     AppController.getInstance().getRequestQueue().cancelAll(CommonUtils.SERVICE_TYPE.ADD_BENEFICIARY_CE.toString());
                     AppController.getInstance().addToRequestQueue(jsonObjReq, CommonUtils.SERVICE_TYPE.ADD_BENEFICIARY_CE.toString());
-                    CommonUtils.showLoading(context, getString(R.string.please_wait), CommonUtils.SERVICE_TYPE.ADD_BENEFICIARY_CE.toString(), false);
+                    CommonUtils.showLoading(context, getString(app.alansari.R.string.please_wait), CommonUtils.SERVICE_TYPE.ADD_BENEFICIARY_CE.toString(), false);
                 }
             } else {
-                Toast.makeText(context, getString(R.string.error_no_internet), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, getString(app.alansari.R.string.error_no_internet), Toast.LENGTH_SHORT).show();
             }
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -1317,20 +1216,20 @@ public class MyProfileDetails extends AppCompatActivity implements View.OnClickL
 
     private void setDataToEditText(int position, String text, String code) {
         dynamicEditText[position].setText(text);
-        dynamicEditText[position].setTag(R.id.VIEW_TAG_CODE_ID, code);
+        dynamicEditText[position].setTag(app.alansari.R.id.VIEW_TAG_CODE_ID, code);
 
     }
 
     private void setDataToEditTextCountry(int position, String text, String code) {
         dynamicEditText[position].setText(text.replaceAll("[^a-zA-Z]+", ""));
-        dynamicEditText[position].setTag(R.id.VIEW_TAG_CODE_ID, code);
+        dynamicEditText[position].setTag(app.alansari.R.id.VIEW_TAG_CODE_ID, code);
         Log.e("wcscbhnbc", "" + text);
         beneficiaryDynamicFieldsCeList.get(position).setFIELDVALUE(text);
     }
 
     private void setDataToEditText(int position, String text, int code) {
         dynamicEditText[position].setText(text);
-        dynamicEditText[position].setTag(R.id.VIEW_TAG_CODE_ID, code);
+        dynamicEditText[position].setTag(app.alansari.R.id.VIEW_TAG_CODE_ID, code);
     }
 
     @Override

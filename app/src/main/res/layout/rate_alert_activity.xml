@@ -189,7 +189,7 @@
                     android:textColor="@color/color1E6AB3"
                     android:textColorHint="@color/color1E6AB3"
                     android:textSize="@dimen/dimens_26sp" />
-            </androidx.cardview.widget.CardView >
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:id="@+id/notification_requires_label"

@@ -42,7 +42,7 @@
                     <TextView
                         android:id="@+id/receiving_country"
                         style="@style/ReceivingCountryTextView"
-                        android:paddingBottom="@dimen/dimens_2"/>
+                        android:paddingBottom="@dimen/dimens_2" />
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/flag"
@@ -61,19 +61,19 @@
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/fab"
                     style="@style/addBeneficiaryButtonNew"
-                    android:layout_centerInParent="true"
                     android:layout_below="@+id/toolbar_layout"
+                    android:layout_centerInParent="true"
                     app:srcCompat="@drawable/ic_add_new" />
 
 
             </RelativeLayout>
 
             <androidx.core.widget.NestedScrollView
-                android:layout_marginTop="@dimen/minus_dimens_10"
                 android:id="@+id/nested_scrollview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/country_layout"
+                android:layout_marginTop="@dimen/minus_dimens_10"
                 android:clipToPadding="false"
                 android:fillViewport="true"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
@@ -517,11 +517,11 @@
     </ScrollView>
 
     <LinearLayout
-        android:layout_marginTop="@dimen/dimens_20"
         android:id="@+id/bottom_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dimens_20"
         android:background="@color/colorPrimary"
         android:fitsSystemWindows="true"
         android:minHeight="@dimen/dimens_45"

@@ -4,15 +4,14 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -103,8 +102,8 @@ public class PaymentModeActivity extends AppCompatActivity implements View.OnCli
     private ArrayList<PaymentModeData> paymentModeData;
     private String charge;
     private String diagAedAmount, diagCharges, diagTotalPay;
-
     private FirebaseAnalytics mFirebaseAnalytics;
+
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -314,8 +313,6 @@ public class PaymentModeActivity extends AppCompatActivity implements View.OnCli
                 ((TextView) pendingTransactionDialog.findViewById(app.alansari.R.id.dialog_title)).setText(getString(app.alansari.R.string.pm_pay_at_branch_dialog_title));
                 ((TextView) pendingTransactionDialog.findViewById(app.alansari.R.id.dialog_text)).setText(getString(app.alansari.R.string.pm_pay_at_branch_dialog_text));
                 pendingTransactionDialog.findViewById(app.alansari.R.id.dialog_btn).setOnClickListener(new View.OnClickListener() {
-                    //Siddu 123
-
                     @Override
                     public void onClick(View v) {
                         if (isWu.equalsIgnoreCase("Y")) {
@@ -571,12 +568,9 @@ public class PaymentModeActivity extends AppCompatActivity implements View.OnCli
                                     txnDetailsData = CommonUtils.getTxnDetailsData(txnDetailsCeCashPayout);
                                 }
                                 if (txnDetailsData != null && txnDetailsData.size() > 0) {
+                                    mFirebaseAnalytics.logEvent("Remittance_PayAtBranch_Complete", null);
+                                    Log.i("Remit_PayAtBranch_Comp", "Success in Remittance_PayAtBranch_Complete ");
 
-                                    //Siddu 123
-
-                                   /* mFirebaseAnalytics.logEvent("WC_PayAtBranch_Complete", null);
-                                    Log.i("WC_PayAtBranch_Complete", "Success in PayAtBranch_Complete ");
-                                    Toast.makeText(this, "1111", Toast.LENGTH_SHORT).show();*/
                                     intent = new Intent(context, TransactionDetailsActivity.class);
                                     intent.putExtra(Constants.SOURCE, Constants.SOURCE_PAYMENT_MODE);
                                     intent.putExtra(Constants.SOURCE_TYPE, Constants.TYPE_SEND_MONEY);
@@ -617,9 +611,7 @@ public class PaymentModeActivity extends AppCompatActivity implements View.OnCli
                                 }.getType());
                                 ArrayList<TxnDetailsData> txnDetailsData = CommonUtils.getTxnDetailsDataFromCreditCard(txnDetailsCreditCardData);
                                 if (txnDetailsData != null && txnDetailsData.size() > 0) {
-                                   /* mFirebaseAnalytics.logEvent("WC_PayAtBranch_Complete", null);
-                                    Log.i("WC_PayAtBranch_2222", "Success in PayAtBranch_Complete ");
-                                    Toast.makeText(this, "222", Toast.LENGTH_SHORT).show();*/
+
                                     intent = new Intent(context, TransactionDetailsActivity.class);
                                     intent.putExtra(Constants.SOURCE, Constants.SOURCE_PAYMENT_MODE);
                                     intent.putExtra(Constants.SOURCE_TYPE, Constants.TYPE_CREDIT_CARD);
@@ -684,11 +676,6 @@ public class PaymentModeActivity extends AppCompatActivity implements View.OnCli
                                 ArrayList<TxnDetailsData> txnDetailsData = (ArrayList<TxnDetailsData>) new Gson().fromJson(response.getJSONArray(Constants.RESULT).toString(), new TypeToken<ArrayList<TxnDetailsData>>() {
                                 }.getType());
                                 if (txnDetailsData != null && txnDetailsData.size() > 0) {
-
-                                   /* mFirebaseAnalytics.logEvent("WC_PayAtBranch_Complete", null);
-                                    Log.i("WC_PayAtBranch_3333", "Success in PayAtBranch_Complete ");
-                                    Toast.makeText(this, "333", Toast.LENGTH_SHORT).show();*/
-
                                     intent = new Intent(context, TransactionDetailsActivity.class);
                                     intent.putExtra(Constants.SOURCE, Constants.SOURCE_PAYMENT_MODE);
                                     intent.putExtra(Constants.SOURCE_TYPE, Constants.TRANSACTION_TYPE_WU);
@@ -727,11 +714,9 @@ public class PaymentModeActivity extends AppCompatActivity implements View.OnCli
                                 //txnDetailsData = CommonUtils.getTxnDetailsDataTravelCard(txnDetailsTravelCardReload);
                                 Log.e("kfcsdjfbcjh", "" + txnDetailsData.size());
                                 if (txnDetailsData != null && txnDetailsData.size() > 0) {
-
-                                    mFirebaseAnalytics.logEvent("WC_PayAtBranch_Complete", null);
+                                    /*mFirebaseAnalytics.logEvent("WC_PayAtBranch_Complete", null);
                                     Log.i("WC_PayAtBranch_Complete", "Success in PayAtBranch_Complete ");
-
-                                    intent = new Intent(context, TransactionTravelCompDetailsActivity.class);
+                                    */intent = new Intent(context, TransactionTravelCompDetailsActivity.class);
                                     intent.putExtra(Constants.OBJECT, txnDetailsData.get(0));
                                     context.startActivity(intent);
                                 } else {

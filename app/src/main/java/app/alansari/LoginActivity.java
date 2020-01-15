@@ -16,10 +16,10 @@ import android.os.Handler;
 import android.security.keystore.KeyGenParameterSpec;
 import android.security.keystore.KeyProperties;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -38,6 +38,7 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.getkeepsafe.taptargetview.TapTargetSequence;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -65,6 +66,7 @@ import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
 import app.alansari.Utils.LogOutTimerUtil;
 import app.alansari.Utils.LogUtils;
+import app.alansari.Utils.TapTargetViewUtils;
 import app.alansari.fcm.FCMUtils;
 import app.alansari.keypadview.BigButtonView;
 import app.alansari.listeners.OnFingerprintAuthentication;
@@ -124,10 +126,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private String mobileNum = null, source, target, statusCode, message;
     private Dialog appVersionDialog;
     private String sessionTime;
-
-
     private FirebaseAnalytics mFirebaseAnalytics;
-
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -761,8 +760,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             intent.putExtra(Constants.USER_STATUS, Constants.UVDN);
                             startActivity(intent);
                         } else if (userData.getStatus().equalsIgnoreCase("CR") || userData.getStatus().equalsIgnoreCase("N") || userData.getStatus().equalsIgnoreCase("B")) {
-
-
                             mFirebaseAnalytics.logEvent("Reference_Number_Screen", null);
                             Log.i("Reference_Number_Screen", "Success in Login Screen");
                             intent = new Intent(context, GoToBranchActivity.class);
@@ -850,11 +847,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
             } else if (requestCode == Constants.UVDN_CODE && resultCode == Activity.RESULT_OK) {
                 mFirebaseAnalytics.logEvent("Reference_Number_Screen", null);
+                Log.i("Reference_Number_Screen", "Success in Login Screen");
                 intent = new Intent(context, GoToBranchActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
             } else if (requestCode == Constants.VOTP_EXCEPTION_4003 && resultCode == Activity.RESULT_OK) {
                 //goToSetPINSETUP(CommonUtils.getUserMobile(), Constants.UVDN_CODE);
+
                 goToSetPINSETUP(CommonUtils.getUserMobile(), Constants.LUVDN_CODE);
 
             }

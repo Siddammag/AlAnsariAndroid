@@ -525,7 +525,7 @@ public class Constants {
     // public static final String BASE_URL_TESTING_DYNAMIC = "http://barshaoffice.dyndns.org:9106/";
 
     //1.
-      public static final String BASE_URL_TESTING_DYNAMIC = "https://mobileapp.eexchange.ae:9106/";
+    public static final String BASE_URL_TESTING_DYNAMIC = "https://mobileapp.eexchange.ae:9106/";
     //public static final String BASE_URL_TESTING_DYNAMIC ="https://mobileapp.eexchange.ae:4002/";
 
 
@@ -535,10 +535,10 @@ public class Constants {
       public static final String COUNTRY_FLAG_IMAGE_BASE_URL_TEST = "http://mobileapp.eexchange.ae:9106/ProjectGatewayImage/Flag/";*/
 
     //2.
-     public static final String COUNTRY_FLAG_IMAGE_BASE_URL_TEST = "https://mobileapp.eexchange.ae:9106/ProjectGatewayImage/Flag/";
-   // public static final String COUNTRY_FLAG_IMAGE_BASE_URL_TEST = BASE_URL_TESTING_DYNAMIC+"ProjectGatewayImage/Flag/";
+    public static final String COUNTRY_FLAG_IMAGE_BASE_URL_TEST = "https://mobileapp.eexchange.ae:9106/ProjectGatewayImage/Flag/";
+    // public static final String COUNTRY_FLAG_IMAGE_BASE_URL_TEST = BASE_URL_TESTING_DYNAMIC+"ProjectGatewayImage/Flag/";
 
-////////////**********************************************************************************//////////Sidduuu
+    ////////////**********************************************************************************//////////Sidduuu
     //public static final String BASE_URL_TESTING = "http://barshaoffice.dyndns.org:9106/ProjectGateway2/api/";
     //public static final String BASE_URL_TESTING = "https://mobileapp.eexchange.ae:9106/ProjectGateway3/api/";
     public static final String BASE_URL_TESTING = "https://mobileapp.eexchange.ae:9106/ProjectGateway2/api/";
@@ -578,10 +578,9 @@ public class Constants {
 ////////////**********************************************************************************//////////Sidduuu
     //------------------------------TESTING_URL-----------------------------------------------------
 
-    //public static final String BASE_URL = BASE_URL_TESTING;
+   /* public static final String BASE_URL = BASE_URL_TESTING;
     //public static final String WU_BASE_URL = WU_BASE_URL_TESTING;
-    //public static final String WU_BASE_URL = BASE_URL_TESTING;
-
+    public static final String WU_BASE_URL = BASE_URL_TESTING;*/
 
 
     public static String BASE_URL = SplashActivity.BASE_URLS;
@@ -840,7 +839,7 @@ public class Constants {
     //public static final String PAYMENT_GATEWAY_BASE_URL_TEST = "http://barshaoffice.dyndns.org:9106/jsp1/";
     // public static final String PAYMENT_GATEWAY_BASE_URL_TEST1 = "http://barshaoffice.dyndns.org:9106/PGSGateway/";
 
-  //3.
+    //3.
     public static final String PAYMENT_GATEWAY_BASE_URL_TEST = "https://mobileapp.eexchange.ae:9106/jsp1/";
     public static final String PAYMENT_GATEWAY_BASE_URL_TEST1 = "https://mobileapp.eexchange.ae:9106/PGSGateway/";
     /*  public static final String PAYMENT_GATEWAY_BASE_URL_TEST = BASE_URL_TESTING_DYNAMIC+ "jsp1/";

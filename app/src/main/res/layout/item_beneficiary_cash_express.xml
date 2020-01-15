@@ -308,6 +308,6 @@
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/svg_btn_delete_ce" />
         </RelativeLayout>
-  <!--  </androidx.cardview.widget.CardView >-->
+  <!--  </androidx.cardview.widget.CardView>-->
 </RelativeLayout>
 </LinearLayout>

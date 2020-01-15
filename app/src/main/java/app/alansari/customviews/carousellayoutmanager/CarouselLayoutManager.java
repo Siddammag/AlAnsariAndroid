@@ -5,7 +5,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Parcel;
 import android.os.Parcelable;
-
 import androidx.annotation.CallSuper;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

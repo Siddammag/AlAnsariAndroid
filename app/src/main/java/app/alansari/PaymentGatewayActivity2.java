@@ -6,10 +6,13 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.http.SslError;
 import android.os.Handler;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.JavascriptInterface;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceError;
@@ -21,12 +24,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.crashlytics.android.Crashlytics;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import org.json.JSONObject;
 
@@ -66,7 +67,7 @@ public class PaymentGatewayActivity2 extends AppCompatActivity implements OnWebS
     private TextView tvEmpty, tvError;
     private MultiStateView multiStateView;
     private String url, successUrl, errorUrl;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -197,6 +198,7 @@ public class PaymentGatewayActivity2 extends AppCompatActivity implements OnWebS
         setContentView(R.layout.activity_payment_gateway2);
 
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         sessionTime = (String) SharedPreferenceManger.getPrefVal(Constants.SESSION_ID, null, SharedPreferenceManger.VALUE_TYPE.STRING);
 
         Toolbar toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
@@ -305,6 +307,8 @@ public class PaymentGatewayActivity2 extends AppCompatActivity implements OnWebS
 
             }
         });
+
+
     }
 
     @Override
@@ -395,6 +399,7 @@ public class PaymentGatewayActivity2 extends AppCompatActivity implements OnWebS
                                 context.startActivity(intent);
                                 finish();
                             } else {
+
                                 Intent intent = new Intent(context, TransactionCompletedActivity.class);
                                 intent.putExtra(Constants.OBJECT, dataObject);
                                 intent.putExtra(Constants.SOURCE_TYPE, getIntent().getExtras().getString(Constants.SOURCE_TYPE));

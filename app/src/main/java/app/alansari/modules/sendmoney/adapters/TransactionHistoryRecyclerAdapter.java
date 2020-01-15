@@ -21,7 +21,9 @@ import app.alansari.Utils.Constants;
 import app.alansari.Utils.OnLoadMoreListener;
 import app.alansari.Utils.Validation;
 import app.alansari.models.TxnDetailsData;
+import app.alansari.models.transactionhistroy.TxnDetailsHistroyTravelCard;
 import app.alansari.modules.sendmoney.TransactionCompletedActivity;
+import app.alansari.newAdditions.Main2Activity;
 import app.alansari.textdrawable.ColorGenerator;
 import app.alansari.textdrawable.TextDrawable;
 

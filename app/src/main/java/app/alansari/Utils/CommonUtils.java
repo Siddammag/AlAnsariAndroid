@@ -30,16 +30,14 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import androidx.annotation.ColorInt;
 import androidx.annotation.DrawableRes;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
-
-import androidx.appcompat.widget.AppCompatImageView;
-import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.Toolbar;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Base64;
@@ -97,6 +95,7 @@ import app.alansari.models.TxnDetailsCeCashPayout;
 import app.alansari.models.TxnDetailsCreditCardData;
 import app.alansari.models.TxnDetailsData;
 import app.alansari.models.UserData;
+import app.alansari.models.transactionhistroy.TxnDetailsHistroyTravelCard;
 import app.alansari.newAdditions.LogoutCalling;
 import app.alansari.preferences.SharedPreferenceManger;
 import de.hdodenhof.circleimageview.CircleImageView;

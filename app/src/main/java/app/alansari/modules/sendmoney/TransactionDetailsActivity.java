@@ -7,16 +7,16 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
-
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
 import android.text.Editable;
 import android.text.Html;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,6 +30,7 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import net.yslibrary.android.keyboardvisibilityevent.KeyboardVisibilityEvent;
 import net.yslibrary.android.keyboardvisibilityevent.KeyboardVisibilityEventListener;
@@ -56,6 +57,7 @@ import app.alansari.newAdditions.LogoutCalling;
 import app.alansari.preferences.SharedPreferenceManger;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
+import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.LOGIN;
 import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.SUBMIT_REFERENCE_NUM_REMITTANCE_API;
 import static app.alansari.Utils.LogOutTimerUtil.stopLogoutTimer;
 
@@ -84,7 +86,7 @@ public class TransactionDetailsActivity extends AppCompatActivity implements Vie
     private ScrollView scrollView;
     private View bottomLayout;
     private Dialog learnToTransferDialog;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -148,6 +150,8 @@ public class TransactionDetailsActivity extends AppCompatActivity implements Vie
         super.onCreate(savedInstanceState);
         setContentView(app.alansari.R.layout.transaction_details_activity);
         context = this;
+
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
         ((TextView) findViewById(app.alansari.R.id.toolbar_title)).setText("Transaction Details");
         setSupportActionBar(toolbar);
@@ -164,8 +168,8 @@ public class TransactionDetailsActivity extends AppCompatActivity implements Vie
             txnDetailsData = getIntent().getParcelableExtra(Constants.OBJECT);
             sourceType = getIntent().getExtras().getString(Constants.SOURCE_TYPE, Constants.TYPE_SEND_MONEY);
             //sourceType = getIntent().getExtras().getString(Constants.SOURCE_TYPE);
-
-            //Log.e("cjijhcfs", "" + sourceType+" "+txnDetailsData.getInvoiceFlag());
+            //Toast.makeText(this, "" + sourceType, Toast.LENGTH_SHORT).show();
+            Log.i("Siddu", "Siddu" + sourceType+" " + txnDetailsData.getInvoiceFlag());
             if (txnDetailsData != null) {
                 setInitialData();
             }
@@ -806,6 +810,7 @@ public class TransactionDetailsActivity extends AppCompatActivity implements Vie
                 if (status == 1) {
                     try {
                         if (response.getString(Constants.STATUS_MSG).equals(Constants.SUCCESS)) {
+
                             intent = new Intent(context, TransactionCompletedActivity.class);
                             intent.putExtra(Constants.OBJECT, txnDetailsData);
                             intent.putExtra(Constants.SOURCE_TYPE, sourceType);

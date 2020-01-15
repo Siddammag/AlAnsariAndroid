@@ -13,18 +13,21 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputLayout;
 
 import androidx.annotation.RequiresApi;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -40,8 +43,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.textfield.TextInputLayout;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -371,7 +372,8 @@ public class AddBeneficiaryCeActivity extends AppCompatActivity implements View.
         } else {
             pickCamera();
         }
-    }    private boolean checkLayoutFilledStatus(EditText[] dynamicEditTextTemp, TextInputLayout[] dynamicInputLayoutTemp, boolean showMessage) {
+    }
+    private boolean checkLayoutFilledStatus(EditText[] dynamicEditTextTemp, TextInputLayout[] dynamicInputLayoutTemp, boolean showMessage) {
         boolean specialCharacterValidation = true;
 
         if (dynamicEditTextTemp == null) {
@@ -690,9 +692,72 @@ public class AddBeneficiaryCeActivity extends AppCompatActivity implements View.
             @Override
             public void afterTextChanged(Editable s) {
                 validateSingleField(editText, inputLayout);
+                //checkingdata(editText, inputLayout);
             }
         });
-    }    private void validateData() {
+    }
+
+    private void checkingdata(EditText editText, TextInputLayout inputLayout) {
+        // Check Min And Max Length
+       /* if(checkingAgain(new EditText[]{editText}, new TextInputLayout[]{inputLayout}, true)){
+            // validateSingleField(editText, inputLayout);
+            Log.e("onchegches", "true");
+        }else{
+            Log.e("onchegches", "false");
+        }*/
+        checkingAgain(new EditText[]{editText}, new TextInputLayout[]{inputLayout}, true);
+    }
+
+    private boolean checkingAgain(EditText[] dynamicEditTextTemp, TextInputLayout[] dynamicInputLayoutTemp, boolean showMessage) {
+        boolean specialCharacterValidation = true;
+        if (dynamicEditTextTemp == null) {
+            dynamicEditTextTemp = this.dynamicEditText;
+            dynamicInputLayoutTemp = this.dynamicInputLayout;
+        }
+
+        // Check Min And Max Length
+        for (int i = 0; i < dynamicEditTextTemp.length; i++) {
+            if (Validation.isValidEditTextValue(dynamicEditTextTemp[i]) && dynamicEditTextTemp[i].getTag() != null && ((BeneficiaryDynamicFieldsCe) dynamicEditTextTemp[i].getTag()).getFieldType() != null && ((BeneficiaryDynamicFieldsCe) dynamicEditTextTemp[i].getTag()).getFieldType().equalsIgnoreCase("T"))
+                if (!Validation.validateSpecialCharacters(dynamicEditTextTemp[i], dynamicInputLayoutTemp[i])) {
+                    specialCharacterValidation = false;
+                    continue;
+                }
+
+
+        if ((getEditTextMinLength(dynamicEditTextTemp[i]) == 0) && ((getEditTextLength(dynamicEditTextTemp[i]) == 0) || dynamicEditTextTemp[i].getText().toString().trim().length() <= getEditTextLength(dynamicEditTextTemp[i]))) {
+            accountLayoutStatus = true;
+            setErrorLayout(showMessage, dynamicEditTextTemp[i], dynamicInputLayoutTemp[i]);
+        } else {
+            accountLayoutStatus = false;
+            setErrorLayout(false, dynamicEditTextTemp[i], dynamicInputLayoutTemp[i]);
+            break;
+        }
+    }
+
+        if ((showMessage && dynamicEditTextTemp.length == 1 && specialCharacterValidation && accountLayoutStatus)) {
+        LogUtils.d("ok", "YEs Return");
+        return true;
+    }
+
+        if (specialCharacterValidation && accountLayoutStatus) {
+        ivAccountLoading.setImageResource(app.alansari.R.drawable.ic_success);
+    } else {
+        ivAccountLoading.setImageResource(app.alansari.R.drawable.ic_loading);
+    }
+
+        if (specialCharacterValidation && accountLayoutStatus)
+            btnNext.setEnabled(true);
+        else
+                btnNext.setEnabled(false);
+
+        return accountLayoutStatus;
+
+
+
+
+
+    }
+    private void validateData() {
         if (NetworkStatus.getInstance(context).isOnline2(context)) {
             addBeneficiaryJsonFormat();
             try {
@@ -1030,7 +1095,8 @@ public class AddBeneficiaryCeActivity extends AppCompatActivity implements View.
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
         }
-    }    private int getEditTextLength(EditText editText) {
+    }
+    private int getEditTextLength(EditText editText) {
         try {
             return Integer.valueOf(((BeneficiaryDynamicFieldsCe) editText.getTag()).getLength());
         } catch (Exception ex) {
@@ -1042,7 +1108,8 @@ public class AddBeneficiaryCeActivity extends AppCompatActivity implements View.
         Intent intent = new Intent("android.intent.action.PICK");
         intent.setType("image/*");
         startActivityForResult(Intent.createChooser(intent, "Select File"), REQUEST_IMAGE_PICK);
-    }    private int getEditTextMinLength(EditText editText) {
+    }
+    private int getEditTextMinLength(EditText editText) {
         try {
             return Integer.valueOf(((BeneficiaryDynamicFieldsCe) editText.getTag()).getMinLength());
         } catch (Exception ex) {

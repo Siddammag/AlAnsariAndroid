@@ -1,10 +1,15 @@
 package app.alansari.newAdditions;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Handler;
 import android.os.Looper;
 import android.provider.Settings;
+import androidx.appcompat.app.AppCompatActivity;
+import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.android.volley.Request;

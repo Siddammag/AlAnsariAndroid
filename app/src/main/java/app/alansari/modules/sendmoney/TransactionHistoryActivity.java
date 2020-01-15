@@ -2,12 +2,12 @@ package app.alansari.modules.sendmoney;
 
 import android.content.Context;
 import android.os.Bundle;
-
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
@@ -18,8 +18,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.google.android.material.tabs.TabLayout;
 
 import app.alansari.NavigationBaseActivity;
 import app.alansari.Utils.CommonUtils;
@@ -35,6 +33,7 @@ import static app.alansari.Utils.LogOutTimerUtil.stopLogoutTimer;
 /**
  * Created by Parveen Dala on 01 November, 2016
  * Fugenx Technologies, Bengaluru
+ * DKG
  * AlAnsari
  */
 public class TransactionHistoryActivity extends NavigationBaseActivity implements  LogOutTimerUtil.LogOutListener  {

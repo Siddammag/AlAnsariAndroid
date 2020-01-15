@@ -3,11 +3,11 @@ package app.alansari.modules.promotions;
 import android.content.Context;
 import android.os.Bundle;
 
-import androidx.appcompat.widget.Toolbar;
+
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
+import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -117,8 +117,8 @@ public class PromotionsActivity extends NavigationBaseActivity implements View.O
                 multiStateView.setViewState(MultiStateView.VIEW_STATE_LOADING);
             }
             JsonObjectRequest jsonObjReq = new CallAddr().executeApi(new APIRequestParams().fetchAds((String)
-                    SharedPreferenceManger.getPrefVal(Constants.USER_ID, null,
-                    SharedPreferenceManger.VALUE_TYPE.STRING), LogoutCalling.getDeviceID(context)),
+                            SharedPreferenceManger.getPrefVal(Constants.USER_ID, null,
+                                    SharedPreferenceManger.VALUE_TYPE.STRING), LogoutCalling.getDeviceID(context)),
                     Constants.AFTER_LOGIN_ADDS_URL, ADDS, Request.Method.POST, this);
             AppController.getInstance().getRequestQueue().cancelAll(ADDS.toString());
             AppController.getInstance().addToRequestQueue(jsonObjReq, ADDS.toString());
@@ -136,7 +136,7 @@ public class PromotionsActivity extends NavigationBaseActivity implements View.O
 
             JsonObjectRequest jsonObjReq = new CallAddr().executeApi(new APIRequestParams().fetchAdsAfterLogin((String)
                             SharedPreferenceManger.getPrefVal(Constants.USER_ID, null,
-                            SharedPreferenceManger.VALUE_TYPE.STRING), LogoutCalling.getDeviceID(context),
+                                    SharedPreferenceManger.VALUE_TYPE.STRING), LogoutCalling.getDeviceID(context),
                     sessionTime
 
                     ),

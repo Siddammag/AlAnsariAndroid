@@ -11,17 +11,19 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.MediaStore;
+import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.AppCompatImageView;
-import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.widget.NestedScrollView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextUtils;
@@ -43,7 +45,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -77,15 +78,22 @@ import app.alansari.customviews.flatbutton.ButtonFlat;
 import app.alansari.customviews.progressbar.CircleProgressBar;
 import app.alansari.listeners.CustomClickListener;
 import app.alansari.listeners.OnWebServiceResult;
+import app.alansari.models.BankData;
 import app.alansari.models.BeneficiaryData;
 import app.alansari.models.CountryData;
+import app.alansari.models.PaymentModeData;
 import app.alansari.models.ServiceTypeData;
 import app.alansari.models.TxnAmountData;
+import app.alansari.models.additioninfowc.RESULTItem;
 import app.alansari.models.missingparameter.BeneficiaryDynamicFieldsCeNew;
 import app.alansari.models.servicetype.RESULTDTO;
 import app.alansari.modules.accountmanagement.adapters.BeneficiaryRecyclerAdapter;
 import app.alansari.modules.accountmanagement.models.BeneficiaryDynamicFields;
+import app.alansari.modules.accountmanagement.models.BeneficiaryDynamicFieldsCe;
+import app.alansari.modules.sendmoney.AdditionalInfoActivity;
+import app.alansari.modules.sendmoney.SendMoneyActivity;
 import app.alansari.modules.sendmoney.adapters.SendMoneyCurrencyCodeRecyclerAdapter;
+import app.alansari.modules.sendmoney.fragments.SendMoneyFragment;
 import app.alansari.network.APIRequestParams;
 import app.alansari.network.CallAddr;
 import app.alansari.network.NetworkStatus;
@@ -108,6 +116,7 @@ import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.FETCH_CE_CURRENCY_DATA
 /**
  * Created by Parveen Dala on 13 October, 2016
  * Fugenx Technologies, Bengaluru
+ * DKG
  * AlAnsari
  */
 public class BeneficiaryActivity extends AppCompatActivity implements View.OnClickListener, OnWebServiceResult, CustomClickListener, LogOutTimerUtil.LogOutListener {
@@ -258,7 +267,6 @@ public class BeneficiaryActivity extends AppCompatActivity implements View.OnCli
         });
         recyclerViewValue.setLayoutManager(layoutManagerValue);
         recyclerViewValue.setHasFixedSize(true);
-
         recyclerAdapterValue = new BeneficiaryRecyclerAdapter(this, new ArrayList<BeneficiaryData>(), this, intentType);
         recyclerViewValue.setAdapter(recyclerAdapterValue);
 
@@ -775,9 +783,6 @@ public class BeneficiaryActivity extends AppCompatActivity implements View.OnCli
         arexUserId = CommonUtils.getMemPkId(Constants.AREX_MAPPING);
         ceUserId = CommonUtils.getMemPkId(Constants.CE_MAPPING);
         sessionTime = (String) SharedPreferenceManger.getPrefVal(Constants.SESSION_ID, null, SharedPreferenceManger.VALUE_TYPE.STRING);
-
-
-
 
 
 
@@ -1386,44 +1391,8 @@ public class BeneficiaryActivity extends AppCompatActivity implements View.OnCli
         startCountCe = "1";
         setSelectedCountryData();
         ;*/
-
-        recyclerAdapterValue.clear();
-        fetchBeneficiary(AREXMapping);
-        selectedCountry = SharedPreferenceManger.loadSelectedCountryData();
-
-        setSelectedCountryData();
-
-
-
-//        selectedCountry = SharedPreferenceManger.loadSelectedCountryData();
-//        startCountArex = "1";
-//        startCountCe = "1";
-//        setSelectedCountryData();
-
-       // fetchBeneficiary(CEMapping);
-
-       /* startCountCe = "1";
-        startCountArex = "1";
-        selectedCountry = data.getParcelableExtra(Constants.OBJECT);
-        setSelectedCountryData();*/
-
-
-//        String beneficiaryId = getIntent().getExtras().getString(Constants.ID, null);
-//        /*if (beneficiaryId != null) {
-//            fetchBeneficiaryDetails(beneficiaryId, getIntent().getExtras().getString(Constants.SERVICE_TYPE, Constants.AREX_MAPPING));
-//            return;
-//        }*/
-//        //fetchBeneficiaryDetails(beneficiaryId, getIntent().getExtras().getString(Constants.SERVICE_TYPE, Constants.AREX_MAPPING));
-//        if (Integer.parseInt(startCountArex) >= recyclerAdapterValue.getItemCount()) {
-//            fetchBeneficiary(AREXMapping);
-//        }
         super.onResume();
-
-
-
     }
-
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -1440,8 +1409,6 @@ public class BeneficiaryActivity extends AppCompatActivity implements View.OnCli
                     startCountArex = "1";
                     selectedCountry = data.getParcelableExtra(Constants.OBJECT);
                     setSelectedCountryData();
-
-                    //123456
                 } else {
                     if (selectedCountry == null)
                         onBackPressed();
@@ -1637,8 +1604,7 @@ public class BeneficiaryActivity extends AppCompatActivity implements View.OnCli
                         CommonUtils.showLoading(context, getString(app.alansari.R.string.please_wait), null, false);
                     }
                     String sessionTime = (String) SharedPreferenceManger.getPrefVal(Constants.SESSION_ID, null, SharedPreferenceManger.VALUE_TYPE.STRING);
-                    JsonObjectRequest jsonObjReq = new CallAddr().executeApi(new APIRequestParams().fetchBeneficiaryDetails(beneficiaryId, serviceTypes, userId, LogoutCalling.getDeviceID(context), sessionTime),
-                            Constants.FETCH_BENEFICIARY_DETAILS_URL, CommonUtils.SERVICE_TYPE.FETCH_BENEFICIARY_DETAILS, Request.Method.POST, this);
+                    JsonObjectRequest jsonObjReq = new CallAddr().executeApi(new APIRequestParams().fetchBeneficiaryDetails(beneficiaryId, serviceTypes, userId, LogoutCalling.getDeviceID(context), sessionTime), Constants.FETCH_BENEFICIARY_DETAILS_URL, CommonUtils.SERVICE_TYPE.FETCH_BENEFICIARY_DETAILS, Request.Method.POST, this);
                     AppController.getInstance().cancelPendingRequests(FETCH_BENEFICIARY_DETAILS);
                     AppController.getInstance().addToRequestQueue(jsonObjReq, FETCH_BENEFICIARY_DETAILS.toString());
 
@@ -1662,14 +1628,7 @@ public class BeneficiaryActivity extends AppCompatActivity implements View.OnCli
                         }
                         String sessionTime = (String) SharedPreferenceManger.getPrefVal(Constants.SESSION_ID, null, SharedPreferenceManger.VALUE_TYPE.STRING);
 
-                        JsonObjectRequest jsonObjReq = new CallAddr().executeApi(new APIRequestParams().fetchBeneficiary2(userId,
-                                (String) SharedPreferenceManger.getPrefVal(Constants.AREX_MEM_ID, null,
-                                  SharedPreferenceManger.VALUE_TYPE.STRING), (String) SharedPreferenceManger.getPrefVal(Constants.CE_MEM_ID, null,
-                                   SharedPreferenceManger.VALUE_TYPE.STRING),
-                                serviceType.equalsIgnoreCase(AREXMapping) ? arexUserId : ceUserId, serviceType.equals(AREXMapping) ? selectedCountry.getCountryCodeAREX() : selectedCountry.getCountryCodeCE(), serviceType, startCount, LogoutCalling.getDeviceID(context), sessionTime),
-                                Constants.FETCH_BENEFICIARY_URL, FETCH_BENEFICIARY_INSTANT, Request.Method.POST, this);
-                        //Siddu..
-
+                        JsonObjectRequest jsonObjReq = new CallAddr().executeApi(new APIRequestParams().fetchBeneficiary2(userId, (String) SharedPreferenceManger.getPrefVal(Constants.AREX_MEM_ID, null, SharedPreferenceManger.VALUE_TYPE.STRING), (String) SharedPreferenceManger.getPrefVal(Constants.CE_MEM_ID, null, SharedPreferenceManger.VALUE_TYPE.STRING), serviceType.equalsIgnoreCase(AREXMapping) ? arexUserId : ceUserId, serviceType.equals(AREXMapping) ? selectedCountry.getCountryCodeAREX() : selectedCountry.getCountryCodeCE(), serviceType, startCount, LogoutCalling.getDeviceID(context), sessionTime), Constants.FETCH_BENEFICIARY_URL, FETCH_BENEFICIARY_INSTANT, Request.Method.POST, this);
                         AppController.getInstance().cancelPendingRequests(FETCH_BENEFICIARY_INSTANT);
                         AppController.getInstance().addToRequestQueue(jsonObjReq, FETCH_BENEFICIARY_INSTANT.toString());
 

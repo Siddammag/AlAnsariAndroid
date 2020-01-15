@@ -7,6 +7,10 @@ import android.graphics.Bitmap;
 import android.net.http.SslError;
 import android.os.Bundle;
 import android.os.Handler;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.SslErrorHandler;
@@ -20,12 +24,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.crashlytics.android.Crashlytics;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import org.json.JSONObject;
 
@@ -71,7 +73,7 @@ public class PaymentGatewayActivity extends AppCompatActivity implements OnWebSe
     private TextView tvEmpty, tvError;
     private MultiStateView multiStateView;
     private String url, successUrl, errorUrl;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -200,6 +202,7 @@ public class PaymentGatewayActivity extends AppCompatActivity implements OnWebSe
         super.onCreate(savedInstanceState);
         setContentView(app.alansari.R.layout.payment_gateway_activity);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         sessionTime = (String) SharedPreferenceManger.getPrefVal(Constants.SESSION_ID, null, SharedPreferenceManger.VALUE_TYPE.STRING);
 
         Toolbar toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
@@ -392,6 +395,7 @@ public class PaymentGatewayActivity extends AppCompatActivity implements OnWebSe
                     try {
                         //  if (response.getString(Constants.STATUS_MSG).equals(Constants.SUCCESS) || response.getString(Constants.STATUS_MSG).equals(Constants.FAILURE)) {
                         if (response.getString(Constants.STATUS_MSG).equals(Constants.SUCCESS)) {
+
                             Intent intent = new Intent(context, TransactionCompletedActivity.class);
                             intent.putExtra(Constants.OBJECT, dataObject);
                             intent.putExtra(Constants.SOURCE_TYPE, getIntent().getExtras().getString(Constants.SOURCE_TYPE));
@@ -443,6 +447,7 @@ public class PaymentGatewayActivity extends AppCompatActivity implements OnWebSe
                             } else if (response.getString(Constants.STATUS_MSG).equals(Constants.FAILURE)) {
                                 dataObject.setTxnStatus(Constants.TRANSACTION_STATUS_REJECTED);
                             }
+
                             Intent intent = new Intent(context, TransactionCompletedActivity.class);
                             intent.putExtra(Constants.OBJECT, dataObject);
                             intent.putExtra(Constants.SOURCE_TYPE, getIntent().getExtras().getString(Constants.SOURCE_TYPE));

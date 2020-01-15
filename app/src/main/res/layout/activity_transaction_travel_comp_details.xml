@@ -389,7 +389,7 @@
                                     android:textColor="@color/colorE86768"
                                     android:textColorHint="@color/colorE86768"
                                     android:textSize="@dimen/dimens_12sp" />
-                            </androidx.cardview.widget.CardView >
+                            </androidx.cardview.widget.CardView>
                         </LinearLayout>
 
                         <LinearLayout

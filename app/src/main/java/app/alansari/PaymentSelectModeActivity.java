@@ -4,7 +4,9 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,9 +14,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -106,7 +105,6 @@ public class PaymentSelectModeActivity extends AppCompatActivity implements View
     private String serviceType, countryCode, ccyCode;
     private RelativeLayout topLayout;
     private String PreLogin = "";
-
     private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
@@ -564,6 +562,10 @@ public class PaymentSelectModeActivity extends AppCompatActivity implements View
                                 }.getType());
                                 ArrayList<TxnDetailsData> txnDetailsData = CommonUtils.getTxnDetailsDataFromCreditCard(txnDetailsCreditCardData);
                                 if (txnDetailsData != null && txnDetailsData.size() > 0) {
+
+                                    mFirebaseAnalytics.logEvent("Remittance_CreditCard_Complete", null);
+                                    Log.i("Remittan_CreCard_Compl", "Success in PayAtBranch_Complete ");
+                                    Toast.makeText(this, "Sidduu1111", Toast.LENGTH_SHORT).show();
                                     intent = new Intent(context, TransactionDetailsActivity.class);
                                     intent.putExtra(Constants.SOURCE, Constants.SOURCE_PAYMENT_MODE);
                                     intent.putExtra(Constants.SOURCE_TYPE, Constants.TYPE_CREDIT_CARD);

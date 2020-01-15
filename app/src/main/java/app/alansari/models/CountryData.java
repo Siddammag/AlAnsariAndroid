@@ -225,8 +225,6 @@ public class CountryData implements Parcelable {
         //dest.writeString(screenMessage);
     }
 
-
-
     public static class CurrencyData implements Parcelable {
 
 
@@ -306,7 +304,6 @@ public class CountryData implements Parcelable {
             dest.writeString(currencyCode);
             dest.writeString(name);
             dest.writeString(defaultStatus);
-
         }
 
         public String getCurrencyCode() {

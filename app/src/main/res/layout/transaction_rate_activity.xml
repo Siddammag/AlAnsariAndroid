@@ -53,7 +53,7 @@
                     android:textColor="@color/colorWhite"
                     android:textSize="@dimen/dimens_14sp" />
 
-                <android.support.v7.widget.AppCompatRatingBar
+                <androidx.appcompat.widget.AppCompatRatingBar
                     android:id="@+id/rating_bar"
                     style="@style/transactionRatingBar"
                     android:layout_width="wrap_content"

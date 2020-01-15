@@ -1,8 +1,7 @@
 package app.alansari.customviews.carousellayoutmanager;
 
-import android.view.View;
-
 import androidx.annotation.NonNull;
+import android.view.View;
 
 /**
  * Implementation of {@link CarouselLayoutManager.PostLayoutListener} that makes interesting scaling of items. <br />

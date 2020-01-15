@@ -13,12 +13,14 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.widget.Toolbar;
 
 import android.util.Log;
 import android.view.MenuItem;
@@ -26,8 +28,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.material.snackbar.Snackbar;
-import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -57,6 +57,7 @@ public class MyEmiratesIdActivity extends NavigationBaseActivity implements View
     private Dialog imagePickDialog;
     private ProfileDetails.TEMPLATELISTItem dataObject;
     boolean hideDialog;
+
     private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -116,7 +117,7 @@ public class MyEmiratesIdActivity extends NavigationBaseActivity implements View
             dataObject = getIntent().getExtras().getParcelable(Constants.OBJECT);
         }
         boolean hideMenu = getIntent().getBooleanExtra(Constants.HIDE_BURGER_MENU, false);
-         hideDialog = getIntent().getBooleanExtra("HideDialog", true);
+        hideDialog = getIntent().getBooleanExtra("HideDialog", true);
         if (hideMenu) {
             findViewById(app.alansari.R.id.nav_menu).setVisibility(View.GONE);
             addFragment(2);
@@ -149,7 +150,6 @@ public class MyEmiratesIdActivity extends NavigationBaseActivity implements View
         }else {
             mFirebaseAnalytics.logEvent("AML_Pending", null);
             Log.i("AML_Pending", "Success in MyEmiratesId Acitivity");
-
             MyEmiratesIdFragment myEmiratesIdFragment=new MyEmiratesIdFragment();
             myEmiratesIdFragment.setArguments(bundle);
             fragmentTransaction.add(R.id.fragment_layout,myEmiratesIdFragment).addToBackStack(null);

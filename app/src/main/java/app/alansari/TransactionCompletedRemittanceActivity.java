@@ -3,12 +3,12 @@ package app.alansari;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
-
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
-import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -21,9 +21,10 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.textfield.TextInputLayout;
 
 import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 import app.alansari.Utils.CommonUtils;
 import app.alansari.Utils.Constants;
@@ -31,8 +32,10 @@ import app.alansari.Utils.LogOutTimerUtil;
 import app.alansari.Utils.Validation;
 import app.alansari.listeners.OnWebServiceResult;
 import app.alansari.models.TxnDetailsCeCashPayout;
+import app.alansari.models.TxnDetailsData;
 import app.alansari.modules.accountmanagement.BeneficiaryActivity;
 import app.alansari.modules.remittance.TXNHISTORYDATAItem;
+import app.alansari.modules.sendmoney.TransactionRateActivity;
 import app.alansari.network.APIRequestParams;
 import app.alansari.network.CallAddr;
 import app.alansari.network.NetworkStatus;

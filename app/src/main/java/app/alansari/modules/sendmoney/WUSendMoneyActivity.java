@@ -5,8 +5,18 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import android.text.Editable;
+import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
@@ -14,14 +24,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.AppCompatImageView;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.viewpager.widget.ViewPager;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -188,13 +190,12 @@ public class WUSendMoneyActivity extends NavigationBaseActivity implements View.
                 selectedCountry.setCountryCodeAREX(dataObject.getArexCountryCode());
                 selectedCountry.setWuCountryCode(dataObject.getReceiverCountryCode());
 
-                if(!getIntent().getStringExtra(Constants.WU_LOOKUP_PROMO_CODE).equalsIgnoreCase("")){
+                if (!getIntent().getStringExtra(Constants.WU_LOOKUP_PROMO_CODE).equalsIgnoreCase("")) {
                     etPromoCode.setText(getIntent().getStringExtra(Constants.WU_LOOKUP_PROMO_CODE));
                     etPromoCode.setEnabled(false);
-                }else{
+                } else {
                     etPromoCode.setEnabled(true);
                 }
-
 
 
                 ArrayList<CountryData.CurrencyData> currencyData = new ArrayList<CountryData.CurrencyData>();
@@ -315,6 +316,18 @@ public class WUSendMoneyActivity extends NavigationBaseActivity implements View.
         btnSend.setEnabled(false);
     }
 
+    //siddu
+    private String getReceiverCountryCode() {
+        String wuCcYCode = null;
+        if (adapter != null && adapter.getCount() > 1) {
+            if (adapter.getFragment(1) instanceof WUSendMoneyFragment && (WUSendMoneyFragment) adapter.getFragment(1) != null) {
+                wuCcYCode = ((WUSendMoneyFragment) adapter.getFragment(1)).getWuCcyCode();
+            }
+        }
+        return TextUtils.isEmpty(wuCcYCode) ? dataObject.getReceiverCountryCode() : wuCcYCode;
+    }
+
+
     private void setCountryData() {
         boolean isFirstTime = false;
         if (selectedCountry != null) {
@@ -324,7 +337,9 @@ public class WUSendMoneyActivity extends NavigationBaseActivity implements View.
                 resetAmount();
             }
         }
-    }    @Override
+    }
+
+    @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case app.alansari.R.id.nav_menu:
@@ -353,6 +368,7 @@ public class WUSendMoneyActivity extends NavigationBaseActivity implements View.
         }
     }
 
+    //WU_CCY_CODE
     @Override
     public void onResponse(int status, JSONObject response, CommonUtils.SERVICE_TYPE sType) {
         CommonUtils.hideLoading();
@@ -497,7 +513,8 @@ public class WUSendMoneyActivity extends NavigationBaseActivity implements View.
         dataObject.setVat(vat);
         dataObject.setBankData(selectedBank);
         intent.putExtra(Constants.AREX_COUNTRY_CODE, selectedCountry.getCountryCodeAREX());
-        intent.putExtra(Constants.WU_COUNTRY_CODE, dataObject.getReceiverCountryCode());
+        intent.putExtra(Constants.WU_COUNTRY_CODE, getReceiverCountryCode()); //siddu
+        Log.i("getReceiverCountryCode", getReceiverCountryCode());
         intent.putExtra(Constants.OBJECT, dataObject);
         intent.putExtra(Constants.WU_RATE_CHARGE_RESPONSE, sendMoneyResponse.toString());
         intent.putExtra(Constants.TOTAL_AMOUNT_PP, TOTAL_AMOUNT_PP);
@@ -599,7 +616,9 @@ public class WUSendMoneyActivity extends NavigationBaseActivity implements View.
 
     public void setSendBtnState(boolean state) {
         btnSend.setEnabled(state);
-    }    private void showCountryInfo() {
+    }
+
+    private void showCountryInfo() {
         if (NetworkStatus.getInstance(context).isOnline2(context)) {
             JsonObjectRequest jsonObjReq = new CallAddr().executeApi(new APIRequestParams().fetchWuCountryInfo(CommonUtils.getUserId(), arexUserId, dataObject.getReceiverCountryCode(), dataObject.getReceiverCurrencyCode(), "WU", LogoutCalling.getDeviceID(context), sessionTime), Constants.WU_COUNTRY_INFO_URL, CommonUtils.SERVICE_TYPE.WU_COUNTRY_INFO, Request.Method.POST, this);
             AppController.getInstance().getRequestQueue().cancelAll(CommonUtils.SERVICE_TYPE.WU_COUNTRY_INFO.toString());
@@ -648,7 +667,9 @@ public class WUSendMoneyActivity extends NavigationBaseActivity implements View.
         intent.putExtra(Constants.ITEM_TYPE, Constants.WU_SELECT_ITEM_COUNTRY);
         startActivityForResult(intent, Constants.WU_SELECT_ITEM_COUNTRY);
         overridePendingTransition(app.alansari.R.anim.pump_top_to_up, app.alansari.R.anim.hold);
-    }    private void checkTxtLimit() {
+    }
+
+    private void checkTxtLimit() {
         if (NetworkStatus.getInstance(context).isOnline2(context)) {
             String totalTxtAmt = "";
             String txtAmt = "";
@@ -750,11 +771,8 @@ public class WUSendMoneyActivity extends NavigationBaseActivity implements View.
             return "Cash Pick-up";
         }
     }
-
-
-
-
-
-
-
 }
+
+
+
+

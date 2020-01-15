@@ -9,9 +9,11 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -93,13 +95,13 @@ public class MyProfileActivity extends NavigationBaseActivity implements View.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_profile);
         context = this;
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        ((TextView) findViewById(R.id.toolbar_title)).setText("My Profile");
+        Toolbar toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
+        ((TextView) findViewById(app.alansari.R.id.toolbar_title)).setText("My Profile");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back_arrow);
-        findViewById(R.id.nav_menu).setOnClickListener(this);
+        getSupportActionBar().setHomeAsUpIndicator(app.alansari.R.drawable.ic_back_arrow);
+        findViewById(app.alansari.R.id.nav_menu).setOnClickListener(this);
         init();
        /* swipeRefreshLayout.setColorSchemeColors(CommonUtils.getPrimaryColor(this));
         swipeRefreshLayout.setEnabled(false);
@@ -125,11 +127,11 @@ public class MyProfileActivity extends NavigationBaseActivity implements View.On
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.empty_button:
-            case R.id.error_button:
+            case app.alansari.R.id.empty_button:
+            case app.alansari.R.id.error_button:
                 fetchProfileData();
                 break;
-            case R.id.nav_menu:
+            case app.alansari.R.id.nav_menu:
                 openMenuDrawer();
                 break;
         }
@@ -163,13 +165,13 @@ public class MyProfileActivity extends NavigationBaseActivity implements View.On
     private void init() {
 
 
-       // swipeRefreshLayout = (SwipeRefreshLayout) findViewById(app.alansari.R.id.swipeRefreshLayout);
-        multiStateView = (MultiStateView) findViewById(R.id.multiStateViewBank);
-        multiStateView.findViewById(R.id.empty_button).setOnClickListener(this);
-        multiStateView.findViewById(R.id.error_button).setOnClickListener(this);
-        tvEmpty = ((TextView) multiStateView.findViewById(R.id.empty_textView));
-        tvError = ((TextView) multiStateView.findViewById(R.id.error_textView));
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        // swipeRefreshLayout = (SwipeRefreshLayout) findViewById(app.alansari.R.id.swipeRefreshLayout);
+        multiStateView = (MultiStateView) findViewById(app.alansari.R.id.multiStateViewBank);
+        multiStateView.findViewById(app.alansari.R.id.empty_button).setOnClickListener(this);
+        multiStateView.findViewById(app.alansari.R.id.error_button).setOnClickListener(this);
+        tvEmpty = ((TextView) multiStateView.findViewById(app.alansari.R.id.empty_textView));
+        tvError = ((TextView) multiStateView.findViewById(app.alansari.R.id.error_textView));
+        recyclerView = (RecyclerView) findViewById(app.alansari.R.id.recyclerView);
 
     }
 
@@ -220,15 +222,15 @@ public class MyProfileActivity extends NavigationBaseActivity implements View.On
                                     return;
                                 }
                             }
-                           setViewState(VIEW_STATE_EMPTY);
+                            setViewState(VIEW_STATE_EMPTY);
                         } else {
-                           setViewState(VIEW_STATE_WRONG);
+                            setViewState(VIEW_STATE_WRONG);
                         }
                     } catch (Exception ex) {
                         ex.printStackTrace();
                         setViewState(VIEW_STATE_WRONG);
                     } finally {
-                       // onItemsLoadComplete();
+                        // onItemsLoadComplete();
                     }
                 } else {
                     setViewState(VIEW_STATE_WRONG);
@@ -277,16 +279,16 @@ public class MyProfileActivity extends NavigationBaseActivity implements View.On
     @Override
     public void itemClickedListerners(View view, int position, Object dataItem) {
         //if(((ProfileDetails.TEMPLATELISTItem) dataItem).getCATEGORYID().equalsIgnoreCase("500"))
-       // startActivity(new Intent(context, MyEmiratesIdActivity.class).putExtra(Constants.OBJECT, (ProfileDetails.TEMPLATELISTItem) dataItem));
+        // startActivity(new Intent(context, MyEmiratesIdActivity.class).putExtra(Constants.OBJECT, (ProfileDetails.TEMPLATELISTItem) dataItem));
 
         if(position==5) {
             Intent intent=new Intent(context, MyEmiratesIdActivity.class);
             intent.putExtra(Constants.OBJECT, (ProfileDetails.TEMPLATELISTItem) dataItem);
             startActivityForResult(intent,Constants.UPDATED_DATA);
         }else {
-             Intent intent=new Intent(context, MyProfileDetails.class);
-             intent.putExtra(Constants.OBJECT, (ProfileDetails.TEMPLATELISTItem) dataItem);
-             startActivityForResult(intent,Constants.UPDATED_DATA);
+            Intent intent=new Intent(context, MyProfileDetails.class);
+            intent.putExtra(Constants.OBJECT, (ProfileDetails.TEMPLATELISTItem) dataItem);
+            startActivityForResult(intent,Constants.UPDATED_DATA);
 
         }
     }
@@ -303,7 +305,7 @@ public class MyProfileActivity extends NavigationBaseActivity implements View.On
 
         }catch (Exception e) {
             e.printStackTrace();
-            Toast.makeText(context, getString(R.string.error_something_wrong), Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, getString(app.alansari.R.string.error_something_wrong), Toast.LENGTH_SHORT).show();
 
         }
     }

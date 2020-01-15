@@ -4,10 +4,10 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
 import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,7 +18,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.textfield.TextInputLayout;
 
 import org.json.JSONObject;
 
@@ -34,7 +33,6 @@ import app.alansari.network.CallAddr;
 import app.alansari.network.NetworkStatus;
 import app.alansari.preferences.SharedPreferenceManger;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
-
 
 import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.CUSTOMER_PROFILE;
 import static app.alansari.Utils.LogOutTimerUtil.stopLogoutTimer;
@@ -147,7 +145,7 @@ public class CustomerProfile extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.change_btn:
-                Intent i=new Intent(context,RegisterActivity.class);
+                Intent i=new Intent(context, RegisterActivity.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY);
                 startActivity(i);
                 finish();

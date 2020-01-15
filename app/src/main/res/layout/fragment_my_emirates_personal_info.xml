@@ -90,8 +90,7 @@
                                 style="@style/AddBeneficiaryEditText"
                                 android:hint="@string/emirates_id_number"
                                 android:imeOptions="actionDone"
-                                android:inputType="none"
-                                android:maxLength="18" />
+                                android:inputType="none"                                android:maxLength="18" />
                         </com.google.android.material.textfield.TextInputLayout>
                     </RelativeLayout>
 
@@ -156,7 +155,7 @@
 
 
             </LinearLayout>
-        </androidx.cardview.widget.CardView >
+        </androidx.cardview.widget.CardView>
 
         <Button
             android:id="@+id/btn_click_update_emirates_id"

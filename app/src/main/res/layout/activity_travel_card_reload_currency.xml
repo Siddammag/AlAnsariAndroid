@@ -194,9 +194,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/fee_aed"
                 android:gravity="center_vertical"
-                android:text="@string/vat_changes_ade_0_00"
                 android:textColor="@color/colorEDEBEB"
-                android:textSize="@dimen/dimens_9sp" />
+                android:textSize="@dimen/dimens_9sp"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/discount_label"

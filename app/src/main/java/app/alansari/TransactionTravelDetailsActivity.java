@@ -7,16 +7,16 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
-
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
 import android.text.Editable;
 import android.text.Html;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,6 +30,7 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import net.yslibrary.android.keyboardvisibilityevent.KeyboardVisibilityEvent;
 import net.yslibrary.android.keyboardvisibilityevent.KeyboardVisibilityEventListener;
@@ -49,6 +50,7 @@ import app.alansari.Utils.Validation;
 import app.alansari.customviews.MultiStateView;
 import app.alansari.listeners.OnWebServiceResult;
 import app.alansari.models.TxnDetailsData;
+import app.alansari.models.transactionhistroy.WALLETDETAILSItem;
 import app.alansari.modules.branchlocator.BranchLocatorCityActivity;
 import app.alansari.modules.sendmoney.PaymentGatewayActivity;
 import app.alansari.modules.sendmoney.TransactionCompletedActivity;
@@ -86,7 +88,7 @@ public class TransactionTravelDetailsActivity extends AppCompatActivity implemen
     private TextView tvLabelCurrency1,tvLabelCurrency2,tvLabelCurrency3,tvLabelCurrency4,tvLabelCurrency5,tvLabelCurrency6;
     private TextView tvLabelName1,tvLabelName2,tvLabelName3,tvLabelName4,tvLabelName5,tvLabelName6;
     private List<TxnDetailsData.TRANSACTIONHISTORYDETAILWCItem> itemList;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
@@ -165,6 +167,7 @@ public class TransactionTravelDetailsActivity extends AppCompatActivity implemen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transaction_travel_details);
         context = this;
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         toolbar = (Toolbar) findViewById(app.alansari.R.id.toolbar);
         ((TextView) findViewById(app.alansari.R.id.toolbar_title)).setText("Transaction Details");
         setSupportActionBar(toolbar);
@@ -814,6 +817,7 @@ public class TransactionTravelDetailsActivity extends AppCompatActivity implemen
                 if (status == 1) {
                     try {
                         if (response.getString(Constants.STATUS_MSG).equals(Constants.SUCCESS)) {
+
                             intent = new Intent(context, TransactionCompletedActivity.class);
                             intent.putExtra(Constants.OBJECT, txnDetailsData);
                             intent.putExtra(Constants.SOURCE_TYPE, sourceType);

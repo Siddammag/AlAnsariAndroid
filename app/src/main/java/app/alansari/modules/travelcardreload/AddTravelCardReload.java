@@ -6,11 +6,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -26,7 +26,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.textfield.TextInputLayout;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -46,6 +45,7 @@ import app.alansari.Utils.Constants;
 import app.alansari.Utils.LogOutTimerUtil;
 import app.alansari.customviews.progressbutton.CircularProgressButton;
 import app.alansari.listeners.OnWebServiceResult;
+import app.alansari.models.CreditCardData;
 import app.alansari.models.TravelCardReloadModel.TravelCardInfo;
 import app.alansari.network.APIRequestParams;
 import app.alansari.network.CallAddr;
@@ -54,6 +54,7 @@ import app.alansari.newAdditions.LogoutCalling;
 import app.alansari.preferences.SharedPreferenceManger;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
+import static app.alansari.Utils.CommonUtils.SERVICE_TYPE.DELETE_TRAVEL_CARD;
 import static app.alansari.Utils.LogOutTimerUtil.stopLogoutTimer;
 
 public class AddTravelCardReload extends AppCompatActivity implements View.OnClickListener, OnWebServiceResult, LogOutTimerUtil.LogOutListener {

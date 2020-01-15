@@ -3,7 +3,6 @@ package app.alansari.modules.accountmanagement;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -120,7 +119,7 @@ public class WUBeneficiaryActivity extends AppCompatActivity implements View.OnC
             @Override
             public void onLoadMore() {
                 if (loadMore) {
-                    //fetchBeneficiary();
+                   // fetchBeneficiary();
                 }
             }
         });
@@ -179,8 +178,7 @@ public class WUBeneficiaryActivity extends AppCompatActivity implements View.OnC
                 CommonUtils.showLoading(context, getString(app.alansari.R.string.please_wait), null, false);
             }
             etKeyword.setEnabled(false);
-            JsonObjectRequest jsonObjReq = new CallAddr().executeApi(new APIRequestParams().fetchWUBeneficiary((String) SharedPreferenceManger.getPrefVal(Constants.USER_ID, null, SharedPreferenceManger.VALUE_TYPE.STRING), arexUserId, "", startCount, LogoutCalling.getDeviceID(context),sessionTime),
-                    Constants.FETCH_WU_BENEFICIARY_URL, CommonUtils.SERVICE_TYPE.FETCH_WU_BENEFICIARY, Request.Method.PUT, this);
+            JsonObjectRequest jsonObjReq = new CallAddr().executeApi(new APIRequestParams().fetchWUBeneficiary((String) SharedPreferenceManger.getPrefVal(Constants.USER_ID, null, SharedPreferenceManger.VALUE_TYPE.STRING), arexUserId, "", startCount, LogoutCalling.getDeviceID(context),sessionTime), Constants.FETCH_WU_BENEFICIARY_URL, CommonUtils.SERVICE_TYPE.FETCH_WU_BENEFICIARY, Request.Method.PUT, this);
             AppController.getInstance().getRequestQueue().cancelAll(CommonUtils.SERVICE_TYPE.FETCH_WU_BENEFICIARY.toString());
             AppController.getInstance().addToRequestQueue(jsonObjReq, CommonUtils.SERVICE_TYPE.FETCH_WU_BENEFICIARY.toString());
         } else {
